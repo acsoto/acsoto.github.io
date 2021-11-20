@@ -1,262 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
+<head><!-- hexo injector head_begin start -->
+<script src="/config.f0c72ea54ff3a2d0417f.js"></script>
+<!-- hexo injector head_begin end -->
+<meta charset="utf-8">
+<title>Git - soto</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://example.com/2020/11/03/Git/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
-    
-    
-    
-    
-    
-
-
-    <!-- meta -->
-
-
-<title>Git | soto</title>
-
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="Git 学习笔记soto 基础操作创建一个文件夹(bash here) 1234mkdir learngitcd learngitpwdgit init  上传&amp;提交123git add xxxgit rm xxx  &#x2F;&#x2F;remove local file firstgit commit -m &quot;some logs&quot;  版本控制12345git statusgit di">
-<meta property="og:type" content="article">
+<meta name="description" content="Git 学习笔记 soto 基础操作 创建一个文件夹 (bash here) 1234mkdir learngitcd learngitpwdgit init 上传&amp;提交 123git add xxxgit rm xxx  &#x2F;&#x2F;remove local file firstgit commit -m &quot;some logs&quot; 版本控制 12345git statusgit">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Git">
 <meta property="og:url" content="http://example.com/2020/11/03/Git/index.html">
 <meta property="og:site_name" content="soto">
-<meta property="og:description" content="Git 学习笔记soto 基础操作创建一个文件夹(bash here) 1234mkdir learngitcd learngitpwdgit init  上传&amp;提交123git add xxxgit rm xxx  &#x2F;&#x2F;remove local file firstgit commit -m &quot;some logs&quot;  版本控制12345git statusgit di">
+<meta property="og:description" content="Git 学习笔记 soto 基础操作 创建一个文件夹 (bash here) 1234mkdir learngitcd learngitpwdgit init 上传&amp;提交 123git add xxxgit rm xxx  &#x2F;&#x2F;remove local file firstgit commit -m &quot;some logs&quot; 版本控制 12345git statusgit">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.gravatar.com/avatar/35612aa144d2d5299ca854d35a0adc5b?s=160">
 <meta property="article:published_time" content="2020-11-03T14:51:30.000Z">
 <meta property="article:modified_time" content="2021-11-06T15:45:46.739Z">
 <meta property="article:author" content="soto">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/35612aa144d2d5299ca854d35a0adc5b?s=160">
 
 
-    
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
-    
-    
-        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
-        
-    
-
-    
-    
-
-    
-
-     
-
-    <!-- custom head -->
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-    <body>
-        <div id="app">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">SOTO</span>
-        </a>
-    </div>
-    <div class="header__right">
-        
-            <div class="navbar__menus">
-                
-                    <a href="/" class="navbar-menu button">首页</a>
-                
-                    <a href="/tags/" class="navbar-menu button">标签</a>
-                
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/friends/" class="navbar-menu button">友链</a>
-                
-                    <a href="/page/" class="navbar-menu button">Page</a>
-                
-            </div>
-        
-        
-        
-
-        
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/friends/" class="dropdown-menu button">友链</a>
-                
-                    <a href="/page/" class="dropdown-menu button">Page</a>
-                
-            </div>
-        
-    </div>
-</header>
-
-
-            <main class="main">
-    
-
-<div class="post-title">
-    <h1 class="post-title__text">
-        Git
-    </h1>
-    <div class="post-title__meta">
-        <a href="/archives/2020/11/" class="post-meta__date button">2020-11-03</a>
-        
- 
-        
-    
-    
-
-
- 
-
- 
-    </div>
-</div>
-
-
-
-<article class="post content-card">
-    <div class="post__header"></div>
-    <div class="post__content">
-        <h1 id="Git-学习笔记"><a href="#Git-学习笔记" class="headerlink" title="Git 学习笔记"></a>Git 学习笔记</h1><p><code>soto</code></p>
-<h2 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h2><h3 id="创建一个文件夹"><a href="#创建一个文件夹" class="headerlink" title="创建一个文件夹"></a>创建一个文件夹</h3><p>(bash here)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir learngit</span><br><span class="line">cd learngit</span><br><span class="line">pwd</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h3 id="上传-amp-提交"><a href="#上传-amp-提交" class="headerlink" title="上传&amp;提交"></a>上传&amp;提交</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add xxx</span><br><span class="line">git rm xxx  //remove local file first</span><br><span class="line">git commit -m &quot;some logs&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git diff xxx</span><br><span class="line">git log</span><br><span class="line">git reflog</span><br><span class="line">git reset --hard HEAD~1 </span><br></pre></td></tr></table></figure>
-
-<h3 id="理论上的模型"><a href="#理论上的模型" class="headerlink" title="理论上的模型"></a>理论上的模型</h3><p>分清楚  <code>工作区</code>   <code>暂存区</code>   <code>版本库</code> 三者的关系</p>
-<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout --&lt;file&gt;  //丢弃工作区</span><br><span class="line">git reset HEAD &lt;file&gt;  //丢弃暂存区后，回到仅仅是工作区有问题的情况</span><br></pre></td></tr></table></figure>
-
-<h3 id="GitHub仓库同步"><a href="#GitHub仓库同步" class="headerlink" title="GitHub仓库同步"></a>GitHub仓库同步</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:acsoto/learngit.git</span><br><span class="line">git push -u origin master //First</span><br><span class="line">git push origin master	//After</span><br><span class="line">git push</span><br><span class="line">git pull</span><br><span class="line">git clone xxxxx</span><br></pre></td></tr></table></figure>
-
-<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><p>(encouraged)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git branch	//check branch</span><br><span class="line">git switch -c xxx  //create and switch</span><br><span class="line">git switch xxx	//switch</span><br><span class="line">git merge xxx  //merge to master</span><br><span class="line">git branch -d xxx	//remove</span><br><span class="line">git merge --no-ff -m &quot;xxx&quot; dev	//禁用 Fast forward模式合并</span><br></pre></td></tr></table></figure>
-
-<h3 id="储存分支"><a href="#储存分支" class="headerlink" title="储存分支"></a>储存分支</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br><span class="line">git stash list</span><br><span class="line">git stash apply</span><br><span class="line">git stash drop</span><br><span class="line">git cherry-pick &lt;commit&gt;	//把提交复制到当前分支</span><br><span class="line">git rebase	//分支整合为直线</span><br></pre></td></tr></table></figure>
-
-<h3 id="标签操作"><a href="#标签操作" class="headerlink" title="标签操作"></a>标签操作</h3><p>标签与commit挂钩</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git tag xxx //默认HEAD</span><br><span class="line">git tag</span><br><span class="line">git show xxx</span><br><span class="line">git tag -d xxx</span><br><span class="line">git push origin xxx/--tags	//推送某标签或全部标签</span><br></pre></td></tr></table></figure>
-
-
-    </div>
-     
-    <div class="post-footer__meta"><p>updated at 2021-11-06</p></div> 
-    <div class="post-entry__tags"></div> 
-</article>
-
-
-    <div class="nav">
-        <div class="nav__prev">
-            
-                <a href="/2020/12/21/Hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            Previous Post
-                        </div>
-                        <div class="nav__title">
-                            Hexo食用方法
-                        </div>
-                    </div>
-                </a>
-            
-        </div>
-        <div class="nav__next">
-            
-        </div>
-    </div>
-
-
-
-
-
-</main>
-
-            <footer class="footer">
-    
-    
-
-
-    
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2021 <a href="/">soto</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
-</footer>
-
-        </div>
-         
-
- 
-
- 
-
- 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-    
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    </body>
+<!-- hexo injector head_end start --><style is="theme">html{--inside-accent-color:#2a2b33;--inside-foreground-color:#363636;--inside-border-color:#e0e0e0;--inside-background:#f3f6f7;--inside-sidebar-background:#2a2b33;--inside-card-background:#fff;--inside-font-base:'Josefin Sans','PingFang SC';--inside-font-logo:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-menu:Baloo Bhaijaan,'Josefin Sans','PingFang SC';--inside-font-heading:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-label:Montserrat,'Josefin Sans','PingFang SC';--inside-font-code:Inconsolata,monospace;--inside-font-print:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-content-width:660px;--inside-highlight-00:#ffffff;--inside-highlight-01:#e0e0e0;--inside-highlight-02:#f3f6f7;--inside-highlight-03:#95a5b3;--inside-highlight-04:#363636;--inside-highlight-05:#262b2f;--inside-highlight-06:#000000;--inside-highlight-07:#000000;--inside-highlight-08:#5d6c7b;--inside-highlight-09:#40464a;--inside-highlight-0a:#2980b9;--inside-highlight-0b:#be516e;--inside-highlight-0c:#237dac;--inside-highlight-0d:#944770;--inside-highlight-0e:#239371;--inside-highlight-0f:#edf0f3;--inside-card-color:#fff;--inside-accent-color-005:rgba(42,43,51,.05);--inside-accent-color-01:rgba(42,43,51,.1);--inside-accent-color-02:rgba(42,43,51,.2);--inside-accent-color-04:rgba(42,43,51,.4);--inside-accent-color-08:rgba(42,43,51,.8)}</style><script src="/theme.9ecc9ab1.js"></script><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"></link><link href="/styles.6467ff941351c62afa27.css" rel="stylesheet"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+<body lang="en"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="/runtime.1ed960b0635ea0669f87.js"></script><script src="/polyfills.b7bf56fc45f931a8b83e.js"></script><script src="/main.77d232ad63257576b99f.js"></script><!-- hexo injector body_end end --></body>
 </html>
