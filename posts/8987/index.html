@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>BUAAOO-第四单元总结 - SOTO-BLOG</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="SOTO-BLOG"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SOTO-BLOG"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="BUAAOO-第四单元总结总结本单元作业的架构设计本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业实现类图分析 将UML元素根据其含义分为如下层次结构 部分元素根据需求分装为MyXXX  根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素    循环轮次 处理元素    1 UmlClass UmlInterface UmlAssociationEnd   2 UmlOp"><meta property="og:type" content="blog"><meta property="og:title" content="BUAAOO-第四单元总结"><meta property="og:url" content="http://atksoto.com/posts/8987/"><meta property="og:site_name" content="SOTO-BLOG"><meta property="og:description" content="BUAAOO-第四单元总结总结本单元作业的架构设计本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业实现类图分析 将UML元素根据其含义分为如下层次结构 部分元素根据需求分装为MyXXX  根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素    循环轮次 处理元素    1 UmlClass UmlInterface UmlAssociationEnd   2 UmlOp"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://atksoto.com/posts/8987/BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103351737.png"><meta property="og:image" content="http://atksoto.com/posts/8987/BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103946632.png"><meta property="article:published_time" content="2021-06-26T03:23:00.000Z"><meta property="article:modified_time" content="2021-12-05T16:45:29.650Z"><meta property="article:author" content="soto"><meta property="article:tag" content="BUAA"><meta property="article:tag" content="面向对象"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103351737.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://atksoto.com/posts/8987/"},"headline":"BUAAOO-第四单元总结","image":["http://atksoto.com/posts/8987/BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103351737.png","http://atksoto.com/posts/8987/BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103946632.png"],"datePublished":"2021-06-26T03:23:00.000Z","dateModified":"2021-12-05T16:45:29.650Z","author":{"@type":"Person","name":"soto"},"publisher":{"@type":"Organization","name":"SOTO-BLOG","logo":{"@type":"ImageObject"}},"description":"BUAAOO-第四单元总结总结本单元作业的架构设计本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业实现类图分析 将UML元素根据其含义分为如下层次结构 部分元素根据需求分装为MyXXX  根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素    循环轮次 处理元素    1 UmlClass UmlInterface UmlAssociationEnd   2 UmlOp"}</script><link rel="canonical" href="http://atksoto.com/posts/8987/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">SOTO-BLOG</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-06-26T03:23:00.000Z" title="2021/6/26 上午11:23:00">2021-06-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-12-05T16:45:29.650Z" title="2021/12/6 上午12:45:29">2021-12-06</time></span><span class="level-item">10 minutes read (About 1505 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">BUAAOO-第四单元总结</h1><div class="content"><h1 id="BUAAOO-第四单元总结"><a href="#BUAAOO-第四单元总结" class="headerlink" title="BUAAOO-第四单元总结"></a>BUAAOO-第四单元总结</h1><h3 id="总结本单元作业的架构设计"><a href="#总结本单元作业的架构设计" class="headerlink" title="总结本单元作业的架构设计"></a>总结本单元作业的架构设计</h3><p>本单元任务为设计UML分析器，包括类图，顺序图，状态图</p>
+<h4 id="第一次作业"><a href="#第一次作业" class="headerlink" title="第一次作业"></a>第一次作业</h4><p>实现类图分析</p>
+<p>将UML元素根据其含义分为如下层次结构</p>
+<p>部分元素根据需求分装为MyXXX</p>
+<p><img src="BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103351737.png"></p>
+<p>根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素</p>
+<table>
+<thead>
+<tr>
+<th>循环轮次</th>
+<th>处理元素</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>UmlClass UmlInterface UmlAssociationEnd</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UmlParameter</td>
+</tr>
+</tbody></table>
+<h4 id="第二次作业"><a href="#第二次作业" class="headerlink" title="第二次作业"></a>第二次作业</h4><p>实现顺序图，状态图</p>
+<p>将UML元素根据其含义分为如下层次结构</p>
+<p>部分元素根据需求分装为MyXXX</p>
+<p><img src="BUAAOO-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/image-20210626103946632.png"></p>
+<p>根据逻辑层次，读入过程分为四个循环，分别处理四个层次的元素</p>
+<table>
+<thead>
+<tr>
+<th>循环轮次</th>
+<th>处理元素</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>UmlClass UmlInterface UmlAssociationEnd UmlInteraction UmlStateMachine UmlRegion</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization UmlLifeline UmlState UmlPseudostate UmlFinalState</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UmlParameter UmlMessage UmlTransition</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UmlEvent</td>
+</tr>
+</tbody></table>
+<h4 id="第三次作业"><a href="#第三次作业" class="headerlink" title="第三次作业"></a>第三次作业</h4><p>架构同第二次。</p>
+<p>其他的就是一些图算法的问题了。</p>
+<h3 id="总结自己在四个单元中架构设计及OO方法理解的演进"><a href="#总结自己在四个单元中架构设计及OO方法理解的演进" class="headerlink" title="总结自己在四个单元中架构设计及OO方法理解的演进"></a>总结自己在四个单元中架构设计及OO方法理解的演进</h3><table>
+<thead>
+<tr>
+<th>单元</th>
+<th>理解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一单元</td>
+<td>面向对象的层次化设计：factor，term，poly层次结构逻辑分明，各司其职，同时又都实现某接口，递归下降的操作过程中非常符合人的直觉感受。认识到清晰的逻辑架构的重要性。</td>
+</tr>
+<tr>
+<td>第二单元</td>
+<td>多线程设计：多线程的加入使得程序有了更多的不确定性。线程之间的交互在逻辑需要深入理解，UML流程图的作用。</td>
+</tr>
+<tr>
+<td>第三单元</td>
+<td>基于JML的设计：学到了JML规格相关知识，工程化思想进一步提升</td>
+</tr>
+<tr>
+<td>第四单元</td>
+<td>UML：清晰且彻底的理解了面向对象层次化设计的形态和结构</td>
+</tr>
+</tbody></table>
+<h3 id="总结自己在四个单元中测试理解与实践的演进"><a href="#总结自己在四个单元中测试理解与实践的演进" class="headerlink" title="总结自己在四个单元中测试理解与实践的演进"></a>总结自己在四个单元中测试理解与实践的演进</h3><table>
+<thead>
+<tr>
+<th>单元</th>
+<th>理解 实践</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一单元</td>
+<td>利用python生存复杂数据，边界数据进行测试</td>
+</tr>
+<tr>
+<td>第二单元</td>
+<td>需要考虑线程之间时间差异可能带来的问题，性能方面也要注意特殊情况，形式化验证</td>
+</tr>
+<tr>
+<td>第三单元</td>
+<td>没怎么测，错了一片，看来测试很重要</td>
+</tr>
+<tr>
+<td>第四单元</td>
+<td>利用工具，手动构造较为复杂的UML图，进行测试。</td>
+</tr>
+</tbody></table>
+<h3 id="总结自己的课程收获"><a href="#总结自己的课程收获" class="headerlink" title="总结自己的课程收获"></a>总结自己的课程收获</h3><p>​    16周连续的任务（其中一周有休息）任务量确实比较大，回首自己的前三篇博客，也能看到自己泡一天图书馆写程序的影子，为BUG抓狂的夜晚，周三看结果看到“你在强测中得到0分”的悲痛心情。</p>
+<p>​    每周精确到天的任务，不得不说，这是一门硬课。但重要的是确实看到了自己的在这门课上的收获有多大。这是一门实实在在能学到很多东西的课程，无论是代码风格，程序基础，性能算法，还是最重要的架构设计，我都得到了比较大的提升，在最重要的架构设计上，我深刻理解了对于复杂程序甚至是工程程序中，无论是对个人还是团队合作，面向对象思想的重要性。</p>
+<p>​    前几周投入的精力更大一些，第一单元和第二单元收获颇丰，得分也比较好看，第三单元有所松懈，有幸得到了强测0分体验。这门课没有考试，却比考试周突击的课能学到更多东西。</p>
+<p>​    虽然最后作为社恐和菜鸡没有在研讨课发过言，也没得到什么奖，或许最后得分比较一般，但是这门课确实是我在计算机学院到目前为止感觉上的最舒服的一门课，没有什么遗憾了。</p>
+<p>​    非常感谢可爱的吴际老师一学期的辛勤教学，lyj学长前两单元架构经验的倾情分享和研讨课课程组织，还有其他助教们全程的辛勤付出！</p>
+<h3 id="立足于自己的体会给课程提三个具体改进建议"><a href="#立足于自己的体会给课程提三个具体改进建议" class="headerlink" title="立足于自己的体会给课程提三个具体改进建议"></a>立足于自己的体会给课程提三个具体改进建议</h3><ol>
+<li>建议第三单元第四单元互换时间，第三单元内容简单，适合考期时间紧张的情况下写，第四单元的工作量相对来说太大了，难顶</li>
+<li>对于面向对象这门课，希望少一些算法考察，第三单元的CTLE现象太坑人，第四单元的图算法太多，虽然算法也是必须掌握的内容，但是在本来任务量就大的情况下，我认为重心应该只放在架构设计上</li>
+<li>第三单元可以压缩，三次作业难度都明显低于其他单元。</li>
+<li>第四单元的重复工作希望可以有所减少，代码量感觉有点大。</li>
+<li>希望每个单元的三次作业的描述能标记增量部分，每次拿到大几千字的文档，好多内容都和之前一模一样，也容易看不进去</li>
+<li>研讨课加分政策感觉有点卷了，对于我这种又比较弱又社恐的人有种被push的感觉</li>
+</ol>
+<p>（超过3个了，不好意思）</p>
+<p><strong>以上仅是作为一个比较弱的人的个人主观想法，可能存在发牢骚现象，如有不合理内容请无视，相信课程组多年来积累的经验，祝OO课程组越来越好！</strong></p>
+<p><strong>完结撒花！！！</strong></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>BUAAOO-第四单元总结</p><p><a href="http://atksoto.com/posts/8987/">http://atksoto.com/posts/8987/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>soto</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-06-26</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-12-06</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/BUAA/">BUAA</a><a class="link-muted mr-2" rel="tag" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/posts/53100/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Memo</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/posts/4801/"><span class="level-item">BUAAOO-第三单元总结</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" alt="soto"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">soto</p><p class="is-size-6 is-block">多喝水</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Beijing</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">35</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">17</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/acsoto" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/acsoto"><i class="fab fa-github"></i></a></div></div></div><!--!--><!--!--><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AtTackCraft/"><span class="tag">AtTackCraft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/BUAA/"><span class="tag">BUAA</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/C/"><span class="tag">C++</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MacOS/"><span class="tag">MacOS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Shell/"><span class="tag">Shell</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Swift/"><span class="tag">Swift</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8F%A4%E5%85%B8%E9%9F%B3%E4%B9%90/"><span class="tag">古典音乐</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%90%90%E6%A7%BD/"><span class="tag">吐槽</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BC%80%E5%8F%91/"><span class="tag">开发</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8E%A8%E6%AD%8C/"><span class="tag">推歌</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%94%B5%E5%BD%B1/"><span class="tag">电影</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BC%96%E8%AF%91/"><span class="tag">编译</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9A%8F%E6%83%B3/"><span class="tag">随想</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"><span class="tag">面向对象</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%A1%B9%E7%9B%AE/"><span class="tag">项目</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">December 2021</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">November 2021</span></span><span class="level-end"><span class="level-item tag">18</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">October 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">June 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/05/"><span class="level-start"><span class="level-item">May 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">December 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/10/"><span class="level-start"><span class="level-item">October 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">SOTO-BLOG</a><p class="is-size-7"><span>&copy; 2021 soto</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
