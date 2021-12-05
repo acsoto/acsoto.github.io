@@ -1,32 +1,444 @@
-<!doctype html>
-<html lang="zh-Hans">
-<head><!-- hexo injector head_begin start -->
-<script src="config.a6ddddbf965db0a0d676.js"></script>
-<!-- hexo injector head_begin end -->
-<meta charset="utf-8">
-<title>BUAAOO-第一单元总结 - SOTO-BLOG</title>
-<base href="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://atksoto.com/posts/56284/">
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<meta name="description" content="BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression  (1) 基于度量分析 类复杂度  方法复杂度  可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。">
-<meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"atksoto.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="BUAAOO-第一单元总结基于度量分析程序结构第一次作业对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression  (1) 基于度量分析类复杂度  方法复杂度  可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。 本次作业">
+<meta property="og:type" content="article">
 <meta property="og:title" content="BUAAOO-第一单元总结">
 <meta property="og:url" content="http://atksoto.com/posts/56284/index.html">
 <meta property="og:site_name" content="SOTO-BLOG">
-<meta property="og:description" content="BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression  (1) 基于度量分析 类复杂度  方法复杂度  可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。">
+<meta property="og:description" content="BUAAOO-第一单元总结基于度量分析程序结构第一次作业对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression  (1) 基于度量分析类复杂度  方法复杂度  可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。 本次作业">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121094323695.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121102908959.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121102926182.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121102938589.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121102947709.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121102958011.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121103009774.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121103022797.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121103058547.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121103109066.png">
+<meta property="og:image" content="http://atksoto.com/posts/56284/image-20211121103118727.png">
 <meta property="article:published_time" content="2021-03-28T11:23:00.000Z">
 <meta property="article:modified_time" content="2021-12-01T08:28:38.731Z">
 <meta property="article:author" content="soto">
 <meta property="article:tag" content="BUAA">
 <meta property="article:tag" content="面向对象">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta name="twitter:image" content="http://atksoto.com/posts/56284/image-20211121094323695.png">
+
+<link rel="canonical" href="http://atksoto.com/posts/56284/">
 
 
-<!-- hexo injector head_end start --><style is="theme">html{--inside-accent-color:#2a2b33;--inside-foreground-color:#363636;--inside-border-color:#e0e0e0;--inside-background:#f3f6f7;--inside-sidebar-background:#2a2b33;--inside-card-background:#fff;--inside-font-base:'Josefin Sans','PingFang SC';--inside-font-logo:https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg,'Josefin Sans','PingFang SC';--inside-font-menu:Baloo Bhaijaan,'Josefin Sans','PingFang SC';--inside-font-heading:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-label:Montserrat,'Josefin Sans','PingFang SC';--inside-font-code:Inconsolata,monospace;--inside-font-print:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-content-width:660px;--inside-highlight-00:#ffffff;--inside-highlight-01:#e0e0e0;--inside-highlight-02:#f3f6f7;--inside-highlight-03:#95a5b3;--inside-highlight-04:#363636;--inside-highlight-05:#262b2f;--inside-highlight-06:#000000;--inside-highlight-07:#000000;--inside-highlight-08:#5d6c7b;--inside-highlight-09:#40464a;--inside-highlight-0a:#2980b9;--inside-highlight-0b:#be516e;--inside-highlight-0c:#237dac;--inside-highlight-0d:#944770;--inside-highlight-0e:#239371;--inside-highlight-0f:#edf0f3;--inside-card-color:#fff;--inside-accent-color-005:rgba(42,43,51,.05);--inside-accent-color-01:rgba(42,43,51,.1);--inside-accent-color-02:rgba(42,43,51,.2);--inside-accent-color-04:rgba(42,43,51,.4);--inside-accent-color-08:rgba(42,43,51,.8)}</style><script src="theme.9ecc9ab1.js"></script><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"></link><link href="styles.6467ff941351c62afa27.css" rel="stylesheet"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
-<body lang="zh-Hans"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="runtime.1ed960b0635ea0669f87.js"></script><script src="polyfills.b7bf56fc45f931a8b83e.js"></script><script src="main.77d232ad63257576b99f.js"></script><!-- hexo injector body_end end --></body>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>BUAAOO-第一单元总结 | SOTO-BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SOTO-BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://atksoto.com/posts/56284/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="soto">
+      <meta itemprop="description" content="SOTO的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SOTO-BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          BUAAOO-第一单元总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-28 19:23:00" itemprop="dateCreated datePublished" datetime="2021-03-28T19:23:00+08:00">2021-03-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-01 16:28:38" itemprop="dateModified" datetime="2021-12-01T16:28:38+08:00">2021-12-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="BUAAOO-第一单元总结"><a href="#BUAAOO-第一单元总结" class="headerlink" title="BUAAOO-第一单元总结"></a>BUAAOO-第一单元总结</h1><h2 id="基于度量分析程序结构"><a href="#基于度量分析程序结构" class="headerlink" title="基于度量分析程序结构"></a>基于度量分析程序结构</h2><h3 id="第一次作业"><a href="#第一次作业" class="headerlink" title="第一次作业"></a>第一次作业</h3><p>对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression</p>
+<p><img src="/posts/56284/image-20211121094323695.png"></p>
+<h3 id="1-基于度量分析"><a href="#1-基于度量分析" class="headerlink" title="(1) 基于度量分析"></a>(1) 基于度量分析</h3><p>类复杂度</p>
+<p><img src="/posts/56284/image-20211121102908959.png"></p>
+<p>方法复杂度</p>
+<p><img src="/posts/56284/image-20211121102926182.png"></p>
+<p>可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。</p>
+<p>本次作业没有被其他同学hack。性能方面，由于使用了hashmap，表达式基本上达到了最短，没有考虑到正负号打头和x**2拆分为x*x等细节</p>
+<p>本次作业没有很好的给下一次作业做好铺垫，表达式解析方法过于粗暴。</p>
+<h3 id="第二次作业"><a href="#第二次作业" class="headerlink" title="第二次作业"></a>第二次作业</h3><p>本次作业难度骤升，因为要考虑表达式因子，第一次作业使用的暴力解析字符串方法骤然失效，遂彻底进行重构。我在本次作业中大量时间用于研究如何递归下降读取表达式。求导本身并不困难，创建Factor接口，sin，cos，幂函数，常量，term，poly均继承Factor，保证每个因子都有实现tostring和求导以及simplify方法。其中，Term是一些Factor构成的List，Poly是一些Term构成的List。在对Poly进行求导会自然向下递归。</p>
+<p>Patterns存放了提前编译好的正则表达式</p>
+<p>Parser用于递归下降解析表达式</p>
+<p><img src="/posts/56284/image-20211121102938589.png"></p>
+<p>类复杂度</p>
+<p><img src="/posts/56284/image-20211121102947709.png"></p>
+<p>可见Parser中方法复杂度较高，这是因为在解析字符串过程中，我调用了过多的私有方法，此处可以进行模块化优化。</p>
+<p>Term中由于simplify和diff的操作过于复杂，整体复杂度较高，此处可以把一些操作在初始化term时完成来优化。</p>
+<p>方法复杂度</p>
+<p><img src="/posts/56284/image-20211121102958011.png"></p>
+<p>复杂度较高的几个方法</p>
+<p><img src="/posts/56284/image-20211121103009774.png"></p>
+<p>其中Term的simplify如前文所述，该方法过于臃肿。</p>
+<h3 id="第三次作业"><a href="#第三次作业" class="headerlink" title="第三次作业"></a>第三次作业</h3><p>本次作业加入了sin和cos内的嵌套已经wrong format的检测。由于和上一次作业的架构相似，仅需调整sin和cos内成员变量为Poly，并且对parser进行进一步递归下降即可。wrong format成为了难点，由于上一次作业的递归下降读取基于表达式正确的情况，这次由于格式可能的错误，我对parser进行了较大的调整，首先对字符串进行多余空白符和非法字符的判断，随后在递归下降读取过程中判断格式错误，包括括号和幂函数的错误。</p>
+<p>结构与第二次作业相似，加入了format checker和WF exception</p>
+<p><img src="/posts/56284/image-20211121103022797.png"></p>
+<p>类复杂度</p>
+<p><img src="/posts/56284/image-20211121103058547.png"></p>
+<p>方法复杂度</p>
+<p><img src="/posts/56284/image-20211121103109066.png"></p>
+<p>其中较高的和第二次作业类似</p>
+<p>其中getCosFactor和getSinFactor是由于进行了格式的判断，此处重用了相似的代码，可以归类为一个方法进行优化。</p>
+<p><img src="/posts/56284/image-20211121103118727.png"></p>
+<h2 id="分析自己程序的bug"><a href="#分析自己程序的bug" class="headerlink" title="分析自己程序的bug"></a>分析自己程序的bug</h2><p>在前两次作业中，互测阶段没有被找到bug，在个人初期写代码过程中，遇到的一些BUG如：没有及时在while循环中continue，在if判断中逻辑过于复杂导致自己搞错了与或非逻辑，往往正是这类小的失误导致耗费大量时间debug，因此在写程序过程中应该时刻关注代码的复杂度。</p>
+<p>第三次作业，互测阶段被hack了两次，问题均是出在格式判断正负号和常数之间的空格时，我的判断条件出了问题，误判了一些正确的格式，自己写wrong format时没有考虑到各种情况，测试不够充分。</p>
+<p>对比分析出现bug的方法和未出现bug的方法在代码行和圈复杂度上的差异：在我的前两次作业中自己发生的BUG很明显主要是因为圈复杂度导致的，在第三次作业被hack的这个BUG主要是因为Wrong Format欠考虑。</p>
+<h2 id="分析自己发现别人程序bug采用策略"><a href="#分析自己发现别人程序bug采用策略" class="headerlink" title="分析自己发现别人程序bug采用策略"></a>分析自己发现别人程序bug采用策略</h2><p>主要采取的策略构建一些我在写代码过程中遇到的容易发生bug的数据点来对别人的代码进行测试，使用python进行核对。</p>
+<h2 id="重构经历总结"><a href="#重构经历总结" class="headerlink" title="重构经历总结"></a>重构经历总结</h2><p>第一次到第二次作业过程中经历了重构，原因是第一次作业没有留下足够的拓展空间，解析字符串过于暴力，但是在第二次作业理解了如何递归下降进行读取解析之后，重构反而显得思路更加清晰，在这个架构下，第三次作业完成的比较容易。由于重构前后属2次作业内容，没有可比较性，故未通过数据进行对比。</p>
+<p>吸取的教训是：尽可能给程序留下充足的可扩展空间，已经写好的类尽量保证其完备性，在拓展时就尽量不去修改了，类之间的保证解耦，方法复杂度尽可能底，如此下来可以保证程序的鲁棒性。</p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>第一次作业思维还是比较偏面向过程的，对字符串进行了暴力解析，对象也仅仅停留在所谓的Term和Expression上。</p>
+<p>在第二次作业难度骤然增加后，明白了面向对象的重要性，一个接口下的多个类逻辑分明，调用各自的方法，另外，在第二次作业过程中，理解了递归下降的思路，这是一种逻辑非常清晰的做法，为我的第三次作业节省了大量的时间。</p>
+<p>第三次作业在格式判断上填了第二次作业留下的坑，更进一步理清了整个程序的逻辑，虽然最后在性能分上没有占到很多优势，但是总体下来我认为代码的结构和逻辑还是很清晰的，代码总计行数705完成了。</p>
+<p>总的来说，本次作业虽然遇到一些困难（指第二次作业递归下降和如何优化）但总体来说还是学到了很多东西，包括但不仅限于面向对象的思维，正则表达式的使用，Java容器操作的熟练，递归等。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/BUAA/" rel="tag"># BUAA</a>
+              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="tag"># 面向对象</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/undefined/" rel="prev" title="Python数据处理">
+      <i class="fa fa-chevron-left"></i> Python数据处理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/54734/" rel="next" title="BUAAOO-第二单元总结">
+      BUAAOO-第二单元总结 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BUAAOO-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">BUAAOO-第一单元总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E5%BA%A6%E9%87%8F%E5%88%86%E6%9E%90%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.</span> <span class="nav-text">基于度量分析程序结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">第一次作业</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%9F%BA%E4%BA%8E%E5%BA%A6%E9%87%8F%E5%88%86%E6%9E%90"><span class="nav-number">1.1.2.</span> <span class="nav-text">(1) 基于度量分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.3.</span> <span class="nav-text">第二次作业</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.4.</span> <span class="nav-text">第三次作业</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%87%AA%E5%B7%B1%E7%A8%8B%E5%BA%8F%E7%9A%84bug"><span class="nav-number">1.2.</span> <span class="nav-text">分析自己程序的bug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%87%AA%E5%B7%B1%E5%8F%91%E7%8E%B0%E5%88%AB%E4%BA%BA%E7%A8%8B%E5%BA%8Fbug%E9%87%87%E7%94%A8%E7%AD%96%E7%95%A5"><span class="nav-number">1.3.</span> <span class="nav-text">分析自己发现别人程序bug采用策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%9E%84%E7%BB%8F%E5%8E%86%E6%80%BB%E7%BB%93"><span class="nav-number">1.4.</span> <span class="nav-text">重构经历总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A"><span class="nav-number">1.5.</span> <span class="nav-text">心得体会</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">soto</p>
+  <div class="site-description" itemprop="description">SOTO的博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">soto</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>

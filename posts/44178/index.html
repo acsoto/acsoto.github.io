@@ -1,32 +1,509 @@
-<!doctype html>
-<html lang="zh-Hans">
-<head><!-- hexo injector head_begin start -->
-<script src="config.a6ddddbf965db0a0d676.js"></script>
-<!-- hexo injector head_begin end -->
-<meta charset="utf-8">
-<title>C++基础 - SOTO-BLOG</title>
-<base href="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://atksoto.com/posts/44178/">
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<meta name="description" content="结构 123456struct Student&amp;#123;int i;int j;char c;&amp;#125; 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。 压缩： 1#pragma pack(1) 宏 函数宏 1#define ARRAY_SIZE(a) sizeof(a)&#x2F;sizeof(a[0]) 控制宏 1">
-<meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"atksoto.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="结构 123456struct Student&amp;#123;int i;int j;char c;&amp;#125;  由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。 压缩： 1#pragma pack(1)  宏函数宏 1#define ARRAY_SIZE(a) sizeof(a)&#x2F;sizeof(a[0])  控制宏">
+<meta property="og:type" content="article">
 <meta property="og:title" content="C++基础">
 <meta property="og:url" content="http://atksoto.com/posts/44178/index.html">
 <meta property="og:site_name" content="SOTO-BLOG">
-<meta property="og:description" content="结构 123456struct Student&amp;#123;int i;int j;char c;&amp;#125; 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。 压缩： 1#pragma pack(1) 宏 函数宏 1#define ARRAY_SIZE(a) sizeof(a)&#x2F;sizeof(a[0]) 控制宏 1">
+<meta property="og:description" content="结构 123456struct Student&amp;#123;int i;int j;char c;&amp;#125;  由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。 压缩： 1#pragma pack(1)  宏函数宏 1#define ARRAY_SIZE(a) sizeof(a)&#x2F;sizeof(a[0])  控制宏">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta property="og:image" content="http://pic.mcatk.com/soto-pictures/2021-12/%E7%9F%A5%E8%AF%86%E7%82%B9%E7%BA%B2%E8%A6%81.png">
 <meta property="article:published_time" content="2021-04-30T03:00:00.000Z">
 <meta property="article:modified_time" content="2021-12-01T06:55:22.182Z">
 <meta property="article:author" content="soto">
 <meta property="article:tag" content="BUAA">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta name="twitter:image" content="http://pic.mcatk.com/soto-pictures/2021-12/%E7%9F%A5%E8%AF%86%E7%82%B9%E7%BA%B2%E8%A6%81.png">
+
+<link rel="canonical" href="http://atksoto.com/posts/44178/">
 
 
-<!-- hexo injector head_end start --><style is="theme">html{--inside-accent-color:#2a2b33;--inside-foreground-color:#363636;--inside-border-color:#e0e0e0;--inside-background:#f3f6f7;--inside-sidebar-background:#2a2b33;--inside-card-background:#fff;--inside-font-base:'Josefin Sans','PingFang SC';--inside-font-logo:https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg,'Josefin Sans','PingFang SC';--inside-font-menu:Baloo Bhaijaan,'Josefin Sans','PingFang SC';--inside-font-heading:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-label:Montserrat,'Josefin Sans','PingFang SC';--inside-font-code:Inconsolata,monospace;--inside-font-print:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-content-width:660px;--inside-highlight-00:#ffffff;--inside-highlight-01:#e0e0e0;--inside-highlight-02:#f3f6f7;--inside-highlight-03:#95a5b3;--inside-highlight-04:#363636;--inside-highlight-05:#262b2f;--inside-highlight-06:#000000;--inside-highlight-07:#000000;--inside-highlight-08:#5d6c7b;--inside-highlight-09:#40464a;--inside-highlight-0a:#2980b9;--inside-highlight-0b:#be516e;--inside-highlight-0c:#237dac;--inside-highlight-0d:#944770;--inside-highlight-0e:#239371;--inside-highlight-0f:#edf0f3;--inside-card-color:#fff;--inside-accent-color-005:rgba(42,43,51,.05);--inside-accent-color-01:rgba(42,43,51,.1);--inside-accent-color-02:rgba(42,43,51,.2);--inside-accent-color-04:rgba(42,43,51,.4);--inside-accent-color-08:rgba(42,43,51,.8)}</style><script src="theme.9ecc9ab1.js"></script><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"></link><link href="styles.6467ff941351c62afa27.css" rel="stylesheet"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
-<body lang="zh-Hans"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="runtime.1ed960b0635ea0669f87.js"></script><script src="polyfills.b7bf56fc45f931a8b83e.js"></script><script src="main.77d232ad63257576b99f.js"></script><!-- hexo injector body_end end --></body>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>C++基础 | SOTO-BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SOTO-BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://atksoto.com/posts/44178/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="soto">
+      <meta itemprop="description" content="SOTO的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SOTO-BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C++基础
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-30 11:00:00" itemprop="dateCreated datePublished" datetime="2021-04-30T11:00:00+08:00">2021-04-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-01 14:55:22" itemprop="dateModified" datetime="2021-12-01T14:55:22+08:00">2021-12-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="http://pic.mcatk.com/soto-pictures/2021-12/%E7%9F%A5%E8%AF%86%E7%82%B9%E7%BA%B2%E8%A6%81.png" alt="知识点纲要"></p>
+<p>结构</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">int</span> j;</span><br><span class="line"><span class="keyword">char</span> c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。</p>
+<p>压缩：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(1)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><p>函数宏</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ARRAY_SIZE(a) sizeof(a)/sizeof(a[0])</span></span><br></pre></td></tr></table></figure>
+
+<p>控制宏</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> HOME <span class="comment">//用于控制开关</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> HOME</span></span><br><span class="line">cout &lt;&lt; <span class="string">&quot;link a&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="meta">#elseif</span></span><br><span class="line">cout &lt;&lt; <span class="string">&quot;link b&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> WIN32 <span class="comment">//windows平台上一定会有的宏</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;windows.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+<p>如果把C++程序和C程序混合编译</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="string">&quot;C&quot;</span> <span class="function"><span class="keyword">void</span> <span class="title">fun_C</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C++编译器修饰的方式去找。</p>
+<p>函数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.overloading</span></span><br><span class="line"><span class="comment">//2.default parameter</span></span><br><span class="line"><span class="comment">//默认参数必须放后</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun2</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b = <span class="number">3</span>, <span class="keyword">int</span> c = <span class="number">4</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; b &lt;&lt; c &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.占位参数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun3</span><span class="params">(<span class="keyword">int</span>)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="number">233</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="C-面向对象"><a href="#C-面向对象" class="headerlink" title="C++ 面向对象"></a>C++ 面向对象</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Person</span> &#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">char</span> *name;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Person</span>(<span class="keyword">int</span> aage, <span class="keyword">char</span> *aname);</span><br><span class="line">    ~<span class="built_in">Person</span>();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Person::<span class="built_in">Person</span>(<span class="keyword">int</span> aage, <span class="keyword">char</span> *aname) &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;age = aage;</span><br><span class="line">    <span class="keyword">this</span>-&gt;name = aname;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person::~<span class="built_in">Person</span>()&#123;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>struct和class区别：class默认成员变量private</p>
+<p>默认构造：不带括号</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Test <span class="title">t1</span><span class="params">(<span class="number">3</span>)</span></span>;</span><br><span class="line">Test *t2 = <span class="keyword">new</span> <span class="built_in">Test</span>();</span><br><span class="line"><span class="function">Test <span class="title">t3</span><span class="params">(<span class="number">2</span>,<span class="number">3</span>)</span></span>;</span><br><span class="line"><span class="function">Test <span class="title">t4</span><span class="params">()</span></span>; <span class="comment">//this is a function</span></span><br><span class="line">Test t4;</span><br><span class="line">Test *t5 = <span class="keyword">new</span> <span class="built_in">Test</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<p>函数的原则：尽量不用返回值去返回，输入输出参数放在参数里</p>
+<p>成员变量原则：</p>
+<p>value：必然组成部分</p>
+<p>address：可有可无的部分</p>
+<p>类嵌套：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span>&#123;</span></span><br><span class="line">    Point *p;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span>&#123;</span></span><br><span class="line">    Circle c;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>析构函数(destructor)：</p>
+<p>对象消亡时自动调用</p>
+<p>可用于free堆区malloc</p>
+<p>防止重复free，free时：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (p != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">free</span>(p);</span><br><span class="line">        p = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="指针与引用"><a href="#指针与引用" class="headerlink" title="指针与引用"></a>指针与引用</h3><p>指针的问题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. fly pointer (if null / assert)</span></span><br><span class="line"><span class="comment">//2. memory leak (free)</span></span><br><span class="line"><span class="comment">//3. return addr of local var</span></span><br><span class="line"><span class="comment">//4. multi-pointers for one object</span></span><br></pre></td></tr></table></figure>
+
+<p>引用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//reference 引用</span></span><br><span class="line"><span class="keyword">int</span> m = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> &amp;r = m; <span class="comment">//m的小名</span></span><br></pre></td></tr></table></figure>
+
+<p>对象的copy</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//bitwise copy 浅拷贝（默认） vs. logical copy 深拷贝</span></span><br><span class="line"><span class="comment">//copy constructor</span></span><br><span class="line">Test::<span class="built_in">Test</span>(Test &amp;t) &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;i = t.i;</span><br><span class="line">    <span class="comment">//!!!this-&gt; = t.j</span></span><br><span class="line">    <span class="keyword">this</span>-&gt;j = (<span class="keyword">int</span> *) <span class="built_in">malloc</span>(<span class="built_in"><span class="keyword">sizeof</span></span>(<span class="keyword">int</span>));</span><br><span class="line">    *j = *t.j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>e</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//    pass by value vs. pass by address(pointer or reference)</span></span><br><span class="line"><span class="comment">//效果 read              read/write</span></span><br><span class="line"><span class="comment">//性能 sizeof(object)    sizeof(int)</span></span><br><span class="line"><span class="comment">//麻烦 copy-constructor  nothing</span></span><br><span class="line"><span class="comment">//conclusion: never pass by value(build-in type except)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="new-and-delete"><a href="#new-and-delete" class="headerlink" title="new and delete"></a>new and delete</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Test *p = (Test *)malloc(sizeof (Test));</span></span><br><span class="line">Test *p =<span class="keyword">new</span> <span class="built_in">Test</span>(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"><span class="comment">//new = malloc + constructor</span></span><br><span class="line"><span class="keyword">delete</span> p;</span><br><span class="line"><span class="comment">//delete = destructor + free;</span></span><br><span class="line"><span class="comment">//多个对象</span></span><br><span class="line">Test *p = <span class="keyword">new</span> Test[<span class="number">10</span>]; <span class="comment">//要求有默认构造</span></span><br><span class="line"><span class="keyword">delete</span> []p;</span><br></pre></td></tr></table></figure>
+
+<h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Test::fun</span><span class="params">()</span> <span class="keyword">const</span></span>&#123;</span><br><span class="line">    <span class="comment">//read only function</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> Test t;</span><br><span class="line">t.<span class="built_in">fun</span>();</span><br></pre></td></tr></table></figure>
+
+<h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> i; <span class="comment">//堆区，与全局变量同</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="extern"><a href="#extern" class="headerlink" title="extern"></a>extern</h6><p>全局变量不定义在头文件，定义在某一源文件中</p>
+<p>extern外链接放在头文件。</p>
+<p>函数默认extern外链接，用static修饰表明作用域为本文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extern int g_i;</span><br></pre></td></tr></table></figure>
+
+<p>类中static修饰：全类的共享空间</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">test</span>&#123;</span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">int</span> j;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Test</span>(<span class="keyword">int</span> aj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//显示一次性初始化</span></span><br><span class="line"><span class="keyword">int</span> Test::i = <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p>static无this指针</p>
+<h3 id="operator"><a href="#operator" class="headerlink" title="operator"></a>operator</h3><p> 重载运算符</p>
+<p><code>[]</code> 重载数组 <code>*</code> 重载取内容 <code>new delet</code> 重载malloc <code>++</code>重载++</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Account</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">int</span> balance;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Account &amp;<span class="keyword">operator</span>+(<span class="keyword">int</span> n);</span><br><span class="line">    <span class="comment">//++a</span></span><br><span class="line">    Account&amp; <span class="keyword">operator</span>++();</span><br><span class="line">    <span class="comment">//a++</span></span><br><span class="line">    Account <span class="keyword">operator</span>++(<span class="keyword">int</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Account &amp;Account::<span class="keyword">operator</span>+(<span class="keyword">int</span> n) &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;balance += n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Account&amp; Account::<span class="keyword">operator</span>++() &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;balance++;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Account Account::<span class="keyword">operator</span>++(<span class="keyword">int</span>) &#123;</span><br><span class="line">    Account old = *<span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">this</span>-&gt;balance++;</span><br><span class="line">    <span class="keyword">return</span> old;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Account a;</span><br><span class="line">    a = a+<span class="number">100</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="继承-inheritance-与组成-composition"><a href="#继承-inheritance-与组成-composition" class="headerlink" title="继承(inheritance)与组成(composition)"></a>继承(inheritance)与组成(composition)</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(derived class)子类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> :</span> <span class="keyword">public</span> Borrower</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">borrow_book</span><span class="params">()</span></span>;    </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::borrow_book</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Borrower::<span class="built_in">borrow_book</span>();</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;if&gt;=5 return&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注意构造顺序</p>
+<p>子类构造器自动调用父类构造器，析构相反</p>
+<p>组成也会先自动调用内部对象的构造(Engine initial - Car initial)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//构造器初始化列表(若没有默认构造无法默认调用)</span></span><br><span class="line">Derived::<span class="built_in">Derived</span>(<span class="keyword">int</span> ai, <span class="keyword">int</span> aj):<span class="built_in">Base</span>(ai)&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//有先后顺序</span></span><br><span class="line">Test::<span class="built_in">Test</span>(<span class="keyword">int</span> ai, <span class="keyword">int</span> aj) :<span class="built_in">i</span>(ai),<span class="built_in">j</span>(aj)&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>多继承(菱形结构)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Derived</span> :</span> <span class="keyword">public</span> Base1, <span class="keyword">public</span> Base2&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><ol>
+<li>upcasting 向上转换</li>
+<li>later binding vs. early binding </li>
+<li>polymorphism 多态性</li>
+<li>virtual </li>
+<li>constructor &amp; destructor 构造无多态，析构往往多态</li>
+<li>abstract class (interface in Java &amp; C#)</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pet</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> *name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">speak</span><span class="params">()</span></span>; <span class="comment">//虚函数 内存占用+8 子类自动virtual</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Needle</span><span class="params">(Pet&amp; pet)</span> <span class="comment">//never pass by value 拷贝构造使多态失效</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//binding</span></span><br><span class="line">    <span class="comment">//1. early binding</span></span><br><span class="line">    <span class="comment">//2. later(dynamic/runtime) binding</span></span><br><span class="line">    pet.<span class="built_in">speak</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>多态的实现：</p>
+<p>类：V-table 虚函数表</p>
+<p>对象：V-ptr 指向本类虚函数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//纯虚函数</span></span><br><span class="line"><span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">speak</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line"><span class="comment">//抽象类：含纯虚函数，无法创建对象</span></span><br></pre></td></tr></table></figure>
+
+<p>行为串联：当两个类别家族因为行为共性发生关系时，用抽象类来关联两个类别家族</p>
+<h5 id="template-class"><a href="#template-class" class="headerlink" title="template class"></a>template class</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//template class 模板类 collection in Java</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> &#123;</span></span><br><span class="line">    T pool[<span class="number">100</span>];</span><br><span class="line">    <span class="keyword">int</span> top;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//内联函数 inline function</span></span><br><span class="line">    <span class="comment">//top=0</span></span><br><span class="line">    <span class="built_in">Stack</span>() : <span class="built_in">top</span>(<span class="number">0</span>) &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(T v)</span> </span>&#123;</span><br><span class="line">        pool[top++] = v;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">T <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> pool[--top];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Stack&lt;<span class="keyword">int</span>&gt; s1;</span><br><span class="line">    Stack&lt;<span class="keyword">double</span>&gt; s2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>STL</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//STL: standard template library</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    vector&lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; ++i) </span><br><span class="line">    &#123;</span><br><span class="line">        v.<span class="built_in">push_back</span>(i);</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; v[<span class="number">9988</span>] &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>iterator</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) &#123;</span><br><span class="line">    v.<span class="built_in">push_back</span>(i);</span><br><span class="line">&#125;</span><br><span class="line">vector&lt;<span class="keyword">int</span>&gt;::iterator it = v.<span class="built_in">begin</span>();</span><br><span class="line"><span class="keyword">while</span> (it != v.<span class="built_in">end</span>()) &#123;</span><br><span class="line">    cout &lt;&lt; *it &lt;&lt; endl;</span><br><span class="line">    it++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>name space类上一级层次 </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> my_nsp</span><br></pre></td></tr></table></figure>
+
+<p>try catch 和Java一样</p>
+<p>assert</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//让断言全部失效</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NDEBUG</span></span><br></pre></td></tr></table></figure>
+
+<p>friend</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/BUAA/" rel="tag"># BUAA</a>
+              <a href="/tags/C/" rel="tag"># C++</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/54734/" rel="prev" title="BUAAOO-第二单元总结">
+      <i class="fa fa-chevron-left"></i> BUAAOO-第二单元总结
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/undefined/" rel="next" title="基于反应扩散动力模型的微博热点话题研究">
+      基于反应扩散动力模型的微博热点话题研究 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%8F"><span class="nav-number">1.</span> <span class="nav-text">宏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.</span> <span class="nav-text">C++ 面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">指针与引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new-and-delete"><span class="nav-number">4.</span> <span class="nav-text">new and delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E9%87%8F"><span class="nav-number">5.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static"><span class="nav-number">6.</span> <span class="nav-text">static</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#extern"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">extern</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#operator"><span class="nav-number">7.</span> <span class="nav-text">operator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF-inheritance-%E4%B8%8E%E7%BB%84%E6%88%90-composition"><span class="nav-number">8.</span> <span class="nav-text">继承(inheritance)与组成(composition)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E6%80%81"><span class="nav-number">9.</span> <span class="nav-text">多态</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#template-class"><span class="nav-number">9.0.1.</span> <span class="nav-text">template class</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">soto</p>
+  <div class="site-description" itemprop="description">SOTO的博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">soto</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>

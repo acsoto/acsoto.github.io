@@ -1,32 +1,432 @@
-<!doctype html>
-<html lang="zh-Hans">
-<head><!-- hexo injector head_begin start -->
-<script src="config.a6ddddbf965db0a0d676.js"></script>
-<!-- hexo injector head_begin end -->
-<meta charset="utf-8">
-<title>BUAAOO-第二单元总结 - SOTO-BLOG</title>
-<base href="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://atksoto.com/posts/54734/">
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<meta name="description" content="BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求 其中，锁全部位于调度器中 例如 12345678910111213public Perso">
-<meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"atksoto.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="BUAAOO-第二单元总结作业分析同步块与锁InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求 其中，锁全部位于调度器中 例如 12345678910111213public PersonRe">
+<meta property="og:type" content="article">
 <meta property="og:title" content="BUAAOO-第二单元总结">
 <meta property="og:url" content="http://atksoto.com/posts/54734/index.html">
 <meta property="og:site_name" content="SOTO-BLOG">
-<meta property="og:description" content="BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求 其中，锁全部位于调度器中 例如 12345678910111213public Perso">
+<meta property="og:description" content="BUAAOO-第二单元总结作业分析同步块与锁InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求 其中，锁全部位于调度器中 例如 12345678910111213public PersonRe">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425163631337.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425171756534.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425214505979.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425215005256.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425215341767.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425220331346.png">
+<meta property="og:image" content="http://atksoto.com/posts/54734/image-20210425225410022.png">
 <meta property="article:published_time" content="2021-04-25T14:33:00.000Z">
 <meta property="article:modified_time" content="2021-12-01T08:28:48.586Z">
 <meta property="article:author" content="soto">
 <meta property="article:tag" content="BUAA">
 <meta property="article:tag" content="面向对象">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg">
+<meta name="twitter:image" content="http://atksoto.com/posts/54734/image-20210425163631337.png">
+
+<link rel="canonical" href="http://atksoto.com/posts/54734/">
 
 
-<!-- hexo injector head_end start --><style is="theme">html{--inside-accent-color:#2a2b33;--inside-foreground-color:#363636;--inside-border-color:#e0e0e0;--inside-background:#f3f6f7;--inside-sidebar-background:#2a2b33;--inside-card-background:#fff;--inside-font-base:'Josefin Sans','PingFang SC';--inside-font-logo:https://tva1.sinaimg.cn/large/008i3skNly1gwnyp4ovp5j30d00d0t9c.jpg,'Josefin Sans','PingFang SC';--inside-font-menu:Baloo Bhaijaan,'Josefin Sans','PingFang SC';--inside-font-heading:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-label:Montserrat,'Josefin Sans','PingFang SC';--inside-font-code:Inconsolata,monospace;--inside-font-print:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-content-width:660px;--inside-highlight-00:#ffffff;--inside-highlight-01:#e0e0e0;--inside-highlight-02:#f3f6f7;--inside-highlight-03:#95a5b3;--inside-highlight-04:#363636;--inside-highlight-05:#262b2f;--inside-highlight-06:#000000;--inside-highlight-07:#000000;--inside-highlight-08:#5d6c7b;--inside-highlight-09:#40464a;--inside-highlight-0a:#2980b9;--inside-highlight-0b:#be516e;--inside-highlight-0c:#237dac;--inside-highlight-0d:#944770;--inside-highlight-0e:#239371;--inside-highlight-0f:#edf0f3;--inside-card-color:#fff;--inside-accent-color-005:rgba(42,43,51,.05);--inside-accent-color-01:rgba(42,43,51,.1);--inside-accent-color-02:rgba(42,43,51,.2);--inside-accent-color-04:rgba(42,43,51,.4);--inside-accent-color-08:rgba(42,43,51,.8)}</style><script src="theme.9ecc9ab1.js"></script><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"></link><link href="styles.6467ff941351c62afa27.css" rel="stylesheet"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
-<body lang="zh-Hans"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="runtime.1ed960b0635ea0669f87.js"></script><script src="polyfills.b7bf56fc45f931a8b83e.js"></script><script src="main.77d232ad63257576b99f.js"></script><!-- hexo injector body_end end --></body>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>BUAAOO-第二单元总结 | SOTO-BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SOTO-BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://atksoto.com/posts/54734/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="soto">
+      <meta itemprop="description" content="SOTO的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SOTO-BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          BUAAOO-第二单元总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-25 22:33:00" itemprop="dateCreated datePublished" datetime="2021-04-25T22:33:00+08:00">2021-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-01 16:28:48" itemprop="dateModified" datetime="2021-12-01T16:28:48+08:00">2021-12-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="BUAAOO-第二单元总结"><a href="#BUAAOO-第二单元总结" class="headerlink" title="BUAAOO-第二单元总结"></a>BUAAOO-第二单元总结</h1><h2 id="作业分析"><a href="#作业分析" class="headerlink" title="作业分析"></a>作业分析</h2><h3 id="同步块与锁"><a href="#同步块与锁" class="headerlink" title="同步块与锁"></a>同步块与锁</h3><p>InputThread捕捉输入，将其加入waitQueue队列中</p>
+<p>Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher</p>
+<p>Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求</p>
+<p>其中，锁全部位于调度器中</p>
+<p>例如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> PersonRequest <span class="title">checkTopRequest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">synchronized</span> (waitQueue) &#123;</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        PersonRequest request = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (PersonRequest r : waitQueue) &#123;</span><br><span class="line">            <span class="keyword">if</span> (r.getFromFloor() &gt; max) &#123;</span><br><span class="line">                max = r.getFromFloor();</span><br><span class="line">                request = r;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> request;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>三次作业都为相同的设计，Dispatcher基本没有变动。</p>
+<h3 id="调度器设计与线程交互"><a href="#调度器设计与线程交互" class="headerlink" title="调度器设计与线程交互"></a>调度器设计与线程交互</h3><p>外部可以放心与调度器进行交互，类似生产者消费者模型，调度器维护waitQueue，输入线程通过调度器向其中加入请求，电梯通过调度器查询和获取请求</p>
+<p><img src="/posts/54734/image-20210425163631337.png"></p>
+<p>第二、三次作业中加入了多个电梯与dispatcher交互</p>
+<p>电梯策略：</p>
+<p>Random：自由竞争，直接去找队列中第一个目标，接到请求后，优先处理电梯中的第一个请求，在运行过程中在每层判断是否可以接送乘客并且进行操作。</p>
+<p>Morning：电梯位于1层，开始接人，2s后出发，一直送到电梯内请求列表的最高层后返回，依次循环</p>
+<p>Night：直接前往队列中最高层接人，向下过程中继续接人，回到一层后依次循环。</p>
+<h3 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h3><h5 id="第一次作业"><a href="#第一次作业" class="headerlink" title="第一次作业"></a>第一次作业</h5><p>Main创建输入和电梯线程以及调度器，输入线程提供mode，requests，end等，调度器负责控制队列，elevator进行运行。</p>
+<p><img src="/posts/54734/image-20210425171756534.png"></p>
+<p>流程图：</p>
+<p><img src="/posts/54734/image-20210425214505979.png"></p>
+<h5 id="第二次作业"><a href="#第二次作业" class="headerlink" title="第二次作业"></a>第二次作业</h5><p>相比第一次作业，输入线程负责创建新的Elevator</p>
+<p><img src="/posts/54734/image-20210425215005256.png"></p>
+<p>流程图</p>
+<p><img src="/posts/54734/image-20210425215341767.png"></p>
+<h5 id="第三次作业"><a href="#第三次作业" class="headerlink" title="第三次作业"></a>第三次作业</h5><p>结构和第二次没有什么不同，在电梯类内部进行了ABC的区分，没有进行换乘的优化，仅仅是规定了各个电梯可人的层数后进行自由竞争。</p>
+<p>流程图</p>
+<p><img src="/posts/54734/image-20210425220331346.png"></p>
+<h3 id="分析自己程序的bug"><a href="#分析自己程序的bug" class="headerlink" title="分析自己程序的bug"></a>分析自己程序的bug</h3><p>在第一次作业没有互测bug。</p>
+<p>第二次作业自测的bug主要集中在没有正确结束线程。互测没有被找到bug，但是强测出现了一个超载的bug，原因在进行电梯可承载人数时加减号使用错误导致超载。</p>
+<p>第三次作业自测阶段的bug主要在电梯由于型号不同，理论上结束标志不一，我在while循环结束的时候仅判断了input的信号，导致部分电梯提前结束，后来又因为没有正确结束导致while死循环CPU超时。</p>
+<p>在互测中被hack一次，原因是我没有进行换乘优化，对方的数据点为集中的密集底层到高层数据，我的电梯只有C会去接人，导致超时。</p>
+<h3 id="分析自己发现别人程序bug所采用的策略"><a href="#分析自己发现别人程序bug所采用的策略" class="headerlink" title="分析自己发现别人程序bug所采用的策略"></a>分析自己发现别人程序bug所采用的策略</h3><p>能力有限，这几次没有对他人的程序进行bug测试</p>
+<h3 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h3><p>多线程的加入使得程序有了更多的不确定性，增加了测试的难度，但总而言之，只要做好线程的安全，如定义好线程安全类在进行操作，处理好线程的结束，不产生轮询，就可以避免多线程带来的bug。线程之间的交互在逻辑上就如同P6流水线的竞争一样，需要进行大量情况的考虑。在这几次作业中，我学会了多线程程序的正确处理。</p>
+<p>最终代码量</p>
+<p><img src="/posts/54734/image-20210425225410022.png"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/BUAA/" rel="tag"># BUAA</a>
+              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="tag"># 面向对象</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/56284/" rel="prev" title="BUAAOO-第一单元总结">
+      <i class="fa fa-chevron-left"></i> BUAAOO-第一单元总结
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/44178/" rel="next" title="C++基础">
+      C++基础 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BUAAOO-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">BUAAOO-第二单元总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A%E5%88%86%E6%9E%90"><span class="nav-number">1.1.</span> <span class="nav-text">作业分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%9D%97%E4%B8%8E%E9%94%81"><span class="nav-number">1.1.1.</span> <span class="nav-text">同步块与锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E5%99%A8%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%BA%A4%E4%BA%92"><span class="nav-number">1.1.2.</span> <span class="nav-text">调度器设计与线程交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UML"><span class="nav-number">1.1.3.</span> <span class="nav-text">UML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.3.0.1.</span> <span class="nav-text">第一次作业</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.3.0.2.</span> <span class="nav-text">第二次作业</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.1.3.0.3.</span> <span class="nav-text">第三次作业</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%87%AA%E5%B7%B1%E7%A8%8B%E5%BA%8F%E7%9A%84bug"><span class="nav-number">1.1.4.</span> <span class="nav-text">分析自己程序的bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%87%AA%E5%B7%B1%E5%8F%91%E7%8E%B0%E5%88%AB%E4%BA%BA%E7%A8%8B%E5%BA%8Fbug%E6%89%80%E9%87%87%E7%94%A8%E7%9A%84%E7%AD%96%E7%95%A5"><span class="nav-number">1.1.5.</span> <span class="nav-text">分析自己发现别人程序bug所采用的策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A"><span class="nav-number">1.1.6.</span> <span class="nav-text">心得体会</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">soto</p>
+  <div class="site-description" itemprop="description">SOTO的博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">soto</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
