@@ -1,7 +1,0 @@
-<h5 id="多级反馈队列调度算法-Multilevel-Feedback-Queue-Scheduling"><a href="#多级反馈队列调度算法-Multilevel-Feedback-Queue-Scheduling" class="headerlink" title="多级反馈队列调度算法(Multilevel Feedback Queue Scheduling)"></a>多级反馈队列调度算法(Multilevel Feedback Queue Scheduling)</h5><ul>
-<li>N个队列，优先级依次降低，越低时间片越长</li>
-<li>对于第N个队列，遵循时间片轮转法</li>
-<li>对于其他队列，先来先服务，给一定的时间片，若某进程未结束，则移到下一队队尾</li>
-<li>新来高优先级进程抢占CPU</li>
-<li>IO型放前，CPU型放后</li>
-</ul>
