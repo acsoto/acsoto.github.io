@@ -49,7 +49,7 @@
       <guid>http://atksoto.com/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
       <description>uu们最近给我推的歌
 大家一起分享
- YOASOBI新专辑  稚名林檎     </description>
+ YOASOBI新专辑   椎名林檎       </description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@
       <description>《假如爱有天意》
  PocBU6 
 最近又在听《假如爱有天意》，遂又回去二刷原作 一年了，依然感动
- b5aerz   akXFgz   AakrPd   qdDRVn</description>
+  b5aerz   akXFgz   AakrPd   qdDRVn</description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
       <description>uu们最近给我推的歌 大家一起分享
    カンタレラ~grace edition~ 
 这首的交响版本也很棒：
-  ODDTAXI
+   ODDTAXI
   魂之轮回 HB to 剑风
   魂のルフラン (魂之轮回)
   イナヅマ侍
@@ -116,6 +116,18 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
  bUHIUT 
  3D8Ynt 
  RjeNLY</description>
+    </item>
+    
+    <item>
+      <title>MacOS全局可执行文件</title>
+      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 30 Nov 2021 21:30:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>sudo vim /usr/local/bin/command
+/usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
+#!/bin/bash do something sudo chmod +x /usr/local/bin/command
+即可全局使用 command</description>
     </item>
     
     <item>
@@ -145,7 +157,7 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
  
 打开链接一看：
  
-很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放
+ 很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放
 查来查去发现是有人盗了一个用来处理封禁的账号，进去之后一通乱封
 把数据库恢复了一下备份，玩家还是进不去，我能进去，查了一下litebans的官网，是用了一个封锁服务器进入权限的指令，打了个指令就解决了。
 很低级的手段，很无聊的恶趣味
@@ -635,18 +647,6 @@ Hexo指令 基本 hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;
 风险识别，风险分析（可能性，后果严重性），风险排序
 管理，评估，应对
 失败的预防 优生优育  优质材料 降额\裕度设计 余度设计 健壮设计 耐环境设计 放错设计  养生保健  熟练的使用 定期的维护 有力的保障 持续的改进  失败的思维 如何看待失败 知识管理的概念 从失败中学习：知识的螺旋 吃一堑长一智：失败知识从哪来 失败知识的共享 失败知识的应用</description>
-    </item>
-    
-    <item>
-      <title>MacOS全局可执行文件</title>
-      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
-      <description>sudo vim /usr/local/bin/command
-/usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
-#!/bin/bash do something sudo chmod +x /usr/local/bin/command
-即可全局使用 command</description>
     </item>
     
   </channel>

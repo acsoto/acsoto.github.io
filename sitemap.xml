@@ -47,6 +47,18 @@
     <loc>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2021-12-01T19:25:00+00:00</lastmod>
   </url><url>
+    <loc>http://atksoto.com/tags/macos/</loc>
+    <lastmod>2021-11-30T21:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2021-11-30T21:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://atksoto.com/tags/shell/</loc>
+    <lastmod>2021-11-30T21:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://atksoto.com/tags/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2021-11-30T21:30:00+00:00</lastmod>
+  </url><url>
     <loc>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</loc>
     <lastmod>2021-11-28T23:59:12+00:00</lastmod>
   </url><url>
@@ -63,9 +75,6 @@
     <lastmod>2021-11-28T02:54:12+00:00</lastmod>
   </url><url>
     <loc>http://atksoto.com/tags/swift/</loc>
-    <lastmod>2021-11-28T02:54:12+00:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2021-11-28T02:54:12+00:00</lastmod>
   </url><url>
     <loc>http://atksoto.com/tags/%E9%A1%B9%E7%9B%AE/</loc>
@@ -236,12 +245,6 @@
     <loc>http://atksoto.com/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://atksoto.com/tags/macos/</loc>
-  </url><url>
-    <loc>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
-  </url><url>
     <loc>http://atksoto.com/search/</loc>
-  </url><url>
-    <loc>http://atksoto.com/tags/shell/</loc>
   </url>
 </urlset>

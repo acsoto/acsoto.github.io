@@ -6,7 +6,19 @@
     <description>Recent content in 开发 on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Nov 2021 21:30:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS全局可执行文件</title>
+      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 30 Nov 2021 21:30:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>sudo vim /usr/local/bin/command
+/usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
+#!/bin/bash do something sudo chmod +x /usr/local/bin/command
+即可全局使用 command</description>
+    </item>
+    
     <item>
       <title>IoTMonitor</title>
       <link>http://atksoto.com/posts/iotmonitor/</link>
@@ -73,18 +85,6 @@ Mac, iPad适配
 Controller 一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等
 其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
 class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.</description>
-    </item>
-    
-    <item>
-      <title>MacOS全局可执行文件</title>
-      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
-      <description>sudo vim /usr/local/bin/command
-/usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
-#!/bin/bash do something sudo chmod +x /usr/local/bin/command
-即可全局使用 command</description>
     </item>
     
   </channel>
