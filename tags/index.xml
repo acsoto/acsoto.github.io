@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on E</title>
+    <title>Tags on SOTO-BLOG</title>
     <link>http://atksoto.com/tags/</link>
-    <description>Recent content in Tags on E</description>
+    <description>Recent content in Tags on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Dec 2021 15:01:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -40,6 +40,15 @@
       <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
       
       <guid>http://atksoto.com/tags/%E7%94%B5%E5%BD%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随想</title>
+      <link>http://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</link>
+      <pubDate>Sun, 28 Nov 2021 23:59:12 +0000</pubDate>
+      
+      <guid>http://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</guid>
       <description></description>
     </item>
     
@@ -89,11 +98,11 @@
     </item>
     
     <item>
-      <title>随想</title>
-      <link>http://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</link>
-      <pubDate>Fri, 19 Nov 2021 23:34:01 +0000</pubDate>
+      <title>hexo</title>
+      <link>http://atksoto.com/tags/hexo/</link>
+      <pubDate>Tue, 23 Nov 2021 10:09:18 +0000</pubDate>
       
-      <guid>http://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</guid>
+      <guid>http://atksoto.com/tags/hexo/</guid>
       <description></description>
     </item>
     

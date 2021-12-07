@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Swift on E</title>
+    <title>Swift on SOTO-BLOG</title>
     <link>http://atksoto.com/tags/swift/</link>
-    <description>Recent content in Swift on E</description>
+    <description>Recent content in Swift on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />

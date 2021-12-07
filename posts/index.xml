@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on E</title>
+    <title>Posts on SOTO-BLOG</title>
     <link>http://atksoto.com/posts/</link>
-    <description>Recent content in Posts on E</description>
+    <description>Recent content in Posts on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Dec 2021 15:01:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -116,6 +116,21 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
  bUHIUT 
  3D8Ynt 
  RjeNLY</description>
+    </item>
+    
+    <item>
+      <title>岁末将至</title>
+      <link>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
+      <pubDate>Sun, 28 Nov 2021 23:59:12 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
+      <description>2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。
+ 
+2021年仍然是不平凡的一年，仍然记得年初开学前的焦虑，现在回首，已是云淡风轻。
+昨天也做了一件有意义的事情，终结了我的某个让我焦虑了一年的项目，很遗憾，和一般情况不同，不是顺利完成了，而是我终于宣告退出了，不知是我诉苦奏效还是项目确实没有什么意义，身边人在最后关头支持我的退出。且不谈这个项目的实际意义，我已经丧失了对项目的兴趣，尽管起初驱动我的也不是兴趣，最主要的还是这一年在这一件事上，循环往复的都是焦虑和难以推进，在近期，也是我今年最忙的时间段，项目突然开始快速推进，我借着这个机会，跟老板提出退出。最终什么都没有拿到，倒是这一年，更像是两年，本就社恐，又无经验，还得不到具体的指导，老板问我有没有给我压力，确实也没有，是自己给自己增加了不少压力，而我，2021年末的我，已经不愿再做自己不喜欢的事情了。让此事告终，心情也好了不少。
+这几天甚是忙碌，周围人都出去玩乐了，我还在做作业，复习重修的课程。小伙伴今天下午约我出去玩，我才意识到这已经是这学期不知道第几次因为要考试而拒绝了。倒也不觉得情绪低，因为清楚自己在做什么，为什么忙，除了时间确实不够用，熬了几次夜，反倒挺有兴致的。也非常期待下一周，校历第13周的结束，这意味着编译和数据库的结课，数分期中考试的结束，物联网，安卓大作业的结束，虽然此时此刻他们都还没有结束，也不知道会以什么样的方式结束。
+写完这篇，Typora提醒我15天后他要开始收费了。回想疫情居家的那一学期，在6系学长为我们讲解数据结构时，看到了学长的Typora，一眼喜欢上了这个软件，专门加了学长好友去问这款软件叫什么，学长告诉我，如果到了6系会经常用到，我还一笑，不曾想过自己会去6系，如今已是在计算机学院的第二年了。恰合主题，时间过得这么快，也算见证了Typora的演变。
+岁末将至，敬颂冬绥</description>
     </item>
     
     <item>
@@ -243,6 +258,41 @@ UI整体使用卡片式扁平设计
     </item>
     
     <item>
+      <title>Hexo-Front-matter</title>
+      <link>http://atksoto.com/posts/hexo/hexo-front-matter/</link>
+      <pubDate>Tue, 23 Nov 2021 10:09:18 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/hexo/hexo-front-matter/</guid>
+      <description>Demo title: date: 2021-11-23 10:09:18 tags: [hexo] categories: cover:
+官方说明 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。
+   参数 描述 默认值     layout 布局 config.default_layout   title 标题 文章的文件名   date 建立日期 文件建立日期   updated 更新日期 文件更新日期   comments 开启文章的评论功能 true   tags 标签（不适用于分页）    categories 分类（不适用于分页）    permalink 覆盖文章网址    excerpt Page excerpt in plain text. Use this plugin to format the text    disableNunjucks Disable rendering of Nunjucks tag {{ }}/{% %} and tag plugins when enabled    lang Set the language to override auto-detection Inherited from _config.</description>
+    </item>
+    
+    <item>
+      <title>关于封校的行为艺术——很有冲击力</title>
+      <link>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E5%B0%81%E6%A0%A1-%E5%8C%97%E4%BA%AC%E7%94%B5%E5%BD%B1%E5%AD%A6%E9%99%A2/</link>
+      <pubDate>Mon, 22 Nov 2021 15:28:59 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E5%B0%81%E6%A0%A1-%E5%8C%97%E4%BA%AC%E7%94%B5%E5%BD%B1%E5%AD%A6%E9%99%A2/</guid>
+      <description>今日看到北京电影学院的行为艺术，甚感封校许久政策就是最明显的校内不同群体的利益冲突，比如在BUAA，冲封校冲得最厉害的，似乎是大四的同学，因为很多人急于出去实习科研。对于一些每天的生活只有卷的同学，封校政策并无大碍。对于北航家属呢，此政策影响不到他们的正常出行。对于我呢，在我想出去玩的时候，对政策感到厌恶，在我不想出玩的时候，却也觉得无所谓。
+《肖申克的救赎》
+ 
+更新于2021-11-23 10:17
+昨天刚吐槽完这个，今天BUAA就改报备制了，近期也并无心出门
+《不至于》</description>
+    </item>
+    
+    <item>
+      <title>何以变革</title>
+      <link>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</link>
+      <pubDate>Sat, 20 Nov 2021 01:53:10 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</guid>
+      <description>大部分人做着自己不想做的事情，只是为了生存，这点有史以来未曾改变。有人只是爱好，有人只是在追求功利，摆出一副难看的样子，卑微的为了让自己能或许多有一点点微乎其微的可能性，去屈服，痛苦，下跪，丧失着自由。何以变革，或许少部分值得敬佩的，才是异类。
+我选择方式越来越趋向于同一个准则，或许是积累了那么多经验，觉得只要这样做才是应该的，才能让自己快乐，当然，这样的选择方式，在遵循的同时，也不失会带来一些焦虑，然后我又去抑制这种焦虑？就不知道是自己在习惯的过程中，还是做错了。</description>
+    </item>
+    
+    <item>
       <title>与鸟巢的匆匆一面</title>
       <link>http://atksoto.com/posts/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
       <pubDate>Fri, 19 Nov 2021 23:34:01 +0000</pubDate>
@@ -280,6 +330,16 @@ Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;
 File reading Read by line, scan every char of every string and analyse.
 while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
 while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;+&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.</description>
+    </item>
+    
+    <item>
+      <title>2021年11月的第一场雪</title>
+      <link>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
+      <pubDate>Sun, 07 Nov 2021 02:04:08 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E9%9A%8F%E6%83%B3/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
+      <description>真的很冷
+今天大家的关注点都在S赛，我也未能免俗参与其中</description>
     </item>
     
     <item>
@@ -378,6 +438,20 @@ struct Student { int i; int j; char c; } 由于int需要占用4个字节，由�
 extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C++编译器修饰的方式去找。
 函数
 //1.overloading //2.default parameter //默认参数必须放后 void fun2(int a, int b = 3, int c = 4) { cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; b &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl; } //3.</description>
+    </item>
+    
+    <item>
+      <title>Hexo食用方法</title>
+      <link>http://atksoto.com/posts/hexo/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 21 Dec 2020 23:34:37 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/hexo/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>Blog搭建 https://zhuanlan.zhihu.com/p/26625249
+https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+安装：npm install -g hexo
+Hexo指令 基本 hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo g == hexo generate #生成 hexo s == hexo server #启动服务预览 hexo d == hexo deploy #部署 域名解析 在github项目根目录新建一个名为CNAME的文件，里面填写域名
+然后CNAME解析
+图片 https://www.cnblogs.com/bzsheng/p/13802829.html</description>
     </item>
     
     <item>
