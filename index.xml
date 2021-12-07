@@ -48,7 +48,8 @@ date: 2021-12-07 12:11:00
 tags: []
 image: 
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;插件名：Templater&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;插件名：&lt;a class=&#34;link&#34; href=&#34;https://silentvoid13.github.io/Templater/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Templater&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;双链&#34;&gt;双链&lt;/h2&gt;
 &lt;p&gt;这个双向链接，指的就是你的一个md对象可以指向另一个对象，然后目标对象也会知道有哪个对象指向了自己。我理解这个东西就是类似于一个图，模拟你的神经网络，形成一种你的第二大脑的感觉，但其实到现在我也没感觉到有多强大，没有get到他的点。&lt;/p&gt;
 &lt;p&gt;这是他给我的仓库生成的图谱，因为没怎么建双链，所以边比较少，倒是挺好玩&lt;/p&gt;
