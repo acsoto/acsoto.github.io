@@ -6,10 +6,10 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Obsidian体验——新工作流</title>
         <link>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
-        <pubDate>Tue, 07 Dec 2021 12:11:00 +0000</pubDate>
+        <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
         <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/XmECh3.png" alt="Featured image of post Obsidian体验——新工作流" /&gt;&lt;p&gt;最近在玩Hexo，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora现在也收费了，趁着这个契机，打算换一个软件用。&lt;/p&gt;
@@ -34,7 +34,7 @@
 &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;推荐一个 YIN &amp;amp; YANG 我现在在用，很好看&lt;/p&gt;
 &lt;h2 id=&#34;插件&#34;&gt;插件&lt;/h2&gt;
-&lt;p&gt;还是因为社区文化好，插件也很多，但是目前我没什么需要的，唯一装了一个模板插件，可以用快捷键生成我预置的内容，这个和Hexo配合起来非常舒服，之前为了让md生成FrontMeta，必须手动hexo n，现在只要提前设置好Hexo的FrontMeta，设置好快捷键，即可一键生成需要的内容，包括时间这种变量。&lt;/p&gt;
+&lt;p&gt;还是因为社区文化好，插件也很多，但是目前我没什么需要的，唯一装了一个模板插件，可以用快捷键生成我预置的内容，这个和Hexo配合起来非常舒服，之前为了让md生成FrontMatter，必须手动hexo n，现在只要提前设置好Hexo的FrontMatter，设置好快捷键，即可一键生成需要的内容，包括时间这种变量。&lt;/p&gt;
 &lt;p&gt;如下，我设置好模板后，只需 &lt;code&gt;command+T&lt;/code&gt; 即可生成下面的内容&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: &amp;lt;% tp.file.title %&amp;gt;
@@ -88,7 +88,7 @@ cover:
 &lt;p&gt;也谈不上什么工作流，又不是专职作者，只是觉得好玩。&lt;/p&gt;
 &lt;p&gt;以下是我现在发布博客的过程，非常简单&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;打开Obsidian，新建文件，输入标题，cmd+T 生成FrontMeta&lt;/li&gt;
+&lt;li&gt;打开Obsidian，新建文件，输入标题，cmd+T 生成FrontMatter&lt;/li&gt;
 &lt;li&gt;写&lt;/li&gt;
 &lt;li&gt;打开控制台，输入hexos&lt;/li&gt;
 &lt;/ol&gt;
@@ -114,7 +114,7 @@ cover:
         <item>
         <title>西方音乐史-作业</title>
         <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</link>
-        <pubDate>Mon, 06 Dec 2021 15:01:00 +0000</pubDate>
+        <pubDate>Mon, 06 Dec 2021 15:01:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
         <description>&lt;h1 id=&#34;第一次作业巴洛克时期的音乐&#34;&gt;第一次作业—巴洛克时期的音乐&lt;/h1&gt;
@@ -311,7 +311,7 @@ cover:
         <item>
         <title>数学分析</title>
         <link>http://atksoto.com/p/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
-        <pubDate>Sat, 04 Dec 2021 23:40:00 +0000</pubDate>
+        <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
         <description>&lt;p&gt;1&lt;/p&gt;
@@ -400,7 +400,7 @@ cover:
         <item>
         <title>推歌 第二期</title>
         <link>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
-        <pubDate>Sat, 04 Dec 2021 15:49:00 +0000</pubDate>
+        <pubDate>Sat, 04 Dec 2021 15:49:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌&lt;br&gt;
@@ -422,7 +422,7 @@ cover:
         <item>
         <title>假如爱有天意</title>
         <link>http://atksoto.com/p/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
-        <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
+        <pubDate>Fri, 03 Dec 2021 22:11:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
         <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/y6rPnu.png" alt="Featured image of post 假如爱有天意" /&gt;&lt;p&gt;《假如爱有天意》&lt;/p&gt;
@@ -505,7 +505,7 @@ cover:
         <item>
         <title>数据库建立</title>
         <link>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
-        <pubDate>Thu, 02 Dec 2021 20:48:00 +0000</pubDate>
+        <pubDate>Thu, 02 Dec 2021 20:48:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
         <description>&lt;p&gt;设置自动当前时间时间戳&lt;/p&gt;
@@ -515,7 +515,7 @@ cover:
         <item>
         <title>Django相关</title>
         <link>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</link>
-        <pubDate>Thu, 02 Dec 2021 20:24:00 +0000</pubDate>
+        <pubDate>Thu, 02 Dec 2021 20:24:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</guid>
         <description>&lt;h4 id=&#34;数据库转类&#34;&gt;数据库转类&lt;/h4&gt;
@@ -538,7 +538,7 @@ cover:
         <item>
         <title>推歌 第一期</title>
         <link>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
-        <pubDate>Wed, 01 Dec 2021 23:18:00 +0000</pubDate>
+        <pubDate>Wed, 01 Dec 2021 23:18:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌
@@ -577,7 +577,7 @@ cover:
         <item>
         <title>Our Little Sister</title>
         <link>http://atksoto.com/p/our-little-sister/</link>
-        <pubDate>Wed, 01 Dec 2021 19:25:00 +0000</pubDate>
+        <pubDate>Wed, 01 Dec 2021 19:25:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/our-little-sister/</guid>
         <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/GkSWWl.png" alt="Featured image of post Our Little Sister" /&gt;&lt;p&gt;《海街日记》&lt;/p&gt;
@@ -657,7 +657,7 @@ cover:
         <item>
         <title>MacOS全局可执行文件</title>
         <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-        <pubDate>Tue, 30 Nov 2021 21:30:00 +0000</pubDate>
+        <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
         <description>&lt;p&gt;sudo vim /usr/local/bin/&lt;code&gt;command&lt;/code&gt;&lt;/p&gt;
@@ -672,7 +672,7 @@ cover:
         <item>
         <title>岁末将至</title>
         <link>http://atksoto.com/p/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
-        <pubDate>Sun, 28 Nov 2021 23:59:12 +0000</pubDate>
+        <pubDate>Sun, 28 Nov 2021 23:59:12 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwvcckpc31j30sg0lcjw0.jpg" alt="Featured image of post 岁末将至" /&gt;&lt;p&gt;2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。&lt;/p&gt;
@@ -699,7 +699,7 @@ cover:
         <item>
         <title>AC又被黑了</title>
         <link>http://atksoto.com/p/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
-        <pubDate>Sun, 28 Nov 2021 16:17:36 +0000</pubDate>
+        <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
         
         <guid>http://atksoto.com/p/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuxr0uhfdj30yc0jsgn6.jpg" alt="Featured image of post AC又被黑了" /&gt;&lt;p&gt;下午突然看到服务器有人发&lt;/p&gt;
@@ -756,7 +756,7 @@ cover:
         <item>
         <title>IoTMonitor</title>
         <link>http://atksoto.com/p/iotmonitor/</link>
-        <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
+        <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
         
         <guid>http://atksoto.com/p/iotmonitor/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" alt="Featured image of post IoTMonitor" /&gt;&lt;h1 id=&#34;iotmonitor&#34;&gt;IoTMonitor&lt;/h1&gt;
@@ -853,7 +853,7 @@ cover:
         <item>
         <title>我的语言使用统计</title>
         <link>http://atksoto.com/p/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</link>
-        <pubDate>Sat, 27 Nov 2021 01:11:33 +0000</pubDate>
+        <pubDate>Sat, 27 Nov 2021 01:11:33 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</guid>
         <description>&lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acsoto&layout=compact&show_icons=true&hide_border=false" alt="Featured image of post 我的语言使用统计" /&gt;&lt;img align=&#34;center&#34; alt=&#34;Top Langs&#34; src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=acsoto&amp;layout=compact&amp;show_icons=true&amp;hide_border=false&#34; /&gt;
@@ -862,7 +862,7 @@ cover:
         <item>
         <title>我的GitHub数据</title>
         <link>http://atksoto.com/p/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</link>
-        <pubDate>Sat, 27 Nov 2021 01:11:09 +0000</pubDate>
+        <pubDate>Sat, 27 Nov 2021 01:11:09 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</guid>
         <description>&lt;img src="https://github-readme-stats.vercel.app/api?username=acsoto&show_icons=true&hide_title=false&hide_border=false" alt="Featured image of post 我的GitHub数据" /&gt;&lt;img align=&#34;center&#34; src=&#34;https://github-readme-stats.vercel.app/api?username=acsoto&amp;show_icons=true&amp;hide_title=false&amp;hide_border=false&#34; /&gt;
@@ -871,7 +871,7 @@ cover:
         <item>
         <title>我爱我度过的所有时间</title>
         <link>http://atksoto.com/p/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
-        <pubDate>Fri, 26 Nov 2021 19:06:03 +0000</pubDate>
+        <pubDate>Fri, 26 Nov 2021 19:06:03 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwt3jhmdacj31gm0luq6m.jpg" alt="Featured image of post 我爱我度过的所有时间" /&gt;&lt;p&gt;《现在去见你》&lt;/p&gt;
@@ -906,7 +906,7 @@ cover:
         <item>
         <title>新北老年活动中心</title>
         <link>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
-        <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
+        <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg" alt="Featured image of post 新北老年活动中心" /&gt;&lt;h1 id=&#34;新北区迷惑大赏&#34;&gt;新北区迷惑大赏&lt;/h1&gt;
@@ -955,10 +955,10 @@ cover:
         <item>
         <title>西方音乐史-浪漫主义时期</title>
         <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</link>
-        <pubDate>Tue, 23 Nov 2021 20:34:50 +0000</pubDate>
+        <pubDate>Tue, 23 Nov 2021 20:34:50 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;浪漫主义时期&#34;&gt;浪漫主义时期&lt;/h1&gt;
+        <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/CxHj8q.jpg" alt="Featured image of post 西方音乐史-浪漫主义时期" /&gt;&lt;h1 id=&#34;浪漫主义时期&#34;&gt;浪漫主义时期&lt;/h1&gt;
 &lt;p&gt;（1820-1900）&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;特点&#34;&gt;特点&lt;/h2&gt;
@@ -1155,7 +1155,7 @@ cover:
         <item>
         <title>泳社约游群的有趣见闻</title>
         <link>http://atksoto.com/p/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
-        <pubDate>Tue, 23 Nov 2021 12:36:52 +0000</pubDate>
+        <pubDate>Tue, 23 Nov 2021 12:36:52 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
         <description>&lt;p&gt;&lt;figure 
@@ -1176,7 +1176,7 @@ cover:
         <item>
         <title>Hexo-Front-matter</title>
         <link>http://atksoto.com/p/hexo-front-matter/</link>
-        <pubDate>Tue, 23 Nov 2021 10:09:18 +0000</pubDate>
+        <pubDate>Tue, 23 Nov 2021 10:09:18 +0800</pubDate>
         
         <guid>http://atksoto.com/p/hexo-front-matter/</guid>
         <description>&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
@@ -1267,7 +1267,7 @@ cover:&lt;/p&gt;
         <item>
         <title>关于封校的行为艺术——很有冲击力</title>
         <link>http://atksoto.com/p/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
-        <pubDate>Mon, 22 Nov 2021 15:28:59 +0000</pubDate>
+        <pubDate>Mon, 22 Nov 2021 15:28:59 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwnymv1zyrj31780u0ane.jpg" alt="Featured image of post 关于封校的行为艺术——很有冲击力" /&gt;&lt;p&gt;今日看到北京电影学院的行为艺术，甚感封校许久政策就是最明显的校内不同群体的利益冲突，比如在BUAA，冲封校冲得最厉害的，似乎是大四的同学，因为很多人急于出去实习科研。对于一些每天的生活只有卷的同学，封校政策并无大碍。对于北航家属呢，此政策影响不到他们的正常出行。对于我呢，在我想出去玩的时候，对政策感到厌恶，在我不想出玩的时候，却也觉得无所谓。&lt;/p&gt;
@@ -1304,7 +1304,7 @@ cover:&lt;/p&gt;
         <item>
         <title>何以变革</title>
         <link>http://atksoto.com/p/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</link>
-        <pubDate>Sat, 20 Nov 2021 01:53:10 +0000</pubDate>
+        <pubDate>Sat, 20 Nov 2021 01:53:10 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</guid>
         <description>&lt;p&gt;大部分人做着自己不想做的事情，只是为了生存，这点有史以来未曾改变。有人只是爱好，有人只是在追求功利，摆出一副难看的样子，卑微的为了让自己能或许多有一点点微乎其微的可能性，去屈服，痛苦，下跪，丧失着自由。何以变革，或许少部分值得敬佩的，才是异类。&lt;/p&gt;
@@ -1314,7 +1314,7 @@ cover:&lt;/p&gt;
         <item>
         <title>与鸟巢的匆匆一面</title>
         <link>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
-        <pubDate>Fri, 19 Nov 2021 23:34:01 +0000</pubDate>
+        <pubDate>Fri, 19 Nov 2021 23:34:01 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwocp0mkarj30sg0lc43v.jpg" alt="Featured image of post 与鸟巢的匆匆一面" /&gt;&lt;p&gt;今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。&lt;/p&gt;
@@ -1365,7 +1365,7 @@ cover:&lt;/p&gt;
         <item>
         <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
         <link>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</link>
-        <pubDate>Fri, 19 Nov 2021 10:09:18 +0000</pubDate>
+        <pubDate>Fri, 19 Nov 2021 10:09:18 +0800</pubDate>
         
         <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
         <description>&lt;p&gt;运行sql脚本时&lt;/p&gt;
@@ -1377,7 +1377,7 @@ cover:&lt;/p&gt;
         <item>
         <title>Alxa_Compiler 编译器</title>
         <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
-        <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
+        <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler 编译器" /&gt;&lt;p&gt;相关文章：[[编译实验总结感想]]&lt;/p&gt;
@@ -2299,12 +2299,15 @@ cover:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By these means, short circuit calculation is solved.&lt;/p&gt;
 &lt;h2 id=&#34;总结感想&#34;&gt;总结感想&lt;/h2&gt;
 &lt;p&gt;[[编译实验总结感想]]&lt;/p&gt;
+&lt;h3 id=&#34;参考资料&#34;&gt;参考资料&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bookstack.cn/read/pandolia-tinyc/about.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bookstack.cn/read/pandolia-tinyc/about.md&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>2021年11月的第一场雪</title>
         <link>http://atksoto.com/p/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
-        <pubDate>Sun, 07 Nov 2021 02:04:08 +0000</pubDate>
+        <pubDate>Sun, 07 Nov 2021 02:04:08 +0800</pubDate>
         
         <guid>http://atksoto.com/p/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwkz3r6pstj30sg0lc43b.jpg" alt="Featured image of post 2021年11月的第一场雪" /&gt;&lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;150&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/album/the-four-seasons-concerto-no-4-in-f-minor-rv-297/883897569?i=883897598&amp;l=en&#34;&gt;&lt;/iframe&gt;
@@ -2315,7 +2318,7 @@ cover:&lt;/p&gt;
         <item>
         <title>Memo</title>
         <link>http://atksoto.com/p/memo/</link>
-        <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
+        <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/memo/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" alt="Featured image of post Memo" /&gt;&lt;h1 id=&#34;memo&#34;&gt;Memo&lt;/h1&gt;
@@ -2619,10 +2622,10 @@ cover:&lt;/p&gt;
         <item>
         <title>西方音乐史-维也纳古典时期</title>
         <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</link>
-        <pubDate>Tue, 19 Oct 2021 17:32:00 +0000</pubDate>
+        <pubDate>Tue, 19 Oct 2021 17:32:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;维也纳古典时期&#34;&gt;维也纳古典时期&lt;/h1&gt;
+        <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/5DRCtL.jpeg" alt="Featured image of post 西方音乐史-维也纳古典时期" /&gt;&lt;h1 id=&#34;维也纳古典时期&#34;&gt;维也纳古典时期&lt;/h1&gt;
 &lt;p&gt;古典三杰：海顿，莫扎特，贝多芬&lt;/p&gt;
 &lt;p&gt;海顿：清唱剧《创世纪》《四季》
 莫扎特：四部喜歌剧 《费加罗的婚礼》 《唐璜》《女人心》 《魔笛》
@@ -2730,10 +2733,10 @@ concerto  “轮流说话”
         <item>
         <title>西方音乐史-巴洛克时期</title>
         <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</link>
-        <pubDate>Wed, 29 Sep 2021 08:34:00 +0000</pubDate>
+        <pubDate>Wed, 29 Sep 2021 08:34:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;巴洛克时期&#34;&gt;巴洛克时期&lt;/h1&gt;
+        <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/LPGlHr.png" alt="Featured image of post 西方音乐史-巴洛克时期" /&gt;&lt;h1 id=&#34;巴洛克时期&#34;&gt;巴洛克时期&lt;/h1&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;特点&#34;&gt;特点&lt;/h2&gt;
 &lt;p&gt;悠长而富于装饰的旋律线条
@@ -2762,7 +2765,7 @@ concerto  “轮流说话”
         <item>
         <title>西方音乐史-总述</title>
         <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</link>
-        <pubDate>Tue, 28 Sep 2021 19:34:00 +0000</pubDate>
+        <pubDate>Tue, 28 Sep 2021 19:34:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</guid>
         <description>&lt;h2 id=&#34;共晓时期&#34;&gt;共晓时期：&lt;/h2&gt;
@@ -2823,7 +2826,7 @@ concerto  “轮流说话”
         <item>
         <title>BUAAOO-第四单元总结</title>
         <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
-        <pubDate>Sat, 26 Jun 2021 11:23:00 +0000</pubDate>
+        <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第四单元总结&#34;&gt;BUAAOO-第四单元总结&lt;/h1&gt;
@@ -2991,7 +2994,7 @@ concerto  “轮流说话”
         <item>
         <title>BUAAOO-第三单元总结</title>
         <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
-        <pubDate>Sat, 29 May 2021 11:54:00 +0000</pubDate>
+        <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第三单元总结&#34;&gt;BUAAOO-第三单元总结&lt;/h1&gt;
@@ -3173,7 +3176,7 @@ concerto  “轮流说话”
         <item>
         <title>C&#43;&#43;基础</title>
         <link>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</link>
-        <pubDate>Fri, 30 Apr 2021 11:00:00 +0000</pubDate>
+        <pubDate>Fri, 30 Apr 2021 11:00:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</guid>
         <description>&lt;p&gt;&lt;figure 
@@ -3485,7 +3488,7 @@ concerto  “轮流说话”
         <item>
         <title>BUAAOO-第二单元总结</title>
         <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
-        <pubDate>Sun, 25 Apr 2021 22:33:00 +0000</pubDate>
+        <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第二单元总结&#34;&gt;BUAAOO-第二单元总结&lt;/h1&gt;
@@ -3626,7 +3629,7 @@ concerto  “轮流说话”
         <item>
         <title>BUAAOO-第一单元总结</title>
         <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
-        <pubDate>Sun, 28 Mar 2021 19:23:00 +0000</pubDate>
+        <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第一单元总结&#34;&gt;BUAAOO-第一单元总结&lt;/h1&gt;
@@ -3807,7 +3810,7 @@ concerto  “轮流说话”
         <item>
         <title>Hexo食用方法</title>
         <link>http://atksoto.com/p/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-        <pubDate>Mon, 21 Dec 2020 23:34:37 +0000</pubDate>
+        <pubDate>Mon, 21 Dec 2020 23:34:37 +0800</pubDate>
         
         <guid>http://atksoto.com/p/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;h2 id=&#34;blog搭建&#34;&gt;Blog搭建&lt;/h2&gt;
@@ -3833,7 +3836,7 @@ hexo d == hexo deploy #部署
         <item>
         <title>失败的逻辑课程笔记</title>
         <link>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
-        <pubDate>Thu, 29 Oct 2020 11:54:00 +0000</pubDate>
+        <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
         
         <guid>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;失败的规律&#34;&gt;失败的规律&lt;/h2&gt;

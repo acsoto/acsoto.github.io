@@ -6,11 +6,11 @@
     <description>Recent content in 开发 on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 30 Nov 2021 21:30:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Nov 2021 21:30:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MacOS全局可执行文件</title>
       <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Tue, 30 Nov 2021 21:30:00 +0000</pubDate>
+      <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
       <description>sudo vim /usr/local/bin/command
@@ -22,7 +22,7 @@
     <item>
       <title>IoTMonitor</title>
       <link>http://atksoto.com/p/iotmonitor/</link>
-      <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
+      <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
       
       <guid>http://atksoto.com/p/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
@@ -47,7 +47,7 @@ UI整体使用卡片式扁平设计
     <item>
       <title>Alxa_Compiler 编译器</title>
       <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
-      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>相关文章：[[编译实验总结感想]]
@@ -60,7 +60,7 @@ while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;
     <item>
       <title>Memo</title>
       <link>http://atksoto.com/p/memo/</link>
-      <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
+      <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/memo/</guid>
       <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
