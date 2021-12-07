@@ -109,16 +109,6 @@ cover:
 &lt;li&gt;生成，部署&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这样做的好处是分离hexo目录和真正的笔记，我把笔记目录放到了iCloud上，以便在任何设备上直接用obsidian打开仓库，不需要把hexo上传到iCloud，就不用担心Obsidian只能打开整个hexo目录的问题&lt;/p&gt;
-&lt;p&gt;#!/bin/bash
-rm -rf /Users/soto/Documents/HugoBlog/content/posts
-cp -r /Users/soto/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/&amp;gt;
-笔记/HexoBlog /Users/soto/Documents/HugoBlog/content/posts
-cd /Users/soto/Documents/HugoBlog
-hugo
-cd /Users/soto/Documents/HugoBlog/public
-git add .
-git commit -m &amp;ldquo;blog updated&amp;rdquo;
-git push&lt;/p&gt;
 </description>
         </item>
         <item>
