@@ -40,13 +40,13 @@
 title: &amp;lt;% tp.file.title %&amp;gt;
 date: &amp;lt;% tp.file.creation_date() %&amp;gt;:00
 tags: []
-cover: 
+image: 
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: Obsidian体验——新工作流
 date: 2021-12-07 12:11:00
 tags: []
-cover: 
+image: 
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;插件名：Templater&lt;/p&gt;
 &lt;h2 id=&#34;双链&#34;&gt;双链&lt;/h2&gt;

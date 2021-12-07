@@ -13,10 +13,7 @@
       <pubDate>Fri, 19 Nov 2021 10:09:18 +0800</pubDate>
       
       <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
-      <description>运行sql脚本时
-sql报错如下
-Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;
-原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
+      <description>运行sql脚本时 sql报错如下 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo; 原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
     </item>
     
   </channel>

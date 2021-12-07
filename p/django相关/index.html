@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='数据库转类 python3 manage.py inspectdb
-解决冲突问题
-class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为
-user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署
-如何部署'><title>Django相关</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署'><title>Django相关</title>
 
 <link rel='canonical' href='http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Django相关'>
-<meta property='og:description' content='数据库转类 python3 manage.py inspectdb
-解决冲突问题
-class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为
-user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署
-如何部署'>
+<meta property='og:description' content='数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署'>
 <meta property='og:url' content='http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-12-02T20:24:00&#43;08:00'/><meta property='article:modified_time' content='2021-12-02T20:24:00&#43;08:00'/>
 <meta name="twitter:title" content="Django相关">
-<meta name="twitter:description" content="数据库转类 python3 manage.py inspectdb
-解决冲突问题
-class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为
-user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署
-如何部署">
+<meta name="twitter:description" content="数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署">
     <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
 
     </head>
@@ -101,6 +89,20 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
             </div>
         
 
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
         
     </footer>
     
