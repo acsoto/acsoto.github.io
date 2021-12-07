@@ -5,6 +5,61 @@
     <link>http://atksoto.com/categories/buaa/</link>
     <description>Recent content in BUAA on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Nov 2021 10:22:27 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新北老年活动中心</title>
+      <link>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+      <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+      <description>新北区迷惑大赏 我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩 上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第四单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第三单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第二单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制wa</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第一单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha</description>
+    </item>
+    
+    <item>
+      <title>失败的逻辑课程笔记</title>
+      <link>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <description>失败的规律 墨菲定律 定义 如果做某项工作有多种方法，而其中有一种方法将导致事故，那么一定有人会按这种方法去做。 四种表现形式 （注意：都不是一定的）</description>
+    </item>
+    
   </channel>
 </rss>
