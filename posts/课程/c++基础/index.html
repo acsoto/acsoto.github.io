@@ -12,7 +12,7 @@ extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器
 函数
 //1.overloading //2.default parameter //默认参数必须放后 void fun2(int a, int b = 3, int c = 4) { cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; b &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl; } //3.'><title>C&#43;&#43;基础</title>
 
-<link rel='canonical' href='http://example.org/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/'>
+<link rel='canonical' href='http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='C&#43;&#43;基础'>
 <meta property='og:description' content='知识点纲要 
@@ -25,8 +25,8 @@ struct Student { int i; int j; char c; } 由于int需要占用4个字节，由�
 extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C&#43;&#43;编译器修饰的方式去找。
 函数
 //1.overloading //2.default parameter //默认参数必须放后 void fun2(int a, int b = 3, int c = 4) { cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; b &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl; } //3.'>
-<meta property='og:url' content='http://example.org/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/'>
-<meta property='og:site_name' content='My New Hugo Site'>
+<meta property='og:url' content='http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/'>
+<meta property='og:site_name' content='E'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='BUAA' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2021-04-30T11:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-04-30T11:00:00&#43;00:00'/>
 <meta name="twitter:title" content="C&#43;&#43;基础">
 <meta name="twitter:description" content="知识点纲要 
@@ -150,210 +150,210 @@ extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器
 	
 </figure></p>
 <p>结构</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Student</span>
-{
-<span style="color:#66d9ef">int</span> i;
-<span style="color:#66d9ef">int</span> j;
-<span style="color:#66d9ef">char</span> c;
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">struct</span> <span class="nc">Student</span>
+<span class="p">{</span>
+<span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">j</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。</p>
 <p>压缩：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">#pragma pack(1)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#pragma pack(1)
 </span></code></pre></div><h3 id="宏">宏</h3>
 <p>函数宏</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">#define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0])
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0])
 </span></code></pre></div><p>控制宏</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">#define HOME </span><span style="color:#75715e">//用于控制开关
-</span><span style="color:#75715e"></span><span style="color:#75715e">#ifdef HOME
-</span><span style="color:#75715e"></span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;link a&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-<span style="color:#75715e">#elseif
-</span><span style="color:#75715e"></span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;link b&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-<span style="color:#75715e">#endif
-</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">#ifdef WIN32 </span><span style="color:#75715e">//windows平台上一定会有的宏
-</span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;windows.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#endif
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#define HOME </span><span class="c1">//用于控制开关
+</span><span class="c1"></span><span class="cp">#ifdef HOME
+</span><span class="cp"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;link a&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="cp">#elseif
+</span><span class="cp"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;link b&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="cp">#endif
+</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#ifdef WIN32 </span><span class="c1">//windows平台上一定会有的宏
+</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span><span class="cp">#endif
 </span></code></pre></div><p>如果把C++程序和C程序混合编译</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">extern</span> <span style="color:#e6db74">&#34;C&#34;</span> <span style="color:#66d9ef">void</span> fun_C();
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">extern</span> <span class="s">&#34;C&#34;</span> <span class="kt">void</span> <span class="n">fun_C</span><span class="p">();</span>
 </code></pre></div><p>这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C++编译器修饰的方式去找。</p>
 <p>函数</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//1.overloading
-</span><span style="color:#75715e">//2.default parameter
-</span><span style="color:#75715e">//默认参数必须放后
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fun2</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, <span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) {
-    cout <span style="color:#f92672">&lt;&lt;</span> a <span style="color:#f92672">&lt;&lt;</span> b <span style="color:#f92672">&lt;&lt;</span> c <span style="color:#f92672">&lt;&lt;</span> endl;
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//1.overloading
+</span><span class="c1">//2.default parameter
+</span><span class="c1">//默认参数必须放后
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">fun2</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span style="color:#75715e">//3.占位参数
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fun3</span>(<span style="color:#66d9ef">int</span>) {
-    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">233</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-}
+<span class="c1">//3.占位参数
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">fun3</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">233</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><h3 id="c-面向对象">C++ 面向对象</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Person</span> {
-<span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
-    <span style="color:#66d9ef">int</span> age;
-    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>name;
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    Person(<span style="color:#66d9ef">int</span> aage, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>aname);
-    <span style="color:#f92672">~</span>Person();
-};
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">struct</span> <span class="nc">Person</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">Person</span><span class="p">(</span><span class="kt">int</span> <span class="n">aage</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">aname</span><span class="p">);</span>
+    <span class="o">~</span><span class="n">Person</span><span class="p">();</span>
+<span class="p">};</span>
 
-Person<span style="color:#f92672">::</span>Person(<span style="color:#66d9ef">int</span> aage, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>aname) {
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>age <span style="color:#f92672">=</span> aage;
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>name <span style="color:#f92672">=</span> aname;
-}
+<span class="n">Person</span><span class="o">::</span><span class="n">Person</span><span class="p">(</span><span class="kt">int</span> <span class="n">aage</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">aname</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">age</span> <span class="o">=</span> <span class="n">aage</span><span class="p">;</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">aname</span><span class="p">;</span>
+<span class="p">}</span>
 
-Person<span style="color:#f92672">::~</span>Person(){
-    <span style="color:#75715e">//析构函数
-</span><span style="color:#75715e"></span>}
+<span class="n">Person</span><span class="o">::~</span><span class="n">Person</span><span class="p">(){</span>
+    <span class="c1">//析构函数
+</span><span class="c1"></span><span class="p">}</span>
 </code></pre></div><p>struct和class区别：class默认成员变量private</p>
 <p>默认构造：不带括号</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">Test <span style="color:#a6e22e">t1</span>(<span style="color:#ae81ff">3</span>);
-Test <span style="color:#f92672">*</span>t2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Test();
-Test <span style="color:#a6e22e">t3</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
-Test <span style="color:#a6e22e">t4</span>(); <span style="color:#75715e">//this is a function
-</span><span style="color:#75715e"></span>Test t4;
-Test <span style="color:#f92672">*</span>t5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Test(<span style="color:#ae81ff">3</span>);
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="n">Test</span> <span class="nf">t1</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">Test</span> <span class="o">*</span><span class="n">t2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">();</span>
+<span class="n">Test</span> <span class="nf">t3</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">Test</span> <span class="nf">t4</span><span class="p">();</span> <span class="c1">//this is a function
+</span><span class="c1"></span><span class="n">Test</span> <span class="n">t4</span><span class="p">;</span>
+<span class="n">Test</span> <span class="o">*</span><span class="n">t5</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
 </code></pre></div><p>函数的原则：尽量不用返回值去返回，输入输出参数放在参数里</p>
 <p>成员变量原则：</p>
 <p>value：必然组成部分</p>
 <p>address：可有可无的部分</p>
 <p>类嵌套：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Point</span>;
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Circle</span>{
-    Point <span style="color:#f92672">*</span>p;
-};
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Point</span>{
-    Circle c;
-};
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">Point</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Circle</span><span class="p">{</span>
+    <span class="n">Point</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Point</span><span class="p">{</span>
+    <span class="n">Circle</span> <span class="n">c</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></div><p>析构函数(destructor)：</p>
 <p>对象消亡时自动调用</p>
 <p>可用于free堆区malloc</p>
 <p>防止重复free，free时：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">if</span> (p <span style="color:#f92672">!=</span> NULL) {
-        free(p);
-        p <span style="color:#f92672">=</span> NULL;
-    }
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">free</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
 </code></pre></div><h3 id="指针与引用">指针与引用</h3>
 <p>指针的问题</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//1. fly pointer (if null / assert)
-</span><span style="color:#75715e">//2. memory leak (free)
-</span><span style="color:#75715e">//3. return addr of local var
-</span><span style="color:#75715e">//4. multi-pointers for one object
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//1. fly pointer (if null / assert)
+</span><span class="c1">//2. memory leak (free)
+</span><span class="c1">//3. return addr of local var
+</span><span class="c1">//4. multi-pointers for one object
 </span></code></pre></div><p>引用</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//reference 引用
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> m <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-<span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>r <span style="color:#f92672">=</span> m; <span style="color:#75715e">//m的小名
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//reference 引用
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">&amp;</span><span class="n">r</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span> <span class="c1">//m的小名
 </span></code></pre></div><p>对象的copy</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//bitwise copy 浅拷贝（默认） vs. logical copy 深拷贝
-</span><span style="color:#75715e">//copy constructor
-</span><span style="color:#75715e"></span>Test<span style="color:#f92672">::</span>Test(Test <span style="color:#f92672">&amp;</span>t) {
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>i <span style="color:#f92672">=</span> t.i;
-    <span style="color:#75715e">//!!!this-&gt; = t.j
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>j <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>) malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>));
-    <span style="color:#f92672">*</span>j <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>t.j;
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//bitwise copy 浅拷贝（默认） vs. logical copy 深拷贝
+</span><span class="c1">//copy constructor
+</span><span class="c1"></span><span class="n">Test</span><span class="o">::</span><span class="n">Test</span><span class="p">(</span><span class="n">Test</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">i</span> <span class="o">=</span> <span class="n">t</span><span class="p">.</span><span class="n">i</span><span class="p">;</span>
+    <span class="c1">//!!!this-&gt; = t.j
+</span><span class="c1"></span>    <span class="k">this</span><span class="o">-&gt;</span><span class="n">j</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+    <span class="o">*</span><span class="n">j</span> <span class="o">=</span> <span class="o">*</span><span class="n">t</span><span class="p">.</span><span class="n">j</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>e</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//    pass by value vs. pass by address(pointer or reference)
-</span><span style="color:#75715e">//效果 read              read/write
-</span><span style="color:#75715e">//性能 sizeof(object)    sizeof(int)
-</span><span style="color:#75715e">//麻烦 copy-constructor  nothing
-</span><span style="color:#75715e">//conclusion: never pass by value(build-in type except)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//    pass by value vs. pass by address(pointer or reference)
+</span><span class="c1">//效果 read              read/write
+</span><span class="c1">//性能 sizeof(object)    sizeof(int)
+</span><span class="c1">//麻烦 copy-constructor  nothing
+</span><span class="c1">//conclusion: never pass by value(build-in type except)
 </span></code></pre></div><h3 id="new-and-delete">new and delete</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//Test *p = (Test *)malloc(sizeof (Test));
-</span><span style="color:#75715e"></span>Test <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span><span style="color:#66d9ef">new</span> Test(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>);
-<span style="color:#75715e">//new = malloc + constructor
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">delete</span> p;
-<span style="color:#75715e">//delete = destructor + free;
-</span><span style="color:#75715e">//多个对象
-</span><span style="color:#75715e"></span>Test <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Test[<span style="color:#ae81ff">10</span>]; <span style="color:#75715e">//要求有默认构造
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">delete</span> []p;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//Test *p = (Test *)malloc(sizeof (Test));
+</span><span class="c1"></span><span class="n">Test</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span><span class="k">new</span> <span class="n">Test</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<span class="c1">//new = malloc + constructor
+</span><span class="c1"></span><span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+<span class="c1">//delete = destructor + free;
+</span><span class="c1">//多个对象
+</span><span class="c1"></span><span class="n">Test</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span> <span class="c1">//要求有默认构造
+</span><span class="c1"></span><span class="k">delete</span> <span class="p">[]</span><span class="n">p</span><span class="p">;</span>
 </code></pre></div><h3 id="常量">常量</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">void</span> Test<span style="color:#f92672">::</span>fun() <span style="color:#66d9ef">const</span>{
-    <span style="color:#75715e">//read only function
-</span><span style="color:#75715e"></span>};
-<span style="color:#66d9ef">const</span> Test t;
-t.fun();
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">void</span> <span class="n">Test</span><span class="o">::</span><span class="n">fun</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
+    <span class="c1">//read only function
+</span><span class="c1"></span><span class="p">};</span>
+<span class="k">const</span> <span class="n">Test</span> <span class="n">t</span><span class="p">;</span>
+<span class="n">t</span><span class="p">.</span><span class="n">fun</span><span class="p">();</span>
 </code></pre></div><h3 id="static">static</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fun</span>(){
-	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> i; <span style="color:#75715e">//堆区，与全局变量同
-</span><span style="color:#75715e"></span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">void</span> <span class="nf">fun</span><span class="p">(){</span>
+	<span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span> <span class="c1">//堆区，与全局变量同
+</span><span class="c1"></span><span class="p">}</span>
 </code></pre></div><h6 id="extern">extern</h6>
 <p>全局变量不定义在头文件，定义在某一源文件中</p>
 <p>extern外链接放在头文件。</p>
 <p>函数默认extern外链接，用static修饰表明作用域为本文件。</p>
 <pre tabindex="0"><code>extern int g_i;
 </code></pre><p>类中static修饰：全类的共享空间</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span>{
-    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> i;
-    <span style="color:#66d9ef">int</span> j;
-    <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    Test(<span style="color:#66d9ef">int</span> aj);
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">test</span><span class="p">{</span>
+    <span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">j</span><span class="p">;</span>
+    <span class="k">public</span><span class="o">:</span>
+    <span class="n">Test</span><span class="p">(</span><span class="kt">int</span> <span class="n">aj</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span style="color:#75715e">//显示一次性初始化
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> Test<span style="color:#f92672">::</span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+<span class="c1">//显示一次性初始化
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">Test</span><span class="o">::</span><span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 </code></pre></div><p>static无this指针</p>
 <h3 id="operator">operator</h3>
 <p>重载运算符</p>
 <p><code>[]</code> 重载数组 <code>*</code> 重载取内容 <code>new delet</code> 重载malloc <code>++</code>重载++</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Account</span>{
-    <span style="color:#66d9ef">int</span> id;
-    <span style="color:#66d9ef">int</span> balance;
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    Account <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span><span style="color:#f92672">+</span>(<span style="color:#66d9ef">int</span> n);
-    <span style="color:#75715e">//++a
-</span><span style="color:#75715e"></span>    Account<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">++</span>();
-    <span style="color:#75715e">//a++
-</span><span style="color:#75715e"></span>    Account <span style="color:#66d9ef">operator</span><span style="color:#f92672">++</span>(<span style="color:#66d9ef">int</span>);
-};
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">Account</span><span class="p">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">balance</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">Account</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+    <span class="c1">//++a
+</span><span class="c1"></span>    <span class="n">Account</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">++</span><span class="p">();</span>
+    <span class="c1">//a++
+</span><span class="c1"></span>    <span class="n">Account</span> <span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+<span class="p">};</span>
 
-Account <span style="color:#f92672">&amp;</span>Account<span style="color:#f92672">::</span><span style="color:#66d9ef">operator</span><span style="color:#f92672">+</span>(<span style="color:#66d9ef">int</span> n) {
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>balance <span style="color:#f92672">+=</span> n;
-}
+<span class="n">Account</span> <span class="o">&amp;</span><span class="n">Account</span><span class="o">::</span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">n</span><span class="p">;</span>
+<span class="p">}</span>
 
-Account<span style="color:#f92672">&amp;</span> Account<span style="color:#f92672">::</span><span style="color:#66d9ef">operator</span><span style="color:#f92672">++</span>() {
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>balance<span style="color:#f92672">++</span>;
-    <span style="color:#66d9ef">return</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">this</span>; 
-}
+<span class="n">Account</span><span class="o">&amp;</span> <span class="n">Account</span><span class="o">::</span><span class="k">operator</span><span class="o">++</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">balance</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span> 
+<span class="p">}</span>
 
-Account Account<span style="color:#f92672">::</span><span style="color:#66d9ef">operator</span><span style="color:#f92672">++</span>(<span style="color:#66d9ef">int</span>) {
-    Account old <span style="color:#f92672">=</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">this</span>;
-    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>balance<span style="color:#f92672">++</span>;
-    <span style="color:#66d9ef">return</span> old;
-}
+<span class="n">Account</span> <span class="n">Account</span><span class="o">::</span><span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Account</span> <span class="n">old</span> <span class="o">=</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">balance</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">old</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-{
-    Account a;
-    a <span style="color:#f92672">=</span> a<span style="color:#f92672">+</span><span style="color:#ae81ff">100</span>;
-}
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Account</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="mi">100</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><h3 id="继承inheritance与组成composition">继承(inheritance)与组成(composition)</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//(derived class)子类
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Borrower
-{
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-	<span style="color:#66d9ef">void</span> borrow_book();    
-};
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//(derived class)子类
+</span><span class="c1"></span><span class="k">class</span> <span class="nc">Student</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Borrower</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">void</span> <span class="n">borrow_book</span><span class="p">();</span>    
+<span class="p">};</span>
 
-<span style="color:#66d9ef">void</span> Student<span style="color:#f92672">::</span>borrow_book()
-{
-    Borrower<span style="color:#f92672">::</span>borrow_book();
-    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;if&gt;=5 return&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-}
+<span class="kt">void</span> <span class="n">Student</span><span class="o">::</span><span class="n">borrow_book</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Borrower</span><span class="o">::</span><span class="n">borrow_book</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;if&gt;=5 return&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 
 </code></pre></div><p>注意构造顺序</p>
 <p>子类构造器自动调用父类构造器，析构相反</p>
 <p>组成也会先自动调用内部对象的构造(Engine initial - Car initial)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//构造器初始化列表(若没有默认构造无法默认调用)
-</span><span style="color:#75715e"></span>Derived<span style="color:#f92672">::</span>Derived(<span style="color:#66d9ef">int</span> ai, <span style="color:#66d9ef">int</span> aj)<span style="color:#f92672">:</span>Base(ai){
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//构造器初始化列表(若没有默认构造无法默认调用)
+</span><span class="c1"></span><span class="n">Derived</span><span class="o">::</span><span class="n">Derived</span><span class="p">(</span><span class="kt">int</span> <span class="n">ai</span><span class="p">,</span> <span class="kt">int</span> <span class="n">aj</span><span class="p">)</span><span class="o">:</span><span class="n">Base</span><span class="p">(</span><span class="n">ai</span><span class="p">){</span>
     
-}
-<span style="color:#75715e">//有先后顺序
-</span><span style="color:#75715e"></span>Test<span style="color:#f92672">::</span>Test(<span style="color:#66d9ef">int</span> ai, <span style="color:#66d9ef">int</span> aj) <span style="color:#f92672">:</span>i(ai),j(aj){
+<span class="p">}</span>
+<span class="c1">//有先后顺序
+</span><span class="c1"></span><span class="n">Test</span><span class="o">::</span><span class="n">Test</span><span class="p">(</span><span class="kt">int</span> <span class="n">ai</span><span class="p">,</span> <span class="kt">int</span> <span class="n">aj</span><span class="p">)</span> <span class="o">:</span><span class="n">i</span><span class="p">(</span><span class="n">ai</span><span class="p">),</span><span class="n">j</span><span class="p">(</span><span class="n">aj</span><span class="p">){</span>
     
-}
+<span class="p">}</span>
 </code></pre></div><p>多继承(菱形结构)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Derived</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Base1, <span style="color:#66d9ef">public</span> Base2{}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">Derived</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Base1</span><span class="p">,</span> <span class="k">public</span> <span class="n">Base2</span><span class="p">{}</span>
 </code></pre></div><h3 id="多态">多态</h3>
 <ol>
 <li>upcasting 向上转换</li>
@@ -363,81 +363,81 @@ Account Account<span style="color:#f92672">::</span><span style="color:#66d9ef">
 <li>constructor &amp; destructor 构造无多态，析构往往多态</li>
 <li>abstract class (interface in Java &amp; C#)</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pet</span>
-{
-    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>name;
-    <span style="color:#66d9ef">int</span> age;
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> speak(); <span style="color:#75715e">//虚函数 内存占用+8 子类自动virtual
-</span><span style="color:#75715e"></span>};
-<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;cstdlib&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">Needle</span>(Pet<span style="color:#f92672">&amp;</span> pet) <span style="color:#75715e">//never pass by value 拷贝构造使多态失效
-</span><span style="color:#75715e"></span>{
-    <span style="color:#75715e">//binding
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//1. early binding
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//2. later(dynamic/runtime) binding
-</span><span style="color:#75715e"></span>    pet.speak();
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">Pet</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">speak</span><span class="p">();</span> <span class="c1">//虚函数 内存占用+8 子类自动virtual
+</span><span class="c1"></span><span class="p">};</span>
+<span class="cp">#include</span><span class="cpf">&lt;cstdlib&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">void</span> <span class="nf">Needle</span><span class="p">(</span><span class="n">Pet</span><span class="o">&amp;</span> <span class="n">pet</span><span class="p">)</span> <span class="c1">//never pass by value 拷贝构造使多态失效
+</span><span class="c1"></span><span class="p">{</span>
+    <span class="c1">//binding
+</span><span class="c1"></span>    <span class="c1">//1. early binding
+</span><span class="c1"></span>    <span class="c1">//2. later(dynamic/runtime) binding
+</span><span class="c1"></span>    <span class="n">pet</span><span class="p">.</span><span class="n">speak</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div><p>多态的实现：</p>
 <p>类：V-table 虚函数表</p>
 <p>对象：V-ptr 指向本类虚函数</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//纯虚函数
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">speak</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#75715e">//抽象类：含纯虚函数，无法创建对象
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//纯虚函数
+</span><span class="c1"></span><span class="k">virtual</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="c1">//抽象类：含纯虚函数，无法创建对象
 </span></code></pre></div><p>行为串联：当两个类别家族因为行为共性发生关系时，用抽象类来关联两个类别家族</p>
 <h5 id="template-class">template class</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//template class 模板类 collection in Java
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Stack</span> {
-    T pool[<span style="color:#ae81ff">100</span>];
-    <span style="color:#66d9ef">int</span> top;
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    <span style="color:#75715e">//内联函数 inline function
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//top=0
-</span><span style="color:#75715e"></span>    Stack() <span style="color:#f92672">:</span> top(<span style="color:#ae81ff">0</span>) {
-    }
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//template class 模板类 collection in Java
+</span><span class="c1"></span><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nc">Stack</span> <span class="p">{</span>
+    <span class="n">T</span> <span class="n">pool</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">//内联函数 inline function
+</span><span class="c1"></span>    <span class="c1">//top=0
+</span><span class="c1"></span>    <span class="n">Stack</span><span class="p">()</span> <span class="o">:</span> <span class="n">top</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">}</span>
 
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push</span>(T v) {
-        pool[top<span style="color:#f92672">++</span>] <span style="color:#f92672">=</span> v;
-    }
+    <span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">T</span> <span class="n">v</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">pool</span><span class="p">[</span><span class="n">top</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    T <span style="color:#a6e22e">pop</span>() {
-        <span style="color:#66d9ef">return</span> pool[<span style="color:#f92672">--</span>top];
-    }
-};
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-    Stack<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> s1;
-    Stack<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">double</span><span style="color:#f92672">&gt;</span> s2;
-}
+    <span class="n">T</span> <span class="nf">pop</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">pool</span><span class="p">[</span><span class="o">--</span><span class="n">top</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Stack</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">s1</span><span class="p">;</span>
+    <span class="n">Stack</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">s2</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p><code>STL</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//STL: standard template library
-</span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//STL: standard template library
+</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span><span class="cp"></span>
 
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v;
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10000</span>; <span style="color:#f92672">++</span>i) 
-    {
-        v.push_back(i);
-    }
-    cout <span style="color:#f92672">&lt;&lt;</span> v[<span style="color:#ae81ff">9988</span>] <span style="color:#f92672">&lt;&lt;</span> endl;
-}
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">v</span><span class="p">[</span><span class="mi">9988</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>iterator</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v;
-<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#f92672">++</span>i) {
-    v.push_back(i);
-}
-vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;::</span>iterator it <span style="color:#f92672">=</span> v.begin();
-<span style="color:#66d9ef">while</span> (it <span style="color:#f92672">!=</span> v.end()) {
-    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>it <span style="color:#f92672">&lt;&lt;</span> endl;
-    it<span style="color:#f92672">++</span>;
-}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">it</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>name space类上一级层次</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> my_nsp
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="k">using</span> <span class="k">namespace</span> <span class="n">my_nsp</span>
 </code></pre></div><p>try catch 和Java一样</p>
 <p>assert</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//让断言全部失效
-</span><span style="color:#75715e"></span><span style="color:#75715e">#define NDEBUG
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">//让断言全部失效
+</span><span class="c1"></span><span class="cp">#define NDEBUG
 </span></code></pre></div><p>friend</p>
 
 </section>
@@ -454,6 +454,18 @@ vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</sp
     </section>
 
 
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
     </footer>
 
 
@@ -463,37 +475,62 @@ vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</sp
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
-                
-                    
-<article class="">
-    <a href="/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">失败的逻辑课程笔记</h2>
-        </div>
-    </a>
-</article>
-                
-            </div>
-        </div>
-    
 </aside>
 
      
     
         
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
     
 
     <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
-        2021 My New Hugo Site
+            2020 - 
+        
+        2021 E
     </section>
     
     <section class="powerby">
@@ -601,21 +638,29 @@ vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</sp
                 
                 <div class="widget--toc">
                     <nav id="TableOfContents">
-  <ul>
+  <ol>
     <li>
-      <ul>
+      <ol>
         <li><a href="#宏">宏</a></li>
         <li><a href="#c-面向对象">C++ 面向对象</a></li>
         <li><a href="#指针与引用">指针与引用</a></li>
         <li><a href="#new-and-delete">new and delete</a></li>
         <li><a href="#常量">常量</a></li>
-        <li><a href="#static">static</a></li>
+        <li><a href="#static">static</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
         <li><a href="#operator">operator</a></li>
         <li><a href="#继承inheritance与组成composition">继承(inheritance)与组成(composition)</a></li>
-        <li><a href="#多态">多态</a></li>
-      </ul>
+        <li><a href="#多态">多态</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ol>
     </li>
-  </ul>
+  </ol>
 </nav>
                 </div>
             </section>
