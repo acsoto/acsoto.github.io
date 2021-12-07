@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='相关文章：[[编译实验总结感想]]
+词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
+File reading Read by line, scan every char of every string and analyse.
+while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
+while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;&#43;&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.'><title>Alxa_Compiler 编译器</title>
+
+<link rel='canonical' href='http://example.org/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Alxa_Compiler 编译器'>
+<meta property='og:description' content='相关文章：[[编译实验总结感想]]
+词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
+File reading Read by line, scan every char of every string and analyse.
+while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
+while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;&#43;&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.'>
+<meta property='og:url' content='http://example.org/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/'>
+<meta property='og:site_name' content='My New Hugo Site'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='BUAA' /><meta property='article:tag' content='编译' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-16T16:29:00&#43;00:00'/><meta property='article:modified_time' content='2021-11-16T16:29:00&#43;00:00'/>
+<meta name="twitter:title" content="Alxa_Compiler 编译器">
+<meta name="twitter:description" content="相关文章：[[编译实验总结感想]]
+词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
+File reading Read by line, scan every char of every string and analyse.
+while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
+while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;&#43;&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">Alxa_Compiler 编译器</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 16, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    17 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>相关文章：[[编译实验总结感想]]</p>
+<h2 id="词法分析">词法分析</h2>
+<h3 id="before-code">Before Code</h3>
+<p>Requriement:  read <code>testfile.txt</code>, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.</p>
+<h4 id="file-reading">File reading</h4>
+<p>Read by line, scan every char of every string and analyse.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">((</span>s <span style="color:#f92672">=</span> bf<span style="color:#f92672">.</span><span style="color:#a6e22e">readLine</span><span style="color:#f92672">())</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	<span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="analyse">Analyse</h4>
+<p>When i get the key word, enter the next analyst.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">((</span>c <span style="color:#f92672">=</span> getChar<span style="color:#f92672">())</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\r&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\t&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">continue</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;-&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;%&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    words<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Word<span style="color:#f92672">(</span>c<span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;/&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    analyseSlash<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;(&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;)&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;[&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;]&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;{&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;}&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    words<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Word<span style="color:#f92672">(</span>c<span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&gt;&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&lt;&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;=&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;!&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    analyseRelation<span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;;&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    words<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Word<span style="color:#f92672">(</span>c<span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#34;&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    analyseCitation<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&amp;&#39;</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;|&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    analyseLogic<span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Character<span style="color:#f92672">.</span><span style="color:#a6e22e">isDigit</span><span style="color:#f92672">(</span>c<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    analyseDigit<span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Character<span style="color:#f92672">.</span><span style="color:#a6e22e">isLetter</span><span style="color:#f92672">(</span>c<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;_&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    analyseLetter<span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="common">Common</h5>
+<p>For example, when I get &lsquo;+&rsquo;, I directly new a Word typify the &ldquo;PLUS&rdquo;.</p>
+<h5 id="function">Function</h5>
+<p>For example</p>
+<p>When I get <code>&lt;</code> , enter function<code>analyseRelation</code> read one char more. If it is<code>=</code>, analyze <code>LEQ</code>&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&lt;&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  c <span style="color:#f92672">=</span> getChar<span style="color:#f92672">();</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;=&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    words<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Word<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&lt;=&#34;</span><span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+    unGetChar<span style="color:#f92672">();</span>
+    words<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Word<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&lt;&#34;</span><span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span>
+</code></pre></div><p><code>analyseLogic</code> is as the same.</p>
+<h5 id="digit-and-letter">Digit and Letter</h5>
+<p>Digit: When I get a digit, it means I will scan a serial of some digits and turn them into a Word typify &ldquo;INTCON&rdquo;.</p>
+<p>Letter: When I get a letter, it means I will scan a string about letter or digit. It maybe a &ldquo;IDENFR&rdquo; or &ldquo;STRCON&rdquo;, which depends on whether it is in key map or not.</p>
+<h4 id="word">Word</h4>
+<p>class Word:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Word</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String identification<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String content<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String type<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Capsulate the initial function, I only need to <code>new Word(...)</code> in the main processor, which will create the corresponding word.</p>
+<p>For example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Word</span><span style="color:#f92672">(</span><span style="color:#66d9ef">char</span> identification<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">identification</span> <span style="color:#f92672">=</span> String<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>identification<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> KeyWordMap<span style="color:#f92672">().</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">identification</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">identification</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>As for KeyWordMap, it is a HashMap, mapping the string of word and its type.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">KeyWordMap</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        keyWords <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+        keyWords<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;main&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;MAINTK&#34;</span><span style="color:#f92672">);</span>
+        keyWords<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;const&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;CONSTTK&#34;</span><span style="color:#f92672">);</span>
+        keyWords<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;INTTK&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">...</span>
+        <span style="color:#f92672">}</span>
+</code></pre></div><h3 id="after-code">After Code</h3>
+<h4 id="file-reading-1">File reading</h4>
+<p>Read file by line is not convenient for preread and undo, so I read the file into a single String at first.</p>
+<p>The method is read by line, add <code>\n</code> after every line and scan every char. When I get <code>\n</code>, <code>lineNum++</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> String <span style="color:#a6e22e">transferFileToCode</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        BufferedReader bf <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader<span style="color:#f92672">(</span>reader<span style="color:#f92672">);</span>
+        StringBuffer buffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer<span style="color:#f92672">();</span>
+        String s <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">((</span>s <span style="color:#f92672">=</span> bf<span style="color:#f92672">.</span><span style="color:#a6e22e">readLine</span><span style="color:#f92672">())</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            buffer<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>s<span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> buffer<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h4 id="analyse-1">Analyse</h4>
+<p>About analyst, it is different from what before coding.</p>
+<p>First, I need analyze word one by one, so I add global variety <code>index</code> to memorize where is the pointer.</p>
+<p>Besides, I met the situation that I need read one more or undo, so I  encapsulate the function <code>ungetChar</code> and <code>getChar</code>, which will be convenient for me to analyze.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> Character <span style="color:#a6e22e">getChar</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>index <span style="color:#f92672">&lt;</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>index<span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                lineNum<span style="color:#f92672">++;</span>
+            <span style="color:#f92672">}</span>
+            index<span style="color:#f92672">++;</span>
+            <span style="color:#66d9ef">return</span> c<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">unGetChar</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        index<span style="color:#f92672">--;</span>
+        <span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>index<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            lineNum<span style="color:#f92672">--;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="slash">Slash</h5>
+<ol>
+<li><code>//</code> : When it comes to <code>\n</code> , stop.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">do</span> <span style="color:#f92672">{</span>
+  c <span style="color:#f92672">=</span> getChar<span style="color:#f92672">();</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+    <span style="color:#75715e">// 判断为//注释，结束分析
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+</code></pre></div><ol start="2">
+<li><code>/* */</code>: Get char until <code>*/</code> appears</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">do</span> <span style="color:#f92672">{</span>
+  c <span style="color:#f92672">=</span> getChar<span style="color:#f92672">();</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;*&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    c <span style="color:#f92672">=</span> getChar<span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;/&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+      <span style="color:#75715e">// 判断为/* */注释，直接结束分析
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      unGetChar<span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+</code></pre></div><h2 id="语法分析">语法分析</h2>
+<p>Requirement: Based on the words identified by the lexical analysis program, identify various grammatical elements according to the grammatical rules. Recursive descent method is used to analyze the grammatical components defined in the grammar.</p>
+<h3 id="before-code-1">Before Code</h3>
+<h4 id="data-reading">Data Reading</h4>
+<p>Like the lexical analyst, I prepared function  <code>getWord</code> <code>getNextWord</code> and so on. At the same time, there is a global variety <code>(Word) curWord</code> to display which word it is when I read <code>ArrayList&lt;Word&gt; words </code> from lexical analyst one by one.</p>
+<p>My analyst tragedy is as follows:</p>
+<p>To normal rule: I keep getting words and analyze them</p>
+<p>To expression rule: I scan the whole expression first, which is implemented by function <code>getExp</code>. Then I divide the expression and use method recursive descent to analyze them.</p>
+<p><code>getExp</code> like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">getExp</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word is symbol of end<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            <span style="color:#f92672">...</span>
+            getWordWithoutAddToGrammar<span style="color:#f92672">();</span>
+            exp<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>curWord<span style="color:#f92672">);</span>
+            word <span style="color:#f92672">=</span> getNextWord<span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> exp<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h4 id="recursive-descent">recursive descent</h4>
+<p>According to Grammatical Rules, code function for every term of rule.</p>
+<p>Main idea: read a word, check what it symbolize and enter the next analyzing function.</p>
+<p>For example:</p>
+<p>to</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">CompUnit <span style="color:#960050;background-color:#1e0010">→</span> {Decl} {FuncDef} MainFuncDef <span style="color:#75715e">// 1.是否存在Decl 2.是否存在 FuncDef
+</span></code></pre></div><p>I analyze like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">analyseCompUnit</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  Word word <span style="color:#f92672">=</span> getNextWord<span style="color:#f92672">();</span>
+  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CONSTTK&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#f92672">(</span>
+    word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INTTK&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> getNext2Word<span style="color:#f92672">().</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;IDENFR&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>getNext3Word<span style="color:#f92672">().</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;LPARENT&#34;</span><span style="color:#f92672">)))</span> <span style="color:#f92672">{</span>
+    analyseDecl<span style="color:#f92672">();</span>
+    word <span style="color:#f92672">=</span> getNextWord<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;VOIDTK&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#f92672">(</span>
+    <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INTTK&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>getNext2Word<span style="color:#f92672">().</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MAINTK&#34;</span><span style="color:#f92672">))))</span> <span style="color:#f92672">{</span>
+    analyseFuncDef<span style="color:#f92672">();</span>
+    word <span style="color:#f92672">=</span> getNextWord<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INTTK&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> getNext2Word<span style="color:#f92672">().</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MAINTK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    analyseMainFuncDef<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+    error<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+  grammar<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&lt;CompUnit&gt;&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>grammar is used for memorize output of lexical analyst and grammar analyst list.</p>
+<h4 id="left-recursion">left recursion</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">加减表达式 AddExp <span style="color:#960050;background-color:#1e0010">→</span> MulExp <span style="color:#f92672">|</span> AddExp <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;−&#39;</span><span style="color:#f92672">)</span> MulExp <span style="color:#75715e">// 1.MulExp 2.+ 需覆盖 3.- 需覆盖
+</span></code></pre></div><p>Check if the exp has &lsquo;+&rsquo; or &lsquo;-&rsquo;. If it has, separate the exp to AddExp and  MulExp. Then analyze them separately.</p>
+<h3 id="after-code-1">After Code</h3>
+<h4 id="left-recursion-1">left recursion</h4>
+<p>The method used before is not perfect for recursive descent. So I changed my rewrite way.</p>
+<p>to</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#960050;background-color:#1e0010">加减表达式</span> AddExp <span style="color:#960050;background-color:#1e0010">→</span> MulExp <span style="color:#f92672">|</span> AddExp (<span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;−&#39;</span>) MulExp <span style="color:#75715e">// 1.MulExp 2.+ 需覆盖 3.- 需覆盖
+</span></code></pre></div><p>Rewrite it like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">AddExp <span style="color:#960050;background-color:#1e0010">→</span> MulExp (<span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;−&#39;</span>) MulExp  (<span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;−&#39;</span>) MulExp ...
+</code></pre></div><p>Code like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">analyseMulExp</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  Exps exps <span style="color:#f92672">=</span> divideExp<span style="color:#f92672">(</span>exp<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MULT&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;DIV&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;MOD&#34;</span><span style="color:#f92672">)));</span>
+  <span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp1 <span style="color:#f92672">:</span> exps<span style="color:#f92672">.</span><span style="color:#a6e22e">getWords</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    analyseUnaryExp<span style="color:#f92672">(</span>exp1<span style="color:#f92672">);</span>
+    grammar<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&lt;MulExp&gt;&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>j <span style="color:#f92672">&lt;</span> exps<span style="color:#f92672">.</span><span style="color:#a6e22e">getSymbols</span><span style="color:#f92672">().</span><span style="color:#a6e22e">size</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+      grammar<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>exps<span style="color:#f92672">.</span><span style="color:#a6e22e">getSymbols</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>j<span style="color:#f92672">++).</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Function <code>divideExp</code> is used for divide the whole exp passed by <code>getExp</code> or the pre function.</p>
+<p><code>divideExp</code>:</p>
+<p>In: orignal: <code>exp</code> stop symbol:  <code>symbol</code></p>
+<p>Out: List of divided exp and symbol.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> Exps <span style="color:#a6e22e">divideExp</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">,</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> symbol<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  ArrayList<span style="color:#f92672">&lt;</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;&gt;</span> exps <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+  ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+  ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> symbols <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+  <span style="color:#66d9ef">boolean</span> unaryFlag <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">int</span> flag1 <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">int</span> flag2 <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> exp<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+    Word word <span style="color:#f92672">=</span> exp<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;LPARENT&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      flag1<span style="color:#f92672">++;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RPARENT&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      flag1<span style="color:#f92672">--;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;LBRACK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      flag2<span style="color:#f92672">++;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RBRACK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      flag2<span style="color:#f92672">--;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>symbol<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">())</span> <span style="color:#f92672">&amp;&amp;</span> flag1 <span style="color:#f92672">==</span> 0 <span style="color:#f92672">&amp;&amp;</span> flag2 <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      <span style="color:#75715e">//UnaryOp
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeOfUnary</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>unaryFlag<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+          exp1<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>word<span style="color:#f92672">);</span>
+          <span style="color:#66d9ef">continue</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+      <span style="color:#f92672">}</span>
+      exps<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>exp1<span style="color:#f92672">);</span>
+      symbols<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>word<span style="color:#f92672">);</span>
+      exp1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      exp1<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>word<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+    unaryFlag <span style="color:#f92672">=</span> word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;IDENFR&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">||</span> word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RPARENT&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">||</span> word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INTCON&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">||</span> word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RBRACK&#34;</span><span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
+  exps<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>exp1<span style="color:#f92672">);</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Exps<span style="color:#f92672">(</span>exps<span style="color:#f92672">,</span> symbols<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><code>Exps</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Exps</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;&gt;</span> words<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> symbols<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="other-bugs">other bugs</h4>
+<p>Most bugs are produced by function <code>getExp</code> and <code>divideExp</code> because of some situations are ignored. So I always get something like index out of range&hellip;</p>
+<p>So I changed some symbol of stop getting expression and modify the rules to divide or not the expression and so on.</p>
+<h2 id="错误处理">错误处理</h2>
+<h3 id="before-code-2">Before Code</h3>
+<h4 id="create-the-symbol-table">Create the symbol table</h4>
+<p>Symbol class</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Symbol</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String type<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> intType<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String content<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> area <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Type means the type of the symbol.</p>
+<p>IntType is an integer. If it&rsquo;s 0, the symbol is int. if it&rsquo;s 1, the symbol is int[],  if it&rsquo;s 2, the symbol is int[] []&hellip;</p>
+<p>Content is its content.</p>
+<p>Area is where is it.</p>
+<p>I create a HashMap of Symbols, memorizing symbols created in each area.</p>
+<p>When I enter a new area, area++. When I leave an area, area&ndash;, with the corresponding Symbols are destroyed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> HashMap<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">,</span> Symbols<span style="color:#f92672">&gt;</span> symbols <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#66d9ef">private</span> HashMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Function<span style="color:#f92672">&gt;</span> functions <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>Error<span style="color:#f92672">&gt;</span> errors <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> area <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> needReturn <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> whileFlag <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+</code></pre></div><p><code>needReturn</code> means if the current function need to return.</p>
+<p><code>whileFlag </code> means if the current code block is in while circle.</p>
+<h4 id="errors">Errors</h4>
+<h5 id="a"><strong>a</strong></h5>
+<p>Just check format</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isFormatIllegal</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> content<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> content<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>isLegal<span style="color:#f92672">(</span>c<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#f92672">&amp;&amp;</span> content<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i <span style="color:#f92672">+</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;d&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">continue</span><span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;\\&#39;</span> <span style="color:#f92672">&amp;&amp;</span> content<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i <span style="color:#f92672">+</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;n&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="b-c"><strong>b c</strong></h5>
+<p>B: Every time I get an identity, check if there is the same symbol has been defined in this area.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">hasSymbolInThisArea</span><span style="color:#f92672">(</span>Word word<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> symbols<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>area<span style="color:#f92672">).</span><span style="color:#a6e22e">hasSymbol</span><span style="color:#f92672">(</span>word<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span> 
+</code></pre></div><p>C: Check all area. If the symbol has been defined. Functions are as the same.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">hasSymbol</span><span style="color:#f92672">(</span>Word word<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Symbols s <span style="color:#f92672">:</span> symbols<span style="color:#f92672">.</span><span style="color:#a6e22e">values</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>s<span style="color:#f92672">.</span><span style="color:#a6e22e">hasSymbol</span><span style="color:#f92672">(</span>word<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="d-e"><strong>d e</strong></h5>
+<p>To check if the function parameters are matched, I memorize parameters of every function and when I met a function call, I will scan the function call parameters and match them. I prepare a function to do this. Finally I found I need to use recursive descent again, so I add the check procedure to the recursive descent of the grammatical analyst. Please check the <code>After Code/Error d and e</code></p>
+<h5 id="f-g">f g</h5>
+<p>There is a global variety <code>needReturn</code> used to display if the current function need return. if it does but there is no return in the end of the code block, or if it doesn&rsquo;t but there is return, the error will be memorized.</p>
+<h5 id="h"><strong>h</strong></h5>
+<p>Just check if it is a const.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>isConst<span style="color:#f92672">(</span>word<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+  error<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;h&#34;</span><span style="color:#f92672">,</span> word<span style="color:#f92672">.</span><span style="color:#a6e22e">getLineNum</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="i-j-k"><strong>i j k</strong></h5>
+<p>Capsulate function about checking missing of the symbol</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">checkParent</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>getNextWord<span style="color:#f92672">().</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RPARENT&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            getWord<span style="color:#f92672">();</span><span style="color:#75715e">// )
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            error<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;j&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="l"><strong>l</strong></h5>
+<p>Count the number of the parameters of string and printf separately and check if they equal.</p>
+<h5 id="m"><strong>m</strong></h5>
+<p>There is a global variety <code>whileFlag</code> symbolize if the code block is in while circle. If it isn&rsquo;t, any continue and break will produce error.</p>
+<h3 id="after-code-2">After Code</h3>
+<h4 id="area">Area</h4>
+<p>I mark the area++ when I get a block or a function, but it will lead to the situation that when enter a code block of a function, the parameters of the function can&rsquo;t be memorize in the different are with the block of the function. So I changed the rules to mark area++.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">analyseBlock</span><span style="color:#f92672">(</span><span style="color:#66d9ef">boolean</span> fromFunc<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">...</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>fromFunc<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            addArea<span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#f92672">...</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>Only when the block is not from the function, the area++.</p>
+<h4 id="error-d-and-e">Error d and e</h4>
+<p>To check if the function parameters are matched, I set an array for every function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Function</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String type<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String content<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String returnType<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> paras<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>When I get a function, I memorize its return type and paras.</p>
+<p>As for the <code>ArrayList&lt;Integer&gt; paras</code>, it reflects as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>Integer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Void</td>
+<td></td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Int</td>
+<td>a</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Int[]</td>
+<td>a[]</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Int[] []</td>
+<td>a[] [3]</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>So when I get a function call, I will check the parameter of it with what I have memorized before.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">checkParasMatchRParas</span><span style="color:#f92672">(</span>Word ident<span style="color:#f92672">,</span> ArrayList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> paras<span style="color:#f92672">,</span> ArrayList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> rparas<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>paras<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> rparas<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        error<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;d&#34;</span><span style="color:#f92672">,</span> ident<span style="color:#f92672">.</span><span style="color:#a6e22e">getLineNum</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> paras<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>paras<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>rparas<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">)))</span> <span style="color:#f92672">{</span>
+                error<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;e&#34;</span><span style="color:#f92672">,</span> ident<span style="color:#f92672">.</span><span style="color:#a6e22e">getLineNum</span><span style="color:#f92672">());</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>As for getting the parameters real type, I add the analyst procedure to the recursive descent of the grammatical analyst. Just like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">analyseExp</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> intType <span style="color:#f92672">=</span> analyseAddExp<span style="color:#f92672">(</span>exp<span style="color:#f92672">);</span>
+        grammar<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&lt;Exp&gt;&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> intType<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>Every recursion will return an <code>intType</code>, which symbolize the final type of the expression.</p>
+<p>Because the terms of one expression must be the same type, so I return only one of them.</p>
+<p>This is the exit of the recursion. It will return a correct type of the expression to the top of the function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">analyseLVal</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> intType <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#f92672">...</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;LBRACK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    intType<span style="color:#f92672">++;</span>
+                    <span style="color:#f92672">...</span>
+                <span style="color:#f92672">}</span>
+         <span style="color:#f92672">...</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>hasSymbol<span style="color:#f92672">(</span>ident<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> getSymbol<span style="color:#f92672">(</span>ident<span style="color:#f92672">).</span><span style="color:#a6e22e">getIntType</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> intType<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h2 id="代码生成">代码生成</h2>
+<p>In this part, I chose to generate Pcode.</p>
+<p>I designed a type of Pcode which is an Inverse Bolan expression stack and symbol table based virtual code.</p>
+<p>At the same time, I designed virtual machine to execute them.</p>
+<p>The Pcode virtual machine is an imaginary machine used to run Pcode commands. It consists of: A code area (code), an instruction pointer (EIP), a stack, a var_table, a func_table and a label_table.</p>
+<p>In the following passage, I will introduce how Pcode executes first and how to produce Pcode next.</p>
+<h3 id="before-code-3">Before Code</h3>
+<h4 id="how-does-the-virtual-machine-run">How does the virtual machine run</h4>
+<p>First, we need a <code>codes</code> list and a <code>stack</code>(int).</p>
+<p>An <code>eip</code>: presents the address of current running code.</p>
+<p>A <code>varTable</code>: memorizes the address of the variety in stack.</p>
+<p>A <code>funcTable</code>: memorizes the address of the function in codes list.</p>
+<p>A <code>labelTable</code>: Memorizes the address of the label in codes list.</p>
+<p>Then, run the code one after another and manage the stack.</p>
+<h4 id="how-to-distinguish-different-variety">How to distinguish different variety</h4>
+<p>Before generate codes, differentiate varieties from different scopes by its only scope number, like: <code>areaID + &quot;_&quot; + curWord.getContent()</code>. In this situation, the variety will not appear more than once in codes, except for recursive function call, which will be solved by push <code>varTable</code> to stack(show later).</p>
+<h4 id="specific-code-definition">Specific Code Definition</h4>
+<p>First, define a class for PCode:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PCode</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> CodeType type<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> Object value1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> Object value2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>It presents one code object, which has a CodeType and two operating values. CodeType is an enum. Value1 and value2 maybe Integer or String or null, which depends on specific code type.</p>
+<h5 id="calculation-type">Calculation Type</h5>
+<p>Two operators:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> pop<span style="color:#f92672">();</span>
+<span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> pop<span style="color:#f92672">();</span>
+push<span style="color:#f92672">(</span>cal<span style="color:#f92672">(</span>a<span style="color:#f92672">,</span>b<span style="color:#f92672">));</span>
+</code></pre></div><p>Single operator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">push<span style="color:#f92672">(</span>cal<span style="color:#f92672">(</span>pop<span style="color:#f92672">()));</span>
+</code></pre></div><h5 id="var">VAR</h5>
+<p><strong>VAR</strong> command to declare a variable, save the variable name and the address assigned to it in the variable table.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> VAR<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Var var <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Var<span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">());</span>
+    varTable<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">(),</span> var<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Var.class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Var</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> index<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> dimension <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> dim1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> dim2<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="dimvar">DIMVAR</h5>
+<p><strong>DIMVAR</strong> command to declare an array. Set the dimension information of the var.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> DIMVAR<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Var var <span style="color:#f92672">=</span> getVar<span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue2</span><span style="color:#f92672">();</span>
+    var<span style="color:#f92672">.</span><span style="color:#a6e22e">setDimension</span><span style="color:#f92672">(</span>n<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> pop<span style="color:#f92672">();</span>
+        var<span style="color:#f92672">.</span><span style="color:#a6e22e">setDim1</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> pop<span style="color:#f92672">(),</span> i <span style="color:#f92672">=</span> pop<span style="color:#f92672">();</span>
+        var<span style="color:#f92672">.</span><span style="color:#a6e22e">setDim1</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+        var<span style="color:#f92672">.</span><span style="color:#a6e22e">setDim2</span><span style="color:#f92672">(</span>j<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="placeholder">PLACEHOLDER</h5>
+<p><strong>PLACEHOLDER</strong> command to grow the stack down, allocate the new space to the variety and array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> PLACEHOLDER<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Var var <span style="color:#f92672">=</span> getVar<span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue2</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        push<span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> var<span style="color:#f92672">.</span><span style="color:#a6e22e">getDim1</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            push<span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> var<span style="color:#f92672">.</span><span style="color:#a6e22e">getDim1</span><span style="color:#f92672">()</span> <span style="color:#f92672">*</span> var<span style="color:#f92672">.</span><span style="color:#a6e22e">getDim2</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            push<span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="other">Other</h5>
+<p>Calculation type: pop the stack top once or twice, calculate them and push again.</p>
+<p>Jump Type: When it&rsquo;s command about jump, just check if the condition is satisfied and change the <code>eip</code>.</p>
+<p>Function call: as follows</p>
+<h4 id="function-call-procedure">Function call procedure</h4>
+<p>First, before function call, there will be some parameters to be pushed into the stack. Each will be followed by a <code>RPARA</code> command, which memorize the address of the previous variety.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> RPARA<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        rparas<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+        rparas<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Second, function <code>CALL</code>.</p>
+<p>Memorize the eip, stack top address, and information about the function(In fact, they will be pushed into stack too). Then update the <code>varTable</code> and <code>eip</code>.  Ready for execute function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> CALL<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Func func <span style="color:#f92672">=</span> funcTable<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">());</span>
+    retInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> RetInfo<span style="color:#f92672">(</span>eip<span style="color:#f92672">,</span> varTable<span style="color:#f92672">,</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">,</span> func<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">(),</span> func<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">(),</span> nowArgsNum<span style="color:#f92672">));</span>
+    eip <span style="color:#f92672">=</span> func<span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">();</span>
+    varTable <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+    callArgsNum <span style="color:#f92672">=</span> func<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">();</span>
+    nowArgsNum <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Finally, return when it&rsquo;s <code>RET</code></p>
+<p>Restore <code>eip</code>, <code>varTable</code> from <code>RetInfo</code>, clear the new information pushed when function in the stack.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> RET<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">();</span>
+    RetInfo info <span style="color:#f92672">=</span> retInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>retInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+    eip <span style="color:#f92672">=</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getEip</span><span style="color:#f92672">();</span>
+    varTable <span style="color:#f92672">=</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getVarTable</span><span style="color:#f92672">();</span>
+    callArgsNum <span style="color:#f92672">=</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getCallArgsNum</span><span style="color:#f92672">();</span>
+    nowArgsNum <span style="color:#f92672">=</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getNowArgsNum</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        stack<span style="color:#f92672">.</span><span style="color:#a6e22e">subList</span><span style="color:#f92672">(</span>info<span style="color:#f92672">.</span><span style="color:#a6e22e">getStackPtr</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> 1 <span style="color:#f92672">-</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getParaNum</span><span style="color:#f92672">(),</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+        stack<span style="color:#f92672">.</span><span style="color:#a6e22e">subList</span><span style="color:#f92672">(</span>info<span style="color:#f92672">.</span><span style="color:#a6e22e">getStackPtr</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> 1 <span style="color:#f92672">-</span> info<span style="color:#f92672">.</span><span style="color:#a6e22e">getParaNum</span><span style="color:#f92672">(),</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="value-or-address">Value or Address</h4>
+<p>Push value or address of the variety is an important thing, it depends on what I need, which will be presented when I describe how to generate codes.</p>
+<p>The command action is as follows(<code>getAddress</code> is used for get the address of the previous variety ).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">case</span> VALUE<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Var var <span style="color:#f92672">=</span> getVar<span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue2</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">int</span> address <span style="color:#f92672">=</span> getAddress<span style="color:#f92672">(</span>var<span style="color:#f92672">,</span> n<span style="color:#f92672">);</span>
+    push<span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>address<span style="color:#f92672">));</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">...</span>
+<span style="color:#66d9ef">case</span> ADDRESS<span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
+    Var var <span style="color:#f92672">=</span> getVar<span style="color:#f92672">((</span>String<span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue1</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> code<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue2</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">int</span> address <span style="color:#f92672">=</span> getAddress<span style="color:#f92672">(</span>var<span style="color:#f92672">,</span> n<span style="color:#f92672">);</span>
+    push<span style="color:#f92672">(</span>address<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="code-generate">Code Generate</h4>
+<p>Code generated from the grammatical analyst procedure.</p>
+<h5 id="declaration">Declaration</h5>
+<p>There is no need to distinguish const and var. When declare a variety, just new a variety and let it point to the stack top. Then if it has an initialization, just push the values one after another. If not, add a <code>PLACEHOLDER</code> command to push something(I push 0) to the stack to hold the place.</p>
+<h5 id="assign-sentence">Assign sentence</h5>
+<p>In this situation, first calculate and push the address of the variety to the stack top. Then analyze expressions. After that, there are only two number in the stack, which are address and value. Assign the value to the address.</p>
+<h5 id="condition-control-sentence">Condition control sentence</h5>
+<p>First, generate labels. Then, place jump sentences in the proper places.</p>
+<p>labels about if and while will be generated and then stored in a stack type structure. like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;());</span>
+whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while&#34;</span><span style="color:#f92672">,</span> labelGenerator<span style="color:#f92672">.</span><span style="color:#a6e22e">getLabel</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while&#34;</span><span style="color:#f92672">));</span>
+whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_end&#34;</span><span style="color:#f92672">,</span> labelGenerator<span style="color:#f92672">.</span><span style="color:#a6e22e">getLabel</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_end&#34;</span><span style="color:#f92672">));</span>
+whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_block&#34;</span><span style="color:#f92672">,</span> labelGenerator<span style="color:#f92672">.</span><span style="color:#a6e22e">getLabel</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_block&#34;</span><span style="color:#f92672">));</span>
+</code></pre></div><p>Take if as example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;IFTK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;if&#34;</span><span style="color:#f92672">)));</span>
+    <span style="color:#f92672">...</span>
+    analyseCond<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;IFTK&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">...</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JZ</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;else&#34;</span><span style="color:#f92672">)));</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;if_block&#34;</span><span style="color:#f92672">)));</span>
+    analyseStmt<span style="color:#f92672">();</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JMP</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;if_end&#34;</span><span style="color:#f92672">)));</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;else&#34;</span><span style="color:#f92672">)));</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ELSETK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        getWord<span style="color:#f92672">();</span> <span style="color:#75715e">//else
+</span><span style="color:#75715e"></span>        analyseStmt<span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;if_end&#34;</span><span style="color:#f92672">)));</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>while:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;WHILETK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while&#34;</span><span style="color:#f92672">)));</span>
+    <span style="color:#f92672">...</span>
+    analyseCond<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;WHILETK&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">...</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JZ</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_end&#34;</span><span style="color:#f92672">)));</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_block&#34;</span><span style="color:#f92672">)));</span>
+    analyseStmt<span style="color:#f92672">();</span>
+    <span style="color:#f92672">...</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JMP</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while&#34;</span><span style="color:#f92672">)));</span>
+    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_end&#34;</span><span style="color:#f92672">)));</span>
+    whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">// break
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;BREAKTK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    getWord<span style="color:#f92672">();</span><span style="color:#75715e">//break
+</span><span style="color:#75715e"></span>    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JMP</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while_end&#34;</span><span style="color:#f92672">)));</span>
+ 		<span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">// continue
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>word<span style="color:#f92672">.</span><span style="color:#a6e22e">typeEquals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CONTINUETK&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    getWord<span style="color:#f92672">();</span><span style="color:#75715e">//continue
+</span><span style="color:#75715e"></span>    codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JMP</span><span style="color:#f92672">,</span> whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>whileLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;while&#34;</span><span style="color:#f92672">)));</span>
+    <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span> 
+</code></pre></div><h3 id="after-code-3">After Code</h3>
+<p>Because of some runtime errors and information shortages, I added and removed some Pcode. At the same, there are some new troubles about address pass and short circuit calculation.</p>
+<h4 id="specific-code-definition-1">Specific Code Definition</h4>
+<p>In Operation, <code>push()</code> means put value into the top of the stack. <code>pop()</code> means pop the value from the top of the stack.</p>
+<h5 id="common-type">Common Type</h5>
+<table>
+<thead>
+<tr>
+<th>CodeType</th>
+<th>Value1</th>
+<th>Value2</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LABEL</td>
+<td>Label_name</td>
+<td>Set  a label</td>
+<td></td>
+</tr>
+<tr>
+<td>VAR</td>
+<td>Ident_name</td>
+<td>Declare  a variety</td>
+<td></td>
+</tr>
+<tr>
+<td>PUSH</td>
+<td>Ident_name/Digit</td>
+<td>push(value1)</td>
+<td></td>
+</tr>
+<tr>
+<td>POP</td>
+<td>Address</td>
+<td>Ident_name</td>
+<td>*value1 = value2</td>
+</tr>
+<tr>
+<td>JZ</td>
+<td>Label_name</td>
+<td></td>
+<td>Jump if stack top is zero</td>
+</tr>
+<tr>
+<td>JNZ</td>
+<td>Label_name</td>
+<td></td>
+<td>Jump if stack top is not zero</td>
+</tr>
+<tr>
+<td>JMP</td>
+<td>Label_name</td>
+<td></td>
+<td>Jump unconditionally</td>
+</tr>
+<tr>
+<td>MAIN</td>
+<td></td>
+<td></td>
+<td>Main function label</td>
+</tr>
+<tr>
+<td>FUNC</td>
+<td></td>
+<td></td>
+<td>Function label</td>
+</tr>
+<tr>
+<td>ENDFUNC</td>
+<td></td>
+<td></td>
+<td>End of function label</td>
+</tr>
+<tr>
+<td>PARA</td>
+<td>Ident_name</td>
+<td>Type</td>
+<td>Parameters</td>
+</tr>
+<tr>
+<td>RET</td>
+<td>Return value or not</td>
+<td></td>
+<td>Function return</td>
+</tr>
+<tr>
+<td>CALL</td>
+<td>Function name</td>
+<td></td>
+<td>Function call</td>
+</tr>
+<tr>
+<td>RPARA</td>
+<td>Type</td>
+<td></td>
+<td>Get parameters ready for function call</td>
+</tr>
+<tr>
+<td>GETINT</td>
+<td></td>
+<td></td>
+<td>Get a integer and put it into stack top</td>
+</tr>
+<tr>
+<td>PRINT</td>
+<td>String</td>
+<td>Para num</td>
+<td>Pop values and print.</td>
+</tr>
+<tr>
+<td>DIMVAR</td>
+<td>Ident_name</td>
+<td>Type</td>
+<td>Set dimension info for array variety</td>
+</tr>
+<tr>
+<td>VALUE</td>
+<td>Ident_name</td>
+<td>Type</td>
+<td>Get the variety value</td>
+</tr>
+<tr>
+<td>ADDRESS</td>
+<td>Ident_name</td>
+<td>Type</td>
+<td>Get the variety address</td>
+</tr>
+<tr>
+<td>PLACEHOLDER</td>
+<td></td>
+<td></td>
+<td>Push something to hold places</td>
+</tr>
+<tr>
+<td>EXIT</td>
+<td></td>
+<td></td>
+<td>Exit</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>CodeType</th>
+<th>Value1</th>
+<th>Value2</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADD</td>
+<td></td>
+<td></td>
+<td>+</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td></td>
+<td></td>
+<td>-</td>
+</tr>
+<tr>
+<td>MUL</td>
+<td></td>
+<td></td>
+<td>*</td>
+</tr>
+<tr>
+<td>DIV</td>
+<td></td>
+<td></td>
+<td>/</td>
+</tr>
+<tr>
+<td>MOD</td>
+<td></td>
+<td></td>
+<td>%</td>
+</tr>
+<tr>
+<td>CMPEQ</td>
+<td></td>
+<td></td>
+<td>==</td>
+</tr>
+<tr>
+<td>CMPNE</td>
+<td></td>
+<td></td>
+<td>!=</td>
+</tr>
+<tr>
+<td>CMPGT</td>
+<td></td>
+<td></td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>CMPLT</td>
+<td></td>
+<td></td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>CMPGE</td>
+<td></td>
+<td></td>
+<td>&gt;=</td>
+</tr>
+<tr>
+<td>CMPLE</td>
+<td></td>
+<td></td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>AND</td>
+<td></td>
+<td></td>
+<td>&amp;&amp;</td>
+</tr>
+<tr>
+<td>OR</td>
+<td></td>
+<td></td>
+<td>||</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td></td>
+<td></td>
+<td>!</td>
+</tr>
+<tr>
+<td>NEG</td>
+<td></td>
+<td></td>
+<td>-</td>
+</tr>
+<tr>
+<td>POS</td>
+<td></td>
+<td></td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="short-circuit-calculation">short circuit calculation</h4>
+<p>There are two situations I need to use short circuit calculation :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#ae81ff">1.</span> <span style="color:#66d9ef">if</span>(a<span style="color:#f92672">&amp;&amp;</span>b) <span style="color:#75715e">// a is false
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">2.</span> <span style="color:#66d9ef">if</span>(a<span style="color:#f92672">||</span>b) <span style="color:#75715e">// b is true
+</span></code></pre></div><p>This seems not an easy thing and I acutally spent lots of time to solve it.</p>
+<p>My method is as follows:</p>
+<p>First, when I analyze <code>analyseLOrExp</code>, every <code>analyseLAndExp</code> will be followed by a <code>JNZ</code>, which is used for detect if the cond is false. If it is, jump to the if body label. At the same time, I generated cond label, which is ready for the <code>analyseLAndExp</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">analyseLOrExp</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">,</span> String from<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">...</span>
+        String label <span style="color:#f92672">=</span> labelGenerator<span style="color:#f92672">.</span><span style="color:#a6e22e">getLabel</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cond_&#34;</span> <span style="color:#f92672">+</span> i<span style="color:#f92672">);</span>
+        analyseLAndExp<span style="color:#f92672">(</span>exp1<span style="color:#f92672">,</span> from<span style="color:#f92672">,</span> label<span style="color:#f92672">);</span>
+        codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">LABEL</span><span style="color:#f92672">,</span> label<span style="color:#f92672">));</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+            codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">OR</span><span style="color:#f92672">));</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+                codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JNZ</span><span style="color:#f92672">,</span> ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>ifLabels<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;if_block&#34;</span><span style="color:#f92672">)));</span>
+            <span style="color:#f92672">}</span>
+          <span style="color:#f92672">...</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#f92672">...</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>In the <code>analyseLAndExp</code>, every <code>analyseEqExp</code> will be followed by a <code>JZ</code>, which is used for detect if the cond is true. If it is, jump to the cond label I set just now.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">analyseLAndExp</span><span style="color:#f92672">(</span>ArrayList<span style="color:#f92672">&lt;</span>Word<span style="color:#f92672">&gt;</span> exp<span style="color:#f92672">,</span> String from<span style="color:#f92672">,</span> String label<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">...</span>
+        analyseEqExp<span style="color:#f92672">(</span>exp1<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+            codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">AND</span><span style="color:#f92672">));</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+                codes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> PCode<span style="color:#f92672">(</span>CodeType<span style="color:#f92672">.</span><span style="color:#a6e22e">JZ</span><span style="color:#f92672">,</span> label<span style="color:#f92672">));</span>
+            <span style="color:#f92672">}</span> 
+          <span style="color:#f92672">...</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>By these means, short circuit calculation is solved.</p>
+<h2 id="总结感想">总结感想</h2>
+<p>[[编译实验总结感想]]</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/buaa/">BUAA</a>
+        
+            <a href="/tags/%E7%BC%96%E8%AF%91/">编译</a>
+        
+            <a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a>
+        
+            <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;基础</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">失败的逻辑课程笔记</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MacOS全局可执行文件</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 My New Hugo Site
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#词法分析">词法分析</a>
+      <ul>
+        <li><a href="#before-code">Before Code</a></li>
+        <li><a href="#after-code">After Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#语法分析">语法分析</a>
+      <ul>
+        <li><a href="#before-code-1">Before Code</a></li>
+        <li><a href="#after-code-1">After Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#错误处理">错误处理</a>
+      <ul>
+        <li><a href="#before-code-2">Before Code</a></li>
+        <li><a href="#after-code-2">After Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码生成">代码生成</a>
+      <ul>
+        <li><a href="#before-code-3">Before Code</a></li>
+        <li><a href="#after-code-3">After Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结感想">总结感想</a></li>
+  </ul>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
