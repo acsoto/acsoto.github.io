@@ -46,6 +46,36 @@ while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;
     </item>
     
     <item>
+      <title>Memo</title>
+      <link>http://atksoto.com/posts/memo/readme/</link>
+      <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/memo/readme/</guid>
+      <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
+灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。
+图片  
+（介绍及短评摘自豆瓣，侵删）
+ 
+Mac, iPad适配
+简介 主页面 主界面分为3个标签：主页，电影，书籍
+主页  
+ 
+电影 这里是你看过的电影片单，你可以随时看到你标记过的所有电影，以及在任何时候添加一个新的电影进入你的片单
+进入某条电影，如果你输入的电影在数据库之中（数据来自豆瓣，侵删），你就可以看到关于电影的介绍：演员，导演，豆瓣评分，类别，介绍等，以及最重要的，在最下方，看到你第一次观看的时间以及感想
+当然，点击此方框，你可以进入到第二次标记的页面，记录下你的第二次观影以及新的感想
+ 
+ 
+书籍 类似电影，这里是你的书单，你可以添加你看过的书籍，并且记录第n次阅读的体验，相信每一次阅读，都会发现不少新东西
+ 
+功能  标记某一天的感受 标记某本电影，某本书 多次标记某电影和书的观看时间和感受 自动展示电影和书籍的相关图片与简介 图文并茂的主页卡片展示设计 在主页展示进一个月看过的电影 在主页展示今天以及那年今日的感想  架构以及实现 源代码文件共25个
+主要分为三个部分：Controller Model Views
+ image-20211027232454144 
+Controller 一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等
+其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
+class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.</description>
+    </item>
+    
+    <item>
       <title>MacOS全局可执行文件</title>
       <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

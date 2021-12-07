@@ -50,8 +50,8 @@ Controller 一些静态函数，实现点击界面按钮后的某些后端反应
 其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
 class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.'>
 <meta property='og:url' content='http://atksoto.com/posts/memo/readme/'>
-<meta property='og:site_name' content='E'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-10-28T17:29:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-28T17:29:00&#43;00:00'/>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-10-28T17:29:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-28T17:29:00&#43;00:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg' />
 <meta name="twitter:title" content="Memo">
 <meta name="twitter:description" content="Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
 灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。
@@ -74,7 +74,8 @@ Mac, iPad适配
  image-20211027232454144 
 Controller 一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等
 其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
-class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.">
+class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg' />
     </head>
     <body class="
     article-page has-toc
@@ -116,13 +117,21 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 
 
 
-                <span>Back</span>
+                <span>返回</span>
             </a>
         </div>
     
 <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/memo/readme/">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" loading="lazy" alt="Featured image of post Memo" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -161,7 +170,7 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -177,8 +186,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <h2 id="图片">图片</h2>
 <p><figure 
 	>
-	<a href="/README/image-20211120173053786.png" >
-		<img src="/README/image-20211120173053786.png"
+	<a href="/image-20211120173053786.png" >
+		<img src="/image-20211120173053786.png"
 			
 			
 			
@@ -190,8 +199,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>（介绍及短评摘自豆瓣，侵删）</p>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwlr5i3osjj30u010ujtt.jpg" >
-		<img src="/README/008i3skNly1gwlr5i3osjj30u010ujtt.jpg"
+	<a href="/008i3skNly1gwlr5i3osjj30u010ujtt.jpg" >
+		<img src="/008i3skNly1gwlr5i3osjj30u010ujtt.jpg"
 			
 			
 			
@@ -207,8 +216,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <h5 id="主页">主页</h5>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwlqj9g2ltj30pi0tkq5a.jpg" >
-		<img src="/README/008i3skNly1gwlqj9g2ltj30pi0tkq5a.jpg"
+	<a href="/008i3skNly1gwlqj9g2ltj30pi0tkq5a.jpg" >
+		<img src="/008i3skNly1gwlqj9g2ltj30pi0tkq5a.jpg"
 			
 			
 			
@@ -219,8 +228,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 </figure></p>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwlqj9pbc4j30pk0vowg3.jpg" >
-		<img src="/README/008i3skNly1gwlqj9pbc4j30pk0vowg3.jpg"
+	<a href="/008i3skNly1gwlqj9pbc4j30pk0vowg3.jpg" >
+		<img src="/008i3skNly1gwlqj9pbc4j30pk0vowg3.jpg"
 			
 			
 			
@@ -235,8 +244,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>当然，点击此方框，你可以进入到第二次标记的页面，记录下你的第二次观影以及新的感想</p>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwlr3yyccmj30u00yfdi5.jpg" >
-		<img src="/README/008i3skNly1gwlr3yyccmj30u00yfdi5.jpg"
+	<a href="/008i3skNly1gwlr3yyccmj30u00yfdi5.jpg" >
+		<img src="/008i3skNly1gwlr3yyccmj30u00yfdi5.jpg"
 			
 			
 			
@@ -261,8 +270,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>类似电影，这里是你的书单，你可以添加你看过的书籍，并且记录第n次阅读的体验，相信每一次阅读，都会发现不少新东西</p>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwlr1ixi5pj30u010gmys.jpg" >
-		<img src="/README/008i3skNly1gwlr1ixi5pj30u010gmys.jpg"
+	<a href="/008i3skNly1gwlr1ixi5pj30u010gmys.jpg" >
+		<img src="/008i3skNly1gwlr1ixi5pj30u010gmys.jpg"
 			
 			
 			
@@ -286,8 +295,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>主要分为三个部分：Controller Model Views</p>
 <p><figure 
 	>
-	<a href="/README/008i3skNly1gwuz8sdizwj306r0kx3z9.jpg" >
-		<img src="/README/008i3skNly1gwuz8sdizwj306r0kx3z9.jpg"
+	<a href="/008i3skNly1gwuz8sdizwj306r0kx3z9.jpg" >
+		<img src="/008i3skNly1gwuz8sdizwj306r0kx3z9.jpg"
 			
 			
 			
@@ -395,8 +404,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>使用NavigationLink，向子界面：MarkDetail传递mark的引用</p>
 <p><figure 
 	>
-	<a href="/README/image-20211027234131178.png" >
-		<img src="/README/image-20211027234131178.png"
+	<a href="/image-20211027234131178.png" >
+		<img src="/image-20211027234131178.png"
 			
 			
 			
@@ -417,8 +426,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 </code></pre></div><p>其中要进行object的解析，如果用户输入能索引本地数据集的一个条目上，将会展示此object的详情</p>
 <p><figure 
 	>
-	<a href="/README/image-20211027234003022.png" >
-		<img src="/README/image-20211027234003022.png"
+	<a href="/image-20211027234003022.png" >
+		<img src="/image-20211027234003022.png"
 			
 			
 			
@@ -436,8 +445,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>以至于用户输入能够及时的反应在变量上并且写入modelData</p>
 <p><figure 
 	>
-	<a href="/README/image-20211027234224510.png" >
-		<img src="/README/image-20211027234224510.png"
+	<a href="/image-20211027234224510.png" >
+		<img src="/image-20211027234224510.png"
 			
 			
 			
@@ -452,8 +461,8 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 <p>其他组件</p>
 <p><figure 
 	>
-	<a href="/README/image-20211027234350311.png" >
-		<img src="/README/image-20211027234350311.png"
+	<a href="/image-20211027234350311.png" >
+		<img src="/image-20211027234350311.png"
 			
 			
 			
@@ -500,19 +509,48 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 
 
     
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
 </article>
 
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
                     
-<article class="">
+<article class="has-image">
     <a href="/posts/iotmonitor/">
         
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg"/>
+                
+            </div>
         
 
         <div class="article-details">
@@ -522,9 +560,15 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 </article>
                 
                     
-<article class="">
+<article class="has-image">
     <a href="/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
         
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
         
 
         <div class="article-details">
@@ -589,9 +633,7 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
-        2021 E
+        2021 SOTO-BLOG
     </section>
     
     <section class="powerby">
@@ -695,7 +737,7 @@ class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;
 
 
                 </div>
-                <h2 class="widget-title section-title">Table of contents</h2>
+                <h2 class="widget-title section-title">目录</h2>
                 
                 <div class="widget--toc">
                     <nav id="TableOfContents">
