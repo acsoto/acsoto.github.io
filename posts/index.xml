@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on E</title>
+    <link>http://atksoto.com/posts/</link>
+    <description>Recent content in Posts on E</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Dec 2021 23:40:00 +0000</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 15:01:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>西方音乐史-作业</title>
+      <link>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Mon, 06 Dec 2021 15:01:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
+      <description>第一次作业—巴洛克时期的音乐  巴洛克时期的旋律有什么特点？ 旋律具大量装饰音 速度不变 在一个调性上表达情感   巴洛克时期的节奏、节拍有什么独特之处？ 规律
+  巴洛克时期的音乐速度有对比吗？ 速度不变
+  巴洛克时期的音阶有哪两种？ 大调小调
+  你能说出欧洲的大调音阶与和声小调音阶吗？ 大调12345671 小调671234#56
+  巴洛克时期的和声有什么特点？ 主调音乐，复调音乐
+  什么是通奏低音？什么是数字低音？ 通奏低音（Basso continuo）是巴洛克时期的一种即兴伴奏声部，通奏低音演奏者阅读作曲家以数字低音写成的乐谱，并判断和即兴演奏。一般来说，通奏低音声部由两件乐器演奏，一件是低音乐器，另一件是和声乐器。 巴洛克时期的室内乐作品中羽管键琴总是被用来担任通奏低音
+  作曲家什么时期开始在乐谱上标注力度记号了？ 巴洛克
+  巴洛克时期的音乐风格特点是什么？ 悠长而富于装饰的旋律线条 大量华丽的装饰音（波光粼粼的装饰音） 速度不变 在一个调性上表达情感 节拍规律
+  西方交响乐队唯一的一件中国乐器是哪一件？ 锣
+  交响乐队弦乐组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  交响乐队木管乐器组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  交响乐队铜管乐器组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  小型、中型、大型乐队分别是多少人？ [[交响乐队配置]]
+  什么是咏叹调？宣叙调？它们在歌剧中的作用？ 歌剧有两种传统的演唱形式：宣叙调（recitativo），不带旋律结构的演唱部分，通常用于交代剧情；咏叹调（aria），通常用于表达角色感情，带旋律结构的唱段。
+  复调音乐听旋律的线条，主调听纵向的和声，这句话对吗？ 复调音乐听线条 主调音乐听纵向和声</description>
+    </item>
+    
     <item>
       <title>数学分析</title>
-      <link>http://example.org/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
+      <link>http://atksoto.com/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
       <pubDate>Sat, 04 Dec 2021 23:40:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
+      <guid>http://atksoto.com/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
       <description>1
 考完了，nmd难死了
   数列极限  定义 Stolz 单调有界   函数极限  定义 连续 无穷大 无穷小  等价无穷小 1的无穷次 $e^{&amp;hellip;}$   一致连续  证明 $|f(x_1)-f(x_2)| &amp;lt; A |x_1-x_2|$ $arctanx$与中值定理     导数  隐函数求导 参数方程求导  $\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$   高阶导数  莱布尼兹公式  $(uv)^n = \sum_{k=0}^nu^{(n-k)}v^{k}$     微分中值定理  罗尔中值定理 拉格朗日中值定理   函数性质 洛必达   泰勒公式  微分 Taylor公式  Peano余项 Lagrange余项</description>
@@ -20,10 +43,10 @@
     
     <item>
       <title>推歌 第二期</title>
-      <link>http://example.org/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
+      <link>http://atksoto.com/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
       <pubDate>Sat, 04 Dec 2021 15:49:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
+      <guid>http://atksoto.com/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
       <description>uu们最近给我推的歌
 大家一起分享
  YOASOBI新专辑  稚名林檎     </description>
@@ -31,10 +54,10 @@
     
     <item>
       <title>假如爱有天意</title>
-      <link>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
+      <link>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
       <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
+      <guid>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
       <description>《假如爱有天意》
  PocBU6 
 最近又在听《假如爱有天意》，遂又回去二刷原作 一年了，依然感动
@@ -43,20 +66,20 @@
     
     <item>
       <title>数据库建立</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
+      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
       <pubDate>Thu, 02 Dec 2021 20:48:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
+      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
       <description>设置自动当前时间时间戳
 为timestamp设置DEFAULT CURRENT_TIMESTAMP</description>
     </item>
     
     <item>
       <title>Django相关</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/django%E7%9B%B8%E5%85%B3/</link>
+      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/django%E7%9B%B8%E5%85%B3/</link>
       <pubDate>Thu, 02 Dec 2021 20:24:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/django%E7%9B%B8%E5%85%B3/</guid>
+      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/django%E7%9B%B8%E5%85%B3/</guid>
       <description>数据库转类 python3 manage.py inspectdb
 解决冲突问题
 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为
@@ -66,10 +89,10 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
     
     <item>
       <title>推歌 第一期</title>
-      <link>http://example.org/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
+      <link>http://atksoto.com/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
       <pubDate>Wed, 01 Dec 2021 23:18:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
+      <guid>http://atksoto.com/posts/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
       <description>uu们最近给我推的歌 大家一起分享
    カンタレラ~grace edition~ 
 这首的交响版本也很棒：
@@ -83,10 +106,10 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
     
     <item>
       <title>Our Little Sister</title>
-      <link>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</link>
+      <link>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</link>
       <pubDate>Wed, 01 Dec 2021 19:25:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</guid>
+      <guid>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</guid>
       <description>《海街日记》
  BZLazU 
  XYaXQK 
@@ -97,10 +120,10 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
     
     <item>
       <title>AC又被黑了</title>
-      <link>http://example.org/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+      <link>http://atksoto.com/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
       <pubDate>Sun, 28 Nov 2021 16:17:36 +0000</pubDate>
       
-      <guid>http://example.org/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+      <guid>http://atksoto.com/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
       <description>下午突然看到服务器有人发
  
 仔细一看
@@ -118,10 +141,10 @@ user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, 
     
     <item>
       <title>IoTMonitor</title>
-      <link>http://example.org/posts/iotmonitor/</link>
+      <link>http://atksoto.com/posts/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
       
-      <guid>http://example.org/posts/iotmonitor/</guid>
+      <guid>http://atksoto.com/posts/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
  
@@ -143,28 +166,28 @@ UI整体使用卡片式扁平设计
     
     <item>
       <title>我的语言使用统计</title>
-      <link>http://example.org/posts/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</link>
+      <link>http://atksoto.com/posts/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</link>
       <pubDate>Sat, 27 Nov 2021 01:11:33 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</guid>
+      <guid>http://atksoto.com/posts/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>我的GitHub数据</title>
-      <link>http://example.org/posts/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</link>
+      <link>http://atksoto.com/posts/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Sat, 27 Nov 2021 01:11:09 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</guid>
+      <guid>http://atksoto.com/posts/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>我爱我度过的所有时间</title>
-      <link>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</link>
+      <link>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</link>
       <pubDate>Fri, 26 Nov 2021 19:06:03 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%94%B5%E5%BD%B1/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</guid>
+      <guid>http://atksoto.com/posts/%E7%94%B5%E5%BD%B1/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</guid>
       <description>《现在去见你》
  
  
@@ -173,10 +196,10 @@ UI整体使用卡片式扁平设计
     
     <item>
       <title>新北老年活动中心</title>
-      <link>http://example.org/posts/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+      <link>http://atksoto.com/posts/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
       <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+      <guid>http://atksoto.com/posts/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
       <description>新北区迷惑大赏 我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩
 上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很着急
  
@@ -186,20 +209,45 @@ UI整体使用卡片式扁平设计
     </item>
     
     <item>
+      <title>西方音乐史-浪漫主义时期</title>
+      <link>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Tue, 23 Nov 2021 20:34:50 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</guid>
+      <description>浪漫主义时期 （1820-1900）
+特点 序幕 舒伯特《魔王》 韦伯 公众音乐会的变化：古典时期的公众音乐会和社交活动是相似的，随意聊天吃喝打拍子，哼唱鼓掌，1840年 古典音乐会 礼仪形成 曲目确定 1800以前 音乐几乎是一次性的为某一时刻而创作，贝多芬以后一代人将前辈作品视作经典反复演奏 乐器音色更加丰富——工业革命的进步。例如长笛（木制-&amp;gt;金属+指动机械装置）圆号（加调音赛） 交响乐队更加庞大，新乐器加入。例如马勒119 柏辽兹《幻想》89 产生了专职指挥。1820年，作曲家路易·施波尔成为用木质指挥棒指挥乐队的第一人。浪漫早期，指挥家由一个打拍子的人变成一个乐谱解释者，现代指挥家出现。 产生了演奏大师。独奏大师的时代，为了迎合观众。意大利帕格尼尼，匈牙利李斯特钢琴之王。 作品宏大复杂。马二，一个半小时。 音乐内容：
+ 爱情 大自然《田园》《山调序曲》 神治 《魔弹射手》《尼伯龙根的指环》 自传性质 《幻想交响曲》  音乐结构自由 标题音乐和非标题音乐并存 旋律悠长（多用半音 具不确定性） 和声 建立半音和声，不和谐和弦 自由速度 tempo rubato 力度强烈 极致的强与弱 调式调性 转调离调变化频繁
+早期浪漫主义 艺术歌曲 主要采用诗人诗作
+钢琴：伴奏烘托
+歌唱：意大利美声
+例：《魔王》——歌德叙事诗
+舒伯特 艺术歌曲（600多首）、交响曲……
+作品比前人更具有抒情性，充满歌唱感
+艺术歌曲《鳟鱼》 交响曲 《第八未完成交响曲》
+罗伯特 舒曼 19世纪德国作曲家、音乐评论家
+《蝴蝶》《狂欢节》《童年情景》
+钢琴《A小调钢琴协奏曲》OP 54
+《桃金娘》（单三部曲式 ABA）献给爱妻克拉拉（著名钢琴家）
+标题音乐 分类：
+ 音乐会序曲 标题交响曲 交响诗  音乐会序曲 门德尔松（学院派作曲家，风格多奏鸣曲快板，甜美轻盈）首创
+门德尔松《仲夏夜之梦》序曲（第一部音乐会序曲）</description>
+    </item>
+    
+    <item>
       <title>泳社约游群的有趣见闻</title>
-      <link>http://example.org/posts/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
+      <link>http://atksoto.com/posts/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
       <pubDate>Tue, 23 Nov 2021 12:36:52 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
+      <guid>http://atksoto.com/posts/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
       <description>想来自己第一次跟着泳社学游泳到现在已经2年了，当初教我的人大多都已经毕业了。</description>
     </item>
     
     <item>
       <title>与鸟巢的匆匆一面</title>
-      <link>http://example.org/posts/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
+      <link>http://atksoto.com/posts/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
       <pubDate>Fri, 19 Nov 2021 23:34:01 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
+      <guid>http://atksoto.com/posts/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
       <description>今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。
 我在乘车前往目的地的路上，看到鸟巢灯火通明的一瞬间，突然感到与繁景告别已久（一个多月），仿佛自己离开了这个城市。恍然间审视起来自己这一个月真的是在有意义的活着吗？貌似是陷在编译里面虚度时间。忽然想起那句：北航人是没有生活的(链接)，直呼赞同。故在按部就班完成生日的惊喜后按耐不住，感觉在座的各位都有自己在这一场聚会中想要做的事情，我不甚相融其中，只想奔赴鸟巢，而且还有点饿，想吃点告别已久的，学校外边的食物，遂离开。
  
@@ -211,10 +259,10 @@ UI整体使用卡片式扁平设计
     
     <item>
       <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</link>
+      <link>http://atksoto.com/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</link>
       <pubDate>Fri, 19 Nov 2021 10:09:18 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</guid>
+      <guid>http://atksoto.com/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</guid>
       <description>运行sql脚本时
 sql报错如下
 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;
@@ -223,10 +271,10 @@ Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;
     
     <item>
       <title>Alxa_Compiler 编译器</title>
-      <link>http://example.org/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <link>http://atksoto.com/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <guid>http://atksoto.com/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>相关文章：[[编译实验总结感想]]
 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
 File reading Read by line, scan every char of every string and analyse.
@@ -235,11 +283,91 @@ while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;
     </item>
     
     <item>
+      <title>西方音乐史-维也纳古典时期</title>
+      <link>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Tue, 19 Oct 2021 17:32:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</guid>
+      <description>维也纳古典时期 古典三杰：海顿，莫扎特，贝多芬
+海顿：清唱剧《创世纪》《四季》 莫扎特：四部喜歌剧 《费加罗的婚礼》 《唐璜》《女人心》 《魔笛》 贝多芬：奏鸣曲：c小调悲怆奏鸣曲)》、 《F小调热情奏鸣曲》
+交响曲：《第五（命运） 交响曲》、《第九（合唱）交响曲》
+小步舞曲 3拍
+清唱剧 哈利路亚
+维也纳古典主义时期产生了奏鸣曲快板形式
+[[西方音乐史-巴洛克时期]] 开始在乐谱标记强弱 维也纳古典主义时期渐强渐弱开始大量出现
+贝多芬随想回旋曲《为丢失铜板而愤怒》
+弗朗兹.约瑟夫.海顿 （奥地利作曲家）交响乐之父，弦乐四重奏之父
+套曲形式：乐章：协奏3 奏鸣4 弦乐四重奏4 交响曲4
+意大利喜歌剧 特点：
+ 序曲：奏明式快板 急口令——喜歌剧独有 引入多部声乐重唱 羽管键琴为宣叙调伴奏  莫扎特 “近代钢琴协奏曲之父” 协奏曲 concerto “轮流说话” 套曲 共三个乐章 双呈示部的形式
+乐队呈示部（只有乐队） 独奏呈示部（独奏与乐队） 展开部
+三者合一 作曲家 指挥 演奏者 第一乐章 奏鸣曲式快板——双呈示部 华彩乐段
+贝多芬 1770-1827 德国 57岁 乐圣 8岁登台 作为管风琴助理写下最初的音乐作品 主要作品：
+ 6首弦乐四重奏 21首钢琴奏鸣曲  第一阶段 一、二交响曲 三首协奏曲 32首钢琴奏鸣曲——钢琴 “新约全书”
+第二阶段 热情时期（1803-1817）</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-巴洛克时期</title>
+      <link>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Wed, 29 Sep 2021 08:34:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</guid>
+      <description>巴洛克时期 特点 悠长而富于装饰的旋律线条 大量华丽的装饰音（波光粼粼的装饰音） 速度不变 在一个调性上表达情感 节拍规律
+作品 巴赫 哥德堡变奏曲 维瓦尔第 四季 威尔第歌剧 哥林赛达 咏叹调风雨飘摇 花腔 装饰
+调式 和声 调式：大调，小调 和声：附调，主调
+大调12345671 和声135,246,357&amp;hellip;三度叠制 小调671234#56
+（1600-1750）巴洛克时期和声：通奏低音-数字低音
+和声特点：主调音乐｜复调音乐
+第一部成熟的歌剧1607年蒙特威尔第《奥菲欧》
+巴赫，亨德尔把复调音乐推向顶峰
+复调音乐听线条 主调音乐听纵向和声
+1650 - 1750 阉人歌手霸占意大利歌剧舞台 亨德尔歌剧《里纳尔多》咏叹调 让我痛哭吧</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-总述</title>
+      <link>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</link>
+      <pubDate>Tue, 28 Sep 2021 19:34:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/posts/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</guid>
+      <description>共晓时期： [[西方音乐史-巴洛克时期]] [[西方音乐史-维也纳古典时期]] [[西方音乐史-浪漫主义时期]]
+音乐形式 协奏曲，交响曲，奏鸣曲，组曲，练习曲，交响诗，歌剧等
+音乐风格的判断 文化判断音乐风格 帕格尼尼主题变奏曲 愤怒的日子
+下葬，死亡的来临，悲剧的结局
+节拍 波尔卡：2拍，快速，末尾重音
+调式 c小调风景玛祖卡op17.2
+曲式结构 回旋曲式：准确的音乐反复
+浪漫主义时期 歌剧 三大作曲家
+威尔第 阿依达
+芭蕾舞剧，柴可夫斯基
+​	天鹅湖
+​	睡美人
+​	胡桃夹子
+钢琴诗人：肖邦（波兰）不对称的美，朗诵调，速度
+钢琴之王：李斯特（匈牙利）交响思维
+《降A大调（爱之梦）》3.op.541
+卡门 序曲 比才
+舒伯特 室内音乐
+印象主义 德彪西 牧神午后前奏曲
+结束在 1 大调，6 小调
+罗西尼 《威廉退尔》序曲
+上行旋律线
+下行旋律线
+马斯涅《泰伊斯》蜿蜒曲折
+《升F大调即兴曲》 肖邦
+《乡村骑士》 《教父》间奏曲
+巴洛克时期：速度不变
+浪漫主义时期：速度和力度变化，自由速度
+《流浪者之歌》</description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43;基础</title>
-      <link>http://example.org/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/</link>
+      <link>http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Fri, 30 Apr 2021 11:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/</guid>
+      <guid>http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/c&#43;&#43;%E5%9F%BA%E7%A1%80/</guid>
       <description>知识点纲要 
 结构
 struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。
@@ -254,10 +382,10 @@ extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器
     
     <item>
       <title>失败的逻辑课程笔记</title>
-      <link>http://example.org/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/</link>
+      <link>http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 29 Oct 2020 11:54:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://atksoto.com/posts/%E8%AF%BE%E7%A8%8B/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%BB%E7%BB%93/</guid>
       <description>失败的规律 墨菲定律 定义 如果做某项工作有多种方法，而其中有一种方法将导致事故，那么一定有人会按这种方法去做。
 四种表现形式 （注意：都不是一定的）
  任何事都没有表面看起来那么简单 所有的事都会比你预计的时间长 会出错的事不论概率多小总会出错 如果你担心某种情况发生，那么它就更有可能发生  启示  不忽视小概率事件 未雨绸缪 应急预案，动态调整 事故学习，反思  海因里希法则 定义 1：29：300
@@ -285,10 +413,10 @@ extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器
     
     <item>
       <title>MacOS全局可执行文件</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <link>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://atksoto.com/posts/%E5%BC%80%E5%8F%91%E5%8D%A1%E7%89%87%E7%9B%92/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
       <description>sudo vim /usr/local/bin/command
 /usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
 #!/bin/bash do something sudo chmod +x /usr/local/bin/command

@@ -40,8 +40,8 @@ UI整体使用卡片式扁平设计
 功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
 该app的UI其中一部分复用了我之前的项目Memo的代码'>
 <meta property='og:url' content='http://atksoto.com/posts/iotmonitor/'>
-<meta property='og:site_name' content='E'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-28T02:54:12&#43;00:00'/><meta property='article:modified_time' content='2021-11-28T02:54:12&#43;00:00'/>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-28T02:54:12&#43;00:00'/><meta property='article:modified_time' content='2021-11-28T02:54:12&#43;00:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
 <meta name="twitter:title" content="IoTMonitor">
 <meta name="twitter:description" content="IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
@@ -59,7 +59,8 @@ UI整体使用卡片式扁平设计
 同时，打开app后每次阈值的设置会被记录，以便查看设置情况
  
 功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
-该app的UI其中一部分复用了我之前的项目Memo的代码">
+该app的UI其中一部分复用了我之前的项目Memo的代码"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
     </head>
     <body class="
     article-page has-toc
@@ -101,13 +102,21 @@ UI整体使用卡片式扁平设计
 
 
 
-                <span>Back</span>
+                <span>返回</span>
             </a>
         </div>
     
 <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/iotmonitor/">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" loading="lazy" alt="Featured image of post IoTMonitor" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -146,7 +155,7 @@ UI整体使用卡片式扁平设计
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    阅读时长: 1 分钟
                 </time>
             </div>
         
@@ -278,31 +287,48 @@ UI整体使用卡片式扁平设计
 
 
     
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
 </article>
 
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
                     
-<article class="">
-    <a href="/posts/memo/readme/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Memo</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
+<article class="has-image">
     <a href="/posts/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
         
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
         
 
         <div class="article-details">
@@ -367,9 +393,7 @@ UI整体使用卡片式扁平设计
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
-        2021 E
+        2021 SOTO-BLOG
     </section>
     
     <section class="powerby">
@@ -473,7 +497,7 @@ UI整体使用卡片式扁平设计
 
 
                 </div>
-                <h2 class="widget-title section-title">Table of contents</h2>
+                <h2 class="widget-title section-title">目录</h2>
                 
                 <div class="widget--toc">
                     <nav id="TableOfContents">

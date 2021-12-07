@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MySQL on My New Hugo Site</title>
-    <link>http://example.org/tags/mysql/</link>
-    <description>Recent content in MySQL on My New Hugo Site</description>
+    <title>MySQL on E</title>
+    <link>http://atksoto.com/tags/mysql/</link>
+    <description>Recent content in MySQL on E</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Nov 2021 10:09:18 +0000</lastBuildDate><atom:link href="http://example.org/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Nov 2021 10:09:18 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</link>
+      <link>http://atksoto.com/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</link>
       <pubDate>Fri, 19 Nov 2021 10:09:18 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</guid>
+      <guid>http://atksoto.com/posts/%E6%8A%80%E6%9C%AF%E7%B1%BB/unknown-collation-utf8mb4_0900_ai_ci/</guid>
       <description>运行sql脚本时
 sql报错如下
 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;

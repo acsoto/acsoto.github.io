@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Swift on My New Hugo Site</title>
-    <link>http://example.org/tags/swift/</link>
-    <description>Recent content in Swift on My New Hugo Site</description>
+    <title>Swift on E</title>
+    <link>http://atksoto.com/tags/swift/</link>
+    <description>Recent content in Swift on E</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0000</lastBuildDate><atom:link href="http://example.org/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IoTMonitor</title>
-      <link>http://example.org/posts/iotmonitor/</link>
+      <link>http://atksoto.com/posts/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
       
-      <guid>http://example.org/posts/iotmonitor/</guid>
+      <guid>http://atksoto.com/posts/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
  
