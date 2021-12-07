@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面向对象 on SOTO-BLOG</title>
+    <link>http://atksoto.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+    <description>Recent content in 面向对象 on SOTO-BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 26 Jun 2021 11:23:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUAAOO-第四单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 26 Jun 2021 11:23:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图
+第一次作业 实现类图分析
+将UML元素根据其含义分为如下层次结构
+部分元素根据需求分装为MyXXX
+ 
+根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素
+   循环轮次 处理元素     1 UmlClass UmlInterface UmlAssociationEnd   2 UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization   3 UmlParameter    第二次作业 实现顺序图，状态图
+将UML元素根据其含义分为如下层次结构
+部分元素根据需求分装为MyXXX
+ 
+根据逻辑层次，读入过程分为四个循环，分别处理四个层次的元素
+   循环轮次 处理元素     1 UmlClass UmlInterface UmlAssociationEnd UmlInteraction UmlStateMachine UmlRegion   2 UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization UmlLifeline UmlState UmlPseudostate UmlFinalState   3 UmlParameter UmlMessage UmlTransition   4 UmlEvent    第三次作业 架构同第二次。</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第三单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 29 May 2021 11:54:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。
+第二次作业中，虽然使用容器实现了数据存储，但是算法方面由于直接按照规格描述进行实现，导致了大量的CTLE。于使此后，阅读完规格后我能对方法有彻底理解后再根据自己的理解去实现。
+再有以上经验后，认为实现规格应采取如下步骤：
+ 完整阅读规格 选择正确的数据结构，容器 正确处理异常 选择合适的算法实现方法  基于JML规格来设计测试的方法和策略  再次阅读JML规格，检查在方法被实现前，异常是否被正确，处理检查方法是否满足规格的ensure 使用Junit，针对每一个具一定不确定因素的方法编写测试样例进行测试 对程序整体进行大数据集测试  本单元看似简单，但在测试方面我做的并不理想，在三次作业中均出现了非常低级的BUG
+第一次：
+ 
+原因是在阅读JML时并未彻底理解其含义，直接按照规格进行书写，导致进行了逻辑完全错误的一个判断
+第二次：
+ 
+低估了自己犯低级错误的的概率（当然本次作业主要问题在CTLE上）
+第三次：
+ 
+自作聪明在判断异常之前就删除了message，造成了大量WA
+三次作业出现的bug基本都是在阅读JML规格时丧失理性造成的，事实证明在阅读JML时候一定要保证独立思考的能力，当然锅也不能全部甩到这里，归根结底还是自己懒得测试且高估了自己写简单代码不出错的能力。
+(Junit暴力测试？)
+@org.junit.jupiter.api.Test void sendIndirectMessage() throws EqualPersonIdException, PersonIdNotFoundException, EqualRelationException, MessageIdNotFoundException, EmojiIdNotFoundException, EqualMessageIdException, RelationNotFoundException, EqualEmojiIdException { Network network = new MyNetwork(); network.addPerson(new MyPerson(1, &amp;#34;A&amp;#34;, 10)); network.addPerson(new MyPerson(3, &amp;#34;N&amp;#34;, 10)); network.addPerson(new MyPerson(6, &amp;#34;F&amp;#34;, 10)); network.addRelation(1, 3, 10); network.addRelation(3, 6, 15); network.addRelation(1, 6, 26); network.</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第二单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 25 Apr 2021 22:33:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中
+Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher
+Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求
+其中，锁全部位于调度器中
+例如
+public PersonRequest checkTopRequest() { synchronized (waitQueue) { int max = 0; PersonRequest request = null; for (PersonRequest r : waitQueue) { if (r.getFromFloor() &amp;gt; max) { max = r.getFromFloor(); request = r; } } return request; } } 三次作业都为相同的设计，Dispatcher基本没有变动。
+调度器设计与线程交互 外部可以放心与调度器进行交互，类似生产者消费者模型，调度器维护waitQueue，输入线程通过调度器向其中加入请求，电梯通过调度器查询和获取请求
+ 
+第二、三次作业中加入了多个电梯与dispatcher交互
+电梯策略：
+Random：自由竞争，直接去找队列中第一个目标，接到请求后，优先处理电梯中的第一个请求，在运行过程中在每层判断是否可以接送乘客并且进行操作。
+Morning：电梯位于1层，开始接人，2s后出发，一直送到电梯内请求列表的最高层后返回，依次循环
+Night：直接前往队列中最高层接人，向下过程中继续接人，回到一层后依次循环。
+UML 第一次作业 Main创建输入和电梯线程以及调度器，输入线程提供mode，requests，end等，调度器负责控制队列，elevator进行运行。
+ 
+流程图：
+ 
+第二次作业 相比第一次作业，输入线程负责创建新的Elevator
+ 
+流程图</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第一单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 28 Mar 2021 19:23:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression
+ 
+(1) 基于度量分析 类复杂度
+ 
+方法复杂度
+ 
+可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。
+本次作业没有被其他同学hack。性能方面，由于使用了hashmap，表达式基本上达到了最短，没有考虑到正负号打头和x**2拆分为x*x等细节
+本次作业没有很好的给下一次作业做好铺垫，表达式解析方法过于粗暴。
+第二次作业 本次作业难度骤升，因为要考虑表达式因子，第一次作业使用的暴力解析字符串方法骤然失效，遂彻底进行重构。我在本次作业中大量时间用于研究如何递归下降读取表达式。求导本身并不困难，创建Factor接口，sin，cos，幂函数，常量，term，poly均继承Factor，保证每个因子都有实现tostring和求导以及simplify方法。其中，Term是一些Factor构成的List，Poly是一些Term构成的List。在对Poly进行求导会自然向下递归。
+Patterns存放了提前编译好的正则表达式
+Parser用于递归下降解析表达式
+ 
+类复杂度
+ 
+可见Parser中方法复杂度较高，这是因为在解析字符串过程中，我调用了过多的私有方法，此处可以进行模块化优化。
+Term中由于simplify和diff的操作过于复杂，整体复杂度较高，此处可以把一些操作在初始化term时完成来优化。
+方法复杂度
+ 
+复杂度较高的几个方法
+ 
+其中Term的simplify如前文所述，该方法过于臃肿。
+第三次作业 本次作业加入了sin和cos内的嵌套已经wrong format的检测。由于和上一次作业的架构相似，仅需调整sin和cos内成员变量为Poly，并且对parser进行进一步递归下降即可。wrong format成为了难点，由于上一次作业的递归下降读取基于表达式正确的情况，这次由于格式可能的错误，我对parser进行了较大的调整，首先对字符串进行多余空白符和非法字符的判断，随后在递归下降读取过程中判断格式错误，包括括号和幂函数的错误。
+结构与第二次作业相似，加入了format checker和WF exception
+ 
+类复杂度
+ 
+方法复杂度
+ 
+其中较高的和第二次作业类似
+其中getCosFactor和getSinFactor是由于进行了格式的判断，此处重用了相似的代码，可以归类为一个方法进行优化。
+ 
+分析自己程序的bug 在前两次作业中，互测阶段没有被找到bug，在个人初期写代码过程中，遇到的一些BUG如：没有及时在while循环中continue，在if判断中逻辑过于复杂导致自己搞错了与或非逻辑，往往正是这类小的失误导致耗费大量时间debug，因此在写程序过程中应该时刻关注代码的复杂度。
+第三次作业，互测阶段被hack了两次，问题均是出在格式判断正负号和常数之间的空格时，我的判断条件出了问题，误判了一些正确的格式，自己写wrong format时没有考虑到各种情况，测试不够充分。
+对比分析出现bug的方法和未出现bug的方法在代码行和圈复杂度上的差异：在我的前两次作业中自己发生的BUG很明显主要是因为圈复杂度导致的，在第三次作业被hack的这个BUG主要是因为Wrong Format欠考虑。
+分析自己发现别人程序bug采用策略 主要采取的策略构建一些我在写代码过程中遇到的容易发生bug的数据点来对别人的代码进行测试，使用python进行核对。
+重构经历总结 第一次到第二次作业过程中经历了重构，原因是第一次作业没有留下足够的拓展空间，解析字符串过于暴力，但是在第二次作业理解了如何递归下降进行读取解析之后，重构反而显得思路更加清晰，在这个架构下，第三次作业完成的比较容易。由于重构前后属2次作业内容，没有可比较性，故未通过数据进行对比。
+吸取的教训是：尽可能给程序留下充足的可扩展空间，已经写好的类尽量保证其完备性，在拓展时就尽量不去修改了，类之间的保证解耦，方法复杂度尽可能底，如此下来可以保证程序的鲁棒性。
+心得体会 第一次作业思维还是比较偏面向过程的，对字符串进行了暴力解析，对象也仅仅停留在所谓的Term和Expression上。
+在第二次作业难度骤然增加后，明白了面向对象的重要性，一个接口下的多个类逻辑分明，调用各自的方法，另外，在第二次作业过程中，理解了递归下降的思路，这是一种逻辑非常清晰的做法，为我的第三次作业节省了大量的时间。
+第三次作业在格式判断上填了第二次作业留下的坑，更进一步理清了整个程序的逻辑，虽然最后在性能分上没有占到很多优势，但是总体下来我认为代码的结构和逻辑还是很清晰的，代码总计行数705完成了。
+总的来说，本次作业虽然遇到一些困难（指第二次作业递归下降和如何优化）但总体来说还是学到了很多东西，包括但不仅限于面向对象的思维，正则表达式的使用，Java容器操作的熟练，递归等。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
+可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
+ 
+图片  
+简介 主页面 分为三个部分：设备状态，历史记录，设置
+UI整体使用卡片式扁平设计
+设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
+其中，温湿度会每秒自动进行更新，2位小数点保留
+ 
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）
+默认显示2天前到现在的曲线，第一次打开app时会同步一次
+ 
+设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
+同时，打开app后每次阈值的设置会被记录，以便查看设置情况
+ 
+功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
+该app的UI其中一部分复用了我之前的项目Memo的代码'><title>IoTMonitor</title>
+
+<link rel='canonical' href='http://atksoto.com/p/iotmonitor/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='IoTMonitor'>
+<meta property='og:description' content='IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
+可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
+ 
+图片  
+简介 主页面 分为三个部分：设备状态，历史记录，设置
+UI整体使用卡片式扁平设计
+设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
+其中，温湿度会每秒自动进行更新，2位小数点保留
+ 
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）
+默认显示2天前到现在的曲线，第一次打开app时会同步一次
+ 
+设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
+同时，打开app后每次阈值的设置会被记录，以便查看设置情况
+ 
+功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
+该app的UI其中一部分复用了我之前的项目Memo的代码'>
+<meta property='og:url' content='http://atksoto.com/p/iotmonitor/'>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-28T02:54:12&#43;00:00'/><meta property='article:modified_time' content='2021-11-28T02:54:12&#43;00:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
+<meta name="twitter:title" content="IoTMonitor">
+<meta name="twitter:description" content="IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
+可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
+ 
+图片  
+简介 主页面 分为三个部分：设备状态，历史记录，设置
+UI整体使用卡片式扁平设计
+设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
+其中，温湿度会每秒自动进行更新，2位小数点保留
+ 
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）
+默认显示2天前到现在的曲线，第一次打开app时会同步一次
+ 
+设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
+同时，打开app后每次阈值的设置会被记录，以便查看设置情况
+ 
+功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
+该app的UI其中一部分复用了我之前的项目Memo的代码"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
+    <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/iotmonitor/">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" loading="lazy" alt="Featured image of post IoTMonitor" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/iotmonitor/">IoTMonitor</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 28, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="iotmonitor">IoTMonitor</h1>
+<p>用于展示IoT课程开发板的相关信息并进行控制</p>
+<p>可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线</p>
+<p><figure 
+	>
+	<a href="http://pic.mcatk.com/soto-pictures/2021-12/IoTMonitor%e5%b1%95%e7%a4%bagif.gif" >
+		<img src="http://pic.mcatk.com/soto-pictures/2021-12/IoTMonitor%e5%b1%95%e7%a4%bagif.gif"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="图片">图片</h2>
+<p><figure 
+	>
+	<a href="https://tva1.sinaimg.cn/large/008i3skNly1gwuux5q5zhj30v90u0wgv.jpg" >
+		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuux5q5zhj30v90u0wgv.jpg"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="简介">简介</h2>
+<h3 id="主页面">主页面</h3>
+<p>分为三个部分：设备状态，历史记录，设置</p>
+<p>UI整体使用卡片式扁平设计</p>
+<h4 id="设备状态">设备状态</h4>
+<p>刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达</p>
+<p>其中，温湿度会每秒自动进行更新，2位小数点保留</p>
+<p><figure 
+	>
+	<a href="https://tva1.sinaimg.cn/large/008i3skNly1gwuv4m8stbj30zu0u0gmq.jpg" >
+		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuv4m8stbj30zu0u0gmq.jpg"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h4 id="历史记录">历史记录</h4>
+<p>通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）</p>
+<p>默认显示2天前到现在的曲线，第一次打开app时会同步一次</p>
+<p><figure 
+	>
+	<a href="https://tva1.sinaimg.cn/large/008i3skNly1gwuv6rhzk8j310g0u0jsq.jpg" >
+		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuv6rhzk8j310g0u0jsq.jpg"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h4 id="设置">设置</h4>
+<p>在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动</p>
+<p>同时，打开app后每次阈值的设置会被记录，以便查看设置情况</p>
+<p><figure 
+	>
+	<a href="https://tva1.sinaimg.cn/large/008i3skNly1gwuvd7193mj30zu0u0752.jpg" >
+		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuvd7193mj30zu0u0752.jpg"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="功能">功能</h2>
+<ul>
+<li>实时显示开发板传感器温湿度</li>
+<li>实时控制开发板电机马达转动与否</li>
+<li>获取任意时间段开发板传感器温湿度历史曲线</li>
+<li>通过设置过热阈值，当温度超过此值，进行报警</li>
+<li>后台实时更新</li>
+</ul>
+<h2 id="实现">实现</h2>
+<p>该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互</p>
+<p>该app的UI其中一部分复用了我之前的项目<a class="link" href="https://github.com/acsoto/Memo"  target="_blank" rel="noopener"
+    >Memo</a>的代码</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/swift/">Swift</a>
+        
+            <a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a>
+        
+            <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/memo/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Memo</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Alxa_Compiler 编译器</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 SOTO-BLOG
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#图片">图片</a></li>
+    <li><a href="#简介">简介</a>
+      <ol>
+        <li><a href="#主页面">主页面</a>
+          <ol>
+            <li><a href="#设备状态">设备状态</a></li>
+            <li><a href="#历史记录">历史记录</a></li>
+            <li><a href="#设置">设置</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#功能">功能</a></li>
+    <li><a href="#实现">实现</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

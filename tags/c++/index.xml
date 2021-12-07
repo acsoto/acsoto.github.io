@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on SOTO-BLOG</title>
+    <link>http://atksoto.com/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on SOTO-BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 30 Apr 2021 11:00:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;基础</title>
+      <link>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 30 Apr 2021 11:00:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</guid>
+      <description>知识点纲要 
+结构
+struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。
+压缩：
+#pragma pack(1) 宏 函数宏
+#define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0]) 控制宏
+#define HOME //用于控制开关 #ifdef HOME cout &amp;lt;&amp;lt; &amp;#34;link a&amp;#34; &amp;lt;&amp;lt; endl; #elseif cout &amp;lt;&amp;lt; &amp;#34;link b&amp;#34; &amp;lt;&amp;lt; endl; #endif #ifdef WIN32 //windows平台上一定会有的宏 #include &amp;lt;windows.h&amp;gt;#endif 如果把C++程序和C程序混合编译
+extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C++编译器修饰的方式去找。
+函数
+//1.overloading //2.default parameter //默认参数必须放后 void fun2(int a, int b = 3, int c = 4) { cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; b &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl; } //3.</description>
+    </item>
+    
+  </channel>
+</rss>

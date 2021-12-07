@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SOTO-BLOG</title>
+    <link>http://atksoto.com/post/</link>
+    <description>Recent content in Posts on SOTO-BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0000</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian体验——新工作流</title>
+      <link>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <pubDate>Tue, 07 Dec 2021 12:11:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <description>最近在玩Hexo，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora现在也收费了，趁着这个契机，打算换一个软件用。
+听说 all in one 的 Notion 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。
+另外就是一直感觉很神秘但是不会用的Obsidian。由于习惯停留在typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。
+但是经过一番研究之后，发现Obsidian确实是很适合我的需求。
+主题 首先Obsidian的社区非常丰富，有很多非常好看的主题，换上之后感觉比之前typora的打字体验好了很多。
+ 社区主题 
+推荐一个 YIN &amp;amp; YANG 我现在在用，很好看
+插件 还是因为社区文化好，插件也很多，但是目前我没什么需要的，唯一装了一个模板插件，可以用快捷键生成我预置的内容，这个和Hexo配合起来非常舒服，之前为了让md生成FrontMeta，必须手动hexo n，现在只要提前设置好Hexo的FrontMeta，设置好快捷键，即可一键生成需要的内容，包括时间这种变量。
+如下，我设置好模板后，只需 command+T 即可生成下面的内容
+--- title: &amp;lt;% tp.file.title %&amp;gt; date: &amp;lt;% tp.file.creation_date() %&amp;gt;:00 tags: [] cover: --- --- title: Obsidian体验——新工作流 date: 2021-12-07 12:11:00 tags: [] cover: --- 插件名：Templater
+双链 这个双向链接，指的就是你的一个md对象可以指向另一个对象，然后目标对象也会知道有哪个对象指向了自己。我理解这个东西就是类似于一个图，模拟你的神经网络，形成一种你的第二大脑的感觉，但其实到现在我也没感觉到有多强大，没有get到他的点。
+这是他给我的仓库生成的图谱，因为没怎么建双链，所以边比较少，倒是挺好玩
+ 关系图谱 
+不过标签和查找功能倒是感觉很好用，我之前给hexo写的标签他也很好的解析下来了，在我真正写笔记的时候，可以非常方便的查到我需要的东西。
+ 我写笔记的时候 
+图片处理 Obsidian不同于Typora的一点是图片不是很好处理，其实这也不是软件的问题，md格式本身就对图片本地加载不是很友好，加上我要上传到博客，整个目录会非常凌乱。同时我想要遵循数据方便转移的原则，以便在之后出现任何问题，我的原数据都整齐保留，于是我用阿里云对象存储OSS建了一个图床，同时使用CDN加速。
+同时使用uPic这个软件，在写笔记的时候，只需要用快捷键上传图片，即可马上拿到图片的链接，以后就不会再在笔记里放上一堆杂乱的图片了
+新的工作流 也谈不上什么工作流，又不是专职作者，只是觉得好玩。
+以下是我现在发布博客的过程，非常简单
+ 打开Obsidian，新建文件，输入标题，cmd+T 生成FrontMeta 写 打开控制台，输入hexos  解释一下最后一步 我在本地建立了一个全局脚本hexos（[[MacOS全局可执行文件]])</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-作业</title>
+      <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Mon, 06 Dec 2021 15:01:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
+      <description>第一次作业—巴洛克时期的音乐  巴洛克时期的旋律有什么特点？ 旋律具大量装饰音 速度不变 在一个调性上表达情感   巴洛克时期的节奏、节拍有什么独特之处？ 规律
+  巴洛克时期的音乐速度有对比吗？ 速度不变
+  巴洛克时期的音阶有哪两种？ 大调小调
+  你能说出欧洲的大调音阶与和声小调音阶吗？ 大调12345671 小调671234#56
+  巴洛克时期的和声有什么特点？ 主调音乐，复调音乐
+  什么是通奏低音？什么是数字低音？ 通奏低音（Basso continuo）是巴洛克时期的一种即兴伴奏声部，通奏低音演奏者阅读作曲家以数字低音写成的乐谱，并判断和即兴演奏。一般来说，通奏低音声部由两件乐器演奏，一件是低音乐器，另一件是和声乐器。 巴洛克时期的室内乐作品中羽管键琴总是被用来担任通奏低音
+  作曲家什么时期开始在乐谱上标注力度记号了？ 巴洛克
+  巴洛克时期的音乐风格特点是什么？ 悠长而富于装饰的旋律线条 大量华丽的装饰音（波光粼粼的装饰音） 速度不变 在一个调性上表达情感 节拍规律
+  西方交响乐队唯一的一件中国乐器是哪一件？ 锣
+  交响乐队弦乐组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  交响乐队木管乐器组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  交响乐队铜管乐器组：高音乐器、中音乐器、低音乐器分别是哪一件？ [[交响乐队配置]]
+  小型、中型、大型乐队分别是多少人？ [[交响乐队配置]]
+  什么是咏叹调？宣叙调？它们在歌剧中的作用？ 歌剧有两种传统的演唱形式：宣叙调（recitativo），不带旋律结构的演唱部分，通常用于交代剧情；咏叹调（aria），通常用于表达角色感情，带旋律结构的唱段。
+  复调音乐听旋律的线条，主调听纵向的和声，这句话对吗？ 复调音乐听线条 主调音乐听纵向和声</description>
+    </item>
+    
+    <item>
+      <title>数学分析</title>
+      <link>http://atksoto.com/p/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 04 Dec 2021 23:40:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
+      <description>1
+考完了，nmd难死了
+  数列极限  定义 Stolz 单调有界   函数极限  定义 连续 无穷大 无穷小  等价无穷小 1的无穷次 $e^{&amp;hellip;}$   一致连续  证明 $|f(x_1)-f(x_2)| &amp;lt; A |x_1-x_2|$ $arctanx$与中值定理     导数  隐函数求导 参数方程求导  $\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$   高阶导数  莱布尼兹公式  $(uv)^n = \sum_{k=0}^nu^{(n-k)}v^{k}$     微分中值定理  罗尔中值定理 拉格朗日中值定理   函数性质 洛必达   泰勒公式  微分 Taylor公式  Peano余项 Lagrange余项</description>
+    </item>
+    
+    <item>
+      <title>推歌 第二期</title>
+      <link>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
+      <pubDate>Sat, 04 Dec 2021 15:49:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
+      <description>uu们最近给我推的歌
+大家一起分享
+ YOASOBI新专辑   椎名林檎       </description>
+    </item>
+    
+    <item>
+      <title>假如爱有天意</title>
+      <link>http://atksoto.com/p/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
+      <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
+      <description>《假如爱有天意》
+ PocBU6 
+最近又在听《假如爱有天意》，遂又回去二刷原作 一年了，依然感动
+  b5aerz   akXFgz   AakrPd   qdDRVn</description>
+    </item>
+    
+    <item>
+      <title>数据库建立</title>
+      <link>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
+      <pubDate>Thu, 02 Dec 2021 20:48:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
+      <description>设置自动当前时间时间戳
+为timestamp设置DEFAULT CURRENT_TIMESTAMP</description>
+    </item>
+    
+    <item>
+      <title>Django相关</title>
+      <link>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Thu, 02 Dec 2021 20:24:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</guid>
+      <description>数据库转类 python3 manage.py inspectdb
+解决冲突问题
+class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为
+user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署
+如何部署</description>
+    </item>
+    
+    <item>
+      <title>推歌 第一期</title>
+      <link>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
+      <pubDate>Wed, 01 Dec 2021 23:18:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
+      <description>uu们最近给我推的歌 大家一起分享
+   カンタレラ~grace edition~ 
+这首的交响版本也很棒：
+   ODDTAXI
+  魂之轮回 HB to 剑风
+  魂のルフラン (魂之轮回)
+  イナヅマ侍
+  旅行
+  </description>
+    </item>
+    
+    <item>
+      <title>Our Little Sister</title>
+      <link>http://atksoto.com/p/our-little-sister/</link>
+      <pubDate>Wed, 01 Dec 2021 19:25:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/our-little-sister/</guid>
+      <description>《海街日记》
+ BZLazU 
+ XYaXQK 
+ bUHIUT 
+ 3D8Ynt 
+ RjeNLY</description>
+    </item>
+    
+    <item>
+      <title>MacOS全局可执行文件</title>
+      <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 30 Nov 2021 21:30:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>sudo vim /usr/local/bin/command
+/usr/local/bin/ 下创建的文件默认在path中 必须使用sudo
+#!/bin/bash do something sudo chmod +x /usr/local/bin/command
+即可全局使用 command</description>
+    </item>
+    
+    <item>
+      <title>岁末将至</title>
+      <link>http://atksoto.com/p/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
+      <pubDate>Sun, 28 Nov 2021 23:59:12 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
+      <description>2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。
+ 
+2021年仍然是不平凡的一年，仍然记得年初开学前的焦虑，现在回首，已是云淡风轻。
+昨天也做了一件有意义的事情，终结了我的某个让我焦虑了一年的项目，很遗憾，和一般情况不同，不是顺利完成了，而是我终于宣告退出了，不知是我诉苦奏效还是项目确实没有什么意义，身边人在最后关头支持我的退出。且不谈这个项目的实际意义，我已经丧失了对项目的兴趣，尽管起初驱动我的也不是兴趣，最主要的还是这一年在这一件事上，循环往复的都是焦虑和难以推进，在近期，也是我今年最忙的时间段，项目突然开始快速推进，我借着这个机会，跟老板提出退出。最终什么都没有拿到，倒是这一年，更像是两年，本就社恐，又无经验，还得不到具体的指导，老板问我有没有给我压力，确实也没有，是自己给自己增加了不少压力，而我，2021年末的我，已经不愿再做自己不喜欢的事情了。让此事告终，心情也好了不少。
+这几天甚是忙碌，周围人都出去玩乐了，我还在做作业，复习重修的课程。小伙伴今天下午约我出去玩，我才意识到这已经是这学期不知道第几次因为要考试而拒绝了。倒也不觉得情绪低，因为清楚自己在做什么，为什么忙，除了时间确实不够用，熬了几次夜，反倒挺有兴致的。也非常期待下一周，校历第13周的结束，这意味着编译和数据库的结课，数分期中考试的结束，物联网，安卓大作业的结束，虽然此时此刻他们都还没有结束，也不知道会以什么样的方式结束。
+写完这篇，Typora提醒我15天后他要开始收费了。回想疫情居家的那一学期，在6系学长为我们讲解数据结构时，看到了学长的Typora，一眼喜欢上了这个软件，专门加了学长好友去问这款软件叫什么，学长告诉我，如果到了6系会经常用到，我还一笑，不曾想过自己会去6系，如今已是在计算机学院的第二年了。恰合主题，时间过得这么快，也算见证了Typora的演变。
+岁末将至，敬颂冬绥</description>
+    </item>
+    
+    <item>
+      <title>AC又被黑了</title>
+      <link>http://atksoto.com/p/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+      <pubDate>Sun, 28 Nov 2021 16:17:36 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+      <description>下午突然看到服务器有人发
+ 
+仔细一看
+ 
+打开链接一看：
+ 
+ 很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放
+查来查去发现是有人盗了一个用来处理封禁的账号，进去之后一通乱封
+把数据库恢复了一下备份，玩家还是进不去，我能进去，查了一下litebans的官网，是用了一个封锁服务器进入权限的指令，打了个指令就解决了。
+很低级的手段，很无聊的恶趣味
+ 后续 原本晚上前往教学楼复习数分，没有带电脑。
+没想到，在傍晚又被黑了，因为只是还有管理号没有停掉，仅凭手机暂时解决了问题，在仔细推敲后，认为其是通过非法调用我部署在web服务器的litebans端的api来实现用拥有权限的玩家账号去封禁其他玩家。
+结果在稍晚一点又一次被黑，终于意识到，事情根本没有那么复杂，只是因为litebans是BC插件，Authme没办法限制登陆前对指令使用权限，任意一个有litebans权限的账号都在未登陆的情况下可以随意使用指令。其实早就应该发现我留了这种低级漏洞的，也没想道竟然这么久了才有人发现了这个这么简单的漏洞。</description>
+    </item>
+    
+    <item>
+      <title>IoTMonitor</title>
+      <link>http://atksoto.com/p/iotmonitor/</link>
+      <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/iotmonitor/</guid>
+      <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
+可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
+ 
+图片  
+简介 主页面 分为三个部分：设备状态，历史记录，设置
+UI整体使用卡片式扁平设计
+设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
+其中，温湿度会每秒自动进行更新，2位小数点保留
+ 
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）
+默认显示2天前到现在的曲线，第一次打开app时会同步一次
+ 
+设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
+同时，打开app后每次阈值的设置会被记录，以便查看设置情况
+ 
+功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
+该app的UI其中一部分复用了我之前的项目Memo的代码</description>
+    </item>
+    
+    <item>
+      <title>我的语言使用统计</title>
+      <link>http://atksoto.com/p/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sat, 27 Nov 2021 01:11:33 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我的GitHub数据</title>
+      <link>http://atksoto.com/p/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sat, 27 Nov 2021 01:11:09 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我爱我度过的所有时间</title>
+      <link>http://atksoto.com/p/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Fri, 26 Nov 2021 19:06:03 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
+      <description>《现在去见你》
+ 
+ 
+哪怕早知道我会早早离开，也不愿辜负有你们的这一生。</description>
+    </item>
+    
+    <item>
+      <title>新北老年活动中心</title>
+      <link>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+      <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+      <description>新北区迷惑大赏 我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩
+上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很着急
+ 
+新的乒乓球桌也理所应当的成为了他们的活动设施
+ 
+合一又是另一回事，属于是中小学食堂了</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-浪漫主义时期</title>
+      <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Tue, 23 Nov 2021 20:34:50 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</guid>
+      <description>浪漫主义时期 （1820-1900）
+特点 序幕 舒伯特《魔王》 韦伯 公众音乐会的变化：古典时期的公众音乐会和社交活动是相似的，随意聊天吃喝打拍子，哼唱鼓掌，1840年 古典音乐会 礼仪形成 曲目确定 1800以前 音乐几乎是一次性的为某一时刻而创作，贝多芬以后一代人将前辈作品视作经典反复演奏 乐器音色更加丰富——工业革命的进步。例如长笛（木制-&amp;gt;金属+指动机械装置）圆号（加调音赛） 交响乐队更加庞大，新乐器加入。例如马勒119 柏辽兹《幻想》89 产生了专职指挥。1820年，作曲家路易·施波尔成为用木质指挥棒指挥乐队的第一人。浪漫早期，指挥家由一个打拍子的人变成一个乐谱解释者，现代指挥家出现。 产生了演奏大师。独奏大师的时代，为了迎合观众。意大利帕格尼尼，匈牙利李斯特钢琴之王。 作品宏大复杂。马二，一个半小时。 音乐内容：
+ 爱情 大自然《田园》《山调序曲》 神治 《魔弹射手》《尼伯龙根的指环》 自传性质 《幻想交响曲》  音乐结构自由 标题音乐和非标题音乐并存 旋律悠长（多用半音 具不确定性） 和声 建立半音和声，不和谐和弦 自由速度 tempo rubato 力度强烈 极致的强与弱 调式调性 转调离调变化频繁
+早期浪漫主义 艺术歌曲 主要采用诗人诗作
+钢琴：伴奏烘托
+歌唱：意大利美声
+例：《魔王》——歌德叙事诗
+舒伯特 艺术歌曲（600多首）、交响曲……
+作品比前人更具有抒情性，充满歌唱感
+艺术歌曲《鳟鱼》 交响曲 《第八未完成交响曲》
+罗伯特 舒曼 19世纪德国作曲家、音乐评论家
+《蝴蝶》《狂欢节》《童年情景》
+钢琴《A小调钢琴协奏曲》OP 54
+《桃金娘》（单三部曲式 ABA）献给爱妻克拉拉（著名钢琴家）
+标题音乐 分类：
+ 音乐会序曲 标题交响曲 交响诗  音乐会序曲 门德尔松（学院派作曲家，风格多奏鸣曲快板，甜美轻盈）首创
+门德尔松《仲夏夜之梦》序曲（第一部音乐会序曲）</description>
+    </item>
+    
+    <item>
+      <title>泳社约游群的有趣见闻</title>
+      <link>http://atksoto.com/p/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
+      <pubDate>Tue, 23 Nov 2021 12:36:52 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
+      <description>想来自己第一次跟着泳社学游泳到现在已经2年了，当初教我的人大多都已经毕业了。</description>
+    </item>
+    
+    <item>
+      <title>Hexo-Front-matter</title>
+      <link>http://atksoto.com/p/hexo-front-matter/</link>
+      <pubDate>Tue, 23 Nov 2021 10:09:18 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/hexo-front-matter/</guid>
+      <description>Demo title: date: 2021-11-23 10:09:18 tags: [hexo] categories: cover:
+官方说明 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。
+   参数 描述 默认值     layout 布局 config.default_layout   title 标题 文章的文件名   date 建立日期 文件建立日期   updated 更新日期 文件更新日期   comments 开启文章的评论功能 true   tags 标签（不适用于分页）    categories 分类（不适用于分页）    permalink 覆盖文章网址    excerpt Page excerpt in plain text. Use this plugin to format the text    disableNunjucks Disable rendering of Nunjucks tag {{ }}/{% %} and tag plugins when enabled    lang Set the language to override auto-detection Inherited from _config.</description>
+    </item>
+    
+    <item>
+      <title>关于封校的行为艺术——很有冲击力</title>
+      <link>http://atksoto.com/p/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
+      <pubDate>Mon, 22 Nov 2021 15:28:59 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
+      <description>今日看到北京电影学院的行为艺术，甚感封校许久政策就是最明显的校内不同群体的利益冲突，比如在BUAA，冲封校冲得最厉害的，似乎是大四的同学，因为很多人急于出去实习科研。对于一些每天的生活只有卷的同学，封校政策并无大碍。对于北航家属呢，此政策影响不到他们的正常出行。对于我呢，在我想出去玩的时候，对政策感到厌恶，在我不想出玩的时候，却也觉得无所谓。
+《肖申克的救赎》
+ 
+更新于2021-11-23 10:17
+昨天刚吐槽完这个，今天BUAA就改报备制了，近期也并无心出门
+《不至于》</description>
+    </item>
+    
+    <item>
+      <title>何以变革</title>
+      <link>http://atksoto.com/p/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</link>
+      <pubDate>Sat, 20 Nov 2021 01:53:10 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E4%BD%95%E4%BB%A5%E5%8F%98%E9%9D%A9/</guid>
+      <description>大部分人做着自己不想做的事情，只是为了生存，这点有史以来未曾改变。有人只是爱好，有人只是在追求功利，摆出一副难看的样子，卑微的为了让自己能或许多有一点点微乎其微的可能性，去屈服，痛苦，下跪，丧失着自由。何以变革，或许少部分值得敬佩的，才是异类。
+我选择方式越来越趋向于同一个准则，或许是积累了那么多经验，觉得只要这样做才是应该的，才能让自己快乐，当然，这样的选择方式，在遵循的同时，也不失会带来一些焦虑，然后我又去抑制这种焦虑？就不知道是自己在习惯的过程中，还是做错了。</description>
+    </item>
+    
+    <item>
+      <title>与鸟巢的匆匆一面</title>
+      <link>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
+      <pubDate>Fri, 19 Nov 2021 23:34:01 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
+      <description>今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。
+我在乘车前往目的地的路上，看到鸟巢灯火通明的一瞬间，突然感到与繁景告别已久（一个多月），仿佛自己离开了这个城市。恍然间审视起来自己这一个月真的是在有意义的活着吗？貌似是陷在编译里面虚度时间。忽然想起那句：北航人是没有生活的(链接)，直呼赞同。故在按部就班完成生日的惊喜后按耐不住，感觉在座的各位都有自己在这一场聚会中想要做的事情，我不甚相融其中，只想奔赴鸟巢，而且还有点饿，想吃点告别已久的，学校外边的食物，遂离开。
+ 
+奔赴鸟巢并不顺利，沿湖东路莫名被封，我四处绕路，路上遇见几位也是如此，最后还是从东侧大道进入，赶在闭园的前几分钟，好心的保安提示我赶紧进去，进去后反倒不如在湖边拍下的风景好，中轴线的人也不多，只有几个年轻人还在滑滑板，却也算完成了今日的心愿。
+见到倒计时板只剩下76天，想到第一次来这个地方，已相隔七百来天，不甚感慨，在BUAA的这两年，在北京的这两年。
+ 
+离开之际，地铁口附近有一些劲爆的音乐和放纵的，各个年龄段的朝阳群众正在狂欢。待了一会儿，离开了，也没吃到饭。（回BUAA吃了难吃的烤冷面和土豆）</description>
+    </item>
+    
+    <item>
+      <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
+      <link>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</link>
+      <pubDate>Fri, 19 Nov 2021 10:09:18 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
+      <description>运行sql脚本时
+sql报错如下
+Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo;
+原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
+    </item>
+    
+    <item>
+      <title>Alxa_Compiler 编译器</title>
+      <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>相关文章：[[编译实验总结感想]]
+词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
+File reading Read by line, scan every char of every string and analyse.
+while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
+while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;+&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.</description>
+    </item>
+    
+    <item>
+      <title>2021年11月的第一场雪</title>
+      <link>http://atksoto.com/p/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
+      <pubDate>Sun, 07 Nov 2021 02:04:08 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
+      <description>真的很冷
+今天大家的关注点都在S赛，我也未能免俗参与其中</description>
+    </item>
+    
+    <item>
+      <title>Memo</title>
+      <link>http://atksoto.com/p/memo/</link>
+      <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/memo/</guid>
+      <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
+灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。
+图片  
+（介绍及短评摘自豆瓣，侵删）
+ 
+Mac, iPad适配
+简介 主页面 主界面分为3个标签：主页，电影，书籍
+主页  
+ 
+电影 这里是你看过的电影片单，你可以随时看到你标记过的所有电影，以及在任何时候添加一个新的电影进入你的片单
+进入某条电影，如果你输入的电影在数据库之中（数据来自豆瓣，侵删），你就可以看到关于电影的介绍：演员，导演，豆瓣评分，类别，介绍等，以及最重要的，在最下方，看到你第一次观看的时间以及感想
+当然，点击此方框，你可以进入到第二次标记的页面，记录下你的第二次观影以及新的感想
+ 
+ 
+书籍 类似电影，这里是你的书单，你可以添加你看过的书籍，并且记录第n次阅读的体验，相信每一次阅读，都会发现不少新东西
+ 
+功能  标记某一天的感受 标记某本电影，某本书 多次标记某电影和书的观看时间和感受 自动展示电影和书籍的相关图片与简介 图文并茂的主页卡片展示设计 在主页展示进一个月看过的电影 在主页展示今天以及那年今日的感想  架构以及实现 源代码文件共25个
+主要分为三个部分：Controller Model Views
+ image-20211027232454144 
+Controller 一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等
+其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
+class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-维也纳古典时期</title>
+      <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Tue, 19 Oct 2021 17:32:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</guid>
+      <description>维也纳古典时期 古典三杰：海顿，莫扎特，贝多芬
+海顿：清唱剧《创世纪》《四季》 莫扎特：四部喜歌剧 《费加罗的婚礼》 《唐璜》《女人心》 《魔笛》 贝多芬：奏鸣曲：c小调悲怆奏鸣曲)》、 《F小调热情奏鸣曲》
+交响曲：《第五（命运） 交响曲》、《第九（合唱）交响曲》
+小步舞曲 3拍
+清唱剧 哈利路亚
+维也纳古典主义时期产生了奏鸣曲快板形式
+[[西方音乐史-巴洛克时期]] 开始在乐谱标记强弱 维也纳古典主义时期渐强渐弱开始大量出现
+贝多芬随想回旋曲《为丢失铜板而愤怒》
+弗朗兹.约瑟夫.海顿 （奥地利作曲家）交响乐之父，弦乐四重奏之父
+套曲形式：乐章：协奏3 奏鸣4 弦乐四重奏4 交响曲4
+意大利喜歌剧 特点：
+ 序曲：奏明式快板 急口令——喜歌剧独有 引入多部声乐重唱 羽管键琴为宣叙调伴奏  莫扎特 “近代钢琴协奏曲之父” 协奏曲 concerto “轮流说话” 套曲 共三个乐章 双呈示部的形式
+乐队呈示部（只有乐队） 独奏呈示部（独奏与乐队） 展开部
+三者合一 作曲家 指挥 演奏者 第一乐章 奏鸣曲式快板——双呈示部 华彩乐段
+贝多芬 1770-1827 德国 57岁 乐圣 8岁登台 作为管风琴助理写下最初的音乐作品 主要作品：
+ 6首弦乐四重奏 21首钢琴奏鸣曲  第一阶段 一、二交响曲 三首协奏曲 32首钢琴奏鸣曲——钢琴 “新约全书”
+第二阶段 热情时期（1803-1817）</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-巴洛克时期</title>
+      <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</link>
+      <pubDate>Wed, 29 Sep 2021 08:34:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</guid>
+      <description>巴洛克时期 特点 悠长而富于装饰的旋律线条 大量华丽的装饰音（波光粼粼的装饰音） 速度不变 在一个调性上表达情感 节拍规律
+作品 巴赫 哥德堡变奏曲 维瓦尔第 四季 威尔第歌剧 哥林赛达 咏叹调风雨飘摇 花腔 装饰
+调式 和声 调式：大调，小调 和声：附调，主调
+大调12345671 和声135,246,357&amp;hellip;三度叠制 小调671234#56
+（1600-1750）巴洛克时期和声：通奏低音-数字低音
+和声特点：主调音乐｜复调音乐
+第一部成熟的歌剧1607年蒙特威尔第《奥菲欧》
+巴赫，亨德尔把复调音乐推向顶峰
+复调音乐听线条 主调音乐听纵向和声
+1650 - 1750 阉人歌手霸占意大利歌剧舞台 亨德尔歌剧《里纳尔多》咏叹调 让我痛哭吧</description>
+    </item>
+    
+    <item>
+      <title>西方音乐史-总述</title>
+      <link>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</link>
+      <pubDate>Tue, 28 Sep 2021 19:34:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</guid>
+      <description>共晓时期： [[西方音乐史-巴洛克时期]] [[西方音乐史-维也纳古典时期]] [[西方音乐史-浪漫主义时期]]
+音乐形式 协奏曲，交响曲，奏鸣曲，组曲，练习曲，交响诗，歌剧等
+音乐风格的判断 文化判断音乐风格 帕格尼尼主题变奏曲 愤怒的日子
+下葬，死亡的来临，悲剧的结局
+节拍 波尔卡：2拍，快速，末尾重音
+调式 c小调风景玛祖卡op17.2
+曲式结构 回旋曲式：准确的音乐反复
+浪漫主义时期 歌剧 三大作曲家
+威尔第 阿依达
+芭蕾舞剧，柴可夫斯基
+​	天鹅湖
+​	睡美人
+​	胡桃夹子
+钢琴诗人：肖邦（波兰）不对称的美，朗诵调，速度
+钢琴之王：李斯特（匈牙利）交响思维
+《降A大调（爱之梦）》3.op.541
+卡门 序曲 比才
+舒伯特 室内音乐
+印象主义 德彪西 牧神午后前奏曲
+结束在 1 大调，6 小调
+罗西尼 《威廉退尔》序曲
+上行旋律线
+下行旋律线
+马斯涅《泰伊斯》蜿蜒曲折
+《升F大调即兴曲》 肖邦
+《乡村骑士》 《教父》间奏曲
+巴洛克时期：速度不变
+浪漫主义时期：速度和力度变化，自由速度
+《流浪者之歌》</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第四单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 26 Jun 2021 11:23:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图
+第一次作业 实现类图分析
+将UML元素根据其含义分为如下层次结构
+部分元素根据需求分装为MyXXX
+ 
+根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素
+   循环轮次 处理元素     1 UmlClass UmlInterface UmlAssociationEnd   2 UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization   3 UmlParameter    第二次作业 实现顺序图，状态图
+将UML元素根据其含义分为如下层次结构
+部分元素根据需求分装为MyXXX
+ 
+根据逻辑层次，读入过程分为四个循环，分别处理四个层次的元素
+   循环轮次 处理元素     1 UmlClass UmlInterface UmlAssociationEnd UmlInteraction UmlStateMachine UmlRegion   2 UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization UmlLifeline UmlState UmlPseudostate UmlFinalState   3 UmlParameter UmlMessage UmlTransition   4 UmlEvent    第三次作业 架构同第二次。</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第三单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 29 May 2021 11:54:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。
+第二次作业中，虽然使用容器实现了数据存储，但是算法方面由于直接按照规格描述进行实现，导致了大量的CTLE。于使此后，阅读完规格后我能对方法有彻底理解后再根据自己的理解去实现。
+再有以上经验后，认为实现规格应采取如下步骤：
+ 完整阅读规格 选择正确的数据结构，容器 正确处理异常 选择合适的算法实现方法  基于JML规格来设计测试的方法和策略  再次阅读JML规格，检查在方法被实现前，异常是否被正确，处理检查方法是否满足规格的ensure 使用Junit，针对每一个具一定不确定因素的方法编写测试样例进行测试 对程序整体进行大数据集测试  本单元看似简单，但在测试方面我做的并不理想，在三次作业中均出现了非常低级的BUG
+第一次：
+ 
+原因是在阅读JML时并未彻底理解其含义，直接按照规格进行书写，导致进行了逻辑完全错误的一个判断
+第二次：
+ 
+低估了自己犯低级错误的的概率（当然本次作业主要问题在CTLE上）
+第三次：
+ 
+自作聪明在判断异常之前就删除了message，造成了大量WA
+三次作业出现的bug基本都是在阅读JML规格时丧失理性造成的，事实证明在阅读JML时候一定要保证独立思考的能力，当然锅也不能全部甩到这里，归根结底还是自己懒得测试且高估了自己写简单代码不出错的能力。
+(Junit暴力测试？)
+@org.junit.jupiter.api.Test void sendIndirectMessage() throws EqualPersonIdException, PersonIdNotFoundException, EqualRelationException, MessageIdNotFoundException, EmojiIdNotFoundException, EqualMessageIdException, RelationNotFoundException, EqualEmojiIdException { Network network = new MyNetwork(); network.addPerson(new MyPerson(1, &amp;#34;A&amp;#34;, 10)); network.addPerson(new MyPerson(3, &amp;#34;N&amp;#34;, 10)); network.addPerson(new MyPerson(6, &amp;#34;F&amp;#34;, 10)); network.addRelation(1, 3, 10); network.addRelation(3, 6, 15); network.addRelation(1, 6, 26); network.</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;基础</title>
+      <link>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 30 Apr 2021 11:00:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</guid>
+      <description>知识点纲要 
+结构
+struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为实际只使用的9个字节。
+压缩：
+#pragma pack(1) 宏 函数宏
+#define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0]) 控制宏
+#define HOME //用于控制开关 #ifdef HOME cout &amp;lt;&amp;lt; &amp;#34;link a&amp;#34; &amp;lt;&amp;lt; endl; #elseif cout &amp;lt;&amp;lt; &amp;#34;link b&amp;#34; &amp;lt;&amp;lt; endl; #endif #ifdef WIN32 //windows平台上一定会有的宏 #include &amp;lt;windows.h&amp;gt;#endif 如果把C++程序和C程序混合编译
+extern &amp;#34;C&amp;#34; void fun_C(); 这个语句就是用于告诉链接器，这个函数是用C标准编译的，不要按照C++编译器修饰的方式去找。
+函数
+//1.overloading //2.default parameter //默认参数必须放后 void fun2(int a, int b = 3, int c = 4) { cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; b &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl; } //3.</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第二单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 25 Apr 2021 22:33:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中
+Dispatcher负责控制waitQueue，对waitQueue的操作需要经过Dispatcher
+Elevator为电梯个体对象，其内包含一个requests用于表示目前位于电梯里的请求
+其中，锁全部位于调度器中
+例如
+public PersonRequest checkTopRequest() { synchronized (waitQueue) { int max = 0; PersonRequest request = null; for (PersonRequest r : waitQueue) { if (r.getFromFloor() &amp;gt; max) { max = r.getFromFloor(); request = r; } } return request; } } 三次作业都为相同的设计，Dispatcher基本没有变动。
+调度器设计与线程交互 外部可以放心与调度器进行交互，类似生产者消费者模型，调度器维护waitQueue，输入线程通过调度器向其中加入请求，电梯通过调度器查询和获取请求
+ 
+第二、三次作业中加入了多个电梯与dispatcher交互
+电梯策略：
+Random：自由竞争，直接去找队列中第一个目标，接到请求后，优先处理电梯中的第一个请求，在运行过程中在每层判断是否可以接送乘客并且进行操作。
+Morning：电梯位于1层，开始接人，2s后出发，一直送到电梯内请求列表的最高层后返回，依次循环
+Night：直接前往队列中最高层接人，向下过程中继续接人，回到一层后依次循环。
+UML 第一次作业 Main创建输入和电梯线程以及调度器，输入线程提供mode，requests，end等，调度器负责控制队列，elevator进行运行。
+ 
+流程图：
+ 
+第二次作业 相比第一次作业，输入线程负责创建新的Elevator
+ 
+流程图</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第一单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 28 Mar 2021 19:23:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression
+ 
+(1) 基于度量分析 类复杂度
+ 
+方法复杂度
+ 
+可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。
+本次作业没有被其他同学hack。性能方面，由于使用了hashmap，表达式基本上达到了最短，没有考虑到正负号打头和x**2拆分为x*x等细节
+本次作业没有很好的给下一次作业做好铺垫，表达式解析方法过于粗暴。
+第二次作业 本次作业难度骤升，因为要考虑表达式因子，第一次作业使用的暴力解析字符串方法骤然失效，遂彻底进行重构。我在本次作业中大量时间用于研究如何递归下降读取表达式。求导本身并不困难，创建Factor接口，sin，cos，幂函数，常量，term，poly均继承Factor，保证每个因子都有实现tostring和求导以及simplify方法。其中，Term是一些Factor构成的List，Poly是一些Term构成的List。在对Poly进行求导会自然向下递归。
+Patterns存放了提前编译好的正则表达式
+Parser用于递归下降解析表达式
+ 
+类复杂度
+ 
+可见Parser中方法复杂度较高，这是因为在解析字符串过程中，我调用了过多的私有方法，此处可以进行模块化优化。
+Term中由于simplify和diff的操作过于复杂，整体复杂度较高，此处可以把一些操作在初始化term时完成来优化。
+方法复杂度
+ 
+复杂度较高的几个方法
+ 
+其中Term的simplify如前文所述，该方法过于臃肿。
+第三次作业 本次作业加入了sin和cos内的嵌套已经wrong format的检测。由于和上一次作业的架构相似，仅需调整sin和cos内成员变量为Poly，并且对parser进行进一步递归下降即可。wrong format成为了难点，由于上一次作业的递归下降读取基于表达式正确的情况，这次由于格式可能的错误，我对parser进行了较大的调整，首先对字符串进行多余空白符和非法字符的判断，随后在递归下降读取过程中判断格式错误，包括括号和幂函数的错误。
+结构与第二次作业相似，加入了format checker和WF exception
+ 
+类复杂度
+ 
+方法复杂度
+ 
+其中较高的和第二次作业类似
+其中getCosFactor和getSinFactor是由于进行了格式的判断，此处重用了相似的代码，可以归类为一个方法进行优化。
+ 
+分析自己程序的bug 在前两次作业中，互测阶段没有被找到bug，在个人初期写代码过程中，遇到的一些BUG如：没有及时在while循环中continue，在if判断中逻辑过于复杂导致自己搞错了与或非逻辑，往往正是这类小的失误导致耗费大量时间debug，因此在写程序过程中应该时刻关注代码的复杂度。
+第三次作业，互测阶段被hack了两次，问题均是出在格式判断正负号和常数之间的空格时，我的判断条件出了问题，误判了一些正确的格式，自己写wrong format时没有考虑到各种情况，测试不够充分。
+对比分析出现bug的方法和未出现bug的方法在代码行和圈复杂度上的差异：在我的前两次作业中自己发生的BUG很明显主要是因为圈复杂度导致的，在第三次作业被hack的这个BUG主要是因为Wrong Format欠考虑。
+分析自己发现别人程序bug采用策略 主要采取的策略构建一些我在写代码过程中遇到的容易发生bug的数据点来对别人的代码进行测试，使用python进行核对。
+重构经历总结 第一次到第二次作业过程中经历了重构，原因是第一次作业没有留下足够的拓展空间，解析字符串过于暴力，但是在第二次作业理解了如何递归下降进行读取解析之后，重构反而显得思路更加清晰，在这个架构下，第三次作业完成的比较容易。由于重构前后属2次作业内容，没有可比较性，故未通过数据进行对比。
+吸取的教训是：尽可能给程序留下充足的可扩展空间，已经写好的类尽量保证其完备性，在拓展时就尽量不去修改了，类之间的保证解耦，方法复杂度尽可能底，如此下来可以保证程序的鲁棒性。
+心得体会 第一次作业思维还是比较偏面向过程的，对字符串进行了暴力解析，对象也仅仅停留在所谓的Term和Expression上。
+在第二次作业难度骤然增加后，明白了面向对象的重要性，一个接口下的多个类逻辑分明，调用各自的方法，另外，在第二次作业过程中，理解了递归下降的思路，这是一种逻辑非常清晰的做法，为我的第三次作业节省了大量的时间。
+第三次作业在格式判断上填了第二次作业留下的坑，更进一步理清了整个程序的逻辑，虽然最后在性能分上没有占到很多优势，但是总体下来我认为代码的结构和逻辑还是很清晰的，代码总计行数705完成了。
+总的来说，本次作业虽然遇到一些困难（指第二次作业递归下降和如何优化）但总体来说还是学到了很多东西，包括但不仅限于面向对象的思维，正则表达式的使用，Java容器操作的熟练，递归等。</description>
+    </item>
+    
+    <item>
+      <title>Hexo食用方法</title>
+      <link>http://atksoto.com/p/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 21 Dec 2020 23:34:37 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>Blog搭建 https://zhuanlan.zhihu.com/p/26625249
+https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+安装：npm install -g hexo
+Hexo指令 基本 hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo g == hexo generate #生成 hexo s == hexo server #启动服务预览 hexo d == hexo deploy #部署 域名解析 在github项目根目录新建一个名为CNAME的文件，里面填写域名
+然后CNAME解析
+图片 https://www.cnblogs.com/bzsheng/p/13802829.html</description>
+    </item>
+    
+    <item>
+      <title>失败的逻辑课程笔记</title>
+      <link>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 29 Oct 2020 11:54:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <description>失败的规律 墨菲定律 定义 如果做某项工作有多种方法，而其中有一种方法将导致事故，那么一定有人会按这种方法去做。
+四种表现形式 （注意：都不是一定的）
+ 任何事都没有表面看起来那么简单 所有的事都会比你预计的时间长 会出错的事不论概率多小总会出错 如果你担心某种情况发生，那么它就更有可能发生  启示  不忽视小概率事件 未雨绸缪 应急预案，动态调整 事故学习，反思  海因里希法则 定义 1：29：300
+事故因果连锁论 伤亡事故的发生不是一个孤立的事件，是一系列事件相继发生的结果。
+ 1，事故往往起于人而又终止于人
+2，人的不安全行为是大多数工伤事故的原因
+3，人在受到伤害前，已经历数百次没有造成伤害的同类事故
+4，人受到伤害的严重程度具有随机性，大多可以避免
+5，人不安全行为的主要原因是不正确的态度
+ 启示 企业安全工作的中心就是防止人的不安全行为，消除机械的或物质的不安全状态，中断事故连锁的进程而避免事故的发生。
+浴盆曲线 可靠性：完成规定功能的能力
+可靠度：完成规定功能的概率
+可靠度 MTBF
+不可靠度 MTTF
+故障率 浴盆曲线
+失败的分析 失败分析三种方式 模式 FMECA 故障模式影响及危害性分析
+原因 FTA 故障树
+事件 ETA 事件树
+失败风险 两个要素：失败的概率和后果
+技术，费用，进度风险
+风险识别，风险分析（可能性，后果严重性），风险排序
+管理，评估，应对
+失败的预防 优生优育  优质材料 降额\裕度设计 余度设计 健壮设计 耐环境设计 放错设计  养生保健  熟练的使用 定期的维护 有力的保障 持续的改进  失败的思维 如何看待失败 知识管理的概念 从失败中学习：知识的螺旋 吃一堑长一智：失败知识从哪来 失败知识的共享 失败知识的应用</description>
+    </item>
+    
+  </channel>
+</rss>

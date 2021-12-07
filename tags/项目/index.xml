@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目 on SOTO-BLOG</title>
+    <link>http://atksoto.com/tags/%E9%A1%B9%E7%9B%AE/</link>
+    <description>Recent content in 项目 on SOTO-BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0000</lastBuildDate><atom:link href="http://atksoto.com/tags/%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IoTMonitor</title>
+      <link>http://atksoto.com/p/iotmonitor/</link>
+      <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/iotmonitor/</guid>
+      <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
+可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
+ 
+图片  
+简介 主页面 分为三个部分：设备状态，历史记录，设置
+UI整体使用卡片式扁平设计
+设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
+其中，温湿度会每秒自动进行更新，2位小数点保留
+ 
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）
+默认显示2天前到现在的曲线，第一次打开app时会同步一次
+ 
+设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
+同时，打开app后每次阈值的设置会被记录，以便查看设置情况
+ 
+功能  实时显示开发板传感器温湿度 实时控制开发板电机马达转动与否 获取任意时间段开发板传感器温湿度历史曲线 通过设置过热阈值，当温度超过此值，进行报警 后台实时更新  实现 该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互
+该app的UI其中一部分复用了我之前的项目Memo的代码</description>
+    </item>
+    
+    <item>
+      <title>Alxa_Compiler 编译器</title>
+      <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>相关文章：[[编译实验总结感想]]
+词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
+File reading Read by line, scan every char of every string and analyse.
+while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
+while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;\r&amp;#39; || c == &amp;#39;\t&amp;#39;) { continue; } else if (c == &amp;#39;+&amp;#39; || c == &amp;#39;-&amp;#39; || c == &amp;#39;*&amp;#39; || c == &amp;#39;%&amp;#39;) { words.</description>
+    </item>
+    
+    <item>
+      <title>Memo</title>
+      <link>http://atksoto.com/p/memo/</link>
+      <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
+      
+      <guid>http://atksoto.com/p/memo/</guid>
+      <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
+灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。
+图片  
+（介绍及短评摘自豆瓣，侵删）
+ 
+Mac, iPad适配
+简介 主页面 主界面分为3个标签：主页，电影，书籍
+主页  
+ 
+电影 这里是你看过的电影片单，你可以随时看到你标记过的所有电影，以及在任何时候添加一个新的电影进入你的片单
+进入某条电影，如果你输入的电影在数据库之中（数据来自豆瓣，侵删），你就可以看到关于电影的介绍：演员，导演，豆瓣评分，类别，介绍等，以及最重要的，在最下方，看到你第一次观看的时间以及感想
+当然，点击此方框，你可以进入到第二次标记的页面，记录下你的第二次观影以及新的感想
+ 
+ 
+书籍 类似电影，这里是你的书单，你可以添加你看过的书籍，并且记录第n次阅读的体验，相信每一次阅读，都会发现不少新东西
+ 
+功能  标记某一天的感受 标记某本电影，某本书 多次标记某电影和书的观看时间和感受 自动展示电影和书籍的相关图片与简介 图文并茂的主页卡片展示设计 在主页展示进一个月看过的电影 在主页展示今天以及那年今日的感想  架构以及实现 源代码文件共25个
+主要分为三个部分：Controller Model Views
+ image-20211027232454144 
+Controller 一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等
+其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片
+class ImageLoader: ObservableObject { var didChange = PassthroughSubject&amp;lt;Data, Never&amp;gt;() var data = Data() { didSet { didChange.send(data) } } init(urlString: String) { guard let url = URL(string: urlString) else { return } let task = URLSession.</description>
+    </item>
+    
+  </channel>
+</rss>
