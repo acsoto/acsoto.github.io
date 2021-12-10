@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on SOTO-BLOG</title>
+    <link>http://atksoto.com/categories/coding/</link>
+    <description>Recent content in Coding on SOTO-BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Dec 2021 20:48:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据库建立</title>
+      <link>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
+      <pubDate>Thu, 02 Dec 2021 20:48:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
+      <description>设置自动当前时间时间戳 为timestamp设置DEFAULT CURRENT_TIMESTAMP</description>
+    </item>
+    
+    <item>
+      <title>Django相关</title>
+      <link>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Thu, 02 Dec 2021 20:24:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</guid>
+      <description>数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署</description>
+    </item>
+    
+    <item>
+      <title>MacOS全局可执行文件</title>
+      <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>sudo vim /usr/local/bin/command /usr/local/bin/ 下创建的文件默认在path中 必须使用sudo #!/bin/bash do something sudo chmod +x /usr/local/bin/command 即可全局使用 command</description>
+    </item>
+    
+    <item>
+      <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
+      <link>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</link>
+      <pubDate>Fri, 19 Nov 2021 10:09:18 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
+      <description>运行sql脚本时 sql报错如下 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo; 原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
+    </item>
+    
+    <item>
+      <title>Alxa_Compiler 编译器</title>
+      <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>相关文章：[[编译实验总结感想]] 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第四单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第三单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;基础</title>
+      <link>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 30 Apr 2021 11:00:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</guid>
+      <description>知识点纲要 结构 struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第二单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制wa</description>
+    </item>
+    
+    <item>
+      <title>BUAAOO-第一单元总结</title>
+      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <description>BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha</description>
+    </item>
+    
+  </channel>
+</rss>

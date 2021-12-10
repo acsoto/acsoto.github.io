@@ -67,8 +67,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/buaa/" >
-                BUAA
+            <a href="/categories/coding/" >
+                Coding
             </a>
         
     </header>
@@ -144,8 +144,8 @@
 <p>外部可以放心与调度器进行交互，类似生产者消费者模型，调度器维护waitQueue，输入线程通过调度器向其中加入请求，电梯通过调度器查询和获取请求</p>
 <p><figure 
 	>
-	<a href="/image-20210425163631337.png" >
-		<img src="/image-20210425163631337.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223045922-179404733.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223045922-179404733.png"
 			
 			
 			
@@ -161,11 +161,10 @@
 <p>Night：直接前往队列中最高层接人，向下过程中继续接人，回到一层后依次循环。</p>
 <h3 id="uml">UML</h3>
 <h5 id="第一次作业">第一次作业</h5>
-<p>Main创建输入和电梯线程以及调度器，输入线程提供mode，requests，end等，调度器负责控制队列，elevator进行运行。</p>
-<p><figure 
+<p>Main创建输入和电梯线程以及调度器，输入线程提供mode，requests，end等，调度器负责控制队列，elevator进行运行。<figure 
 	>
-	<a href="/image-20210425171756534.png" >
-		<img src="/image-20210425171756534.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223107161-475747233.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223107161-475747233.png"
 			
 			
 			
@@ -177,8 +176,8 @@
 <p>流程图：</p>
 <p><figure 
 	>
-	<a href="/image-20210425214505979.png" >
-		<img src="/image-20210425214505979.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223200144-299449511.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223200144-299449511.png"
 			
 			
 			
@@ -191,8 +190,8 @@
 <p>相比第一次作业，输入线程负责创建新的Elevator</p>
 <p><figure 
 	>
-	<a href="/image-20210425215005256.png" >
-		<img src="/image-20210425215005256.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223206804-1806157187.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223206804-1806157187.png"
 			
 			
 			
@@ -204,8 +203,8 @@
 <p>流程图</p>
 <p><figure 
 	>
-	<a href="/image-20210425215341767.png" >
-		<img src="/image-20210425215341767.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223219361-1371495978.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223219361-1371495978.png"
 			
 			
 			
@@ -214,13 +213,13 @@
 	</a>
 	
 </figure></p>
-<h5 id="第三次作业">第三次作业</h5>
+<h5 id="第三次作页">第三次作页</h5>
 <p>结构和第二次没有什么不同，在电梯类内部进行了ABC的区分，没有进行换乘的优化，仅仅是规定了各个电梯可人的层数后进行自由竞争。</p>
 <p>流程图</p>
 <p><figure 
 	>
-	<a href="/image-20210425220331346.png" >
-		<img src="/image-20210425220331346.png"
+	<a href="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223230784-522322619.png" >
+		<img src="https://img2020.cnblogs.com/blog/2324073/202104/2324073-20210425223230784-522322619.png"
 			
 			
 			
@@ -231,26 +230,14 @@
 </figure></p>
 <h3 id="分析自己程序的bug">分析自己程序的bug</h3>
 <p>在第一次作业没有互测bug。</p>
-<p>第二次作业自测的bug主要集中在没有正确结束线程。互测没有被找到bug，但是强测出现了一个超载的bug，原因在进行电梯可承载人数时加减号使用错误导致超载。</p>
+<p>第二次作业自测的bug主要集中在没有正确结束线程。</p>
+<p>互测没有被找到bug，但是强测出现了一个超载的bug，原因在进行电梯可承载人数时加减号使用错误导致超载。</p>
 <p>第三次作业自测阶段的bug主要在电梯由于型号不同，理论上结束标志不一，我在while循环结束的时候仅判断了input的信号，导致部分电梯提前结束，后来又因为没有正确结束导致while死循环CPU超时。</p>
 <p>在互测中被hack一次，原因是我没有进行换乘优化，对方的数据点为集中的密集底层到高层数据，我的电梯只有C会去接人，导致超时。</p>
 <h3 id="分析自己发现别人程序bug所采用的策略">分析自己发现别人程序bug所采用的策略</h3>
 <p>能力有限，这几次没有对他人的程序进行bug测试</p>
 <h3 id="心得体会">心得体会</h3>
 <p>多线程的加入使得程序有了更多的不确定性，增加了测试的难度，但总而言之，只要做好线程的安全，如定义好线程安全类在进行操作，处理好线程的结束，不产生轮询，就可以避免多线程带来的bug。线程之间的交互在逻辑上就如同P6流水线的竞争一样，需要进行大量情况的考虑。在这几次作业中，我学会了多线程程序的正确处理。</p>
-<p>最终代码量</p>
-<p><figure 
-	>
-	<a href="/image-20210425225410022.png" >
-		<img src="/image-20210425225410022.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
-	
-</figure></p>
 
 </section>
 
@@ -351,31 +338,31 @@
 </article>
                 
                     
-<article class="">
-    <a href="/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">失败的逻辑课程笔记</h2>
-        </div>
-    </a>
-</article>
-                
-                    
 <article class="has-image">
-    <a href="/p/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/">
+    <a href="/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
         
         
             <div class="article-image">
                 
-                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg"/>
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">新北老年活动中心</h2>
+            <h2 class="article-title">Alxa_Compiler 编译器</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/c-%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;基础</h2>
         </div>
     </a>
 </article>

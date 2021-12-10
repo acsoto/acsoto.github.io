@@ -6,7 +6,16 @@
     <description>Recent content in Categories on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 26 Nov 2021 10:22:27 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2021 20:48:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>http://atksoto.com/categories/coding/</link>
+      <pubDate>Thu, 02 Dec 2021 20:48:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/categories/coding/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>BUAA</title>
       <link>http://atksoto.com/categories/buaa/</link>
