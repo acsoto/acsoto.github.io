@@ -53,23 +53,17 @@
     <loc>http://atksoto.com/tags/%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2021-12-03T22:11:00+08:00</lastmod>
   </url><url>
-    <loc>http://atksoto.com/categories/</loc>
-    <lastmod>2021-12-02T20:48:00+08:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/categories/coding/</loc>
-    <lastmod>2021-12-02T20:48:00+08:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</loc>
-    <lastmod>2021-12-02T20:48:00+08:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</loc>
-    <lastmod>2021-12-02T20:24:00+08:00</lastmod>
-  </url><url>
     <loc>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</loc>
     <lastmod>2021-12-01T23:18:00+08:00</lastmod>
   </url><url>
     <loc>http://atksoto.com/p/our-little-sister/</loc>
     <lastmod>2021-12-01T19:25:00+08:00</lastmod>
+  </url><url>
+    <loc>http://atksoto.com/categories/</loc>
+    <lastmod>2021-11-30T21:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://atksoto.com/categories/coding/</loc>
+    <lastmod>2021-11-30T21:30:00+08:00</lastmod>
   </url><url>
     <loc>http://atksoto.com/tags/macos/</loc>
     <lastmod>2021-11-30T21:30:00+08:00</lastmod>
@@ -139,12 +133,6 @@
   </url><url>
     <loc>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</loc>
     <lastmod>2021-11-19T23:34:01+08:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/tags/mysql/</loc>
-    <lastmod>2021-11-19T10:09:18+08:00</lastmod>
-  </url><url>
-    <loc>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</loc>
-    <lastmod>2021-11-19T10:09:18+08:00</lastmod>
   </url><url>
     <loc>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</loc>
     <lastmod>2021-11-16T16:29:00+08:00</lastmod>

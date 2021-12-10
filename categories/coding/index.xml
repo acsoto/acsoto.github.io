@@ -6,25 +6,7 @@
     <description>Recent content in Coding on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Dec 2021 20:48:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>数据库建立</title>
-      <link>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
-      <pubDate>Thu, 02 Dec 2021 20:48:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
-      <description>设置自动当前时间时间戳 为timestamp设置DEFAULT CURRENT_TIMESTAMP</description>
-    </item>
-    
-    <item>
-      <title>Django相关</title>
-      <link>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</link>
-      <pubDate>Thu, 02 Dec 2021 20:24:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</guid>
-      <description>数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署</description>
-    </item>
-    
+    <lastBuildDate>Tue, 30 Nov 2021 21:30:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MacOS全局可执行文件</title>
       <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
@@ -32,15 +14,6 @@
       
       <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
       <description>sudo vim /usr/local/bin/command /usr/local/bin/ 下创建的文件默认在path中 必须使用sudo #!/bin/bash do something sudo chmod +x /usr/local/bin/command 即可全局使用 command</description>
-    </item>
-    
-    <item>
-      <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
-      <link>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</link>
-      <pubDate>Fri, 19 Nov 2021 10:09:18 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
-      <description>运行sql脚本时 sql报错如下 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo; 原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
     </item>
     
     <item>

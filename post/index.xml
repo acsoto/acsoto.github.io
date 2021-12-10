@@ -62,24 +62,6 @@
     </item>
     
     <item>
-      <title>数据库建立</title>
-      <link>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</link>
-      <pubDate>Thu, 02 Dec 2021 20:48:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E7%AB%8B/</guid>
-      <description>设置自动当前时间时间戳 为timestamp设置DEFAULT CURRENT_TIMESTAMP</description>
-    </item>
-    
-    <item>
-      <title>Django相关</title>
-      <link>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</link>
-      <pubDate>Thu, 02 Dec 2021 20:24:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/django%E7%9B%B8%E5%85%B3/</guid>
-      <description>数据库转类 python3 manage.py inspectdb 解决冲突问题 class UserEvaluate(models.Model): user_evaluate_id = models.AutoField(primary_key=True) user_evaluate_text = models.CharField(max_length=100, blank=True, null=True) user_evaluate_score = models.IntegerField(blank=True, null=True) user = models.ForeignKey(User, models.DO_NOTHING, blank=True, null=True) post_user = models.ForeignKey(User, models.DO_NOTHING) 后两行改为 user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, blank=True, null=True, related_name=&amp;#39;user_evaluate_1&amp;#39;) post_user = models.ForeignKey(&amp;#39;User&amp;#39;, models.DO_NOTHING, related_name=&amp;#39;user_evaluate_2&amp;#39;) Django 腾讯云函数部署 如何部署</description>
-    </item>
-    
-    <item>
       <title>推歌 第一期</title>
       <link>http://atksoto.com/p/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
       <pubDate>Wed, 01 Dec 2021 23:18:00 +0800</pubDate>
@@ -221,15 +203,6 @@
       
       <guid>http://atksoto.com/p/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
       <description>今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只</description>
-    </item>
-    
-    <item>
-      <title>Unknown collation- &#39;utf8mb4_0900_ai_ci&#39;</title>
-      <link>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</link>
-      <pubDate>Fri, 19 Nov 2021 10:09:18 +0800</pubDate>
-      
-      <guid>http://atksoto.com/p/unknown-collation-utf8mb4_0900_ai_ci/</guid>
-      <description>运行sql脚本时 sql报错如下 Unknown collation: &amp;lsquo;utf8mb4_0900_ai_ci&amp;rsquo; 原因mySQL版本不兼容，将sql文件中 utf8mb4_0900_ai_ci 替换成 utf8mb4_general_ci</description>
     </item>
     
     <item>
