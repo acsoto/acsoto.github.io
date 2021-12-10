@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 22:23:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最近的log4j 和新的 GuildManager</title>
+      <link>http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
+      <pubDate>Fri, 10 Dec 2021 22:23:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
+      <description>昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影</description>
+    </item>
+    
     <item>
       <title>Obsidian体验——新工作流</title>
       <link>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-    <head>
-	<meta name="generator" content="Hugo 0.89.4" /><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='多喝水，好好睡觉，开心点儿'><title>SOTO-BLOG</title>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影'><title>最近的log4j 和新的 GuildManager</title>
 
-<link rel='canonical' href='http://atksoto.com/'>
+<link rel='canonical' href='http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='SOTO-BLOG'>
-<meta property='og:description' content='多喝水，好好睡觉，开心点儿'>
-<meta property='og:url' content='http://atksoto.com/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='最近的log4j 和新的 GuildManager'>
+<meta property='og:description' content='昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影'>
+<meta property='og:url' content='http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2021-12-10T22:23:00&#43;08:00 '/>
-<meta name="twitter:title" content="SOTO-BLOG">
-<meta name="twitter:description" content="多喝水，好好睡觉，开心点儿"><link rel="alternate" type="application/rss&#43;xml" href="http://atksoto.com/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AtTackCraft' /><meta property='article:published_time' content='2021-12-10T22:23:00&#43;08:00'/><meta property='article:modified_time' content='2021-12-10T22:23:00&#43;08:00'/><meta property='og:image' content='http://pic.mcatk.com/soto-pictures/2021-12/0tqH35.png' />
+<meta name="twitter:title" content="最近的log4j 和新的 GuildManager">
+<meta name="twitter:description" content="昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://pic.mcatk.com/soto-pictures/2021-12/0tqH35.png' />
     <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
 
     </head>
-    <body class="">
+    <body class="
+    article-page 
+">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -39,7 +41,13 @@
         }
     })();
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -191,82 +199,25 @@
         
     </ol>
 </aside>
+
+    
 <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="article-list">
-        
-            
-<article class="">
+    <article class="has-image main-article">
     <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/buaa/" >
-                BUAA
+        <div class="article-image">
+            <a href="/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/">
+                
+                    <img src="http://pic.mcatk.com/soto-pictures/2021-12/0tqH35.png" loading="lazy" alt="Featured image of post 最近的log4j 和新的 GuildManager" />
+                
             </a>
-        
-    </header>
+        </div>
     
-
-    <h2 class="article-title">
-        <a href="/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">BUAAOO-第一单元总结</a>
-    </h2>
-
-    
-
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Mar 28, 2021</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 5 分钟
-                </time>
-            </div>
-        
-    </footer>
-    
-</div>
-</header>
-</article>
-        
-            
-<article class="">
-    <header class="article-header">
 
     <div class="article-details">
     
 
     <h2 class="article-title">
-        <a href="/p/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/">Hexo食用方法</a>
+        <a href="/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/">最近的log4j 和新的 GuildManager</a>
     </h2>
 
     
@@ -284,7 +235,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 21, 2020</time>
+                <time class="article-time--published">Dec 10, 2021</time>
             </div>
         
 
@@ -307,111 +258,78 @@
     
 </div>
 </header>
-</article>
-        
-            
-<article class="">
-    <header class="article-header">
 
-    <div class="article-details">
+    <section class="article-content">
+    <p>昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影响，一方面因为暂时不好解决，也因为这个漏洞严重到小服不会成为首要攻击目标，于是也没有在意。</p>
+<p>今天很快各个服务端开始推出带补丁的新版本，Spigot也是，甚至在MCBBS论坛看到了之前写安全插件的一个眼熟的大佬给了一个参数解决问题的方法，佩服众大佬和互联网的速度。我已经去构建了一下新版的Spigot，并且加上了那个参数，双重保险目前应该没有问题了，尽管到现在我还不知道具体怎么触发这个漏洞。</p>
+<p>昨天看kotlin，一时兴起重写了<a class="link" href="https://github.com/acsoto/GuildManager"  target="_blank" rel="noopener"
+    >GuildManager</a>这个一年前初学Java时留下的ss代码，回头看看发现这个插件也记录着自己这一年来编程能力的进步，从面向对象，到数据库设计，也算是学以致用了，想想如果初中的时候自己尝试一下学习这些东西，或许也能少吃点当时折腾MC时候不懂编程的苦头。</p>
+<p>发展快呀。</p>
+
+</section>
+
+
+    <footer class="article-footer">
     
-    <header class="article-category">
+    <section class="article-tags">
         
-            <a href="/categories/buaa/" >
-                BUAA
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">失败的逻辑课程笔记</a>
-    </h2>
-
-    
-
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Oct 29, 2020</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 2 分钟
-                </time>
-            </div>
-        
-    </footer>
-    
-</div>
-</header>
-</article>
+            <a href="/tags/attackcraft/">AtTackCraft</a>
         
     </section>
-    <nav class='pagination'>
-        
-        
 
-        
-            
-                    <a class='page-link' href='/'>1</a>
-                
-            
-            
-                    
-                        
-                        <span class='page-link dots'>&hellip;</span>
-                    
-                
-            
-            
-                    
-                
-            
-            
-                    
-                
-            
-            
-                    
-                
-            
-            
-                    
-                
-            
-            
-                    <a class='page-link' href='/page/7/'>7</a>
-                
-            
-            
-                <span class='page-link current'>8</span>
-                
-            
-    </nav>
 
-<footer class="site-footer">
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -426,127 +344,87 @@
     </section>
 </footer>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
             </main>
     
-    
-    <aside class="sidebar right-sidebar sticky">
-        
-            <form action="/search/" class="search-form widget" >
-        <p>
-            <label>搜索</label>
-            <input name="keyword" required placeholder="输入关键词..." />
-        
-            <button title="搜索">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-        
-            <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">标签云</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/buaa/" class="font_size_12">
-                BUAA
-            </a>
-        
-            <a href="/tags/%E5%8F%A4%E5%85%B8/" class="font_size_5">
-                古典
-            </a>
-        
-            <a href="/tags/%E5%BC%80%E5%8F%91/" class="font_size_4">
-                开发
-            </a>
-        
-            <a href="/tags/%E9%9A%8F%E6%83%B3/" class="font_size_4">
-                随想
-            </a>
-        
-            <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="font_size_4">
-                面向对象
-            </a>
-        
-            <a href="/tags/%E7%94%B5%E5%BD%B1/" class="font_size_3">
-                电影
-            </a>
-        
-            <a href="/tags/%E9%A1%B9%E7%9B%AE/" class="font_size_3">
-                项目
-            </a>
-        
-            <a href="/tags/attackcraft/" class="font_size_2">
-                AtTackCraft
-            </a>
-        
-            <a href="/tags/hexo/" class="font_size_2">
-                hexo
-            </a>
-        
-            <a href="/tags/swift/" class="font_size_2">
-                Swift
-            </a>
-        
-    </div>
-</section>
-        
-            <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">归档</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2021">
-                        
-                            <span class="year">2021</span>
-                            <span class="count">36</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
-                    <a href="/archives/#2020">
-                        
-                            <span class="year">2020</span>
-                            <span class="count">2</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-        
-    </aside>
-
 
         </div>
         <script 

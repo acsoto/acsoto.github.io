@@ -6,7 +6,20 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 10 Dec 2021 22:23:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>最近的log4j 和新的 GuildManager</title>
+        <link>http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
+        <pubDate>Fri, 10 Dec 2021 22:23:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
+        <description>&lt;img src="http://pic.mcatk.com/soto-pictures/2021-12/0tqH35.png" alt="Featured image of post 最近的log4j 和新的 GuildManager" /&gt;&lt;p&gt;昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影响，一方面因为暂时不好解决，也因为这个漏洞严重到小服不会成为首要攻击目标，于是也没有在意。&lt;/p&gt;
+&lt;p&gt;今天很快各个服务端开始推出带补丁的新版本，Spigot也是，甚至在MCBBS论坛看到了之前写安全插件的一个眼熟的大佬给了一个参数解决问题的方法，佩服众大佬和互联网的速度。我已经去构建了一下新版的Spigot，并且加上了那个参数，双重保险目前应该没有问题了，尽管到现在我还不知道具体怎么触发这个漏洞。&lt;/p&gt;
+&lt;p&gt;昨天看kotlin，一时兴起重写了&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/GuildManager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GuildManager&lt;/a&gt;这个一年前初学Java时留下的ss代码，回头看看发现这个插件也记录着自己这一年来编程能力的进步，从面向对象，到数据库设计，也算是学以致用了，想想如果初中的时候自己尝试一下学习这些东西，或许也能少吃点当时折腾MC时候不懂编程的苦头。&lt;/p&gt;
+&lt;p&gt;发展快呀。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Obsidian体验——新工作流</title>
         <link>http://atksoto.com/p/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
         <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
