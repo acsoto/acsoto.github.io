@@ -139,16 +139,16 @@
         
         <guid>http://atksoto.com/p/takeawaydelivery-%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
         <description>&lt;p&gt;相关：&lt;/p&gt;
-&lt;p&gt;项目展示视频： &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV1Yq4y1q7Zf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;web端答辩PPT： &lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery/blob/master/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/acsoto/TakeawayDelivery/blob/master/&lt;/a&gt;系统实现报告.pdf&lt;/p&gt;
-&lt;p&gt;移动端APP答辩PPT： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android/blob/main/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/Qwtdgh/Android/blob/main/&lt;/a&gt;高共享食堂外卖平台“航送”展示PPT.pdf&lt;/p&gt;
-&lt;p&gt;项目前后端仓库： &lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/acsoto/TakeawayDelivery&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;移动端APP仓库： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/Qwtdgh/Android&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery/blob/master/%e7%b3%bb%e7%bb%9f%e5%ae%9e%e7%8e%b0%e6%8a%a5%e5%91%8a.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;web端答辩PPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android/blob/main/%e9%ab%98%e5%85%b1%e4%ba%ab%e9%a3%9f%e5%a0%82%e5%a4%96%e5%8d%96%e5%b9%b3%e5%8f%b0%e2%80%9c%e8%88%aa%e9%80%81%e2%80%9d%e5%b1%95%e7%a4%baPPT.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;移动端APP答辩PPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目前后端仓库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;移动端APP仓库&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;
