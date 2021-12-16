@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='相关： 项目展示视频： https://www.bilibili.com/video/BV1Yq4y1q7Zf web端答辩PPT： [[TakeawayDelivery展示PPT.pdf]] 链接 移动端APP答辩PPT： [[高共享食'><title>TakeawayDelivery 后端实现</title>
+
+<link rel='canonical' href='http://atksoto.com/p/takeawaydelivery-%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='TakeawayDelivery 后端实现'>
+<meta property='og:description' content='相关： 项目展示视频： https://www.bilibili.com/video/BV1Yq4y1q7Zf web端答辩PPT： [[TakeawayDelivery展示PPT.pdf]] 链接 移动端APP答辩PPT： [[高共享食'>
+<meta property='og:url' content='http://atksoto.com/p/takeawaydelivery-%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0/'>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='MySQL' /><meta property='article:tag' content='项目' /><meta property='article:published_time' content='2021-12-07T19:14:00&#43;08:00'/><meta property='article:modified_time' content='2021-12-07T19:14:00&#43;08:00'/>
+<meta name="twitter:title" content="TakeawayDelivery 后端实现">
+<meta name="twitter:description" content="相关： 项目展示视频： https://www.bilibili.com/video/BV1Yq4y1q7Zf web端答辩PPT： [[TakeawayDelivery展示PPT.pdf]] 链接 移动端APP答辩PPT： [[高共享食">
+    <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/coding/" >
+                Coding
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/takeawaydelivery-%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0/">TakeawayDelivery 后端实现</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 07, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>相关：</p>
+<p>项目展示视频： <a class="link" href="https://www.bilibili.com/video/BV1Yq4y1q7Zf"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV1Yq4y1q7Zf</a></p>
+<p>web端答辩PPT： [[TakeawayDelivery展示PPT.pdf]] <a class="link" href="TakeawayDelivery%e5%b1%95%e7%a4%baPPT.pdf" >链接</a></p>
+<p>移动端APP答辩PPT：  [[高共享食堂外卖平台“航送”展示PPT.pdf]] <a class="link" href="%e9%ab%98%e5%85%b1%e4%ba%ab%e9%a3%9f%e5%a0%82%e5%a4%96%e5%8d%96%e5%b9%b3%e5%8f%b0%e2%80%9c%e8%88%aa%e9%80%81%e2%80%9d%e5%b1%95%e7%a4%baPPT.pdf" >链接</a></p>
+<p>项目前后端仓库： <a class="link" href="https://github.com/acsoto/TakeawayDelivery"  target="_blank" rel="noopener"
+    >https://github.com/acsoto/TakeawayDelivery</a></p>
+<p>移动端APP仓库： <a class="link" href="https://github.com/Qwtdgh/Android"  target="_blank" rel="noopener"
+    >https://github.com/Qwtdgh/Android</a></p>
+<h1 id="takeawaydelivery-后端实现">TakeawayDelivery 后端实现</h1>
+<h2 id="开发环境">开发环境</h2>
+<ul>
+<li>Python</li>
+<li>Django</li>
+<li>PyTorch</li>
+<li>MySQL</li>
+</ul>
+<h2 id="云端部署">云端部署</h2>
+<p>我们将后端Django和数据库均部署在服务器上，并且进行了域名解析，可以通过delivery.mcatk.com直接访问后端，前端可以在任意情况下发送请求。</p>
+<p>服务器供应：腾讯云&amp;阿里云
+服务器系统：CentOS 7
+数据库：MySQL 5
+解释器：Anaconda 3</p>
+<h2 id="数据库结构">数据库结构</h2>
+<p><figure 
+	>
+	<a href="http://pic.mcatk.com/soto-pictures/2021-12/SRvqwx.png" >
+		<img src="http://pic.mcatk.com/soto-pictures/2021-12/SRvqwx.png"
+			
+			
+			
+			loading="lazy"
+			alt="数据库结构">
+	</a>
+	
+	<figcaption>数据库结构</figcaption>
+	
+</figure></p>
+<h2 id="后端实现接口">后端实现接口</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/login/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">login</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/register/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">register</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getInformation/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_information</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/changeInformation/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">change_information</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/changePassword/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">change_password</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getStores/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_stores</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getStoreInformation/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_store_information</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/deleteUser/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">delete_user</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getEvaluateFood/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_evaluate_food</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/evaluateFood/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">evaluate_food</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/deleteEvaluateFood/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">delete_evaluate_food</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getEvaluateUser/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_evaluate_user</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/evaluateUser/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">evaluate_user</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/deleteEvaluateUser/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">delete_evaluate_user</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/setOrders/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">set_orders</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/unStar/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">un_star</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/setStar/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">set_star</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/finishOrder/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">finish_order</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/takeOrder/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">take_order</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getAllOrders/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_all_orders</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/getTopFoodList/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">get_top_food_list</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/androidGetUserFoodEvaluate/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">android_get_user_food_evaluate</span><span class="p">),</span>  
+<span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/androidGetFoodEvaluateScore/&#39;</span><span class="p">,</span> <span class="n">myapp</span><span class="o">.</span><span class="n">views</span><span class="o">.</span><span class="n">android_get_food_evaluate_score</span><span class="p">),</span>
+</code></pre></div><h2 id="深度学习">深度学习</h2>
+<p>我们根据订单的配送时间是星期几，餐厅，配送地等信息通过深度学习预测订单送达时间
+我们通过手动构造数据集，训练了一个模型存到服务器，并在每次前端发送新的请求后对订单进行预计送达时间的计算。</p>
+<p><figure 
+	>
+	<a href="http://pic.mcatk.com/soto-pictures/2021-12/wzVMGd.png" >
+		<img src="http://pic.mcatk.com/soto-pictures/2021-12/wzVMGd.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">dl</span><span class="p">):</span>  
+    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>  
+    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>  
+        <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">FloatTensor</span><span class="p">(</span><span class="n">dl</span><span class="p">))</span>  
+    <span class="k">return</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="o">*</span><span class="mf">65.0</span><span class="p">)</span>
+</code></pre></div><h2 id="orm">ORM</h2>
+<p>我们通过Django ORM生成了数据表对象的models，方便了数据库的操作，例如</p>
+<p>Food</p>
+<p><figure 
+	>
+	<a href="http://pic.mcatk.com/soto-pictures/2021-12/C1MOdS.png" >
+		<img src="http://pic.mcatk.com/soto-pictures/2021-12/C1MOdS.png"
+			
+			
+			
+			loading="lazy"
+			alt="Food">
+	</a>
+	
+	<figcaption>Food</figcaption>
+	
+</figure></p>
+<p>实现为</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Food</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>  
+    <span class="n">food_id</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">AutoField</span><span class="p">(</span><span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+    <span class="n">food_name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+    <span class="n">food_price</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+    <span class="n">food_url</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+    <span class="n">food_type</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+    <span class="n">store</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="s1">&#39;Store&#39;</span><span class="p">,</span> <span class="n">models</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+  
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>  
+        <span class="n">managed</span> <span class="o">=</span> <span class="kc">False</span>  
+ <span class="n">db_table</span> <span class="o">=</span> <span class="s1">&#39;food&#39;</span>
+</code></pre></div><h2 id="实现样例">实现样例</h2>
+<ol>
+<li>【增】用户注册</li>
+</ol>
+<p>前端发送post请求
+URL: <code>http://delivery.mcatk.com/api/register/</code>
+PARA:  <code>userName</code>  <code>userPassword</code> <code>userNickname</code> <code>userTel</code> <code>userAddress</code></p>
+<p>后端接到请求，执行<code>register</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&#34;POST&#34;</span><span class="p">:</span>
+        <span class="n">data_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+        <span class="n">new_name</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userName&#34;</span><span class="p">)</span>
+        <span class="n">new_pwd</span> <span class="o">=</span> <span class="n">make_password</span><span class="p">(</span><span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userPassword&#34;</span><span class="p">))</span>
+        <span class="n">new_nickname</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userNickname&#34;</span><span class="p">)</span>
+        <span class="n">new_tel</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userTel&#34;</span><span class="p">)</span>
+        <span class="n">new_address</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userAddress&#34;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">new_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;未输入&#34;</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">space</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">user_name</span><span class="o">=</span><span class="n">new_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">space</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;用户名已存在&#34;</span><span class="p">})</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">new_user</span> <span class="o">=</span> <span class="n">User</span><span class="p">()</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_name</span> <span class="o">=</span> <span class="n">new_name</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_password</span> <span class="o">=</span> <span class="n">new_pwd</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_nickname</span> <span class="o">=</span> <span class="n">new_nickname</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_tel</span> <span class="o">=</span> <span class="n">new_tel</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_address</span> <span class="o">=</span> <span class="n">new_address</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">user_icon_url</span> <span class="o">=</span> <span class="s2">&#34;https://img0.baidu.com/it/u=3730772664,138405132&amp;fm=26&amp;fmt=auto&#34;</span>
+                <span class="n">new_user</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+                <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;注册成功&#34;</span><span class="p">,</span> <span class="s2">&#34;userID&#34;</span><span class="p">:</span> <span class="n">new_user</span><span class="o">.</span><span class="n">user_id</span><span class="p">})</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;请求异常&#34;</span><span class="p">})</span>
+</code></pre></div><p>先检查是否有重名用户，若无，通过Django ORM 将新生成的User导入数据库。</p>
+<ol start="2">
+<li>【删】用户注销</li>
+</ol>
+<p>前端发送post请求
+URL: <code>http://delivery.mcatk.com/api/deleteUser/</code>
+PARA:  <code>userID</code>  <code>userPassword</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">delete_user</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&#34;POST&#34;</span><span class="p">:</span>
+        <span class="n">data_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+        <span class="n">user_id</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userID&#34;</span><span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userPassword&#34;</span><span class="p">)</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">check_password</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">user_password</span><span class="p">):</span>
+            <span class="n">user</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;注销成功&#34;</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;密码错误&#34;</span><span class="p">})</span>
+</code></pre></div><p>检查密码是否正确，若正确则注销用户</p>
+<ol start="3">
+<li>【改】完成订单</li>
+</ol>
+<p>以完成订单为例</p>
+<p>前端发送post请求
+URL: <code>http://delivery.mcatk.com/api/finishOrder/</code>
+PARA: <code>orderID</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">finish_order</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&#34;POST&#34;</span><span class="p">:</span>
+        <span class="n">data_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+        <span class="n">order_id</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;orderID&#34;</span><span class="p">)</span>
+        <span class="n">Order</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">order_id</span><span class="o">=</span><span class="n">order_id</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">order_completed</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                             <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;配送完成&#34;</span><span class="p">,</span>
+                             <span class="p">})</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;请求异常&#34;</span><span class="p">})</span>
+</code></pre></div><ol start="4">
+<li>用户信息查询</li>
+</ol>
+<p>用前端向后端发送获取用户全部信息的API为例</p>
+<p>前端发送post请求
+URL: <code>http://delivery.mcatk.com/api/getInformation/</code>
+PARA: <code>userID</code></p>
+<p>后端接到请求，执行<code>get_information</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_information</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>  
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&#34;POST&#34;</span><span class="p">:</span>  
+        <span class="n">data_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>  
+        <span class="n">user_id</span> <span class="o">=</span> <span class="n">data_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;userID&#34;</span><span class="p">)</span>  
+        <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>  
+        <span class="n">orders1</span> <span class="o">=</span> <span class="n">get_orders</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>  
+        <span class="n">orders2</span> <span class="o">=</span> <span class="n">get_orders</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>  
+        <span class="n">stars</span> <span class="o">=</span> <span class="n">get_stars</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>  
+        <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  
+							 <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;查询成功&#34;</span><span class="p">,</span>  
+							 <span class="s2">&#34;userName&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_name</span><span class="p">,</span>  
+							 <span class="s2">&#34;userNickName&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_nickname</span><span class="p">,</span>  
+							 <span class="s2">&#34;userAddress&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_address</span><span class="p">,</span>  
+							 <span class="s2">&#34;userTel&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_tel</span><span class="p">,</span>  
+							 <span class="s2">&#34;userOrders&#34;</span><span class="p">:</span> <span class="n">orders1</span><span class="p">,</span>  
+							 <span class="s2">&#34;userDeliveryOrders&#34;</span><span class="p">:</span> <span class="n">orders2</span><span class="p">,</span>  
+							 <span class="s2">&#34;userStars&#34;</span><span class="p">:</span> <span class="n">stars</span><span class="p">,</span>  
+							 <span class="s2">&#34;userIconUrl&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_icon_url</span><span class="p">,</span>  
+							 <span class="p">})</span>  
+    <span class="k">else</span><span class="p">:</span>  
+        <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;请求异常&#34;</span><span class="p">})</span>
+</code></pre></div><p>此过程还会调用获取用户订单和用户收藏以及机器学习的函数，不具体展出</p>
+<p>随后，前端可以得到类似如下的返回</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+<span class="nt">&#34;success&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="nt">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;查询成功&#34;</span><span class="p">,</span>
+<span class="nt">&#34;userName&#34;</span><span class="p">:</span> <span class="s2">&#34;zzh&#34;</span><span class="p">,</span>
+<span class="nt">&#34;userNickName&#34;</span><span class="p">:</span> <span class="s2">&#34;粥童帆&#34;</span><span class="p">,</span>
+<span class="nt">&#34;userAddress&#34;</span><span class="p">:</span> <span class="s2">&#34;学院路-15公寓&#34;</span><span class="p">,</span>
+<span class="nt">&#34;userTel&#34;</span><span class="p">:</span> <span class="s2">&#34;18800130501&#34;</span><span class="p">,</span>
+<span class="nt">&#34;userOrders&#34;</span><span class="p">:</span> <span class="p">[</span>
+<span class="err">...</span>
+<span class="err">}</span>
+</code></pre></div><p>这样我们就完成了前后端的通信</p>
+<h2 id="密码加密">密码加密</h2>
+<p>我们对数据库的密码进行了加密，通过Django的 <code>make_password()</code> 和 <code>check_password()</code> 函数在传入和验证密码时候进行了加密解密操作。</p>
+<p><figure 
+	>
+	<a href="http://pic.mcatk.com/soto-pictures/2021-12/lZOUAk.png" >
+		<img src="http://pic.mcatk.com/soto-pictures/2021-12/lZOUAk.png"
+			
+			
+			
+			loading="lazy"
+			alt="数据库中加密的密码">
+	</a>
+	
+	<figcaption>数据库中加密的密码</figcaption>
+	
+</figure></p>
+<p>同时，由于我们的系统起初上线时密码为明文存储，我们会在老用户第一次登陆时通过其验证并为其加密。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">user_password</span> <span class="o">==</span> <span class="n">password</span><span class="p">:</span>  
+    <span class="n">user</span><span class="o">.</span><span class="n">user_password</span> <span class="o">=</span> <span class="n">make_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>  
+    <span class="n">user</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>  
+    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;登录成功，已为您的密码加密&#34;</span><span class="p">,</span> <span class="s2">&#34;userID&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_id</span><span class="p">})</span>  
+<span class="k">elif</span> <span class="n">check_password</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">user_password</span><span class="p">):</span>  
+    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s2">&#34;success&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;登录成功&#34;</span><span class="p">,</span> <span class="s2">&#34;userID&#34;</span><span class="p">:</span> <span class="n">user</span><span class="o">.</span><span class="n">user_id</span><span class="p">})</span>
+</code></pre></div><h2 id="设计细节">设计细节</h2>
+<h3 id="热菜推荐">热菜推荐</h3>
+<p>我们通过MySQL的特性，统计出在订单-菜品关系表中出现最多的菜品，向用户推荐热门菜品。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">order_foods</span> <span class="o">=</span> <span class="n">OrderFood</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">values</span><span class="p">(</span><span class="s1">&#39;food_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="nb">sum</span><span class="o">=</span><span class="n">Sum</span><span class="p">(</span><span class="s1">&#39;food_num&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;-sum&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">order_food</span> <span class="ow">in</span> <span class="n">order_foods</span><span class="p">:</span>  
+    <span class="n">food</span> <span class="o">=</span> <span class="n">Food</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">food_id</span><span class="o">=</span><span class="n">order_food</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;food_id&#39;</span><span class="p">))</span>  
+    <span class="n">food_json</span> <span class="o">=</span> <span class="n">get_food_json</span><span class="p">(</span><span class="n">food</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>  
+    <span class="n">food_json</span><span class="p">[</span><span class="s2">&#34;sum&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">order_food</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>  
+    <span class="n">food_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">food_json</span><span class="p">)</span>
+</code></pre></div><h3 id="按时间展示">按时间展示</h3>
+<p>我们在展示订单，评论等时候会按照时间先后展示，更加人性化</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">food_evaluates</span> <span class="o">=</span> <span class="n">FoodEvaluate</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">food_id</span><span class="o">=</span><span class="n">food_id</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s2">&#34;-food_evaluate_date&#34;</span><span class="p">)</span>
+</code></pre></div><h3 id="下单送单">下单&amp;送单</h3>
+<p>由于我们的开发APP的初衷就是任何用户都可以下单，也可以送单，因此我们提供了返回自己下的单和自己接的单，还有等待接的单的API，他们都根据你的角色不同，返回不同的的结构类型，例如，当你查看自己的单，数据重点在于你点的菜品和价格等，而当你查看你可以接的单时，数据的重点在于这个订单是从哪里送到哪里等等，为此我们提供了各式各样的查询API。</p>
+<h2 id="数据完整性">数据完整性</h2>
+<p>我们为所有存在关系的对象增加了外键约束，并且加入了 MySQL  <code>on delete cascade</code> 的删除规则，在对象删除时删除与其有外键约束的对象。</p>
+<p>例如，当我们删除一个用户的时候，他的全部订单，订单中的菜品关系，用户收藏等将被一并删除，不会出现数据异常。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/mysql/">MySQL</a>
+        
+            <a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Alxa_Compiler 编译器</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MacOS全局可执行文件</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">BUAAOO-第四单元总结</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">BUAAOO-第三单元总结</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/c-%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;基础</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 SOTO-BLOG
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#开发环境">开发环境</a></li>
+    <li><a href="#云端部署">云端部署</a></li>
+    <li><a href="#数据库结构">数据库结构</a></li>
+    <li><a href="#后端实现接口">后端实现接口</a></li>
+    <li><a href="#深度学习">深度学习</a></li>
+    <li><a href="#orm">ORM</a></li>
+    <li><a href="#实现样例">实现样例</a></li>
+    <li><a href="#密码加密">密码加密</a></li>
+    <li><a href="#设计细节">设计细节</a>
+      <ol>
+        <li><a href="#热菜推荐">热菜推荐</a></li>
+        <li><a href="#按时间展示">按时间展示</a></li>
+        <li><a href="#下单送单">下单&amp;送单</a></li>
+      </ol>
+    </li>
+    <li><a href="#数据完整性">数据完整性</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

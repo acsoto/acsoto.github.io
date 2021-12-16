@@ -13,7 +13,7 @@
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
-      <description>相关文章：[[编译实验总结感想]] 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse</description>
+      <description>相关文章：[[编译实验总结感想]] Alxa_Compiler 编译器 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null)</description>
     </item>
     
   </channel>
