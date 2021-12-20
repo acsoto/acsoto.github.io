@@ -6,12 +6,12 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 19 Dec 2021 01:09:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>编译原理-理论部分</title>
-        <link>http://atksoto.com/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+        <link>http://atksoto.com/p/buaa-compiler-theory/</link>
         <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+        <guid>http://atksoto.com/p/buaa-compiler-theory/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112202258896.png" alt="Featured image of post 编译原理-理论部分" /&gt;&lt;h1 id=&#34;编译原理-理论&#34;&gt;编译原理 理论&lt;/h1&gt;
 &lt;h2 id=&#34;编译过程&#34;&gt;编译过程&lt;/h2&gt;
 &lt;p&gt;典型的编译程序具有7个逻辑部分&lt;/p&gt;
@@ -421,17 +421,6 @@ $$&lt;/p&gt;
 &lt;li&gt;取出1个边小于K的节点，移走，记录，重复，直到剩1个。若无法移，任选一个点作为无法着色点移除再重新操作。&lt;/li&gt;
 &lt;li&gt;按照刚才移走的逆序为节点着色，相邻节点不能为同一颜色。&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-        </item>
-        <item>
-        <title>SLR是什么勾8</title>
-        <link>http://atksoto.com/p/slr%E6%98%AF%E4%BB%80%E4%B9%88%E5%8B%BE8/</link>
-        <pubDate>Sun, 19 Dec 2021 01:09:00 +0800</pubDate>
-        
-        <guid>http://atksoto.com/p/slr%E6%98%AF%E4%BB%80%E4%B9%88%E5%8B%BE8/</guid>
-        <description>&lt;p&gt;优化还没看&lt;/p&gt;
-&lt;p&gt;学不完了&lt;/p&gt;
-&lt;p&gt;语法制导又是什么东西，为什么我没学过&lt;/p&gt;
 </description>
         </item>
         <item>
