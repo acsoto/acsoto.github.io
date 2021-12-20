@@ -8,12 +8,12 @@
     <language>zh-cn</language>
     <lastBuildDate>Sun, 19 Dec 2021 01:09:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TakeawayDelivery 后端实现</title>
-      <link>http://atksoto.com/p/takeawaydelivery-back/</link>
-      <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
+      <title>编译原理-理论部分</title>
+      <link>http://atksoto.com/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/takeawaydelivery-back/</guid>
-      <description>相关： 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库 TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Djan</description>
+      <guid>http://atksoto.com/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+      <description>编译原理 理论 编译过程 典型的编译程序具有7个逻辑部分 词法分析 语法分析 语义分析、生成中间代码 代码优化 生成目标程序 符号表管理 出错处理 文法 推导 文法 $</description>
     </item>
     
     <item>
@@ -41,6 +41,15 @@
       
       <guid>http://atksoto.com/p/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
       <description>昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影</description>
+    </item>
+    
+    <item>
+      <title>TakeawayDelivery 后端实现</title>
+      <link>http://atksoto.com/p/takeawaydelivery-back/</link>
+      <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/takeawaydelivery-back/</guid>
+      <description>相关： 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库 TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Djan</description>
     </item>
     
     <item>

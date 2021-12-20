@@ -6,22 +6,22 @@
     <description>Recent content in Categories on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Dec 2021 00:37:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>http://atksoto.com/categories/coding/</link>
+      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/categories/coding/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>日常</title>
       <link>http://atksoto.com/categories/%E6%97%A5%E5%B8%B8/</link>
       <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
       
       <guid>http://atksoto.com/categories/%E6%97%A5%E5%B8%B8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coding</title>
-      <link>http://atksoto.com/categories/coding/</link>
-      <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/categories/coding/</guid>
       <description></description>
     </item>
     
