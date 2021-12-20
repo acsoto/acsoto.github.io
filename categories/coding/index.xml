@@ -35,12 +35,30 @@
     </item>
     
     <item>
+      <title>IoTMonitor</title>
+      <link>http://atksoto.com/p/iotmonitor/</link>
+      <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/iotmonitor/</guid>
+      <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可</description>
+    </item>
+    
+    <item>
       <title>Alxa_Compiler 编译器</title>
       <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>相关文章：[[编译实验总结感想]] Alxa_Compiler 编译器 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null)</description>
+    </item>
+    
+    <item>
+      <title>Memo文档</title>
+      <link>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</guid>
+      <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二</description>
     </item>
     
     <item>
