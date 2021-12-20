@@ -11,6 +11,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Checkout Repository master branch
+              uses: actions/checkout@master
             - name: setup aliyun oss
               uses: manyuanrong/setup-ossutil@master
               with:
@@ -18,5 +20,5 @@ jobs:
                   access-key-id: ${{ secrets.KEY }} # 刚刚配置过的AccessKeyId
                   access-key-secret: ${{ secrets.SECRET }} # 刚刚配置过的AccessKeySecret
             - name: cp files to aliyun
-              run: ossutil cp -rf /. oss://soto-blog/ # 将xxxxx改为创建的Bucket名称，-rf表示覆盖
+              run: ossutil cp -rf ./ oss://soto-blog/ # 将xxxxx改为创建的Bucket名称，-rf表示覆盖
 
