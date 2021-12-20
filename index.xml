@@ -322,6 +322,34 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;动态存储分配&#34;&gt;动态存储分配&lt;/h2&gt;
+&lt;h3 id=&#34;活动记录&#34;&gt;活动记录&lt;/h3&gt;
+&lt;p&gt;AR(Activation Record )：当进入一个程序模块时，在运行栈内创建的专用数据区&lt;/p&gt;
+&lt;p&gt;——————
+| 局部数据区 |
+| 参数区域    |
+| display区   |
+——————&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部数据区&lt;/li&gt;
+&lt;li&gt;参数区域
+&lt;ul&gt;
+&lt;li&gt;隐式参数
+&lt;ul&gt;
+&lt;li&gt;一个返回地址&lt;/li&gt;
+&lt;li&gt;一个指向前一个AR的指针prevabp&lt;/li&gt;
+&lt;li&gt;一个返回值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;显式参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;display区
+&lt;ul&gt;
+&lt;li&gt;全局指向其他活动记录的指针&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;代码优化&#34;&gt;代码优化&lt;/h2&gt;
 &lt;h3 id=&#34;基本块内优化&#34;&gt;基本块内优化&lt;/h3&gt;
 &lt;p&gt;基本块：只能从入口进入出口离开，根据跳转划分&lt;/p&gt;
