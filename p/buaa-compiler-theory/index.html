@@ -240,9 +240,44 @@
 <h2 id="词法">词法</h2>
 <h3 id="正则文法和状态图">正则文法和状态图</h3>
 <ul>
-<li>左线性文法</li>
-<li>右线性文法</li>
+<li>右线性文法
+<ul>
+<li>形如：  A → aB  A → a</li>
+<li>状态图：自上而下推导，需要一个终结状态，用终结符作为条件从左部非终结符指向右部非终结符</li>
 </ul>
+</li>
+<li>左线性文法
+<ul>
+<li>形如：  A → Ba  A → a</li>
+<li>状态图: 自下而上规约，需要一个初始状态，然后从终态开始，箭头倒置，用终结符作为条件从右部非终结符指向左部非终结符
+转换：用一个线性文法作状态图，再读出为另一个线性文法</li>
+</ul>
+</li>
+</ul>
+<p>例：</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202112210045742.png" >
+		<img src="https://pic.mcatk.com/soto/202112210045742.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>右线性正则文法：</p>
+<p>S-&gt;bU|aV
+U-&gt;bZ
+V-&gt;bZ
+Z-&gt;aV
+Z-&gt;$\epsilon$</p>
+<p>左线性正则文法</p>
+<p>Z-&gt;Ub|Vb|$\epsilon$
+V-&gt;Za|a
+U-&gt;b
+V-&gt;a</p>
 <h3 id="正则表达式与有穷自动机">正则表达式与有穷自动机</h3>
 <h4 id="dfa">DFA</h4>
 <p>确定的有穷自动机</p>

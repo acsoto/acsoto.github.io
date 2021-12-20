@@ -138,9 +138,44 @@
 &lt;h2 id=&#34;词法&#34;&gt;词法&lt;/h2&gt;
 &lt;h3 id=&#34;正则文法和状态图&#34;&gt;正则文法和状态图&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;左线性文法&lt;/li&gt;
-&lt;li&gt;右线性文法&lt;/li&gt;
+&lt;li&gt;右线性文法
+&lt;ul&gt;
+&lt;li&gt;形如：  A → aB  A → a&lt;/li&gt;
+&lt;li&gt;状态图：自上而下推导，需要一个终结状态，用终结符作为条件从左部非终结符指向右部非终结符&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;左线性文法
+&lt;ul&gt;
+&lt;li&gt;形如：  A → Ba  A → a&lt;/li&gt;
+&lt;li&gt;状态图: 自下而上规约，需要一个初始状态，然后从终态开始，箭头倒置，用终结符作为条件从右部非终结符指向左部非终结符
+转换：用一个线性文法作状态图，再读出为另一个线性文法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112210045742.png&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112210045742.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;右线性正则文法：&lt;/p&gt;
+&lt;p&gt;S-&amp;gt;bU|aV
+U-&amp;gt;bZ
+V-&amp;gt;bZ
+Z-&amp;gt;aV
+Z-&amp;gt;$\epsilon$&lt;/p&gt;
+&lt;p&gt;左线性正则文法&lt;/p&gt;
+&lt;p&gt;Z-&amp;gt;Ub|Vb|$\epsilon$
+V-&amp;gt;Za|a
+U-&amp;gt;b
+V-&amp;gt;a&lt;/p&gt;
 &lt;h3 id=&#34;正则表达式与有穷自动机&#34;&gt;正则表达式与有穷自动机&lt;/h3&gt;
 &lt;h4 id=&#34;dfa&#34;&gt;DFA&lt;/h4&gt;
 &lt;p&gt;确定的有穷自动机&lt;/p&gt;
