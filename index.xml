@@ -13,6 +13,77 @@
         
         <guid>http://atksoto.com/p/buaa-compiler-theory/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112202258896.png" alt="Featured image of post 编译原理-理论部分" /&gt;&lt;h1 id=&#34;编译原理-理论&#34;&gt;编译原理 理论&lt;/h1&gt;
+&lt;p&gt;考前再浏览一下目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文法和语言
+&lt;ul&gt;
+&lt;li&gt;符号、符号串&lt;/li&gt;
+&lt;li&gt;文法形式定义
+&lt;ul&gt;
+&lt;li&gt;推导、规约&lt;/li&gt;
+&lt;li&gt;语言&lt;/li&gt;
+&lt;li&gt;递归&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;语法树、二义性&lt;/li&gt;
+&lt;li&gt;实用限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;词法分析
+&lt;ul&gt;
+&lt;li&gt;正则文法机状态图&lt;/li&gt;
+&lt;li&gt;有穷自动机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;语法分析
+&lt;ul&gt;
+&lt;li&gt;自顶向下
+&lt;ul&gt;
+&lt;li&gt;LL(1)分析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自底向上
+&lt;ul&gt;
+&lt;li&gt;算符优先分析&lt;/li&gt;
+&lt;li&gt;LR语法分析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;语法制导翻译
+&lt;ul&gt;
+&lt;li&gt;翻译文法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;符号表&lt;/li&gt;
+&lt;li&gt;运行时存储
+&lt;ul&gt;
+&lt;li&gt;静态分配&lt;/li&gt;
+&lt;li&gt;动态分配&lt;/li&gt;
+&lt;li&gt;内存回收&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;中间代码
+&lt;ul&gt;
+&lt;li&gt;波兰表示、N元表示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;错误处理&lt;/li&gt;
+&lt;li&gt;语义分析&lt;/li&gt;
+&lt;li&gt;代码优化
+&lt;ul&gt;
+&lt;li&gt;基本块和流图&lt;/li&gt;
+&lt;li&gt;基本块优化&lt;/li&gt;
+&lt;li&gt;全局优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;目标代码生成
+&lt;ul&gt;
+&lt;li&gt;寄存器分配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;编译过程&#34;&gt;编译过程&lt;/h2&gt;
 &lt;p&gt;典型的编译程序具有7个逻辑部分&lt;/p&gt;
 &lt;ol&gt;
@@ -39,7 +110,6 @@
 &lt;li&gt;$P:产生式或规则的集合$&lt;/li&gt;
 &lt;li&gt;$Z:开始符号(识别符号) Z \in V_n$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;递归文法&#34;&gt;递归文法&lt;/h3&gt;
 &lt;h3 id=&#34;句型-短语-句柄&#34;&gt;句型 短语 句柄&lt;/h3&gt;
 &lt;p&gt;句型是文法的某个推导&lt;/p&gt;
 &lt;ul&gt;
@@ -357,6 +427,26 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;语法制导&#34;&gt;语法制导&lt;/h2&gt;
+&lt;h3 id=&#34;翻译文法&#34;&gt;翻译文法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;插入动作符号的文法。&lt;/li&gt;
+&lt;li&gt;翻译文法是&lt;strong&gt;上下文无关文法&lt;/strong&gt;（2型文法）。&lt;/li&gt;
+&lt;li&gt;终结符号集由&lt;strong&gt;输入符号&lt;/strong&gt;和&lt;strong&gt;动作符号&lt;/strong&gt;组成。&lt;/li&gt;
+&lt;li&gt;由&lt;strong&gt;翻译文法&lt;/strong&gt;可以通过推导产生&lt;strong&gt;活动序列&lt;/strong&gt;。由翻译文法所产生的&lt;strong&gt;终结符号串&lt;/strong&gt;称为&lt;strong&gt;活动序列&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L-ATG 转换为 SL-ATG&lt;/p&gt;
+&lt;p&gt;考虑产生式：&lt;/p&gt;
+&lt;p&gt;&amp;lt; A &amp;gt; → a↑R &amp;lt; B &amp;gt;↑S &amp;lt; C &amp;gt;↓I，I := f(R , S)&lt;/p&gt;
+&lt;p&gt;显然：继承属性求值规则不是简单赋值形式的，因为它需要对 f 求值。&lt;/p&gt;
+&lt;p&gt;设动作符号“@ f ” 表示函数 f 求值，该动作符号有两个继承属性和一个综合属性。&lt;/p&gt;
+&lt;p&gt;@f↓I1,I2↑S1  S1 := f(I1, I2)&lt;/p&gt;
+&lt;p&gt;修改产生式&lt;/p&gt;
+&lt;p&gt;插入“@ f ” 到右部的适当位置
+引进新的复写规则（将R，S 赋给 I1 和 I2，f 值赋给 S1）
+删去原有包含 f 的规则
+&amp;lt; A &amp;gt; → a↑R &amp;lt; B &amp;gt;↑S @ f↓I1,I2↑S1 &amp;lt; C &amp;gt;↓I，I1 := R，I2 := S，S1 := f( I1, I2)，I := S1&lt;/p&gt;
+&lt;p&gt;该文法是简单赋值形式的L-ATG。&lt;/p&gt;
 &lt;h2 id=&#34;动态存储分配&#34;&gt;动态存储分配&lt;/h2&gt;
 &lt;h3 id=&#34;活动记录&#34;&gt;活动记录&lt;/h3&gt;
 &lt;p&gt;AR(Activation Record )：当进入一个程序模块时，在运行栈内创建的专用数据区&lt;/p&gt;

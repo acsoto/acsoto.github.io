@@ -13,7 +13,7 @@
       <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
       
       <guid>http://atksoto.com/p/buaa-compiler-theory/</guid>
-      <description>编译原理 理论 编译过程 典型的编译程序具有7个逻辑部分 词法分析 语法分析 语义分析、生成中间代码 代码优化 生成目标程序 符号表管理 出错处理 文法 推导 文法 $</description>
+      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
     </item>
     
     <item>

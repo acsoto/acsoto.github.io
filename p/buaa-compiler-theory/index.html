@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='编译原理 理论 编译过程 典型的编译程序具有7个逻辑部分 词法分析 语法分析 语义分析、生成中间代码 代码优化 生成目标程序 符号表管理 出错处理 文法 推导 文法 $'><title>编译原理-理论部分</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语'><title>编译原理-理论部分</title>
 
 <link rel='canonical' href='http://atksoto.com/p/buaa-compiler-theory/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='编译原理-理论部分'>
-<meta property='og:description' content='编译原理 理论 编译过程 典型的编译程序具有7个逻辑部分 词法分析 语法分析 语义分析、生成中间代码 代码优化 生成目标程序 符号表管理 出错处理 文法 推导 文法 $'>
+<meta property='og:description' content='编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语'>
 <meta property='og:url' content='http://atksoto.com/p/buaa-compiler-theory/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='编译' /><meta property='article:published_time' content='2021-12-15T10:11:00&#43;08:00'/><meta property='article:modified_time' content='2021-12-15T10:11:00&#43;08:00'/><meta property='og:image' content='https://pic.mcatk.com/soto/202112202258896.png' />
 <meta name="twitter:site" content="@soto51">
     <meta name="twitter:creator" content="@soto51"><meta name="twitter:title" content="编译原理-理论部分">
-<meta name="twitter:description" content="编译原理 理论 编译过程 典型的编译程序具有7个逻辑部分 词法分析 语法分析 语义分析、生成中间代码 代码优化 生成目标程序 符号表管理 出错处理 文法 推导 文法 $"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://pic.mcatk.com/soto/202112202258896.png' />
     <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
 
@@ -115,6 +115,77 @@
 
     <section class="article-content">
     <h1 id="编译原理-理论">编译原理 理论</h1>
+<p>考前再浏览一下目录</p>
+<ul>
+<li>文法和语言
+<ul>
+<li>符号、符号串</li>
+<li>文法形式定义
+<ul>
+<li>推导、规约</li>
+<li>语言</li>
+<li>递归</li>
+</ul>
+</li>
+<li>语法树、二义性</li>
+<li>实用限制</li>
+</ul>
+</li>
+<li>词法分析
+<ul>
+<li>正则文法机状态图</li>
+<li>有穷自动机</li>
+</ul>
+</li>
+<li>语法分析
+<ul>
+<li>自顶向下
+<ul>
+<li>LL(1)分析</li>
+</ul>
+</li>
+<li>自底向上
+<ul>
+<li>算符优先分析</li>
+<li>LR语法分析</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>语法制导翻译
+<ul>
+<li>翻译文法</li>
+</ul>
+</li>
+<li>符号表</li>
+<li>运行时存储
+<ul>
+<li>静态分配</li>
+<li>动态分配</li>
+<li>内存回收</li>
+</ul>
+</li>
+<li>中间代码
+<ul>
+<li>波兰表示、N元表示</li>
+</ul>
+</li>
+<li>错误处理</li>
+<li>语义分析</li>
+<li>代码优化
+<ul>
+<li>基本块和流图</li>
+<li>基本块优化</li>
+<li>全局优化</li>
+</ul>
+</li>
+<li>目标代码生成
+<ul>
+<li>寄存器分配</li>
+</ul>
+</li>
+</ul>
+<hr>
 <h2 id="编译过程">编译过程</h2>
 <p>典型的编译程序具有7个逻辑部分</p>
 <ol>
@@ -141,7 +212,6 @@
 <li>$P:产生式或规则的集合$</li>
 <li>$Z:开始符号(识别符号) Z \in V_n$</li>
 </ul>
-<h3 id="递归文法">递归文法</h3>
 <h3 id="句型-短语-句柄">句型 短语 句柄</h3>
 <p>句型是文法的某个推导</p>
 <ul>
@@ -459,6 +529,26 @@ $$</p>
 </ol>
 </li>
 </ol>
+<h2 id="语法制导">语法制导</h2>
+<h3 id="翻译文法">翻译文法</h3>
+<ul>
+<li>插入动作符号的文法。</li>
+<li>翻译文法是<strong>上下文无关文法</strong>（2型文法）。</li>
+<li>终结符号集由<strong>输入符号</strong>和<strong>动作符号</strong>组成。</li>
+<li>由<strong>翻译文法</strong>可以通过推导产生<strong>活动序列</strong>。由翻译文法所产生的<strong>终结符号串</strong>称为<strong>活动序列</strong>。</li>
+</ul>
+<p>L-ATG 转换为 SL-ATG</p>
+<p>考虑产生式：</p>
+<p>&lt; A &gt; → a↑R &lt; B &gt;↑S &lt; C &gt;↓I，I := f(R , S)</p>
+<p>显然：继承属性求值规则不是简单赋值形式的，因为它需要对 f 求值。</p>
+<p>设动作符号“@ f ” 表示函数 f 求值，该动作符号有两个继承属性和一个综合属性。</p>
+<p>@f↓I1,I2↑S1  S1 := f(I1, I2)</p>
+<p>修改产生式</p>
+<p>插入“@ f ” 到右部的适当位置
+引进新的复写规则（将R，S 赋给 I1 和 I2，f 值赋给 S1）
+删去原有包含 f 的规则
+&lt; A &gt; → a↑R &lt; B &gt;↑S @ f↓I1,I2↑S1 &lt; C &gt;↓I，I1 := R，I2 := S，S1 := f( I1, I2)，I := S1</p>
+<p>该文法是简单赋值形式的L-ATG。</p>
 <h2 id="动态存储分配">动态存储分配</h2>
 <h3 id="活动记录">活动记录</h3>
 <p>AR(Activation Record )：当进入一个程序模块时，在运行栈内创建的专用数据区</p>
@@ -860,7 +950,6 @@ $$</p>
     <li><a href="#文法">文法</a>
       <ol>
         <li><a href="#推导">推导</a></li>
-        <li><a href="#递归文法">递归文法</a></li>
         <li><a href="#句型-短语-句柄">句型 短语 句柄</a>
           <ol>
             <li><a href="#一个例子">一个例子</a></li>
@@ -899,6 +988,11 @@ $$</p>
             <li><a href="#lr分析法">LR分析法</a></li>
           </ol>
         </li>
+      </ol>
+    </li>
+    <li><a href="#语法制导">语法制导</a>
+      <ol>
+        <li><a href="#翻译文法">翻译文法</a></li>
       </ol>
     </li>
     <li><a href="#动态存储分配">动态存储分配</a>
