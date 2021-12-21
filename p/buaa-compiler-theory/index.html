@@ -202,8 +202,7 @@
 <h2 id="文法">文法</h2>
 <h3 id="推导">推导</h3>
 <p>文法  $G=(V_n，V_t，P，Z)$</p>
-<p><strong>巴科斯范式</strong>（英语：Backus Normal Form，缩写为 BNF）
-<strong>BNF</strong> 规定是推导规则(产生式)的集合，写为：</p>
+<p>巴科斯范式<strong>BNF</strong> 规定是推导规则(产生式)的集合，写为：</p>
 <p>&lt;符号&gt; ::= &lt;使用符号的表达式&gt;</p>
 <p>如 E-&gt;E+T|T 的扩充BNF表示为 E-&gt;T{+T}</p>
 <ul>
@@ -231,7 +230,6 @@
 <p>E ::= RP|P</p>
 <p>P ::= (E)|i</p>
 <p>R ::= RP+ | RP* | P+ | P*</p>
-<hr>
 <p>上下文无关文法</p>
 <p>句型 (P+(i)) 的规范推导序列：</p>
 <p>E =&gt;P=&gt;(E)=&gt;(RP)=&gt;(R(E))=&gt;(R(P)=&gt;(R(i))=&gt;(P+(i))</p>
@@ -281,13 +279,13 @@
 <td>2型</td>
 <td>上下文无关语言</td>
 <td>非确定下推自动机</td>
-<td><em>A</em> -&gt; γ</td>
+<td>A -&gt; γ</td>
 </tr>
 <tr>
 <td>3型</td>
 <td>正则语言</td>
 <td>有限状态自动机</td>
-<td><em>A</em> -&gt; <em>aB</em>  <em>A</em> -&gt; <em>a</em></td>
+<td>A -&gt; aB  A -&gt; a</td>
 </tr>
 </tbody>
 </table>
@@ -445,9 +443,6 @@ $$</p>
 <li>分为<strong>终态和非终态</strong></li>
 <li>考察两个集合，集合中任意两个状态通过状态转变后是否<strong>同在</strong>终态和非终态，不是则分</li>
 </ol>
-<p>参考：
-<a class="link" href="https://wmathor.com/index.php/archives/1053/"  target="_blank" rel="noopener"
-    >https://wmathor.com/index.php/archives/1053/</a></p>
 <h2 id="语法">语法</h2>
 <h3 id="自顶向下">自顶向下</h3>
 <h4 id="主要问题">主要问题</h4>
@@ -469,7 +464,7 @@ $$</p>
 <p>即递归下降分析法，拆解成多个子程序分析</p>
 <h4 id="ll1分析法">LL(1)分析法</h4>
 <p><strong>LL分析器</strong>是一种处理某些上下文无关文法自顶向下的分析器。因为它从<strong>左</strong>到右处理输入，再对句型执行<strong>最左推导</strong>出语法树</p>
-<p>一个 LL 分析器若被称为 LL(<em>k</em>) 分析器，表示它使用 <em>k</em> 个词法单元作向前探查</p>
+<p>一个 LL 分析器若被称为 LL(k) 分析器，表示它使用 k 个词法单元作向前探查</p>
 <p>求FIRST头符号和FOLLOW后继符号集</p>
 <p>画出LL1分析表，每个非终结符通过哪一个产生式生成终结符。对于右部存在$\epsilon$的情况，则该产生式左部的FOLLOW集对应的终结符的位置都写上$\epsilon$</p>
 <p>证明LL1文法：</p>
@@ -479,7 +474,7 @@ $$</p>
 <li>若有$\epsilon$，产生式右部FIRST集和产生式左部FOLLOW集不相交</li>
 </ul>
 <p>分析过程：</p>
-<p>分析栈｜剩余输入串｜所用产生式</p>
+<p>符号栈｜读入符号｜剩余输入串｜所用产生式</p>
 <h3 id="自底向上">自底向上</h3>
 <h4 id="主要问题-1">主要问题</h4>
 <p>句柄识别</p>
@@ -492,16 +487,18 @@ $$</p>
 <p>LASTVT(U) = {a|U-&gt;&hellip;a or U-&gt;&hellip;aV}</p>
 <p>对于某规则右部：</p>
 <ul>
-<li>&hellip;aU&hellip; 则有a$&lt;$b (优先级)，其中b$\in$FIRSTVT(U)</li>
-<li>&hellip;Ub&hellip; 则有a$&gt;$b (优先级)，其中a$\in$LASTVT(U)</li>
+<li>&hellip;aU&hellip; 对所有b$\in$FIRSTVT(U)有a$&lt;$b (优先级)</li>
+<li>&hellip;Ub&hellip; 对所有a$\in$LASTVT(U) 有a$&gt;$b (优先级)</li>
 </ul>
-<p>通俗理解，若ab可以同时规约，则优先级相同，若b需要后续导出，则b优先级高，若a需要后续导出，则a优先级高。</p>
+<p>通俗理解，若ab可以同时规约，则优先级相同，若b需要后续导出，则b优先级高，若a需要后续导出，则a优先级高，但注意序不可改变。</p>
 <p>构造优先关系矩阵：</p>
 <ol>
 <li>为每个非终结符 A 计算 FIRSTVT(A) 和 LASTVT(A)</li>
 <li>逐条扫描文法规则 例如+T 则 +&lt; FIRSTVT(T)，E+ 则 LASTVT(E)&gt;+</li>
 <li>寻找#与开始符号E的关系 # = # ， # &lt;FIRSTVT(E)且LASTVT(E)&gt; #</li>
 </ol>
+<p>分析过程：</p>
+<p>符号栈｜剩余输入串｜优先关系｜动作(移进/规约)</p>
 <h4 id="lr分析法">LR分析法</h4>
 <p>类似LL，R指分析过程是最右(Right)推导的逆过程(规范归约)</p>
 <p>活前缀: 若分析过程能够保证栈中符号串均是规范句型 的前缀，则表示输入串已分析过的部分没有语 法错误，所以称为规范句型的活前缀。</p>
@@ -529,6 +526,8 @@ $$</p>
 </ol>
 </li>
 </ol>
+<p>分析过程：</p>
+<p>状态栈｜符号｜输入串｜动作(S/rx)</p>
 <h2 id="语法制导">语法制导</h2>
 <h3 id="翻译文法">翻译文法</h3>
 <ul>
@@ -537,16 +536,17 @@ $$</p>
 <li>终结符号集由<strong>输入符号</strong>和<strong>动作符号</strong>组成。</li>
 <li>由<strong>翻译文法</strong>可以通过推导产生<strong>活动序列</strong>。由翻译文法所产生的<strong>终结符号串</strong>称为<strong>活动序列</strong>。</li>
 </ul>
+<p>动作序列：带着@推导得到的序列</p>
+<p>输出序列：每个@后的字符的序列</p>
+<h3 id="属性翻译文法">属性翻译文法</h3>
+<p>↓继承属性 ↑综合属性</p>
 <p>L-ATG 转换为 SL-ATG</p>
 <p>考虑产生式：</p>
 <p>&lt; A &gt; → a↑R &lt; B &gt;↑S &lt; C &gt;↓I，I := f(R , S)</p>
-<p>显然：继承属性求值规则不是简单赋值形式的，因为它需要对 f 求值。</p>
 <p>设动作符号“@ f ” 表示函数 f 求值，该动作符号有两个继承属性和一个综合属性。</p>
 <p>@f↓I1,I2↑S1  S1 := f(I1, I2)</p>
 <p>修改产生式</p>
-<p>插入“@ f ” 到右部的适当位置
-引进新的复写规则（将R，S 赋给 I1 和 I2，f 值赋给 S1）
-删去原有包含 f 的规则
+<p>插入“@ f ” 到右部的适当位置，引进新的复写规则（将R，S 赋给 I1 和 I2，f 值赋给 S1），删去原有包含 f 的规则
 &lt; A &gt; → a↑R &lt; B &gt;↑S @ f↓I1,I2↑S1 &lt; C &gt;↓I，I1 := R，I2 := S，S1 := f( I1, I2)，I := S1</p>
 <p>该文法是简单赋值形式的L-ATG。</p>
 <h2 id="动态存储分配">动态存储分配</h2>
@@ -993,6 +993,7 @@ $$</p>
     <li><a href="#语法制导">语法制导</a>
       <ol>
         <li><a href="#翻译文法">翻译文法</a></li>
+        <li><a href="#属性翻译文法">属性翻译文法</a></li>
       </ol>
     </li>
     <li><a href="#动态存储分配">动态存储分配</a>
