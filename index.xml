@@ -523,7 +523,7 @@ $$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;初始化一个队列&lt;/li&gt;
 &lt;li&gt;找到一个&lt;strong&gt;父节点&lt;/strong&gt;不在队列或者没有父节点的节点，加入队列&lt;/li&gt;
-&lt;li&gt;查看该节点的&lt;strong&gt;最左子节点&lt;/strong&gt;，若父节点都在队列，则加入队列，然后查看最左子节点的字节点，若不满足条件，重新做2&lt;/li&gt;
+&lt;li&gt;查看该节点的&lt;strong&gt;最左子节点&lt;/strong&gt;，若父节点都在队列，则加入队列，然后查看最左子节点的子节点，若不满足条件，重新做2&lt;/li&gt;
 &lt;li&gt;重复，遍历所有节点&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;逆序&lt;/strong&gt;输出，则得到中间节点的计算顺序，写出新的代码序列&lt;/li&gt;
 &lt;/ol&gt;
