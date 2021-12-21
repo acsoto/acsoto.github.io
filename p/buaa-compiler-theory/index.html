@@ -202,7 +202,7 @@
 <h2 id="文法">文法</h2>
 <h3 id="推导">推导</h3>
 <p>文法  $G=(V_n，V_t，P，Z)$</p>
-<p>巴科斯范式<strong>BNF</strong> 规定是推导规则(产生式)的集合，写为：</p>
+<p>巴科斯范式<strong>BNF</strong>规定是推导规则(产生式)的集合，写为：</p>
 <p>&lt;符号&gt; ::= &lt;使用符号的表达式&gt;</p>
 <p>如 E-&gt;E+T|T 的扩充BNF表示为 E-&gt;T{+T}</p>
 <ul>
@@ -552,11 +552,24 @@ $$</p>
 <h2 id="动态存储分配">动态存储分配</h2>
 <h3 id="活动记录">活动记录</h3>
 <p>AR(Activation Record )：当进入一个程序模块时，在运行栈内创建的专用数据区</p>
-<p>——————
-| 局部数据区 |
-| 参数区域    |
-| display区   |
-——————</p>
+<table>
+<thead>
+<tr>
+<th>活动记录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数区域</td>
+</tr>
+<tr>
+<td>display区</td>
+</tr>
+<tr>
+<td>局部数据区</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>局部数据区</li>
 <li>参数区域

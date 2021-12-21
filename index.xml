@@ -100,7 +100,7 @@
 &lt;h2 id=&#34;文法&#34;&gt;文法&lt;/h2&gt;
 &lt;h3 id=&#34;推导&#34;&gt;推导&lt;/h3&gt;
 &lt;p&gt;文法  $G=(V_n，V_t，P，Z)$&lt;/p&gt;
-&lt;p&gt;巴科斯范式&lt;strong&gt;BNF&lt;/strong&gt; 规定是推导规则(产生式)的集合，写为：&lt;/p&gt;
+&lt;p&gt;巴科斯范式&lt;strong&gt;BNF&lt;/strong&gt;规定是推导规则(产生式)的集合，写为：&lt;/p&gt;
 &lt;p&gt;&amp;lt;符号&amp;gt; ::= &amp;lt;使用符号的表达式&amp;gt;&lt;/p&gt;
 &lt;p&gt;如 E-&amp;gt;E+T|T 的扩充BNF表示为 E-&amp;gt;T{+T}&lt;/p&gt;
 &lt;ul&gt;
@@ -450,11 +450,24 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;动态存储分配&#34;&gt;动态存储分配&lt;/h2&gt;
 &lt;h3 id=&#34;活动记录&#34;&gt;活动记录&lt;/h3&gt;
 &lt;p&gt;AR(Activation Record )：当进入一个程序模块时，在运行栈内创建的专用数据区&lt;/p&gt;
-&lt;p&gt;——————
-| 局部数据区 |
-| 参数区域    |
-| display区   |
-——————&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;活动记录&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;参数区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display区&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;局部数据区&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;ul&gt;
 &lt;li&gt;局部数据区&lt;/li&gt;
 &lt;li&gt;参数区域
