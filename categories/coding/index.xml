@@ -5,8 +5,7 @@
     <link>http://atksoto.com/categories/coding/</link>
     <description>Recent content in Coding on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编译原理-理论部分</title>
       <link>http://atksoto.com/buaa-compiler-theory/</link>
@@ -17,12 +16,21 @@
     </item>
     
     <item>
+      <title>关于TakeawayDelivery</title>
+      <link>http://atksoto.com/takeawaydelivery/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/takeawaydelivery/</guid>
+      <description>[[TakeawayDelivery 后端实现]] 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库</description>
+    </item>
+    
+    <item>
       <title>TakeawayDelivery 后端实现</title>
       <link>http://atksoto.com/takeawaydelivery-back/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
       
       <guid>http://atksoto.com/takeawaydelivery-back/</guid>
-      <description>相关： 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库 TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Djan</description>
+      <description>TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Django和数据库均部署在服务器上，并且进行了域名解析，可以通过delivery.mcatk.</description>
     </item>
     
     <item>

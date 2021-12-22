@@ -6,7 +6,7 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>编译原理-理论部分</title>
         <link>http://atksoto.com/buaa-compiler-theory/</link>
         <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
@@ -590,6 +590,25 @@ $$&lt;/p&gt;
 </description>
         </item>
         <item>
+        <title>关于TakeawayDelivery</title>
+        <link>http://atksoto.com/takeawaydelivery/</link>
+        <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/takeawaydelivery/</guid>
+        <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post 关于TakeawayDelivery" /&gt;&lt;p&gt;[[TakeawayDelivery 后端实现]]&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery/blob/master/TakeawayDelivery%e5%b1%95%e7%a4%baPPT.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;web端答辩PPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android/blob/main/%e9%ab%98%e5%85%b1%e4%ba%ab%e9%a3%9f%e5%a0%82%e5%a4%96%e5%8d%96%e5%b9%b3%e5%8f%b0%e2%80%9c%e8%88%aa%e9%80%81%e2%80%9d%e5%b1%95%e7%a4%baPPT.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;移动端APP答辩PPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目前后端仓库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;移动端APP仓库&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>展望一下十二月</title>
         <link>http://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
         <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
@@ -723,18 +742,7 @@ $$&lt;/p&gt;
         <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
         
         <guid>http://atksoto.com/takeawaydelivery-back/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;p&gt;相关：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery/blob/master/TakeawayDelivery%e5%b1%95%e7%a4%baPPT.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;web端答辩PPT&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android/blob/main/%e9%ab%98%e5%85%b1%e4%ba%ab%e9%a3%9f%e5%a0%82%e5%a4%96%e5%8d%96%e5%b9%b3%e5%8f%b0%e2%80%9c%e8%88%aa%e9%80%81%e2%80%9d%e5%b1%95%e7%a4%baPPT.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;移动端APP答辩PPT&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/TakeawayDelivery&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;项目前后端仓库&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qwtdgh/Android&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;移动端APP仓库&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
+        <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Python&lt;/li&gt;
@@ -1330,9 +1338,7 @@ image:
         <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
         
         <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
-        <description>&lt;p&gt;1&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;考完了，nmd难死了&lt;/p&gt;
+        <description>&lt;p&gt;考完了，nmd难死了&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;数列极限
@@ -1807,24 +1813,6 @@ image:
 &lt;p&gt;该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互&lt;/p&gt;
 &lt;p&gt;该app的UI其中一部分复用了我之前的项目&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/Memo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Memo&lt;/a&gt;的代码&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我的语言使用统计</title>
-        <link>http://atksoto.com/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</link>
-        <pubDate>Sat, 27 Nov 2021 01:11:33 +0800</pubDate>
-        
-        <guid>http://atksoto.com/%E6%88%91%E7%9A%84%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/</guid>
-        <description>&lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acsoto&layout=compact&show_icons=true&hide_border=false" alt="Featured image of post 我的语言使用统计" /&gt;&lt;img align=&#34;center&#34; alt=&#34;Top Langs&#34; src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=acsoto&amp;layout=compact&amp;show_icons=true&amp;hide_border=false&#34; /&gt;
-</description>
-        </item>
-        <item>
-        <title>我的GitHub数据</title>
-        <link>http://atksoto.com/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</link>
-        <pubDate>Sat, 27 Nov 2021 01:11:09 +0800</pubDate>
-        
-        <guid>http://atksoto.com/%E6%88%91%E7%9A%84github%E6%95%B0%E6%8D%AE/</guid>
-        <description>&lt;img src="https://github-readme-stats.vercel.app/api?username=acsoto&show_icons=true&hide_title=false&hide_border=false" alt="Featured image of post 我的GitHub数据" /&gt;&lt;img align=&#34;center&#34; src=&#34;https://github-readme-stats.vercel.app/api?username=acsoto&amp;show_icons=true&amp;hide_title=false&amp;hide_border=false&#34; /&gt;
 </description>
         </item>
         <item>

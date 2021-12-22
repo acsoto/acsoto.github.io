@@ -6,7 +6,52 @@
     <description>Recent content in Tags on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android</title>
+      <link>http://atksoto.com/tags/android/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>http://atksoto.com/tags/django/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>http://atksoto.com/tags/flutter/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://atksoto.com/tags/mysql/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>http://atksoto.com/tags/vue/</link>
+      <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/tags/vue/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>编译</title>
       <link>http://atksoto.com/tags/%E7%BC%96%E8%AF%91/</link>
@@ -35,15 +80,6 @@
     </item>
     
     <item>
-      <title>MySQL</title>
-      <link>http://atksoto.com/tags/mysql/</link>
-      <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>项目</title>
       <link>http://atksoto.com/tags/%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
@@ -53,11 +89,11 @@
     </item>
     
     <item>
-      <title>软件</title>
-      <link>http://atksoto.com/tags/%E8%BD%AF%E4%BB%B6/</link>
+      <title>Obsidian</title>
+      <link>http://atksoto.com/tags/obsidian/</link>
       <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/tags/%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>http://atksoto.com/tags/obsidian/</guid>
       <description></description>
     </item>
     
