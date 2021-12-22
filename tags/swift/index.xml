@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 28 Nov 2021 02:54:12 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IoTMonitor</title>
-      <link>http://atksoto.com/p/iotmonitor/</link>
+      <link>http://atksoto.com/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/iotmonitor/</guid>
+      <guid>http://atksoto.com/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可</description>
     </item>
     
     <item>
       <title>Memo文档</title>
-      <link>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</link>
+      <link>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</guid>
+      <guid>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
       <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二</description>
     </item>
     

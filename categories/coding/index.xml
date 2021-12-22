@@ -9,100 +9,100 @@
     <lastBuildDate>Wed, 15 Dec 2021 10:11:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编译原理-理论部分</title>
-      <link>http://atksoto.com/p/buaa-compiler-theory/</link>
+      <link>http://atksoto.com/buaa-compiler-theory/</link>
       <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/buaa-compiler-theory/</guid>
+      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
       <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
     </item>
     
     <item>
       <title>TakeawayDelivery 后端实现</title>
-      <link>http://atksoto.com/p/takeawaydelivery-back/</link>
+      <link>http://atksoto.com/takeawaydelivery-back/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/takeawaydelivery-back/</guid>
+      <guid>http://atksoto.com/takeawaydelivery-back/</guid>
       <description>相关： 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库 TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Djan</description>
     </item>
     
     <item>
       <title>MacOS全局可执行文件</title>
-      <link>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <link>http://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
       <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
       <description>sudo vim /usr/local/bin/command /usr/local/bin/ 下创建的文件默认在path中 必须使用sudo #!/bin/bash do something sudo chmod +x /usr/local/bin/command 即可全局使用 command</description>
     </item>
     
     <item>
       <title>IoTMonitor</title>
-      <link>http://atksoto.com/p/iotmonitor/</link>
+      <link>http://atksoto.com/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/iotmonitor/</guid>
+      <guid>http://atksoto.com/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可</description>
     </item>
     
     <item>
       <title>Alxa_Compiler 编译器</title>
-      <link>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <link>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <guid>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>相关文章：[[编译实验总结感想]] Alxa_Compiler 编译器 词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null)</description>
     </item>
     
     <item>
       <title>Memo文档</title>
-      <link>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</link>
+      <link>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/memo%E6%96%87%E6%A1%A3/</guid>
+      <guid>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
       <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二</description>
     </item>
     
     <item>
       <title>BUAAOO-第四单元总结</title>
-      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <link>http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
       <description>BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根</description>
     </item>
     
     <item>
       <title>BUAAOO-第三单元总结</title>
-      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
       <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长</description>
     </item>
     
     <item>
       <title>C&#43;&#43;基础</title>
-      <link>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</link>
+      <link>http://atksoto.com/c-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Fri, 30 Apr 2021 11:00:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/c-%E5%9F%BA%E7%A1%80/</guid>
+      <guid>http://atksoto.com/c-%E5%9F%BA%E7%A1%80/</guid>
       <description>知识点纲要 结构 struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为</description>
     </item>
     
     <item>
       <title>BUAAOO-第二单元总结</title>
-      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
       <description>BUAAOO-第二单元总结 作业分析 同步块与锁 InputThread捕捉输入，将其加入waitQueue队列中 Dispatcher负责控制wa</description>
     </item>
     
     <item>
       <title>BUAAOO-第一单元总结</title>
-      <link>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+      <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/p/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
       <description>BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha</description>
     </item>
     

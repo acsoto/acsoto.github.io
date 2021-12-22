@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二'><title>Memo文档</title>
+
+<link rel='canonical' href='http://atksoto.com/memo%E6%96%87%E6%A1%A3/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Memo文档'>
+<meta property='og:description' content='Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二'>
+<meta property='og:url' content='http://atksoto.com/memo%E6%96%87%E6%A1%A3/'>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-10-28T17:29:00&#43;08:00'/><meta property='article:modified_time' content='2021-10-28T17:29:00&#43;08:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg' />
+<meta name="twitter:site" content="@TongFan_">
+    <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="Memo文档">
+<meta name="twitter:description" content="Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg' />
+    <link rel="shortcut icon" href="https://pic.mcatk.com/soto/202112220131460.JPG" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/memo%E6%96%87%E6%A1%A3/">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" loading="lazy" alt="Featured image of post Memo文档" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/coding/" >
+                Coding
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/memo%E6%96%87%E6%A1%A3/">Memo文档</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 28, 2021</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="memo">Memo</h1>
+<p>Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&hellip;</p>
+<p>灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。</p>
+<h2 id="图片">图片</h2>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/OMRjEl.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/OMRjEl.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>（介绍及短评摘自豆瓣，侵删）</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/4qk5Hd.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/4qk5Hd.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="iPad适配">
+	</a>
+	
+	<figcaption>iPad适配</figcaption>
+	
+</figure></p>
+<p>Mac, iPad适配</p>
+<h2 id="简介">简介</h2>
+<h3 id="主页面">主页面</h3>
+<p>主界面分为3个标签：主页，电影，书籍</p>
+<h5 id="主页">主页</h5>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/nU8yrj.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/nU8yrj.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="观">
+	</a>
+	
+	<figcaption>观</figcaption>
+	
+</figure></p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/4mxT4Y.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/4mxT4Y.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="记">
+	</a>
+	
+	<figcaption>记</figcaption>
+	
+</figure></p>
+<h5 id="电影">电影</h5>
+<p>这里是你看过的电影片单，你可以随时看到你标记过的所有电影，以及在任何时候添加一个新的电影进入你的片单</p>
+<p>进入某条电影，如果你输入的电影在数据库之中（数据来自豆瓣，侵删），你就可以看到关于电影的介绍：演员，导演，豆瓣评分，类别，介绍等，以及最重要的，在最下方，看到你第一次观看的时间以及感想</p>
+<p>当然，点击此方框，你可以进入到第二次标记的页面，记录下你的第二次观影以及新的感想</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/somvRM.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/somvRM.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="电影列表">
+	</a>
+	
+	<figcaption>电影列表</figcaption>
+	
+</figure></p>
+<h5 id="书籍">书籍</h5>
+<p>类似电影，这里是你的书单，你可以添加你看过的书籍，并且记录第n次阅读的体验，相信每一次阅读，都会发现不少新东西</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/v7ziTD.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/v7ziTD.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="书">
+	</a>
+	
+	<figcaption>书</figcaption>
+	
+</figure></p>
+<h2 id="功能">功能</h2>
+<ul>
+<li>标记某一天的感受</li>
+<li>标记某本电影，某本书</li>
+<li>多次标记某电影和书的观看时间和感受</li>
+<li>自动展示电影和书籍的相关图片与简介</li>
+<li>图文并茂的主页卡片展示设计</li>
+<li>在主页展示进一个月看过的电影</li>
+<li>在主页展示今天以及那年今日的感想</li>
+</ul>
+<h2 id="架构以及实现">架构以及实现</h2>
+<p>源代码文件共25个</p>
+<p>主要分为三个部分：Controller Model Views</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/1Iyk57.jpg" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/1Iyk57.jpg"
+			
+			
+			
+			loading="lazy"
+			alt="源文件树">
+	</a>
+	
+	<figcaption>源文件树</figcaption>
+	
+</figure></p>
+<h4 id="controller">Controller</h4>
+<p>一些静态函数，实现点击界面按钮后的某些后端反应以及后端用到的函数，如图像获取，日期格式化，Mark筛选等</p>
+<p>其中图片的读取使用了异步加载url的方式，如果url没有解析成功将不会显示图片</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">class</span> <span class="nc">ImageLoader</span><span class="p">:</span> <span class="n">ObservableObject</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">didChange</span> <span class="p">=</span> <span class="n">PassthroughSubject</span><span class="p">&lt;</span><span class="n">Data</span><span class="p">,</span> <span class="n">Never</span><span class="p">&gt;()</span>
+    <span class="kd">var</span> <span class="nv">data</span> <span class="p">=</span> <span class="n">Data</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kr">didSet</span> <span class="p">{</span>
+            <span class="n">didChange</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">init</span><span class="p">(</span><span class="n">urlString</span><span class="p">:</span> <span class="nb">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">url</span> <span class="p">=</span> <span class="n">URL</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="n">urlString</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nv">task</span> <span class="p">=</span> <span class="n">URLSession</span><span class="p">.</span><span class="n">shared</span><span class="p">.</span><span class="n">dataTask</span><span class="p">(</span><span class="n">with</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">guard</span> <span class="kd">let</span> <span class="nv">data</span> <span class="p">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+            <span class="n">DispatchQueue</span><span class="p">.</span><span class="n">main</span><span class="p">.</span><span class="n">async</span> <span class="p">{</span>
+                <span class="kc">self</span><span class="p">.</span><span class="n">data</span> <span class="p">=</span> <span class="n">data</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">task</span><span class="p">.</span><span class="n">resume</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div><h4 id="model">Model</h4>
+<p>主要用到的对象为Mark：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">class</span> <span class="nc">Mark</span><span class="p">:</span> <span class="n">Codable</span><span class="p">,</span> <span class="n">Identifiable</span><span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">index</span><span class="p">:</span><span class="nb">Int</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="kd">var</span> <span class="nv">type</span><span class="p">:</span><span class="n">ModelType</span> <span class="p">=</span> <span class="n">ModelType</span><span class="p">.</span><span class="n">NONE</span>
+    <span class="kd">var</span> <span class="nv">name</span> <span class="p">=</span> <span class="s">&#34;&#34;</span>
+    <span class="kd">var</span> <span class="nv">dates</span><span class="p">:</span> <span class="p">[</span><span class="n">Date</span><span class="p">]</span> <span class="p">=</span> <span class="p">[]</span>
+    <span class="kd">var</span> <span class="nv">feeling</span> <span class="p">=</span> <span class="s">&#34;&#34;</span>
+
+    <span class="kd">init</span><span class="p">(</span><span class="n">index</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span><span class="n">type</span><span class="p">:</span><span class="n">ModelType</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span><span class="nb">String</span><span class="p">,</span> <span class="n">date</span><span class="p">:</span><span class="n">Date</span><span class="p">,</span> <span class="n">feeling</span><span class="p">:</span><span class="nb">String</span><span class="p">){</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">index</span> <span class="p">=</span> <span class="n">index</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">type</span> <span class="p">=</span> <span class="n">type</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="n">name</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">dates</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">feeling</span> <span class="p">=</span> <span class="n">feeling</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Movie, Book 为电影和书籍的简介，不进行重复的展示</p>
+<p>他们遵循MarkableObject协议，用于在展示Mark详情时读取object后再作类型判断</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">struct</span> <span class="nc">Movie</span><span class="p">:</span> <span class="nb">Hashable</span><span class="p">,</span> <span class="n">Codable</span><span class="p">,</span> <span class="n">Identifiable</span><span class="p">,</span> <span class="n">MarkableObject</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">id</span><span class="p">:</span> <span class="nb">String</span> <span class="p">=</span> <span class="s">&#34;&#34;</span>
+		<span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div><p>ModelData负责数据存储的任务</p>
+<p>用到了自带的UserDefaults.standard存储数据</p>
+<p>movies和books分别为电影和书籍数据集，内置在app中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kr">final</span> <span class="kd">class</span> <span class="nc">ModelData</span><span class="p">:</span> <span class="n">ObservableObject</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">moviesDict</span> <span class="p">=</span> <span class="n">getMoviesDict</span><span class="p">(</span><span class="n">movies</span><span class="p">:</span> <span class="n">load</span><span class="p">(</span><span class="s">&#34;movies.json&#34;</span><span class="p">))</span>
+    <span class="kd">var</span> <span class="nv">booksDict</span> <span class="p">=</span> <span class="n">getBooksDict</span><span class="p">(</span><span class="n">books</span><span class="p">:</span> <span class="n">load</span><span class="p">(</span><span class="s">&#34;books.json&#34;</span><span class="p">))</span>
+    <span class="p">@</span><span class="n">Published</span> <span class="kd">var</span> <span class="nv">marks</span><span class="p">:</span> <span class="p">[</span><span class="n">Mark</span><span class="p">]</span> <span class="p">=</span> <span class="p">[]</span>
+
+    <span class="kd">init</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">loadMarks</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">loadMarks</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">marks</span> <span class="p">=</span> <span class="n">UserDefaults</span><span class="p">.</span><span class="n">standard</span><span class="p">.</span><span class="n">object</span><span class="p">(([</span><span class="n">Mark</span><span class="p">]).</span><span class="kc">self</span><span class="p">,</span> <span class="n">with</span><span class="p">:</span> <span class="s">&#34;Marks&#34;</span><span class="p">)</span> <span class="p">??</span> <span class="p">[]</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">saveMarks</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nv">standard</span> <span class="p">=</span> <span class="n">UserDefaults</span><span class="p">.</span><span class="n">standard</span>
+        <span class="n">standard</span><span class="p">.</span><span class="kr">set</span><span class="p">(</span><span class="n">object</span><span class="p">:</span> <span class="n">marks</span><span class="p">,</span> <span class="n">forKey</span><span class="p">:</span> <span class="s">&#34;Marks&#34;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>ModelType为枚举类型，用于Mark类型判断</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">enum</span> <span class="nc">ModelType</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">Codable</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">NONE</span> <span class="p">=</span> <span class="s">&#34;无&#34;</span>
+    <span class="k">case</span> <span class="n">MOVIE</span> <span class="p">=</span> <span class="s">&#34;电影&#34;</span>
+    <span class="k">case</span> <span class="n">BOOK</span> <span class="p">=</span> <span class="s">&#34;书籍&#34;</span>
+    <span class="k">case</span> <span class="n">DAY</span> <span class="p">=</span> <span class="s">&#34;今天&#34;</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="views">Views</h4>
+<p>界面UI</p>
+<p>用到了environmentObject来同步各个界面的数据</p>
+<p>父界面给子界面传递@Binding的变量，子界面拿到引用直接演示和修改，不会出现数据不同步的问题</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="p">@</span><span class="n">main</span>
+<span class="kd">struct</span> <span class="nc">MemoApp</span><span class="p">:</span> <span class="n">App</span> <span class="p">{</span>
+    <span class="p">@</span><span class="n">StateObject</span> <span class="kd">private</span> <span class="kd">var</span> <span class="nv">modelData</span> <span class="p">=</span> <span class="n">ModelData</span><span class="p">()</span>
+    <span class="kd">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="n">Scene</span> <span class="p">{</span>
+        <span class="n">WindowGroup</span> <span class="p">{</span>
+            <span class="n">ContentView</span><span class="p">()</span>
+                    <span class="p">.</span><span class="n">environmentObject</span><span class="p">(</span><span class="n">modelData</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h5 id="mainmenu">MainMenu</h5>
+<p>MarkList: Mark列表，即展示电影和书籍列表</p>
+<p>使用NavigationLink，向子界面：MarkDetail传递mark的引用</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/1qxgoz.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/1qxgoz.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>HomeView: 主界面</p>
+<h5 id="mark">Mark</h5>
+<p>关于Mark的界面</p>
+<p>MarkDetail: 一个Mark的详情</p>
+<p>大部分子界面都如此UI一样，引入modelData的环境变量，承接上一级传下来的@Binding变量，实现数据的同步</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="p">@</span><span class="n">EnvironmentObject</span> <span class="kd">var</span> <span class="nv">modelData</span><span class="p">:</span> <span class="n">ModelData</span>
+<span class="p">@</span><span class="n">Binding</span> <span class="kd">var</span> <span class="nv">mark</span><span class="p">:</span> <span class="n">Mark</span>
+</code></pre></div><p>其中要进行object的解析，如果用户输入能索引本地数据集的一个条目上，将会展示此object的详情</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/oEbVAd.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/oEbVAd.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>MarkAdd: Mark增加界面</p>
+<p>MarkEdit: Mark修改界面</p>
+<p>MarkToday: 标记今天界面</p>
+<p>这三个UI都用到了@State来实时同步Form表单中的信息</p>
+<p>以至于用户输入能够及时的反应在变量上并且写入modelData</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/Lp7xQ3.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/Lp7xQ3.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h4 id="kit">Kit</h4>
+<p>其他组件</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/5YOzFK.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/5YOzFK.png"
+			
+			
+			
+			loading="lazy"
+			alt="其他组件">
+	</a>
+	
+	<figcaption>其他组件</figcaption>
+	
+</figure></p>
+<p>电影和书籍详情，时间线，圆形和方形图片，卡片组件等</p>
+<p>均已展示在各个页面中</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/swift/">Swift</a>
+        
+            <a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a>
+        
+            <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/iotmonitor/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IoTMonitor</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Alxa_Compiler 编译器</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/takeawaydelivery-back/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic.mcatk.com/soto/202112170131240.png" loading="lazy" data-key="TakeawayDelivery-back" data-hash="https://pic.mcatk.com/soto/202112170131240.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">TakeawayDelivery 后端实现</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MacOS全局可执行文件</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/buaa-compiler-theory/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic.mcatk.com/soto/202112202258896.png" loading="lazy" data-key="buaa-compiler-theory" data-hash="https://pic.mcatk.com/soto/202112202258896.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">编译原理-理论部分</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <section class="a">
+    
+</section>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#图片">图片</a></li>
+    <li><a href="#简介">简介</a>
+      <ol>
+        <li><a href="#主页面">主页面</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#功能">功能</a></li>
+    <li><a href="#架构以及实现">架构以及实现</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#controller">Controller</a></li>
+            <li><a href="#model">Model</a></li>
+            <li><a href="#views">Views</a></li>
+            <li><a href="#kit">Kit</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

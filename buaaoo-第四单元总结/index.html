@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根'><title>BUAAOO-第四单元总结</title>
+
+<link rel='canonical' href='http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='BUAAOO-第四单元总结'>
+<meta property='og:description' content='BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根'>
+<meta property='og:url' content='http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/'>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='面向对象' /><meta property='article:tag' content='BUAA' /><meta property='article:published_time' content='2021-06-26T11:23:00&#43;08:00'/><meta property='article:modified_time' content='2021-06-26T11:23:00&#43;08:00'/>
+<meta name="twitter:site" content="@TongFan_">
+    <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="BUAAOO-第四单元总结">
+<meta name="twitter:description" content="BUAAOO-第四单元总结 总结本单元作业的架构设计 本单元任务为设计UML分析器，包括类图，顺序图，状态图 第一次作业 实现类图分析 将UML元素根">
+    <link rel="shortcut icon" href="https://pic.mcatk.com/soto/202112220131460.JPG" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/coding/" >
+                Coding
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">BUAAOO-第四单元总结</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 26, 2021</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="buaaoo-第四单元总结">BUAAOO-第四单元总结</h1>
+<h3 id="总结本单元作业的架构设计">总结本单元作业的架构设计</h3>
+<p>本单元任务为设计UML分析器，包括类图，顺序图，状态图</p>
+<h4 id="第一次作业">第一次作业</h4>
+<p>实现类图分析</p>
+<p>将UML元素根据其含义分为如下层次结构</p>
+<p>部分元素根据需求分装为MyXXX</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e5%9b%9b%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20210626103351737.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e5%9b%9b%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20210626103351737.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>根据逻辑层次，读入过程分为三个循环，分别处理三个层次的元素</p>
+<table>
+<thead>
+<tr>
+<th>循环轮次</th>
+<th>处理元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>UmlClass UmlInterface UmlAssociationEnd</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UmlParameter</td>
+</tr>
+</tbody>
+</table>
+<h4 id="第二次作业">第二次作业</h4>
+<p>实现顺序图，状态图</p>
+<p>将UML元素根据其含义分为如下层次结构</p>
+<p>部分元素根据需求分装为MyXXX</p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e5%9b%9b%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20210626103946632.png" >
+		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e5%9b%9b%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20210626103946632.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p>根据逻辑层次，读入过程分为四个循环，分别处理四个层次的元素</p>
+<table>
+<thead>
+<tr>
+<th>循环轮次</th>
+<th>处理元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>UmlClass UmlInterface UmlAssociationEnd UmlInteraction UmlStateMachine UmlRegion</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UmlOperation UmlAttribute UmlAssociation UmlGeneralization UmlInterfaceRealization UmlLifeline UmlState UmlPseudostate UmlFinalState</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UmlParameter UmlMessage UmlTransition</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UmlEvent</td>
+</tr>
+</tbody>
+</table>
+<h4 id="第三次作业">第三次作业</h4>
+<p>架构同第二次。</p>
+<p>其他的就是一些图算法的问题了。</p>
+<h3 id="总结自己在四个单元中架构设计及oo方法理解的演进">总结自己在四个单元中架构设计及OO方法理解的演进</h3>
+<table>
+<thead>
+<tr>
+<th>单元</th>
+<th>理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一单元</td>
+<td>面向对象的层次化设计：factor，term，poly层次结构逻辑分明，各司其职，同时又都实现某接口，递归下降的操作过程中非常符合人的直觉感受。认识到清晰的逻辑架构的重要性。</td>
+</tr>
+<tr>
+<td>第二单元</td>
+<td>多线程设计：多线程的加入使得程序有了更多的不确定性。线程之间的交互在逻辑需要深入理解，UML流程图的作用。</td>
+</tr>
+<tr>
+<td>第三单元</td>
+<td>基于JML的设计：学到了JML规格相关知识，工程化思想进一步提升</td>
+</tr>
+<tr>
+<td>第四单元</td>
+<td>UML：清晰且彻底的理解了面向对象层次化设计的形态和结构</td>
+</tr>
+</tbody>
+</table>
+<h3 id="总结自己在四个单元中测试理解与实践的演进">总结自己在四个单元中测试理解与实践的演进</h3>
+<table>
+<thead>
+<tr>
+<th>单元</th>
+<th>理解 实践</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一单元</td>
+<td>利用python生存复杂数据，边界数据进行测试</td>
+</tr>
+<tr>
+<td>第二单元</td>
+<td>需要考虑线程之间时间差异可能带来的问题，性能方面也要注意特殊情况，形式化验证</td>
+</tr>
+<tr>
+<td>第三单元</td>
+<td>没怎么测，错了一片，看来测试很重要</td>
+</tr>
+<tr>
+<td>第四单元</td>
+<td>利用工具，手动构造较为复杂的UML图，进行测试。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="总结自己的课程收获">总结自己的课程收获</h3>
+<p>​	16周连续的任务（其中一周有休息）任务量确实比较大，回首自己的前三篇博客，也能看到自己泡一天图书馆写程序的影子，为BUG抓狂的夜晚，周三看结果看到“你在强测中得到0分”的悲痛心情。</p>
+<p>​	每周精确到天的任务，不得不说，这是一门硬课。但重要的是确实看到了自己的在这门课上的收获有多大。这是一门实实在在能学到很多东西的课程，无论是代码风格，程序基础，性能算法，还是最重要的架构设计，我都得到了比较大的提升，在最重要的架构设计上，我深刻理解了对于复杂程序甚至是工程程序中，无论是对个人还是团队合作，面向对象思想的重要性。</p>
+<p>​	前几周投入的精力更大一些，第一单元和第二单元收获颇丰，得分也比较好看，第三单元有所松懈，有幸得到了强测0分体验。这门课没有考试，却比考试周突击的课能学到更多东西。</p>
+<p>​	虽然最后作为社恐和菜鸡没有在研讨课发过言，也没得到什么奖，或许最后得分比较一般，但是这门课确实是我在计算机学院到目前为止感觉上的最舒服的一门课，没有什么遗憾了。</p>
+<p>​	非常感谢可爱的吴际老师一学期的辛勤教学，lyj学长前两单元架构经验的倾情分享和研讨课课程组织，还有其他助教们全程的辛勤付出！</p>
+<h3 id="立足于自己的体会给课程提三个具体改进建议">立足于自己的体会给课程提三个具体改进建议</h3>
+<ol>
+<li>建议第三单元第四单元互换时间，第三单元内容简单，适合考期时间紧张的情况下写，第四单元的工作量相对来说太大了，难顶</li>
+<li>对于面向对象这门课，希望少一些算法考察，第三单元的CTLE现象太坑人，第四单元的图算法太多，虽然算法也是必须掌握的内容，但是在本来任务量就大的情况下，我认为重心应该只放在架构设计上</li>
+<li>第三单元可以压缩，三次作业难度都明显低于其他单元。</li>
+<li>第四单元的重复工作希望可以有所减少，代码量感觉有点大。</li>
+<li>希望每个单元的三次作业的描述能标记增量部分，每次拿到大几千字的文档，好多内容都和之前一模一样，也容易看不进去</li>
+<li>研讨课加分政策感觉有点卷了，对于我这种又比较弱又社恐的人有种被push的感觉</li>
+</ol>
+<p>（超过3个了，不好意思）</p>
+<p><strong>以上仅是作为一个比较弱的人的个人主观想法，可能存在发牢骚现象，如有不合理内容请无视，相信课程组多年来积累的经验，祝OO课程组越来越好！</strong></p>
+<p><strong>完结撒花！！！</strong></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        
+            <a href="/tags/buaa/">BUAA</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">BUAAOO-第三单元总结</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">BUAAOO-第二单元总结</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">BUAAOO-第一单元总结</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" loading="lazy" data-key="" data-hash="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Alxa_Compiler 编译器</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/c-%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;基础</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <section class="a">
+    
+</section>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#总结本单元作业的架构设计">总结本单元作业的架构设计</a>
+          <ol>
+            <li><a href="#第一次作业">第一次作业</a></li>
+            <li><a href="#第二次作业">第二次作业</a></li>
+            <li><a href="#第三次作业">第三次作业</a></li>
+          </ol>
+        </li>
+        <li><a href="#总结自己在四个单元中架构设计及oo方法理解的演进">总结自己在四个单元中架构设计及OO方法理解的演进</a></li>
+        <li><a href="#总结自己在四个单元中测试理解与实践的演进">总结自己在四个单元中测试理解与实践的演进</a></li>
+        <li><a href="#总结自己的课程收获">总结自己的课程收获</a></li>
+        <li><a href="#立足于自己的体会给课程提三个具体改进建议">立足于自己的体会给课程提三个具体改进建议</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
