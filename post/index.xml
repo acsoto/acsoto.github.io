@@ -6,7 +6,7 @@
     <description>Recent content in Posts on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Dec 2021 23:42:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编译原理-理论部分</title>
       <link>http://atksoto.com/buaa-compiler-theory/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://atksoto.com/buaa-compiler-theory/</guid>
       <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
+    </item>
+    
+    <item>
+      <title>推歌 第三期</title>
+      <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
+      <pubDate>Fri, 24 Dec 2021 23:42:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</guid>
+      <description>祝各位圣诞快乐 先来点圣诞歌单 uu们推荐的： 无言花-萧敬腾 凤凰花开的路口-林志炫 没离开过-林志炫 单身情歌-林志炫 月亮惹的祸-张宇 还有我的私货：</description>
     </item>
     
     <item>
@@ -53,11 +62,11 @@
     </item>
     
     <item>
-      <title>Obsidian体验——新工作流</title>
-      <link>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <title>Obsidian体验与新工作流</title>
+      <link>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <guid>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
       <description>最近在玩Hexo，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的m</description>
     </item>
     
