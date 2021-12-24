@@ -8,15 +8,6 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 24 Dec 2021 23:42:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>编译原理-理论部分</title>
-      <link>http://atksoto.com/buaa-compiler-theory/</link>
-      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
-      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
-    </item>
-    
-    <item>
       <title>推歌 第三期</title>
       <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
       <pubDate>Fri, 24 Dec 2021 23:42:00 +0800</pubDate>
@@ -32,6 +23,15 @@
       
       <guid>http://atksoto.com/takeawaydelivery/</guid>
       <description>[[TakeawayDelivery 后端实现]] 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库</description>
+    </item>
+    
+    <item>
+      <title>编译原理-理论部分</title>
+      <link>http://atksoto.com/buaa-compiler-theory/</link>
+      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
+      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
     </item>
     
     <item>
