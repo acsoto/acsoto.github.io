@@ -9,7 +9,7 @@
 <meta property='og:description' content='IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可'>
 <meta property='og:url' content='http://atksoto.com/iotmonitor/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-28T02:54:12&#43;08:00'/><meta property='article:modified_time' content='2021-12-25T14:16:51&#43;08:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Swift' /><meta property='article:tag' content='项目' /><meta property='article:tag' content='开发' /><meta property='article:published_time' content='2021-11-28T02:54:12&#43;08:00'/><meta property='article:modified_time' content='2021-12-27T01:50:06&#43;08:00'/><meta property='og:image' content='https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg' />
 <meta name="twitter:site" content="@TongFan_">
     <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="IoTMonitor">
 <meta name="twitter:description" content="IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可"><meta name="twitter:card" content="summary_large_image">
@@ -162,7 +162,7 @@
 	
 </figure></p>
 <h4 id="历史记录">历史记录</h4>
-<p>通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）</p>
+<p>通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了[[SwiftUI 图表库 ChartView]]库）</p>
 <p>默认显示2天前到现在的曲线，第一次打开app时会同步一次</p>
 <p><figure 
 	>
@@ -201,7 +201,7 @@
 </ul>
 <h2 id="实现">实现</h2>
 <p>该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互</p>
-<p>该app的UI其中一部分复用了我之前的项目<a class="link" href="https://github.com/acsoto/Memo"  target="_blank" rel="noopener"
+<p>该app的UI部分复用项目<a class="link" href="https://github.com/acsoto/Memo"  target="_blank" rel="noopener"
     >Memo</a>的代码</p>
 
 </section>
@@ -242,7 +242,7 @@
 
 
         <span>
-            最后更新于 Dec 25, 2021 14:16 CST
+            最后更新于 Dec 27, 2021 01:50 CST
         </span>
     </section></footer>
 
@@ -317,6 +317,18 @@
 </article>
                 
                     
+<article class="">
+    <a href="/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于Swift开发的依赖安装</h2>
+        </div>
+    </a>
+</article>
+                
+                    
 <article class="has-image">
     <a href="/takeawaydelivery-back/">
         
@@ -342,18 +354,6 @@
 
         <div class="article-details">
             <h2 class="article-title">MacOS全局可执行文件</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">数据库调研报告——键值(Key-Value)存储数据库与 Redis</h2>
         </div>
     </a>
 </article>

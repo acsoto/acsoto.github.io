@@ -6,7 +6,196 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 24 Dec 2021 23:42:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Dec 2021 01:29:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>圣诞和颐和园的日落</title>
+        <link>http://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
+        <pubDate>Mon, 27 Dec 2021 01:29:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
+        <description>&lt;img src="https://pic.mcatk.com/soto/202112270145097.jpeg" alt="Featured image of post 圣诞和颐和园的日落" /&gt;&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270145874.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270145874.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270147863.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270147863.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270149909.gif&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270149909.gif&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;考完编译的几天后，和朋友们在三里屯的一家烤肉店过了一个平安夜，因为外国人很多，这种气氛确实是之前没有感受到的，虽然听不懂他们的小游戏，和他们格格不入，但是一群人坐在一起，吃着烤肉喝着酒，戴着圣诞帽听着圣诞歌曲，大笑着玩小游戏，也是热闹非凡。&lt;/p&gt;
+&lt;p&gt;圣诞节当天，和朋友去颐和园看冬至我没看到的金光穿十七孔桥桥洞。桥洞没我想象中那么“金”，反而是更关注当日耀眼的落日。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270146963.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146963.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270146910.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146910.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270146383.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146383.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270146552.jpeg&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146552.jpeg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;今天真冷～&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>SwiftUI 图表库 ChartView</title>
+        <link>http://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
+        <pubDate>Mon, 27 Dec 2021 01:16:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
+        <description>&lt;p&gt;写这个[[关于Swift开发的依赖安装]]的时候回顾之前的[[IoTMonitor]]，突然很想推荐一下这个库，真的很好看，至少很符合我的审美。&lt;/p&gt;
+&lt;p&gt;当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。&lt;/p&gt;
+&lt;p&gt;(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)&lt;/p&gt;
+&lt;p&gt;地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/AppPear/ChartView&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AppPear/ChartView&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方图例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/130787802-9aa619ee-05de-4343-ba3c-1796e4d05e08.gif&#34; width=&#34;26%&#34;&gt;&lt;/img&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/2826764/130787814-283f3d26-6c9d-448b-b2c7-879e60a3b05d.gif&#34; width=&#34;26%&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/130785262-010d6791-16cf-485d-b920-29e4086477e2.png&#34; width=&#34;45%&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/130785266-94a08622-2963-4177-8777-8bd3ad463809.png&#34; width=&#34;45%&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/130785268-284314de-ba96-4fb7-a1e5-8a46578e1f0e.png&#34; width=&#34;45%&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/131211993-5d33312b-09af-44b4-a32e-ffaad739adfe.gif&#34; width=&#34;45%&#34;&gt;&lt;/img&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/2826764/131211994-48c9ce4e-2e67-40a0-b727-c88bdbd22cd0.gif&#34; width=&#34;45%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;好看就完了，另外使用也相当简单，两个例子：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;n&#34;&gt;MultiLineChartView&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GradientColors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;green&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;99&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;78&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;111&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;70&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;77&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GradientColors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;purple&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;56&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;72&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GradientColors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;orngPink&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/131211991-eca64276-cf05-423f-a78a-697c55e44bbc.gif&#34; width=&#34;50%&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt; &lt;span class=&#34;n&#34;&gt;PieChartView&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;54&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Legendary&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// legend is optional&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://user-images.githubusercontent.com/2826764/131211998-e142657d-0ebc-43b7-aeda-07cae4d9e34b.png&#34; &gt;
+		&lt;img src=&#34;https://user-images.githubusercontent.com/2826764/131211998-e142657d-0ebc-43b7-aeda-07cae4d9e34b.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;而且这些卡片样式都是可以自己重新修订的，不用担心和自己的风格不一样。比如我之前的这个直接搬了两个卡片上去，它的阴影和我其他没有阴影的卡片是很不和谐的，于是我稍作修改，把他改成了和我其他卡片样式风格一致的样子。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuv6rhzk8j310g0u0jsq.jpg&#34; &gt;
+		&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuv6rhzk8j310g0u0jsq.jpg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;因为之前开发仓促，使用的时候没有仔细修改样式，但是可以肯定这个库还有更多的发挥空间。总之这个库真的很不错，封装程度高又不失自定义的空间，推荐。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于Swift开发的依赖安装</title>
+        <link>http://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Mon, 27 Dec 2021 00:59:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;p&gt;今天IOT课写报告突然要用到[[IoTMonitor]]，发现打开Xcode无法编译，找到原因是依赖SwiftHTTP出现了问题，缺少了其中的文件，鉴于之前直接下载了源文件拖进我的工程里，确实不是个规范操作方法，同时，之前做这个app遇到了各种新奇的依赖安装方式，于是决定重新规范安装一下，顺带记录。&lt;/p&gt;
+&lt;h2 id=&#34;cocoapods&#34;&gt;CocoaPods&lt;/h2&gt;
+&lt;p&gt;这个应该是比较常用的方式？首先安装CocoaPods。在项目目录下创建Podfile文件，写入依赖所需的内容，例如&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Podfile&#34; data-lang=&#34;Podfile&#34;&gt;
+source &#39;https://github.com/CocoaPods/Specs.git&#39;
+platform :ios, &#39;8.0&#39;
+use_frameworks!
+
+pod &#39;SwiftHTTP&#39;, &#39;~&amp;gt; 3.0.1&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;后 &lt;code&gt;pod install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;虽然但是，我隐约记得我上次用这个方法搞不定。&lt;/p&gt;
+&lt;h2 id=&#34;carthage&#34;&gt;Carthage&lt;/h2&gt;
+&lt;p&gt;这次我用了这个，首先用brew安装：&lt;code&gt;brew install carthage&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在项目目录下创建Cartfile文件，写入依赖所需内容，如&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;github &amp;quot;daltoniam/SwiftHTTP&amp;quot; &amp;gt;= 3.0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Run &lt;code&gt;carthage update --use-xcframeworks&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;进入生成的Carthage目录&lt;code&gt;Carthage/Build&lt;/code&gt;，把.xcframework直接拖入项目的Frameworks区域即可。&lt;/p&gt;
+&lt;h2 id=&#34;xcode&#34;&gt;Xcode&lt;/h2&gt;
+&lt;p&gt;另外就是Xcode自带的装依赖方法了，一般如果依赖支持都会写操作步骤&lt;/p&gt;
+&lt;p&gt;用ChartView举例&lt;/p&gt;
+&lt;p&gt;File →  Add Packages&amp;hellip;&lt;/p&gt;
+&lt;p&gt;搜索项目地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/AppPear/ChartView&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AppPear/ChartView&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;顺便推荐一下这个ChartView，真的很好看。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270115774.png&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112270115774.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Add 即可&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>推歌 第三期</title>
         <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
         <pubDate>Fri, 24 Dec 2021 23:42:00 +0800</pubDate>
@@ -1928,7 +2117,7 @@ image:
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h4 id=&#34;历史记录&#34;&gt;历史记录&lt;/h4&gt;
-&lt;p&gt;通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了ChartView库）&lt;/p&gt;
+&lt;p&gt;通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了[[SwiftUI 图表库 ChartView]]库）&lt;/p&gt;
 &lt;p&gt;默认显示2天前到现在的曲线，第一次打开app时会同步一次&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -1967,7 +2156,7 @@ image:
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现&#34;&gt;实现&lt;/h2&gt;
 &lt;p&gt;该app主要通过HTTP GET和POST请求像我们的服务器后端发送请求，后端通过电信平台的api调用来发送相关指令，电信平台再把指令下达到开发板，来实现app与开发板的交互&lt;/p&gt;
-&lt;p&gt;该app的UI其中一部分复用了我之前的项目&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/Memo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;该app的UI部分复用项目&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/Memo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Memo&lt;/a&gt;的代码&lt;/p&gt;
 </description>
         </item>
@@ -2214,7 +2403,7 @@ image:
 &lt;p&gt;作品：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;《摇篮曲》&lt;/li&gt;
-&lt;li&gt;室内乐《C小调第三钢琴弦乐四重奏》-献给克拉拉([[第七次课]])&lt;/li&gt;
+&lt;li&gt;室内乐《C小调第三钢琴弦乐四重奏》-献给克拉拉&lt;/li&gt;
 &lt;li&gt;《第二交响曲》&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;柴可夫斯基&#34;&gt;柴可夫斯基&lt;/h5&gt;
