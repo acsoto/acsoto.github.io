@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 28 Dec 2021 01:24:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Dec 2021 18:15:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于编译实验期末上机考试</title>
+      <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+      <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+      <description>刚考完，趁着还记得题，留个记录，供参考。 第一题：错误处理，增加constExp出现变量的错误 第二题：代码生成，增加i++和i&amp;ndash;的</description>
+    </item>
+    
     <item>
       <title>天空之城，米店和XLD</title>
       <link>http://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>

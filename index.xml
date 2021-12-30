@@ -6,7 +6,33 @@
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 Dec 2021 01:24:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 30 Dec 2021 18:15:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于编译实验期末上机考试</title>
+        <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+        <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
+        
+        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+        <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
+&lt;p&gt;第一题：错误处理，增加constExp出现变量的错误&lt;/p&gt;
+&lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是标识符++或&amp;ndash;&lt;/p&gt;
+&lt;p&gt;第三题：直接交课下&lt;/p&gt;
+&lt;p&gt;简答题：
+PCODE：
+描述一个函数调用时候运行栈
+描述多维数组的的定义和使用&lt;/p&gt;
+&lt;p&gt;大体看了一眼mips的，是关于各种优化怎么实现的&lt;/p&gt;
+&lt;p&gt;最后一题是竞速的，与我无关，没看&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;第一题，架构没做好，浪费不少时间，没想到会出现这种错误类型&lt;/p&gt;
+&lt;p&gt;把所有分析表达式的函数加上一个&lt;code&gt;isConst&lt;/code&gt;，然后在&lt;code&gt;analyseConst&lt;/code&gt;里面加上true，其他地方false&lt;/p&gt;
+&lt;p&gt;递归下降到&lt;code&gt;Lval&lt;/code&gt;的时候，如果isConst并且这个ident是个变量，就报错&lt;/p&gt;
+&lt;p&gt;第二题，直接在&lt;code&gt;stmt&lt;/code&gt;的分析是赋值语句还是exp的位置拦截，如果exp（考场上试了我的getExp可以取出i++这样的表达式）是三位，直接看后两位是不是++和&amp;ndash;，如果是的话，首先analyseLval这个ident，然后生成一个新的exp，里面放入&lt;code&gt;ident&lt;/code&gt;、&lt;code&gt;+&lt;/code&gt;、&lt;code&gt;1&lt;/code&gt;，然后pcode加上pop即可。&lt;/p&gt;
+&lt;p&gt;第三个交了直接过了。&lt;/p&gt;
+&lt;p&gt;简答题这部分，虽然我写了两页word，但是感觉关于运行栈我没讲得太清楚，毕竟pcode这个东西本来就是自由设计的，如果要说的很清楚也不是几句话能描述的，详细的都在[[Alxa_Compiler 编译器|文档]]里面了，希望助教能看一下。&lt;/p&gt;
+&lt;p&gt;题出得挺好，这次评测机也没卡，体验不错，还有半个多小时出来的，编译完结撒花🎉&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>天空之城，米店和XLD</title>
         <link>http://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
         <pubDate>Tue, 28 Dec 2021 01:24:00 +0800</pubDate>
