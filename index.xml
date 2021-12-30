@@ -3020,6 +3020,19 @@ cover:&lt;/p&gt;
 &lt;p&gt;Most bugs are produced by function &lt;code&gt;getExp&lt;/code&gt; and &lt;code&gt;divideExp&lt;/code&gt; because of some situations are ignored. So I always get something like index out of range&amp;hellip;&lt;/p&gt;
 &lt;p&gt;So I changed some symbol of stop getting expression and modify the rules to divide or not the expression and so on.&lt;/p&gt;
 &lt;h2 id=&#34;错误处理&#34;&gt;错误处理&lt;/h2&gt;
+&lt;p&gt;Official errors defination&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202112301422547.png&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202112301422547.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;before-code-2&#34;&gt;Before Code&lt;/h3&gt;
 &lt;h4 id=&#34;create-the-symbol-table&#34;&gt;Create the symbol table&lt;/h4&gt;
 &lt;p&gt;Symbol class&lt;/p&gt;
