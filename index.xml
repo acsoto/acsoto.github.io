@@ -14,7 +14,7 @@
         <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
         <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
 &lt;p&gt;第一题：错误处理，增加constExp出现变量的错误&lt;/p&gt;
-&lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是标识符++或&amp;ndash;&lt;/p&gt;
+&lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是变量++或&amp;ndash;&lt;/p&gt;
 &lt;p&gt;第三题：直接交课下&lt;/p&gt;
 &lt;p&gt;简答题：
 PCODE：
