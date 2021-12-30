@@ -43,15 +43,6 @@
     </item>
     
     <item>
-      <title>编译原理-理论部分</title>
-      <link>http://atksoto.com/buaa-compiler-theory/</link>
-      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
-      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
-    </item>
-    
-    <item>
       <title>TakeawayDelivery 后端实现</title>
       <link>http://atksoto.com/takeawaydelivery-back/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>

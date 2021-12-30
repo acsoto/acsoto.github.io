@@ -16,12 +16,30 @@
     </item>
     
     <item>
+      <title>编译原理-理论部分</title>
+      <link>http://atksoto.com/buaa-compiler-theory/</link>
+      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
+      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
+    </item>
+    
+    <item>
       <title>新北老年活动中心</title>
       <link>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
       <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
       
       <guid>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
       <description>新北区迷惑大赏 我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩 上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很</description>
+    </item>
+    
+    <item>
+      <title>Alxa_Compiler 编译器</title>
+      <link>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst. while ((c = getChar()) != null) {</description>
     </item>
     
     <item>
