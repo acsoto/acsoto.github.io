@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jan 2022 16:26:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2022 14:17:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据库-理论部分</title>
+      <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+      <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+      <description>[[数据库系统原理期末复习]] 绪论 数据库系统 独立性 物理独立性：物理改变，逻辑不变 逻辑独立性：逻辑改变，程序不变 完整性 数据正确性 相容性 三级模式</description>
+    </item>
+    
     <item>
       <title>冬日的光</title>
       <link>http://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
@@ -149,15 +158,6 @@
       
       <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
       <description>第一次作业—巴洛克时期的音乐 巴洛克时期的旋律有什么特点？ 旋律具大量装饰音 速度不变 在一个调性上表达情感 巴洛克时期的节奏、节拍有什么独特之处？ 规</description>
-    </item>
-    
-    <item>
-      <title>数学分析</title>
-      <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
-      <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
-      
-      <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</guid>
-      <description>考完了，nmd难死了 数列极限 定义 Stolz 单调有界 函数极限 定义 连续 无穷大 无穷小 等价无穷小 1的无穷次 $e^{&amp;hellip;}$ 一致连续 证明 $|f(x_1)-f(x_2)| &amp;lt; A |x_1-x_2|$ $arctanx$与中值定理</description>
     </item>
     
     <item>

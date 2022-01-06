@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="http://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>数据库-理论部分</title>
+      <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+      <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
+      
+      <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+      <description>[[数据库系统原理期末复习]] 绪论 数据库系统 独立性 物理独立性：物理改变，逻辑不变 逻辑独立性：逻辑改变，程序不变 完整性 数据正确性 相容性 三级模式</description>
+    </item>
+    
+    <item>
       <title>关于编译实验期末上机考试</title>
       <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
       <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
