@@ -94,7 +94,6 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;代数运算&#34;&gt;代数运算&lt;/h2&gt;
 &lt;h1 id=&#34;sql&#34;&gt;SQL&lt;/h1&gt;
-&lt;p&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -157,7 +156,7 @@
 &lt;ol&gt;
 &lt;li&gt;拆右侧，去掉重复的&lt;/li&gt;
 &lt;li&gt;拆左侧，看是否还能推出右侧，决定是否取代&lt;/li&gt;
-&lt;li&gt;遍历一遍，去掉多余的&lt;/li&gt;
+&lt;li&gt;遍历一遍，看去掉后左侧还能否推出右侧，决定是否删除&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;不在F中出现的属性构成一个关系模式&lt;/li&gt;
@@ -196,9 +195,6 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;查询优化&#34;&gt;查询优化&lt;/h2&gt;
 &lt;p&gt;分为&lt;strong&gt;代数优化&lt;/strong&gt;和&lt;strong&gt;物理优化&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;全局查询&lt;/strong&gt;是分布式数据库查询优化的主要对象&lt;/p&gt;
-&lt;p&gt;连接查询优化技术：&lt;strong&gt;半连接&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;分布式数据库系统中，通过&lt;strong&gt;全局模式&lt;/strong&gt;和&lt;strong&gt;分片模式&lt;/strong&gt;之间的映像实现&lt;strong&gt;分片透明性&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;事务处理技术&#34;&gt;事务处理技术&lt;/h1&gt;
 &lt;h2 id=&#34;事务&#34;&gt;事务&lt;/h2&gt;
 &lt;p&gt;用户定义的操作序列，是数据库恢复和并发的基本单位&lt;/p&gt;
@@ -236,7 +232,7 @@
 &lt;h3 id=&#34;封锁粒度&#34;&gt;封锁粒度&lt;/h3&gt;
 &lt;p&gt;多粒度封锁协议：对单个节点加锁则其后裔节点也加同类型的锁&lt;/p&gt;
 &lt;h3 id=&#34;意向锁&#34;&gt;意向锁&lt;/h3&gt;
-&lt;p&gt;该节点下层节点正在被加锁，对任意节点解锁时，必须对上级节点加意向锁。&lt;/p&gt;
+&lt;p&gt;该节点下层节点正在被加锁，对任意节点加锁时，必须对上级节点加意向锁。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;意向共享锁（IS锁）&lt;/li&gt;
 &lt;li&gt;意向排它锁（IX锁）&lt;/li&gt;
@@ -257,6 +253,12 @@
 &lt;p&gt;并发执行与按某一次串行执行结果相同&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;两端锁协议&lt;/strong&gt;可以保证事务并发操作的正确性&lt;/p&gt;
 &lt;h1 id=&#34;数据库保护&#34;&gt;数据库保护&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;用户标识与鉴别&lt;/li&gt;
+&lt;li&gt;存取控制&lt;/li&gt;
+&lt;li&gt;审计功能&lt;/li&gt;
+&lt;li&gt;数据加密&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;存取控制方法&#34;&gt;存取控制方法&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;强制存取控制(MAC)&lt;/li&gt;
@@ -264,8 +266,11 @@
 &lt;/ul&gt;
 &lt;p&gt;为维护完整性，DBMS应提供定义完整性约束条件的机制，提供完整性检查方法，具有违约响应&lt;/p&gt;
 &lt;h1 id=&#34;分布式数据库&#34;&gt;分布式数据库&lt;/h1&gt;
-&lt;p&gt;分布式数据库以数据分布为前提，强调场地自治性和协作性&lt;/p&gt;
+&lt;p&gt;分布式数据库以数据分布为前提，强调&lt;strong&gt;场地自治性&lt;/strong&gt;和&lt;strong&gt;协作性&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;分布透明性包括分片透明性，位置透明性，局部数据模型透明性&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;全局查询&lt;/strong&gt;是分布式数据库查询优化的主要对象&lt;/p&gt;
+&lt;p&gt;连接查询优化技术：&lt;strong&gt;半连接&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分布式数据库系统中，通过&lt;strong&gt;全局模式&lt;/strong&gt;和&lt;strong&gt;分片模式&lt;/strong&gt;之间的映像实现&lt;strong&gt;分片透明性&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;判断范式：&lt;/p&gt;
 &lt;ul&gt;
@@ -273,20 +278,6 @@
 &lt;li&gt;码由全部属性构成——3NF，BCNF&lt;/li&gt;
 &lt;li&gt;所有属性都是主属性——3NF，不一定BCNF&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;概念题或许可以看看面试题，这课考一堆概念可能就是方便面试吧。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;MySQL教程 &lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/mysql/mysql-tutorial.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.runoob.com/mysql/mysql-tutorial.html&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;面试题 &lt;a class=&#34;link&#34; href=&#34;https://www.nowcoder.com/discuss/135748?type=5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.nowcoder.com/discuss/135748?type=5&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
 </description>
         </item>
         <item>
