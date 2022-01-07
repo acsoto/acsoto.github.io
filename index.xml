@@ -266,8 +266,8 @@
 &lt;/ul&gt;
 &lt;p&gt;为维护完整性，DBMS应提供定义完整性约束条件的机制，提供完整性检查方法，具有违约响应&lt;/p&gt;
 &lt;h1 id=&#34;分布式数据库&#34;&gt;分布式数据库&lt;/h1&gt;
-&lt;p&gt;分布式数据库以数据分布为前提，强调&lt;strong&gt;场地自治性&lt;/strong&gt;和&lt;strong&gt;协作性&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;分布透明性包括分片透明性，位置透明性，局部数据模型透明性&lt;/p&gt;
+&lt;p&gt;分布式数据库以数据分布为前提，强调&lt;strong&gt;场地自治性&lt;/strong&gt;和&lt;strong&gt;场地之间的协作性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分布透明性包&lt;strong&gt;括分片透明性，位置透明性，局部数据模型透明性&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;全局查询&lt;/strong&gt;是分布式数据库查询优化的主要对象&lt;/p&gt;
 &lt;p&gt;连接查询优化技术：&lt;strong&gt;半连接&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;分布式数据库系统中，通过&lt;strong&gt;全局模式&lt;/strong&gt;和&lt;strong&gt;分片模式&lt;/strong&gt;之间的映像实现&lt;strong&gt;分片透明性&lt;/strong&gt;&lt;/p&gt;
