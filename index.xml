@@ -19,7 +19,7 @@
 &lt;/ol&gt;
 &lt;p&gt;$$
 \begin{aligned}
-\sum_{i=1}^n\omega_i(x_i-x_{i-1})=\sum_{i=1}^n(f(x_i)-f(x_{i-1}))(x_i-x_{i-1}) \
+\sum_{i=1}^n\omega_i(x_i-x_{i-1})=\sum_{i=1}^n(f(x_i)-f(x_{i-1}))(x_i-x_{i-1}) \\
 &amp;lt;\sum_{i=1}^n(f(b)-f(a))(x_i-x_{i-1})=(f(b)-f(a))||\pi||
 \end{aligned}
 $$&lt;/p&gt;
@@ -374,13 +374,13 @@ r^2 = 2a^2\cos2\theta
 $$&lt;/p&gt;
 &lt;h3 id=&#34;星型线星型线&#34;&gt;星型线&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{cases}x=a\cos^3\theta \&lt;/p&gt;
+\begin{cases}x=a\cos^3\theta \\&lt;/p&gt;
 &lt;p&gt;y=a\sin^3\theta\end{cases}
 $$&lt;/p&gt;
 &lt;h3 id=&#34;摆线摆线&#34;&gt;摆线&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;$$
 \begin{cases}
-x=r(t-sin⁡t) \
+x=r(t-sin⁡t) \\
 y=r(1−cos⁡t)
 \end{cases}
 $$&lt;/p&gt;
