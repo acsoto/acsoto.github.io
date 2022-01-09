@@ -382,7 +382,7 @@ s=\int_a^b\sqrt{1+y&#39;^2}dx
 $$&lt;/p&gt;
 &lt;h3 id=&#34;参数方程形式&#34;&gt;参数方程形式&lt;/h3&gt;
 &lt;p&gt;$$
-s=\int_\alpha^\beta\sqrt{x&#39;^2(t)+y&#39;^2(t)}
+s=\int_\alpha^\beta\sqrt{x&#39;^2(t)+y&#39;^2(t)}dt
 $$&lt;/p&gt;
 &lt;h3 id=&#34;极坐标形式&#34;&gt;极坐标形式&lt;/h3&gt;
 &lt;p&gt;$$
@@ -400,8 +400,8 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;星型线星型线&#34;&gt;星型线&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;$$
 \begin{cases}
-x=a\cos^3\theta \\&lt;/p&gt;
-&lt;p&gt;y=a\sin^3\theta
+x=a\cos^3\theta \\
+y=a\sin^3\theta
 \end{cases}
 $$&lt;/p&gt;
 &lt;h3 id=&#34;摆线摆线&#34;&gt;摆线&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
@@ -2367,18 +2367,6 @@ image:
 &lt;/li&gt;
 &lt;li&gt;[[数学分析-积分部分证明]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://github.com/theme-next/hexo-theme-next/graphs/contributors&#34; &gt;
-		&lt;img src=&#34;https://github.com/theme-next/hexo-theme-next/graphs/contributors&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			&gt;
-	&lt;/a&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
