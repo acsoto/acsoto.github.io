@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AtTackCraft on SOTO-BLOG</title>
-    <link>http://atksoto.com/tags/attackcraft/</link>
+    <link>https://atksoto.com/tags/attackcraft/</link>
     <description>Recent content in AtTackCraft on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Dec 2021 22:23:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 22:23:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>最近的log4j 和新的 GuildManager</title>
-      <link>http://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
+      <link>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
       <pubDate>Fri, 10 Dec 2021 22:23:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
+      <guid>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
       <description>昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影</description>
     </item>
     
     <item>
       <title>AC又被黑了</title>
-      <link>http://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+      <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
       <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
       
-      <guid>http://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+      <guid>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
       <description>下午突然看到服务器有人发 仔细一看 打开链接一看： 很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放 查来查去发现是有人盗了</description>
     </item>
     

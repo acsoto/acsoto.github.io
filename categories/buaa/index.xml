@@ -2,88 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BUAA on SOTO-BLOG</title>
-    <link>http://atksoto.com/categories/buaa/</link>
+    <link>https://atksoto.com/categories/buaa/</link>
     <description>Recent content in BUAA on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数学分析-积分部分证明</title>
-      <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</link>
+      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</link>
       <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
       <description>[a,b]连续证明可积 由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$ 只要[a,b]上任意分割T满足$||T||&amp;lt;\delt</description>
     </item>
     
     <item>
       <title>数据库-理论部分</title>
-      <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+      <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
       <description>[[数据库系统原理期末复习]] 绪论 数据库系统 独立性 物理独立性：物理改变，逻辑不变 逻辑独立性：逻辑改变，程序不变 完整性 数据正确性 相容性 三级模式</description>
     </item>
     
     <item>
       <title>数学分析-关于几何的积分</title>
-      <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</link>
+      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</link>
       <pubDate>Thu, 30 Dec 2021 22:26:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
       <description>极坐标方程的积分 周长 $$ \int_0^{2\pi}r\ d\theta $$ 面积 $$ \int_0^{2\pi}\frac{1}{2}r^2d\theta $$ 弧长公式 一般形式 $$ s=\int_a^b\sqrt{1+y&#39;^2}dx $$ 参数方程形式 $$ s=\int_\alpha^\beta\sqrt{x&#39;^2(t)+y&#39;^2(t)} $$ 极坐标形式 $$ s=\int_\alpha^\beta\sqrt{r^2(\theta)+r&#39;^2(\theta)d\theta} $$ 曲率公式 $$ k=\frac{|y&#39;&#39;|}{(1+(y&#39;)^2)^{\frac{3}{2}}} $$ 特殊图形 双纽线1 $$ r^2 = 2a^2\cos2\theta $$ 星型线</description>
     </item>
     
     <item>
       <title>关于编译实验期末上机考试</title>
-      <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+      <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
       <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+      <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
       <description>刚考完，趁着还记得题，留个记录，供参考。 第一题：错误处理，增加constExp出现变量的错误 第二题：代码生成，增加i++和i&amp;ndash;的</description>
     </item>
     
     <item>
       <title>编译原理-理论部分</title>
-      <link>http://atksoto.com/buaa-compiler-theory/</link>
+      <link>https://atksoto.com/buaa-compiler-theory/</link>
       <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/buaa-compiler-theory/</guid>
+      <guid>https://atksoto.com/buaa-compiler-theory/</guid>
       <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
     </item>
     
     <item>
       <title>数学分析大纲</title>
-      <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</link>
+      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</link>
       <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
       <description>数列极限 定义 Stolz 单调有界 函数极限 定义 连续 无穷大 无穷小 等价无穷小 1的无穷次 $e^{&amp;hellip;}$ 一致连续 证明 $|f(x_1)-f(x_2)| &amp;lt; A |x_1-x_2|$ $arctanx$与中值定理 导数 隐函数求导 参数方</description>
     </item>
     
     <item>
       <title>新北老年活动中心</title>
-      <link>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+      <link>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
       <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+      <guid>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
       <description>新北区迷惑大赏 我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩 上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很</description>
     </item>
     
     <item>
       <title>Alxa_Compiler 编译器</title>
-      <link>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <link>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <guid>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst. while ((c = getChar()) != null) {</description>
     </item>
     
     <item>
       <title>失败的逻辑课程笔记</title>
-      <link>http://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <link>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
       <description>失败的规律 墨菲定律 定义 如果做某项工作有多种方法，而其中有一种方法将导致事故，那么一定有人会按这种方法去做。 四种表现形式 （注意：都不是一定的）</description>
     </item>
     

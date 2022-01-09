@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>SOTO-BLOG</title>
-        <link>http://atksoto.com/</link>
+        <link>https://atksoto.com/</link>
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 09 Jan 2022 08:48:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Jan 2022 08:48:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>数学分析-积分部分证明</title>
-        <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</link>
+        <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</link>
         <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
+        <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析-积分部分证明" /&gt;&lt;h2 id=&#34;ab连续证明可积&#34;&gt;[a,b]连续证明可积&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$&lt;/li&gt;
@@ -68,10 +68,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>数据库-理论部分</title>
-        <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+        <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
         <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+        <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201051418762.png" alt="Featured image of post 数据库-理论部分" /&gt;&lt;p&gt;[[数据库系统原理期末复习]]&lt;/p&gt;
 &lt;h2 id=&#34;绪论&#34;&gt;绪论&lt;/h2&gt;
 &lt;h3 id=&#34;数据库系统&#34;&gt;数据库系统&lt;/h3&gt;
@@ -342,10 +342,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>冬日的光</title>
-        <link>http://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
+        <link>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
         <pubDate>Sun, 02 Jan 2022 16:26:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
+        <guid>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201021637052.jpeg" alt="Featured image of post 冬日的光" /&gt;&lt;p&gt;下午两点半的游泳馆没有多少人，我成为了打破平静清澈水面的第一个人，耳边只有水的声音，不用想别的事情，得以享受片刻的宁静。&lt;/p&gt;
 &lt;p&gt;很少在下午场来游泳馆，冬日午后的阳光温柔地打在水面上，把波光映在池底，是深水区独有的享受，水也比平日晚上来时暖和。穿过撒着阳光的水面，眼前一片闪亮，水下又是另一片安静的光晃动着。&lt;/p&gt;
 &lt;p&gt;后从绿园散步回去，一路上没有什么人，也比平日安静几分，唯有穿过树林温柔的光，喝一瓶可乐，冬这个季节也不是一无是处了。&lt;/p&gt;
@@ -353,19 +353,19 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>你好，2022</title>
-        <link>http://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</link>
+        <link>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</link>
         <pubDate>Sat, 01 Jan 2022 01:33:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</guid>
+        <guid>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</guid>
         <description>&lt;p&gt;新的一年。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>数学分析-关于几何的积分</title>
-        <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</link>
+        <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</link>
         <pubDate>Thu, 30 Dec 2021 22:26:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
+        <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析-关于几何的积分" /&gt;&lt;h2 id=&#34;极坐标方程的积分&#34;&gt;极坐标方程的积分&lt;/h2&gt;
 &lt;h3 id=&#34;周长&#34;&gt;周长&lt;/h3&gt;
 &lt;p&gt;$$
@@ -432,10 +432,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>关于编译实验期末上机考试</title>
-        <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
         <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
         <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
 &lt;p&gt;第一题：错误处理，增加&lt;code&gt;constExp&lt;/code&gt;出现变量的错误&lt;/p&gt;
 &lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是变量++或&amp;ndash;&lt;/p&gt;
@@ -459,10 +459,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>天空之城，米店和XLD</title>
-        <link>http://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
+        <link>https://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
         <pubDate>Tue, 28 Dec 2021 01:24:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
+        <guid>https://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112280125409.jpg" alt="Featured image of post 天空之城，米店和XLD" /&gt;&lt;p&gt;现在是凌晨1:26，刚水完领导力的报告，听着天空之城。&lt;/p&gt;
 &lt;p&gt;今天(昨天)一早起来全朋友圈都在发自己的网易云，我于是打开了很久没有打开的Spotify，想看看有没有年度报告，尘封在资料库的李先生印入眼帘，点开了天空之城，顿时感觉非常感动，听了一下午他的歌。&lt;/p&gt;
 &lt;p&gt;想想自己还挺喜欢他的歌的，却一直只能在Spotify听，于是到北邮人下了他的一堆专辑，打算导进AM。&lt;/p&gt;
@@ -558,10 +558,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>圣诞和颐和园的日落</title>
-        <link>http://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
+        <link>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
         <pubDate>Mon, 27 Dec 2021 01:29:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
+        <guid>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112270145097.jpeg" alt="Featured image of post 圣诞和颐和园的日落" /&gt;&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202112270145874.jpeg&#34; &gt;
@@ -653,10 +653,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>SwiftUI 图表库 ChartView</title>
-        <link>http://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
+        <link>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
         <pubDate>Mon, 27 Dec 2021 01:16:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
+        <guid>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
         <description>&lt;p&gt;写这个[[关于Swift开发的依赖安装]]的时候回顾之前的[[IoTMonitor]]，突然很想推荐一下这个库，真的很好看，至少很符合我的审美。&lt;/p&gt;
 &lt;p&gt;当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。&lt;/p&gt;
 &lt;p&gt;(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)&lt;/p&gt;
@@ -702,10 +702,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>关于Swift开发的依赖安装</title>
-        <link>http://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</link>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</link>
         <pubDate>Mon, 27 Dec 2021 00:59:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</guid>
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</guid>
         <description>&lt;p&gt;今天IOT课写报告突然要用到[[IoTMonitor]]，发现打开Xcode无法编译，找到原因是依赖SwiftHTTP出现了问题，缺少了其中的文件，鉴于之前直接下载了源文件拖进我的工程里，确实不是个规范操作方法，同时，之前做这个app遇到了各种新奇的依赖安装方式，于是决定重新规范安装一下，顺带记录。&lt;/p&gt;
 &lt;h2 id=&#34;cocoapods&#34;&gt;CocoaPods&lt;/h2&gt;
 &lt;p&gt;这个应该是比较常用的方式？首先安装CocoaPods。在项目目录下创建Podfile文件，写入依赖所需的内容，例如&lt;/p&gt;
@@ -747,10 +747,10 @@ pod &#39;SwiftHTTP&#39;, &#39;~&amp;gt; 3.0.1&#39;
         </item>
         <item>
         <title>推歌 第三期</title>
-        <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
         <pubDate>Fri, 24 Dec 2021 23:42:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gxpctdc5yzj30rs0rsgp4.jpg" alt="Featured image of post 推歌 第三期" /&gt;&lt;p&gt;祝各位圣诞快乐&lt;/p&gt;
 &lt;p&gt;先来点圣诞歌单&lt;/p&gt;
 &lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;450&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/playlist/merry-christmas/pl.u-r2yB1GGCRgj4Z1W&#34;&gt;&lt;/iframe&gt;
@@ -778,10 +778,10 @@ pod &#39;SwiftHTTP&#39;, &#39;~&amp;gt; 3.0.1&#39;
         </item>
         <item>
         <title>数据库调研报告——键值(Key-Value)存储数据库与 Redis</title>
-        <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
+        <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
         <pubDate>Thu, 23 Dec 2021 16:29:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
+        <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
         <description>&lt;h1 id=&#34;键值存储数据库与-redis&#34;&gt;键值存储数据库与 Redis&lt;/h1&gt;
 &lt;p&gt;键-值数据库，或键-值存储，是设计用来存储、检索和管理关联数组的数据存储范式，关联数组是现今更常称为“字典”或散列表的一种数据结构。字典包含对对象或记录的一个收集，依次、记录内有多个不同的“域”或称字段，再次、每个字段都包含数据。这些记录使用唯一标识这个记录的“键”来存储和检索，键还用来在数据库中快速的找到数据。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;可以发现，键-值数据库的存储方式，更接近于现代面向对象的编程思维，同时，不同于关系数据库，键-值数据库通常可以使用更少的内存。限制键-值数据库的问题在于性能和标准化。&lt;/p&gt;
@@ -903,10 +903,10 @@ pod &#39;SwiftHTTP&#39;, &#39;~&amp;gt; 3.0.1&#39;
         </item>
         <item>
         <title>关于TakeawayDelivery</title>
-        <link>http://atksoto.com/takeawaydelivery/</link>
+        <link>https://atksoto.com/takeawaydelivery/</link>
         <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/takeawaydelivery/</guid>
+        <guid>https://atksoto.com/takeawaydelivery/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post 关于TakeawayDelivery" /&gt;&lt;p&gt;[[TakeawayDelivery 后端实现]]&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
@@ -922,10 +922,10 @@ pod &#39;SwiftHTTP&#39;, &#39;~&amp;gt; 3.0.1&#39;
         </item>
         <item>
         <title>编译原理-理论部分</title>
-        <link>http://atksoto.com/buaa-compiler-theory/</link>
+        <link>https://atksoto.com/buaa-compiler-theory/</link>
         <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/buaa-compiler-theory/</guid>
+        <guid>https://atksoto.com/buaa-compiler-theory/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112202258896.png" alt="Featured image of post 编译原理-理论部分" /&gt;&lt;h1 id=&#34;编译原理-理论&#34;&gt;编译原理 理论&lt;/h1&gt;
 &lt;p&gt;考前再浏览一下目录&lt;/p&gt;
 &lt;ul&gt;
@@ -1505,10 +1505,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>展望一下十二月</title>
-        <link>http://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
+        <link>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
         <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
+        <guid>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/R6dzgZ.jpeg" alt="Featured image of post 展望一下十二月" /&gt;&lt;p&gt;现在已经是13号了，时间过得真快，来不及展望，今年就要过完了。&lt;/p&gt;
 &lt;p&gt;今天终于截止了数据库和安卓的大作业，虽然有遇到一些不愉快，终于都结束了。&lt;/p&gt;
 &lt;p&gt;这是第15周，从上周开始已经基本没什么课了，后续就是一大堆考试，这应该是我考试最多的一个学期了吧。&lt;/p&gt;
@@ -1606,10 +1606,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>最近的log4j 和新的 GuildManager</title>
-        <link>http://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
+        <link>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
         <pubDate>Fri, 10 Dec 2021 22:23:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
+        <guid>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/0tqH35.png" alt="Featured image of post 最近的log4j 和新的 GuildManager" /&gt;&lt;p&gt;昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影响，一方面因为暂时不好解决，也因为这个漏洞严重到小服不会成为首要攻击目标，于是也没有在意。&lt;/p&gt;
 &lt;p&gt;今天很快各个服务端开始推出带补丁的新版本，Spigot也是，甚至在MCBBS论坛看到了之前写安全插件的一个眼熟的大佬给了一个参数解决问题的方法，佩服众大佬和互联网的速度。我已经去构建了一下新版的Spigot，并且加上了那个参数，双重保险目前应该没有问题了，尽管到现在我还不知道具体怎么触发这个漏洞。&lt;/p&gt;
 &lt;p&gt;昨天看kotlin，一时兴起重写了&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/GuildManager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1633,10 +1633,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>TakeawayDelivery 后端实现</title>
-        <link>http://atksoto.com/takeawaydelivery-back/</link>
+        <link>https://atksoto.com/takeawaydelivery-back/</link>
         <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/takeawaydelivery-back/</guid>
+        <guid>https://atksoto.com/takeawaydelivery-back/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;
@@ -1896,10 +1896,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Obsidian体验与新工作流</title>
-        <link>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+        <link>https://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
         <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+        <guid>https://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/XmECh3.png" alt="Featured image of post Obsidian体验与新工作流" /&gt;&lt;p&gt;最近在玩Hexo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;现在也收费了，趁着这个契机，打算换一个软件用。&lt;/p&gt;
 &lt;p&gt;听说 all in one 的 Notion&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。&lt;/p&gt;
 &lt;p&gt;另外就是一直感觉很神秘但是不会用的Obsidian&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;。由于习惯停留在Typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。&lt;/p&gt;
@@ -2062,10 +2062,10 @@ image:
         </item>
         <item>
         <title>西方音乐史-作业</title>
-        <link>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</link>
+        <link>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</link>
         <pubDate>Mon, 06 Dec 2021 15:01:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
+        <guid>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E4%BD%9C%E4%B8%9A/</guid>
         <description>&lt;h1 id=&#34;第一次作业巴洛克时期的音乐&#34;&gt;第一次作业—巴洛克时期的音乐&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;巴洛克时期的旋律有什么特点？&lt;/li&gt;
@@ -2262,10 +2262,10 @@ image:
         </item>
         <item>
         <title>数学分析大纲</title>
-        <link>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</link>
+        <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</link>
         <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
+        <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析大纲" /&gt;&lt;ul&gt;
 &lt;li&gt;数列极限
 &lt;ul&gt;
@@ -2383,10 +2383,10 @@ image:
         </item>
         <item>
         <title>推歌 第二期</title>
-        <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
         <pubDate>Sat, 04 Dec 2021 15:49:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌&lt;br&gt;
 大家一起分享&lt;/p&gt;
 &lt;ul&gt;
@@ -2404,10 +2404,10 @@ image:
         </item>
         <item>
         <title>假如爱有天意</title>
-        <link>http://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
+        <link>https://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
         <pubDate>Fri, 03 Dec 2021 22:11:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
+        <guid>https://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/y6rPnu.png" alt="Featured image of post 假如爱有天意" /&gt;&lt;p&gt;《假如爱有天意》&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -2476,10 +2476,10 @@ image:
         </item>
         <item>
         <title>推歌 第一期</title>
-        <link>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
         <pubDate>Wed, 01 Dec 2021 23:18:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌
 大家一起分享&lt;/p&gt;
 &lt;hr&gt;
@@ -2514,10 +2514,10 @@ image:
         </item>
         <item>
         <title>Our Little Sister</title>
-        <link>http://atksoto.com/our-little-sister/</link>
+        <link>https://atksoto.com/our-little-sister/</link>
         <pubDate>Wed, 01 Dec 2021 19:25:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/our-little-sister/</guid>
+        <guid>https://atksoto.com/our-little-sister/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/GkSWWl.png" alt="Featured image of post Our Little Sister" /&gt;&lt;p&gt;《海街日记》&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -2583,10 +2583,10 @@ image:
         </item>
         <item>
         <title>MacOS全局可执行文件</title>
-        <link>http://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+        <link>https://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
         <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+        <guid>https://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
         <description>&lt;p&gt;sudo vim /usr/local/bin/&lt;code&gt;command&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;/usr/local/bin/ 下创建的文件默认在&lt;code&gt;path&lt;/code&gt;中
 必须使用sudo&lt;/p&gt;
@@ -2598,10 +2598,10 @@ image:
         </item>
         <item>
         <title>岁末将至</title>
-        <link>http://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
+        <link>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
         <pubDate>Sun, 28 Nov 2021 23:59:12 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
+        <guid>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwvcckpc31j30sg0lcjw0.jpg" alt="Featured image of post 岁末将至" /&gt;&lt;p&gt;2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;figure 
@@ -2625,10 +2625,10 @@ image:
         </item>
         <item>
         <title>AC又被黑了</title>
-        <link>http://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+        <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
         <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
         
-        <guid>http://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+        <guid>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuxr0uhfdj30yc0jsgn6.jpg" alt="Featured image of post AC又被黑了" /&gt;&lt;p&gt;下午突然看到服务器有人发&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -2682,10 +2682,10 @@ image:
         </item>
         <item>
         <title>IoTMonitor</title>
-        <link>http://atksoto.com/iotmonitor/</link>
+        <link>https://atksoto.com/iotmonitor/</link>
         <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
         
-        <guid>http://atksoto.com/iotmonitor/</guid>
+        <guid>https://atksoto.com/iotmonitor/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" alt="Featured image of post IoTMonitor" /&gt;&lt;h1 id=&#34;iotmonitor&#34;&gt;IoTMonitor&lt;/h1&gt;
 &lt;p&gt;用于展示IoT课程开发板的相关信息并进行控制&lt;/p&gt;
 &lt;p&gt;可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线&lt;/p&gt;
@@ -2779,10 +2779,10 @@ image:
         </item>
         <item>
         <title>我爱我度过的所有时间</title>
-        <link>http://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
+        <link>https://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
         <pubDate>Fri, 26 Nov 2021 19:06:03 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
+        <guid>https://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwt3jhmdacj31gm0luq6m.jpg" alt="Featured image of post 我爱我度过的所有时间" /&gt;&lt;p&gt;《现在去见你》&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -2813,10 +2813,10 @@ image:
         </item>
         <item>
         <title>新北老年活动中心</title>
-        <link>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+        <link>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
         <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+        <guid>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg" alt="Featured image of post 新北老年活动中心" /&gt;&lt;h1 id=&#34;新北区迷惑大赏&#34;&gt;新北区迷惑大赏&lt;/h1&gt;
 &lt;p&gt;我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩&lt;/p&gt;
 &lt;p&gt;上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很着急&lt;/p&gt;
@@ -2862,10 +2862,10 @@ image:
         </item>
         <item>
         <title>西方音乐史-浪漫主义时期</title>
-        <link>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</link>
         <pubDate>Tue, 23 Nov 2021 20:34:50 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%B5%AA%E6%BC%AB%E4%B8%BB%E4%B9%89%E6%97%B6%E6%9C%9F/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/CxHj8q.jpg" alt="Featured image of post 西方音乐史-浪漫主义时期" /&gt;&lt;h1 id=&#34;浪漫主义时期&#34;&gt;浪漫主义时期&lt;/h1&gt;
 &lt;p&gt;（1820-1900）&lt;/p&gt;
 &lt;h2 id=&#34;特点&#34;&gt;特点&lt;/h2&gt;
@@ -3061,10 +3061,10 @@ image:
         </item>
         <item>
         <title>泳社约游群的有趣见闻</title>
-        <link>http://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
+        <link>https://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
         <pubDate>Tue, 23 Nov 2021 12:36:52 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
+        <guid>https://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
         <description>&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwoz8tqtvij30u015cq70.jpg&#34; &gt;
@@ -3082,10 +3082,10 @@ image:
         </item>
         <item>
         <title>Hexo-Front-matter</title>
-        <link>http://atksoto.com/hexo-front-matter/</link>
+        <link>https://atksoto.com/hexo-front-matter/</link>
         <pubDate>Tue, 23 Nov 2021 10:09:18 +0800</pubDate>
         
-        <guid>http://atksoto.com/hexo-front-matter/</guid>
+        <guid>https://atksoto.com/hexo-front-matter/</guid>
         <description>&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 &lt;p&gt;title:&lt;/p&gt;
 &lt;p&gt;date: 2021-11-23 10:09:18&lt;/p&gt;
@@ -3182,10 +3182,10 @@ image:
         </item>
         <item>
         <title>关于封校的行为艺术——很有冲击力</title>
-        <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
         <pubDate>Mon, 22 Nov 2021 15:28:59 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwnymv1zyrj31780u0ane.jpg" alt="Featured image of post 关于封校的行为艺术——很有冲击力" /&gt;&lt;p&gt;今日看到北京电影学院的行为艺术，甚感封校许久政策就是最明显的校内不同群体的利益冲突，比如在BUAA，冲封校冲得最厉害的，似乎是大四的同学，因为很多人急于出去实习科研。对于一些每天的生活只有卷的同学，封校政策并无大碍。对于北航家属呢，此政策影响不到他们的正常出行。对于我呢，在我想出去玩的时候，对政策感到厌恶，在我不想出玩的时候，却也觉得无所谓。&lt;/p&gt;
 &lt;p&gt;《肖申克的救赎》&lt;/p&gt;
 &lt;p&gt;&lt;figure 
@@ -3219,10 +3219,10 @@ image:
         </item>
         <item>
         <title>关于2021美赛</title>
-        <link>http://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
         <pubDate>Sun, 21 Nov 2021 11:36:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
         <description>&lt;p&gt;[[2021美赛正文.pdf]] (&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021/blob/main/%e7%be%8e%e8%b5%9b%e6%ad%a3%e6%96%872111259.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -3253,10 +3253,10 @@ image:
         </item>
         <item>
         <title>与鸟巢的匆匆一面</title>
-        <link>http://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
+        <link>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
         <pubDate>Fri, 19 Nov 2021 23:34:01 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
+        <guid>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwocp0mkarj30sg0lc43v.jpg" alt="Featured image of post 与鸟巢的匆匆一面" /&gt;&lt;p&gt;今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。&lt;/p&gt;
 &lt;p&gt;我在乘车前往目的地的路上，看到鸟巢灯火通明的一瞬间，突然感到与繁景告别已久（一个多月），仿佛自己离开了这个城市。恍然间审视起来自己这一个月真的是在有意义的活着吗？貌似是陷在编译里面虚度时间。忽然想起那句：北航人是没有生活的(&lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/ePycPzAVIXsyFPWTIV9fQQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;)，直呼赞同。故在按部就班完成生日的惊喜后按耐不住，感觉在座的各位都有自己在这一场聚会中想要做的事情，我不甚相融其中，只想奔赴鸟巢，而且还有点饿，想吃点告别已久的，学校外边的食物，遂离开。&lt;/p&gt;
@@ -3303,10 +3303,10 @@ image:
         </item>
         <item>
         <title>Alxa_Compiler 编译器</title>
-        <link>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+        <link>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+        <guid>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler 编译器" /&gt;&lt;h2 id=&#34;词法分析&#34;&gt;词法分析&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
@@ -4249,10 +4249,10 @@ image:
         </item>
         <item>
         <title>2021年11月的第一场雪</title>
-        <link>http://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
+        <link>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
         <pubDate>Sun, 07 Nov 2021 02:04:08 +0800</pubDate>
         
-        <guid>http://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
+        <guid>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwkz3r6pstj30sg0lc43b.jpg" alt="Featured image of post 2021年11月的第一场雪" /&gt;&lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;150&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/album/the-four-seasons-concerto-no-4-in-f-minor-rv-297/883897569?i=883897598&amp;l=en&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;真的很冷&lt;/p&gt;
 &lt;p&gt;今天大家的关注点都在S赛，我也未能免俗参与其中&lt;/p&gt;
@@ -4260,10 +4260,10 @@ image:
         </item>
         <item>
         <title>Memo文档</title>
-        <link>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
+        <link>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
         <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
+        <guid>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" alt="Featured image of post Memo文档" /&gt;&lt;h1 id=&#34;memo&#34;&gt;Memo&lt;/h1&gt;
 &lt;p&gt;Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;&lt;/p&gt;
 &lt;p&gt;灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。&lt;/p&gt;
@@ -4555,10 +4555,10 @@ image:
         </item>
         <item>
         <title>西方音乐史-维也纳古典时期</title>
-        <link>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</link>
         <pubDate>Tue, 19 Oct 2021 17:32:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%8F%A4%E5%85%B8%E6%97%B6%E6%9C%9F/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/5DRCtL.jpeg" alt="Featured image of post 西方音乐史-维也纳古典时期" /&gt;&lt;h1 id=&#34;维也纳古典时期&#34;&gt;维也纳古典时期&lt;/h1&gt;
 &lt;p&gt;古典三杰：海顿，莫扎特，贝多芬&lt;/p&gt;
 &lt;p&gt;海顿：清唱剧《创世纪》《四季》&lt;/p&gt;
@@ -4664,10 +4664,10 @@ image:
         </item>
         <item>
         <title>西方音乐史-巴洛克时期</title>
-        <link>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</link>
+        <link>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</link>
         <pubDate>Wed, 29 Sep 2021 08:34:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</guid>
+        <guid>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E5%B7%B4%E6%B4%9B%E5%85%8B%E6%97%B6%E6%9C%9F/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/LPGlHr.png" alt="Featured image of post 西方音乐史-巴洛克时期" /&gt;&lt;h1 id=&#34;巴洛克时期&#34;&gt;巴洛克时期&lt;/h1&gt;
 &lt;h2 id=&#34;特点&#34;&gt;特点&lt;/h2&gt;
 &lt;p&gt;悠长而富于装饰的旋律线条&lt;/p&gt;
@@ -4695,10 +4695,10 @@ image:
         </item>
         <item>
         <title>西方音乐史-总述</title>
-        <link>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</link>
+        <link>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</link>
         <pubDate>Tue, 28 Sep 2021 19:34:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</guid>
+        <guid>https://atksoto.com/%E8%A5%BF%E6%96%B9%E9%9F%B3%E4%B9%90%E5%8F%B2-%E6%80%BB%E8%BF%B0/</guid>
         <description>&lt;h2 id=&#34;共晓时期&#34;&gt;共晓时期：&lt;/h2&gt;
 &lt;p&gt;[[西方音乐史-巴洛克时期]]&lt;/p&gt;
 &lt;p&gt;[[西方音乐史-维也纳古典时期]]&lt;/p&gt;
@@ -4756,10 +4756,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第四单元总结</title>
-        <link>http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第四单元总结&#34;&gt;BUAAOO-第四单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;总结本单元作业的架构设计&#34;&gt;总结本单元作业的架构设计&lt;/h3&gt;
 &lt;p&gt;本单元任务为设计UML分析器，包括类图，顺序图，状态图&lt;/p&gt;
@@ -4924,10 +4924,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第三单元总结</title>
-        <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第三单元总结&#34;&gt;BUAAOO-第三单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;实现规格所采取的设计策略&#34;&gt;实现规格所采取的设计策略&lt;/h3&gt;
 &lt;p&gt;在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。&lt;/p&gt;
@@ -5106,10 +5106,10 @@ image:
         </item>
         <item>
         <title>C&#43;&#43;基础</title>
-        <link>http://atksoto.com/c-%E5%9F%BA%E7%A1%80/</link>
+        <link>https://atksoto.com/c-%E5%9F%BA%E7%A1%80/</link>
         <pubDate>Fri, 30 Apr 2021 11:00:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/c-%E5%9F%BA%E7%A1%80/</guid>
+        <guid>https://atksoto.com/c-%E5%9F%BA%E7%A1%80/</guid>
         <description>&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto-pictures/2021-12/%e7%9f%a5%e8%af%86%e7%82%b9%e7%ba%b2%e8%a6%81.png&#34; &gt;
@@ -5418,10 +5418,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第二单元总结</title>
-        <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第二单元总结&#34;&gt;BUAAOO-第二单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;作业分析&#34;&gt;作业分析&lt;/h2&gt;
 &lt;h3 id=&#34;同步块与锁&#34;&gt;同步块与锁&lt;/h3&gt;
@@ -5559,10 +5559,10 @@ image:
         </item>
         <item>
         <title>关于巨人的烂尾</title>
-        <link>http://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
         <pubDate>Thu, 08 Apr 2021 17:16:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
         <description>&lt;p&gt;从早上得知巨人烂尾，心情一直阴霾，实在忍不住了，想宣泄一下。&lt;/p&gt;
 &lt;p&gt;2013年的时候进击的巨人刚出，第一集艾伦的妈妈被吃前的那一句别抛下就给我留下了深刻的印象，那时候也不懂太多，一方面是被这样残酷的场景震慑了，一方面跟着大伙无脑燃。之后过了很多年，这期间一直也不算是巨人粉。到后来第二季莱纳贝尔托特叛变，我第一次被悲壮的氛围和史诗级的音乐震撼到，那一段我反反复复看了有几十遍，每一次看都起鸡皮疙瘩。那时候也很喜欢巨人第二季振奋的OP献出心脏，也很喜欢结尾怪诞的ED，不知道单曲循环了多少遍，那时候真的对巨人的剧情特别感兴趣，就像那个墙内的少年一样，抑制不住自己的好奇心，也看了很多漫画剧透，每天都在想巨人的剧情，好奇那只猴子，好奇所谓的故乡，被三笠对艾伦，尤弥尔对女王的爱打动。&lt;/p&gt;
 &lt;p&gt;到后来第三季part1王政篇，这时候的我也算是有更成熟的心智了，愿意去思考所谓立场，正义云云的东西，为团长帅气的政变欢呼，为墙内之王感到悲伤，也为肯尼的世界观赞叹不已。到part2时，正值高三，夺回玛丽亚之战，团长的冲锋，爱尔敏的牺牲，兵长砍猴，带给我悲伤却震撼的复杂情绪，也正是这一个个场景让我觉得巨人在我心中永远位于神坛。高考前夕正好更新了白夜，救谁的问题让我揪心，最终的结果也如高考的结束一样让我释然。随着进入地下室揭开一切秘密。&lt;/p&gt;
@@ -5575,10 +5575,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第一单元总结</title>
-        <link>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第一单元总结&#34;&gt;BUAAOO-第一单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;基于度量分析程序结构&#34;&gt;基于度量分析程序结构&lt;/h2&gt;
 &lt;h3 id=&#34;第一次作业&#34;&gt;第一次作业&lt;/h3&gt;
@@ -5756,10 +5756,10 @@ image:
         </item>
         <item>
         <title>Hexo食用方法</title>
-        <link>http://atksoto.com/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+        <link>https://atksoto.com/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</link>
         <pubDate>Mon, 21 Dec 2020 23:34:37 +0800</pubDate>
         
-        <guid>http://atksoto.com/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+        <guid>https://atksoto.com/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;h2 id=&#34;blog搭建&#34;&gt;Blog搭建&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/26625249&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://zhuanlan.zhihu.com/p/26625249&lt;/a&gt;&lt;/p&gt;
@@ -5791,10 +5791,10 @@ hexo d == hexo deploy #部署
         </item>
         <item>
         <title>失败的逻辑课程笔记</title>
-        <link>http://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+        <link>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
         
-        <guid>http://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;失败的规律&#34;&gt;失败的规律&lt;/h2&gt;
 &lt;h4 id=&#34;墨菲定律&#34;&gt;墨菲定律&lt;/h4&gt;
 &lt;h6 id=&#34;定义&#34;&gt;定义&lt;/h6&gt;

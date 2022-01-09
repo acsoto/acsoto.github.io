@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MySQL on SOTO-BLOG</title>
-    <link>http://atksoto.com/tags/mysql/</link>
+    <link>https://atksoto.com/tags/mysql/</link>
     <description>Recent content in MySQL on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于TakeawayDelivery</title>
-      <link>http://atksoto.com/takeawaydelivery/</link>
+      <link>https://atksoto.com/takeawaydelivery/</link>
       <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/takeawaydelivery/</guid>
+      <guid>https://atksoto.com/takeawaydelivery/</guid>
       <description>[[TakeawayDelivery 后端实现]] 项目展示视频 web端答辩PPT 移动端APP答辩PPT 项目前后端仓库 移动端APP仓库</description>
     </item>
     
     <item>
       <title>TakeawayDelivery 后端实现</title>
-      <link>http://atksoto.com/takeawaydelivery-back/</link>
+      <link>https://atksoto.com/takeawaydelivery-back/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/takeawaydelivery-back/</guid>
+      <guid>https://atksoto.com/takeawaydelivery-back/</guid>
       <description>TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Django和数据库均部署在服务器上，并且进行了域名解析，可以通过delivery.mcatk.</description>
     </item>
     

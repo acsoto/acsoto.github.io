@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据库 on SOTO-BLOG</title>
-    <link>http://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <link>https://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
     <description>Recent content in 数据库 on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Jan 2022 14:17:00 +0800</lastBuildDate><atom:link href="http://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2022 14:17:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据库-理论部分</title>
-      <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
+      <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
       <description>[[数据库系统原理期末复习]] 绪论 数据库系统 独立性 物理独立性：物理改变，逻辑不变 逻辑独立性：逻辑改变，程序不变 完整性 数据正确性 相容性 三级模式</description>
     </item>
     
     <item>
       <title>数据库调研报告——键值(Key-Value)存储数据库与 Redis</title>
-      <link>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
+      <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
       <pubDate>Thu, 23 Dec 2021 16:29:00 +0800</pubDate>
       
-      <guid>http://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
+      <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
       <description>键值存储数据库与 Redis 键-值数据库，或键-值存储，是设计用来存储、检索和管理关联数组的数据存储范式，关联数组是现今更常称为“字典”或散列表的一种</description>
     </item>
     
