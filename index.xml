@@ -45,18 +45,25 @@ $$&lt;/p&gt;
 &lt;li&gt;$\forall \epsilon&amp;gt;0, \exists \delta=\frac{\epsilon}{f(b)-f(a)}$ 使当$||\pi||&amp;lt;\delta$时原式$&amp;lt;\epsilon$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;几个值得注意的证明&#34;&gt;几个值得注意的证明&lt;/h2&gt;
-&lt;h3 id=&#34;证明int_01fx2-leq-ffrac13&#34;&gt;证明$\int_0^1f(x^2) \leq f(\frac13)$&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;证明$\int_0^1f(x^2) \leq f(\frac13)$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;在$\frac13$处泰勒展开，替换自变量，两边积分&lt;/p&gt;
-&lt;h3 id=&#34;证明-int_01fxdx4max_xin01fx-f0f10&#34;&gt;证明 $\int_0^1|f&#39;&#39;(x)|dx&amp;gt;4\max_{x\in[0,1]}|f(x)|, f(0)=f(1)=0$&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;证明 $\int_0^1|f&#39;&#39;(x)|dx&amp;gt;4\max_{x\in[0,1]}|f(x)|, f(0)=f(1)=0$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;注意以下三点&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;左侧通过积分中值定理，右侧通过微分中值定理(最大值点)，共同靠向1阶&lt;/li&gt;
 &lt;li&gt;放缩时绝对值的积分大于等于积分的绝对值&lt;/li&gt;
 &lt;li&gt;右侧的4是由$\frac{1}{x(1-x)}\geq4$产生&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;证明-int_abfxgxdx2leqint_abf2xdxint_abg2xdx&#34;&gt;证明 $(\int_a^bf(x)g(x)dx)^2\leq\int_a^bf^2(x)dx\int_a^bg^2(x)dx$&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;证明 $(\int_a^bf(x)g(x)dx)^2\leq\int_a^bf^2(x)dx\int_a^bg^2(x)dx$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;设$F(x)=(\int_a^xf(t)g(t)dt)^2-\int_a^xf^2(t)dt\int_a^xg^2(t)dt$，求导，平方和，代b&lt;/p&gt;
-&lt;p&gt;[[数学分析-关于几何的积分]]&lt;/p&gt;
 </description>
         </item>
         <item>
