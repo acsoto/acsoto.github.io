@@ -12,7 +12,25 @@
         <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
         
         <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
-        <description>&lt;h2 id=&#34;ab单调有界证明可积&#34;&gt;[a,b]单调有界证明可积&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;ab连续证明可积&#34;&gt;[a,b]连续证明可积&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$&lt;/li&gt;
+&lt;li&gt;只要[a,b]上任意分割T满足$||T||&amp;lt;\delta$ 则f(x)在任一小区间有&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$$
+\omega_i=M_i-m_i=\sup_{x&#39;,x&#39;&#39;\in \Delta_i}|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}
+$$
+3. 则有$\sum_T\omega_i\Delta x_i \leq \epsilon$ 故可积&lt;/p&gt;
+&lt;h2 id=&#34;ab有限间断点有界证明可积&#34;&gt;[a,b]有限间断点有界证明可积&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;设间断点为b，M和m为上下确界，任给$\epsilon&amp;gt;0$取$\delta&#39;=\min { \frac\epsilon{2(M-m)} ,b-a}$&lt;/li&gt;
+&lt;li&gt;记区间$\Delta&#39;=[b-\delta&#39;,b]$振幅$\omega&#39;$则有
+$$
+\omega&#39;\Delta x&#39;&amp;lt;(M-m)\frac\epsilon{2(M-m)}=\frac\epsilon2
+$$&lt;/li&gt;
+&lt;li&gt;$[a,b-\delta&#39;]$连续故可积，在该区间存在某个分割T&amp;rsquo;使得$\sum_T\omega_i\Delta x_i &amp;lt; \epsilon/2$，加上$\delta&#39;$则有$\sum_T\omega_i\Delta x_i \leq \epsilon$ 故可积&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ab单调有界证明可积&#34;&gt;[a,b]单调有界证明可积&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;不妨设单增，划定从a到b的分割 $\pi: a=x_0&amp;lt;x_1&amp;lt;&amp;hellip;&amp;lt;x_n=b$&lt;/li&gt;
 &lt;li&gt;进行如下放缩&lt;/li&gt;
@@ -1875,9 +1893,9 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
         
         <guid>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/XmECh3.png" alt="Featured image of post Obsidian体验与新工作流" /&gt;&lt;p&gt;最近在玩Hexo，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora现在也收费了，趁着这个契机，打算换一个软件用。&lt;/p&gt;
-&lt;p&gt;听说 all in one 的 Notion 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。&lt;/p&gt;
-&lt;p&gt;另外就是一直感觉很神秘但是不会用的Obsidian。由于习惯停留在typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。&lt;/p&gt;
+        <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/XmECh3.png" alt="Featured image of post Obsidian体验与新工作流" /&gt;&lt;p&gt;最近在玩Hexo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;现在也收费了，趁着这个契机，打算换一个软件用。&lt;/p&gt;
+&lt;p&gt;听说 all in one 的 Notion&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。&lt;/p&gt;
+&lt;p&gt;另外就是一直感觉很神秘但是不会用的Obsidian&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;。由于习惯停留在Typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。&lt;/p&gt;
 &lt;p&gt;但是经过一番研究之后，发现Obsidian确实是很适合我的需求。&lt;/p&gt;
 &lt;h2 id=&#34;主题&#34;&gt;主题&lt;/h2&gt;
 &lt;p&gt;首先Obsidian的社区非常丰富，有很多非常好看的主题，换上之后感觉比之前typora的打字体验好了很多。&lt;/p&gt;
@@ -1895,7 +1913,7 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
 	&lt;figcaption&gt;社区主题&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;推荐一个 YIN &amp;amp; YANG 我现在在用，很好看。&lt;/p&gt;
+&lt;p&gt;推荐一个 YIN &amp;amp; YANG &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; 我现在在用，很好看。&lt;/p&gt;
 &lt;p&gt;而且主题，包括插件加完之后就是多端同步的，连手机上也有。&lt;/p&gt;
 &lt;h2 id=&#34;插件&#34;&gt;插件&lt;/h2&gt;
 &lt;p&gt;还是因为社区文化好，插件也很多，但是目前我没什么需要的，唯一装了一个模板插件，可以用快捷键生成我预置的内容，这个和Hexo配合起来非常舒服，之前为了让md生成FrontMatter，必须手动hexo n，现在只要提前设置好Hexo的FrontMatter，设置好快捷键，即可一键生成需要的内容，包括时间这种变量。&lt;/p&gt;
@@ -1952,10 +1970,10 @@ image:
 &lt;p&gt;在这个情况下，我把所有的笔记都放到一个仓库里，标签和双链让他们相互关联，在任何设备上都可以看到，很好的保证了整体性，而我又可以分开哪些是要发布的哪些是不发布的。&lt;/p&gt;
 &lt;h2 id=&#34;图片处理&#34;&gt;图片处理&lt;/h2&gt;
 &lt;p&gt;Obsidian不同于Typora的一点是图片不是很好处理，Obsidian的方法是把你放进来的图片复制到库目录下，然后加上双链。其实这也不是软件的问题，md格式本身就对图片本地加载不是很友好，加上我要上传到博客，整个目录会非常凌乱。同时我想要遵循数据方便转移的原则，以便在之后出现任何问题，我的原数据都整齐保留，于是我用阿里云对象存储OSS建了一个图床，同时使用CDN加速。&lt;/p&gt;
-&lt;p&gt;同时使用uPic（picgo也很好）这个软件，在写笔记的时候，只需要用快捷键上传图片，即可马上拿到图片的链接，以后就不会再在笔记里放上一堆杂乱的图片了，发布到Github Pages的时候也会快很多。&lt;/p&gt;
+&lt;p&gt;同时使用uPic&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;（picgo&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;也很好）这个软件，在写笔记的时候，只需要用快捷键上传图片，即可马上拿到图片的链接，以后就不会再在笔记里放上一堆杂乱的图片了，发布到Github Pages的时候也会快很多。&lt;/p&gt;
 &lt;h2 id=&#34;日记&#34;&gt;日记&lt;/h2&gt;
 &lt;p&gt;这个东西甚至可以记日记，有专门的日记系统，还有配套的日历插件，尝试了一下体验确实不错，这是我曾经有过的需求。&lt;/p&gt;
-&lt;p&gt;官方介绍：&lt;/p&gt;
+&lt;p&gt;官方介绍：&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;正如其名，当你使用日记功能时，Obsidian 会为你创建一篇以当天日期命名的空白笔记。当然，如果这篇笔记已经存在了的话，Obsidian 则会为你打开它。日记功能就是为了让你更方便地记录日常生活而设计的，你可以在每天的日记中写下你的生活记录、待办事项，抑或是当天的笔记总结，等等。日记功能允许你为日记指定模板，这样你就不需要重复调整日记的格式。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2000,6 +2018,39 @@ image:
 &lt;li&gt;生成，部署&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这样做的好处是分离hexo目录和真正的笔记，我把笔记目录放到了iCloud上，以便在任何设备上直接用obsidian打开仓库，不需要把hexo上传到iCloud，就不用担心Obsidian只能打开整个hexo目录的问题&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hexo: &lt;a class=&#34;link&#34; href=&#34;https://hexo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://hexo.io/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Typora: &lt;a class=&#34;link&#34; href=&#34;https://www.typora.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.typora.io&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Notion: &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.notion.so&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Obsidian: &lt;a class=&#34;link&#34; href=&#34;https://obsidian.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://obsidian.md&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Obsidian主题Yin-and-Yang: &lt;a class=&#34;link&#34; href=&#34;https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;uPic: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gee1k/uPic&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/gee1k/uPic&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;PicGo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/Molunerfinn/PicGo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Molunerfinn/PicGo&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
         </item>
         <item>
@@ -3029,12 +3080,12 @@ image:
         
         <guid>http://atksoto.com/hexo-front-matter/</guid>
         <description>&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
-&lt;p&gt;title:
-date: 2021-11-23 10:09:18
-tags: [hexo]
-categories:
-cover:&lt;/p&gt;
-&lt;h2 id=&#34;官方说明&#34;&gt;官方说明&lt;/h2&gt;
+&lt;p&gt;title:&lt;/p&gt;
+&lt;p&gt;date: 2021-11-23 10:09:18&lt;/p&gt;
+&lt;p&gt;tags: [hexo]&lt;/p&gt;
+&lt;p&gt;categories:&lt;/p&gt;
+&lt;p&gt;cover:&lt;/p&gt;
+&lt;h2 id=&#34;官方说明官方&#34;&gt;官方说明&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
 &lt;p&gt;以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -3111,6 +3162,15 @@ cover:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hexo.io/docs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://hexo.io/docs/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
         </item>
         <item>
@@ -5700,7 +5760,7 @@ cover:&lt;/p&gt;
     &gt;https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装：npm install -g hexo&lt;/p&gt;
 &lt;h2 id=&#34;hexo指令&#34;&gt;Hexo指令&lt;/h2&gt;
-&lt;h3 id=&#34;基本&#34;&gt;基本&lt;/h3&gt;
+&lt;h3 id=&#34;基本1&#34;&gt;基本&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章
 hexo g == hexo generate #生成
 hexo s == hexo server #启动服务预览
@@ -5711,6 +5771,15 @@ hexo d == hexo deploy #部署
 &lt;h3 id=&#34;图片&#34;&gt;图片&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/bzsheng/p/13802829.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.cnblogs.com/bzsheng/p/13802829.html&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hexo.io/docs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://hexo.io/docs/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
         </item>
         <item>

@@ -13,7 +13,7 @@
       <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
       
       <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
-      <description>[a,b]单调有界证明可积 不妨设单增，划定从a到b的分割 $\pi: a=x_0&amp;lt;x_1&amp;lt;&amp;hellip;&amp;lt;x_n=b$ 进行如下放缩 $$ \begin{aligned} \sum_{i=1}^n\omega_i(x_i-x_{i-1})=\sum_{i=1}^n(f(x_i)-f(x_{i-1}))(x_i-x_{i-1}) \\ &amp;lt;\sum_{i=1}^n(f(b)-f(a))(x_i-x_{i-1})=(f(b)-f(a))||\pi|| \end{aligned} $$ $\forall \epsilon&amp;gt;0, \exists \delta=\frac{\epsilon}{f(b)-f(a)}$ 使当$||\pi||&amp;lt;\delta$时原</description>
+      <description>[a,b]连续证明可积 由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$ 只要[a,b]上任意分割T满足$||T||&amp;lt;\delt</description>
     </item>
     
     <item>
@@ -166,7 +166,7 @@
       <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
       
       <guid>http://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
-      <description>最近在玩Hexo，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的m</description>
+      <description>最近在玩Hexo1，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的</description>
     </item>
     
     <item>
@@ -301,7 +301,7 @@
       <pubDate>Tue, 23 Nov 2021 10:09:18 +0800</pubDate>
       
       <guid>http://atksoto.com/hexo-front-matter/</guid>
-      <description>Demo title: date: 2021-11-23 10:09:18 tags: [hexo] categories: cover: 官方说明 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。 参数 描述 默认值 layout 布局 config.default_layout title 标题 文章的文件名 date 建立日期 文件</description>
+      <description>Demo title: date: 2021-11-23 10:09:18 tags: [hexo] categories: cover: 官方说明1 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。 参数 描述 默认值 layout 布局 config.default_layout title 标题 文章的文件名 date 建立日期 文</description>
     </item>
     
     <item>
@@ -445,7 +445,7 @@
       <pubDate>Mon, 21 Dec 2020 23:34:37 +0800</pubDate>
       
       <guid>http://atksoto.com/hexo%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>Blog搭建 https://zhuanlan.zhihu.com/p/26625249 https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html 安装：npm install -g hexo Hexo指令 基本 hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo g ==</description>
+      <description>Blog搭建 https://zhuanlan.zhihu.com/p/26625249 https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html 安装：npm install -g hexo Hexo指令 基本1 hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo g</description>
     </item>
     
     <item>
