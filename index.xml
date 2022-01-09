@@ -12,7 +12,7 @@
         <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
         
         <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto/202201092221277.jpg" alt="Featured image of post 数学分析-积分部分证明" /&gt;&lt;h2 id=&#34;ab连续证明可积&#34;&gt;[a,b]连续证明可积&lt;/h2&gt;
+        <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析-积分部分证明" /&gt;&lt;h2 id=&#34;ab连续证明可积&#34;&gt;[a,b]连续证明可积&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$&lt;/li&gt;
 &lt;li&gt;只要[a,b]上任意分割T满足$||T||&amp;lt;\delta$ 则f(x)在任一小区间有&lt;/li&gt;
@@ -359,7 +359,7 @@ $$&lt;/p&gt;
         <pubDate>Thu, 30 Dec 2021 22:26:00 +0800</pubDate>
         
         <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto/202201092221277.jpg" alt="Featured image of post 数学分析-关于几何的积分" /&gt;&lt;h2 id=&#34;极坐标方程的积分&#34;&gt;极坐标方程的积分&lt;/h2&gt;
+        <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析-关于几何的积分" /&gt;&lt;h2 id=&#34;极坐标方程的积分&#34;&gt;极坐标方程的积分&lt;/h2&gt;
 &lt;h3 id=&#34;周长&#34;&gt;周长&lt;/h3&gt;
 &lt;p&gt;$$
 \int_0^{2\pi}r\ d\theta
@@ -2259,7 +2259,7 @@ image:
         <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
         
         <guid>http://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto/202201092221277.jpg" alt="Featured image of post 数学分析大纲" /&gt;&lt;ul&gt;
+        <description>&lt;img src="https://pic.mcatk.com/soto/202201092224517.png" alt="Featured image of post 数学分析大纲" /&gt;&lt;ul&gt;
 &lt;li&gt;数列极限
 &lt;ul&gt;
 &lt;li&gt;定义&lt;/li&gt;
