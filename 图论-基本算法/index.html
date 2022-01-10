@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂'><title>图论-基本算法</title>
+
+<link rel='canonical' href='https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='图论-基本算法'>
+<meta property='og:description' content='Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂'>
+<meta property='og:url' content='https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/'>
+<meta property='og:site_name' content='SOTO-BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='图论' /><meta property='article:tag' content='算法' /><meta property='article:published_time' content='2022-01-10T15:19:00&#43;08:00'/><meta property='article:modified_time' content='2022-01-10T22:28:53&#43;08:00'/>
+<meta name="twitter:site" content="@TongFan_">
+    <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="图论-基本算法">
+<meta name="twitter:description" content="Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂">
+    <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/buaa/" >
+                BUAA
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/">图论-基本算法</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 10, 2022</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="cycle-detection">Cycle Detection</h2>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101728823.png" >
+		<img src="https://pic.mcatk.com/soto/202201101728823.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure>
+DFS-Visit-Judge-Cycle
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101727480.png" >
+		<img src="https://pic.mcatk.com/soto/202201101727480.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="minimum-spanning-trees">Minimum Spanning Trees</h2>
+<p><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101542296.png" >
+		<img src="https://pic.mcatk.com/soto/202201101542296.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h3 id="prims-algorithmprimwiki">Prim&rsquo;s algorithm<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h3>
+<p>下述使用优先队列</p>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201102217827.png" >
+		<img src="https://pic.mcatk.com/soto/202201102217827.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201102217954.png" >
+		<img src="https://pic.mcatk.com/soto/202201102217954.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h3 id="kruskals-algorithmkruskalwiki">Kruskal’s algorithm<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h3>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101720499.png" >
+		<img src="https://pic.mcatk.com/soto/202201101720499.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="single-source-shortest-path">Single Source Shortest Path</h2>
+<h3 id="dijkstras-algorithmdij">Dijkstra&rsquo;s algorithm<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></h3>
+<p>复杂度$O(|V^2|)$，下述使用优先队列，复杂度$O(|E|log|V|)$</p>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101712795.png" >
+		<img src="https://pic.mcatk.com/soto/202201101712795.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101713795.png" >
+		<img src="https://pic.mcatk.com/soto/202201101713795.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h3 id="bellmanford-algorithmbellwiki">Bellman–Ford algorithm<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></h3>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101708240.png" >
+		<img src="https://pic.mcatk.com/soto/202201101708240.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure>
+<figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201101714858.png" >
+		<img src="https://pic.mcatk.com/soto/202201101714858.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>出自北京航空航天大学计算机学院童咏昕老师课件&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a class="link" href="https://zh.wikipedia.org/wiki/%e6%99%ae%e6%9e%97%e5%a7%86%e7%ae%97%e6%b3%95"  target="_blank" rel="noopener"
+    >Prim&rsquo;s algorithm</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a class="link" href="https://zh.wikipedia.org/wiki/%e5%85%8b%e9%b2%81%e6%96%af%e5%85%8b%e5%b0%94%e6%bc%94%e7%ae%97%e6%b3%95"  target="_blank" rel="noopener"
+    >Kruskal’s algorithm</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a class="link" href="https://zh.wikipedia.org/wiki/%e6%88%b4%e5%85%8b%e6%96%af%e7%89%b9%e6%8b%89%e7%ae%97%e6%b3%95"  target="_blank" rel="noopener"
+    >Dijkstra&rsquo;s algorithm</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a class="link" href="https://zh.wikipedia.org/wiki/%e5%85%8b%e9%b2%81%e6%96%af%e5%85%8b%e5%b0%94%e6%bc%94%e7%ae%97%e6%b3%95"  target="_blank" rel="noopener"
+    >Kruskal’s algorithm</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%9B%BE%E8%AE%BA/">图论</a>
+        
+            <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Jan 10, 2022 22:28 CST
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">算法设计与分析-理论部分</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic.mcatk.com/soto/202201092224517.png" loading="lazy" data-key="" data-hash="https://pic.mcatk.com/soto/202201092224517.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数学分析-积分部分证明</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic.mcatk.com/soto/202201051418762.png" loading="lazy" data-key="" data-hash="https://pic.mcatk.com/soto/202201051418762.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据库-理论部分</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic.mcatk.com/soto/202201092224517.png" loading="lazy" data-key="" data-hash="https://pic.mcatk.com/soto/202201092224517.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数学分析-关于几何的积分</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于编译实验期末上机考试</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 SOTO-BLOG
+    </section>
+
+    <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2020039419号-1</a>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#cycle-detection">Cycle Detection</a></li>
+    <li><a href="#minimum-spanning-trees">Minimum Spanning Trees</a>
+      <ol>
+        <li><a href="#prims-algorithmprimwiki">Prim&rsquo;s algorithm</a></li>
+        <li><a href="#kruskals-algorithmkruskalwiki">Kruskal’s algorithm</a></li>
+      </ol>
+    </li>
+    <li><a href="#single-source-shortest-path">Single Source Shortest Path</a>
+      <ol>
+        <li><a href="#dijkstras-algorithmdij">Dijkstra&rsquo;s algorithm</a></li>
+        <li><a href="#bellmanford-algorithmbellwiki">Bellman–Ford algorithm</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
