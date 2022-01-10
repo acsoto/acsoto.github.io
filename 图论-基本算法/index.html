@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂'><title>图论-基本算法</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='BFS 伪代码1 Cycle Detection (DFS) 伪代码1 DFS-Visit-Judge-Cycle(G,v) Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优'><title>图论-基本算法</title>
 
 <link rel='canonical' href='https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='图论-基本算法'>
-<meta property='og:description' content='Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂'>
+<meta property='og:description' content='BFS 伪代码1 Cycle Detection (DFS) 伪代码1 DFS-Visit-Judge-Cycle(G,v) Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优'>
 <meta property='og:url' content='https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='图论' /><meta property='article:tag' content='算法' /><meta property='article:published_time' content='2022-01-10T15:19:00&#43;08:00'/><meta property='article:modified_time' content='2022-01-10T22:32:31&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='图论' /><meta property='article:tag' content='算法' /><meta property='article:published_time' content='2022-01-10T15:19:00&#43;08:00'/><meta property='article:modified_time' content='2022-01-10T22:55:16&#43;08:00'/>
 <meta name="twitter:site" content="@TongFan_">
     <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="图论-基本算法">
-<meta name="twitter:description" content="Cycle Detection 伪代码1 DFS-Visit-Judge-Cycle Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优先队列，复杂">
+<meta name="twitter:description" content="BFS 伪代码1 Cycle Detection (DFS) 伪代码1 DFS-Visit-Judge-Cycle(G,v) Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优">
     <link rel="shortcut icon" href="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" />
 
     </head>
@@ -105,9 +105,35 @@
 </header>
 
     <section class="article-content">
-    <h2 id="cycle-detection">Cycle Detection</h2>
-<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+    <h2 id="bfs">BFS</h2>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201102250108.png" >
+		<img src="https://pic.mcatk.com/soto/202201102250108.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure>
 <figure 
+	>
+	<a href="https://pic.mcatk.com/soto/202201102251470.png" >
+		<img src="https://pic.mcatk.com/soto/202201102251470.png"
+			
+			
+			
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<h2 id="cycle-detection-dfs">Cycle Detection (DFS)</h2>
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201101728823.png" >
 		<img src="https://pic.mcatk.com/soto/202201101728823.png"
@@ -118,8 +144,8 @@
 			>
 	</a>
 	
-</figure>
-DFS-Visit-Judge-Cycle
+</figure></p>
+<p>DFS-Visit-Judge-Cycle(G,v)
 <figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201101727480.png" >
@@ -147,8 +173,8 @@ DFS-Visit-Judge-Cycle
 </figure></p>
 <h3 id="prims-algorithmprimwiki">Prim&rsquo;s algorithm<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h3>
 <p>下述使用优先队列</p>
-<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
-<figure 
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201102217827.png" >
 		<img src="https://pic.mcatk.com/soto/202201102217827.png"
@@ -173,8 +199,8 @@ DFS-Visit-Judge-Cycle
 	
 </figure></p>
 <h3 id="kruskals-algorithmkruskalwiki">Kruskal’s algorithm<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h3>
-<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
-<figure 
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201101720499.png" >
 		<img src="https://pic.mcatk.com/soto/202201101720499.png"
@@ -189,8 +215,8 @@ DFS-Visit-Judge-Cycle
 <h2 id="single-source-shortest-path">Single Source Shortest Path</h2>
 <h3 id="dijkstras-algorithmdij">Dijkstra&rsquo;s algorithm<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></h3>
 <p>复杂度$O(|V^2|)$，下述使用优先队列，复杂度$O(|E|log|V|)$</p>
-<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
-<figure 
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201101712795.png" >
 		<img src="https://pic.mcatk.com/soto/202201101712795.png"
@@ -215,8 +241,8 @@ DFS-Visit-Judge-Cycle
 	
 </figure></p>
 <h3 id="bellmanford-algorithmbellwiki">Bellman–Ford algorithm<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></h3>
-<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
-<figure 
+<p><strong>伪代码</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><figure 
 	>
 	<a href="https://pic.mcatk.com/soto/202201101708240.png" >
 		<img src="https://pic.mcatk.com/soto/202201101708240.png"
@@ -301,7 +327,7 @@ DFS-Visit-Judge-Cycle
 
 
         <span>
-            最后更新于 Jan 10, 2022 22:32 CST
+            最后更新于 Jan 10, 2022 22:55 CST
         </span>
     </section></footer>
 
@@ -544,7 +570,8 @@ DFS-Visit-Judge-Cycle
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#cycle-detection">Cycle Detection</a></li>
+    <li><a href="#bfs">BFS</a></li>
+    <li><a href="#cycle-detection-dfs">Cycle Detection (DFS)</a></li>
     <li><a href="#minimum-spanning-trees">Minimum Spanning Trees</a>
       <ol>
         <li><a href="#prims-algorithmprimwiki">Prim&rsquo;s algorithm</a></li>

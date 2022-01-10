@@ -12,9 +12,35 @@
         <pubDate>Mon, 10 Jan 2022 15:19:00 +0800</pubDate>
         
         <guid>https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/</guid>
-        <description>&lt;h2 id=&#34;cycle-detection&#34;&gt;Cycle Detection&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+        <description>&lt;h2 id=&#34;bfs&#34;&gt;BFS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202201102250108.png&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202201102250108.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;
 &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://pic.mcatk.com/soto/202201102251470.png&#34; &gt;
+		&lt;img src=&#34;https://pic.mcatk.com/soto/202201102251470.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;cycle-detection-dfs&#34;&gt;Cycle Detection (DFS)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201101728823.png&#34; &gt;
 		&lt;img src=&#34;https://pic.mcatk.com/soto/202201101728823.png&#34;
@@ -25,8 +51,8 @@
 			&gt;
 	&lt;/a&gt;
 	
-&lt;/figure&gt;
-DFS-Visit-Judge-Cycle
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;DFS-Visit-Judge-Cycle(G,v)
 &lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201101727480.png&#34; &gt;
@@ -54,8 +80,8 @@ DFS-Visit-Judge-Cycle
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;prims-algorithmprimwiki&#34;&gt;Prim&amp;rsquo;s algorithm&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;下述使用优先队列&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;figure 
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201102217827.png&#34; &gt;
 		&lt;img src=&#34;https://pic.mcatk.com/soto/202201102217827.png&#34;
@@ -80,8 +106,8 @@ DFS-Visit-Judge-Cycle
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;kruskals-algorithmkruskalwiki&#34;&gt;Kruskal’s algorithm&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;figure 
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201101720499.png&#34; &gt;
 		&lt;img src=&#34;https://pic.mcatk.com/soto/202201101720499.png&#34;
@@ -96,8 +122,8 @@ DFS-Visit-Judge-Cycle
 &lt;h2 id=&#34;single-source-shortest-path&#34;&gt;Single Source Shortest Path&lt;/h2&gt;
 &lt;h3 id=&#34;dijkstras-algorithmdij&#34;&gt;Dijkstra&amp;rsquo;s algorithm&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;复杂度$O(|V^2|)$，下述使用优先队列，复杂度$O(|E|log|V|)$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;figure 
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201101712795.png&#34; &gt;
 		&lt;img src=&#34;https://pic.mcatk.com/soto/202201101712795.png&#34;
@@ -122,8 +148,8 @@ DFS-Visit-Judge-Cycle
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;bellmanford-algorithmbellwiki&#34;&gt;Bellman–Ford algorithm&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;figure 
+&lt;p&gt;&lt;strong&gt;伪代码&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://pic.mcatk.com/soto/202201101708240.png&#34; &gt;
 		&lt;img src=&#34;https://pic.mcatk.com/soto/202201101708240.png&#34;
