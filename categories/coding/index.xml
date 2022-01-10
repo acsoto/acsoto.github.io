@@ -70,12 +70,12 @@
     </item>
     
     <item>
-      <title>Alxa_Compiler 编译器</title>
-      <link>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <title>Alxa_Compiler(SysY to PCODE)</title>
+      <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
       
-      <guid>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
-      <description>词法分析 Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst. while ((c = getChar()) != null) {</description>
+      <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+      <description>Lexical analysis Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word. File reading Read by line, scan every char of every string and analyse. while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst. while ((c = getChar()) != null) { if (c</description>
     </item>
     
     <item>

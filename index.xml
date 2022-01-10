@@ -675,7 +675,7 @@ $$&lt;/p&gt;
 &lt;p&gt;递归下降到&lt;code&gt;Lval&lt;/code&gt;的时候，如果isConst并且这个ident是个变量，就报错&lt;/p&gt;
 &lt;p&gt;第二题，直接在&lt;code&gt;stmt&lt;/code&gt;的分析是赋值语句还是exp的位置拦截，如果exp（考场上试了我的&lt;code&gt;getExp&lt;/code&gt;可以取出i++这样的表达式）是三位，直接看后两位是不是++和&amp;ndash;，如果是的话，首先&lt;code&gt;analyseLval&lt;/code&gt;这个ident，然后生成一个新的exp，里面放入&lt;code&gt;ident&lt;/code&gt;、&lt;code&gt;+&lt;/code&gt;、&lt;code&gt;1&lt;/code&gt;，&lt;code&gt;analyseExp&lt;/code&gt;，然后pcode加上pop即可。&lt;/p&gt;
 &lt;p&gt;第三个交了直接过了。&lt;/p&gt;
-&lt;p&gt;简答题这部分，虽然我写了两页word，但是感觉关于运行栈我没讲得太清楚，毕竟pcode这个东西本来就是自由设计的，如果要说的很清楚也不是几句话能描述的，详细的都在[[Alxa_Compiler 编译器|文档]]里面了，希望助教能看一下。&lt;/p&gt;
+&lt;p&gt;简答题这部分，虽然我写了两页word，但是感觉关于运行栈我没讲得太清楚，毕竟pcode这个东西本来就是自由设计的，如果要说的很清楚也不是几句话能描述的，详细的都在[[Alxa_Compiler|文档]]里面了，希望助教能看一下。&lt;/p&gt;
 &lt;p&gt;题出得挺好，这次评测机也没卡，体验不错，还有半个多小时出来的&lt;/p&gt;
 &lt;p&gt;至此本学期的编译课程就全部结束了，完结撒花🎉&lt;/p&gt;
 </description>
@@ -3513,12 +3513,12 @@ image:
 </description>
         </item>
         <item>
-        <title>Alxa_Compiler 编译器</title>
-        <link>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+        <title>Alxa_Compiler(SysY to PCODE)</title>
+        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compiler-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
-        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler 编译器" /&gt;&lt;h2 id=&#34;词法分析&#34;&gt;词法分析&lt;/h2&gt;
+        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
 &lt;h4 id=&#34;file-reading&#34;&gt;File reading&lt;/h4&gt;
@@ -3656,7 +3656,7 @@ image:
     &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
   &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;语法分析&#34;&gt;语法分析&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;grammatical-analysis&#34;&gt;Grammatical analysis&lt;/h2&gt;
 &lt;p&gt;Requirement: Based on the words identified by the lexical analysis program, identify various grammatical elements according to the grammatical rules. Recursive descent method is used to analyze the grammatical components defined in the grammar.&lt;/p&gt;
 &lt;h3 id=&#34;before-code-1&#34;&gt;Before Code&lt;/h3&gt;
 &lt;h4 id=&#34;data-reading&#34;&gt;Data Reading&lt;/h4&gt;
@@ -3779,7 +3779,7 @@ image:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;other-bugs&#34;&gt;other bugs&lt;/h4&gt;
 &lt;p&gt;Most bugs are produced by function &lt;code&gt;getExp&lt;/code&gt; and &lt;code&gt;divideExp&lt;/code&gt; because of some situations are ignored. So I always get something like index out of range&amp;hellip;&lt;/p&gt;
 &lt;p&gt;So I changed some symbol of stop getting expression and modify the rules to divide or not the expression and so on.&lt;/p&gt;
-&lt;h2 id=&#34;错误处理&#34;&gt;错误处理&lt;/h2&gt;
+&lt;h2 id=&#34;error-handling&#34;&gt;Error handling&lt;/h2&gt;
 &lt;p&gt;Official errors defination&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -3963,7 +3963,7 @@ image:
             &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
         &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
     &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;代码生成&#34;&gt;代码生成&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;code-generation&#34;&gt;Code generation&lt;/h2&gt;
 &lt;p&gt;In this part, I chose to generate Pcode.&lt;/p&gt;
 &lt;p&gt;I designed a type of Pcode which is an Inverse Bolan expression stack and symbol table based virtual code.&lt;/p&gt;
 &lt;p&gt;At the same time, I designed virtual machine to execute them.&lt;/p&gt;
@@ -4451,9 +4451,9 @@ image:
     &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By these means, short circuit calculation is solved.&lt;/p&gt;
-&lt;h2 id=&#34;总结感想&#34;&gt;总结感想&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;![[编译实验总结感想]]&lt;/p&gt;
-&lt;h3 id=&#34;参考资料&#34;&gt;参考资料&lt;/h3&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bookstack.cn/read/pandolia-tinyc/about.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.bookstack.cn/read/pandolia-tinyc/about.md&lt;/a&gt;&lt;/p&gt;
 </description>
