@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>关于Swift开发的依赖安装</title>
-      <link>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 27 Dec 2021 00:59:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</guid>
-      <description>今天IOT课写报告突然要用到[[IoTMonitor]]，发现打开Xcode无法编译，找到原因是依赖SwiftHTTP出现了问题，缺少了其中</description>
-    </item>
-    
-    <item>
       <title>IoTMonitor</title>
       <link>https://atksoto.com/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>

@@ -16,24 +16,6 @@
     </item>
     
     <item>
-      <title>关于Swift开发的依赖安装</title>
-      <link>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 27 Dec 2021 00:59:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%85%B3%E4%BA%8Eswift%E5%BC%80%E5%8F%91%E7%9A%84%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85/</guid>
-      <description>今天IOT课写报告突然要用到[[IoTMonitor]]，发现打开Xcode无法编译，找到原因是依赖SwiftHTTP出现了问题，缺少了其中</description>
-    </item>
-    
-    <item>
-      <title>数据库调研报告——键值(Key-Value)存储数据库与 Redis</title>
-      <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
-      <pubDate>Thu, 23 Dec 2021 16:29:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
-      <description>键值存储数据库与 Redis 键-值数据库，或键-值存储，是设计用来存储、检索和管理关联数组的数据存储范式，关联数组是现今更常称为“字典”或散列表的一种</description>
-    </item>
-    
-    <item>
       <title>关于TakeawayDelivery</title>
       <link>https://atksoto.com/takeawaydelivery/</link>
       <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
@@ -49,15 +31,6 @@
       
       <guid>https://atksoto.com/takeawaydelivery-back/</guid>
       <description>TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Django和数据库均部署在服务器上，并且进行了域名解析，可以通过delivery.mcatk.</description>
-    </item>
-    
-    <item>
-      <title>MacOS全局可执行文件</title>
-      <link>https://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Tue, 30 Nov 2021 21:30:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/macos%E5%85%A8%E5%B1%80%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
-      <description>sudo vim /usr/local/bin/command /usr/local/bin/ 下创建的文件默认在path中 必须使用sudo #!/bin/bash do something sudo chmod +x /usr/local/bin/command 即可全局使用 command</description>
     </item>
     
     <item>
@@ -103,15 +76,6 @@
       
       <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
       <description>BUAAOO-第三单元总结 实现规格所采取的设计策略 在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长</description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;基础</title>
-      <link>https://atksoto.com/c-%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Fri, 30 Apr 2021 11:00:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/c-%E5%9F%BA%E7%A1%80/</guid>
-      <description>知识点纲要 结构 struct Student { int i; int j; char c; } 由于int需要占用4个字节，由于结构的空间分配是大对齐，总共需要12个空间。 当然也可以压缩空间，把它压缩为</description>
     </item>
     
     <item>

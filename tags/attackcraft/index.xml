@@ -6,16 +6,7 @@
     <description>Recent content in AtTackCraft on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Dec 2021 22:23:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>最近的log4j 和新的 GuildManager</title>
-      <link>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</link>
-      <pubDate>Fri, 10 Dec 2021 22:23:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%9C%80%E8%BF%91%E7%9A%84log4j-%E5%92%8C%E6%96%B0%E7%9A%84-guildmanager/</guid>
-      <description>昨天听说出个很厉害的漏洞，是Java使用Apacje的log框架的问题，可以执行任何命令，问题很严重，不说涉及到全部MC服务器，连TX都受影</description>
-    </item>
-    
+    <lastBuildDate>Sun, 28 Nov 2021 16:17:36 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AC又被黑了</title>
       <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>

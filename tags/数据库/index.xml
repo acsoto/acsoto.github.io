@@ -16,14 +16,5 @@
       <description>[[数据库系统原理期末复习]] 绪论 数据库系统 独立性 物理独立性：物理改变，逻辑不变 逻辑独立性：逻辑改变，程序不变 完整性 数据正确性 相容性 三级模式</description>
     </item>
     
-    <item>
-      <title>数据库调研报告——键值(Key-Value)存储数据库与 Redis</title>
-      <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</link>
-      <pubDate>Thu, 23 Dec 2021 16:29:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A%E9%94%AE%E5%80%BCkey-value%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E-redis/</guid>
-      <description>键值存储数据库与 Redis 键-值数据库，或键-值存储，是设计用来存储、检索和管理关联数组的数据存储范式，关联数组是现今更常称为“字典”或散列表的一种</description>
-    </item>
-    
   </channel>
 </rss>

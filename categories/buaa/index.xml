@@ -7,33 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>图论-基本算法</title>
-      <link>https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Mon, 10 Jan 2022 15:19:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%9B%BE%E8%AE%BA-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/</guid>
-      <description>BFS 伪代码1 Cycle Detection (DFS) 伪代码1 DFS-Visit-Judge-Cycle(G,v) Minimum Spanning Trees 1 Prim&amp;rsquo;s algorithm2 下述使用优先队列 伪代码1 Kruskal’s algorithm3 伪代码1 Single Source Shortest Path Dijkstra&amp;rsquo;s algorithm4 复杂度$O(|V^2|)$，下述使用优</description>
-    </item>
-    
-    <item>
-      <title>数学分析-积分部分证明</title>
-      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</link>
-      <pubDate>Sun, 09 Jan 2022 08:48:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E7%A7%AF%E5%88%86%E9%83%A8%E5%88%86%E8%AF%81%E6%98%8E/</guid>
-      <description>[a,b]连续证明可积 由一致连续性对$|x&#39;-x&#39;&#39;|&amp;lt;\delta$ 有 $|f(x&#39;)-f(x&#39;&#39;)|&amp;lt;\frac\epsilon{b-a}$ 只要[a,b]上任意分割T满足$||T||&amp;lt;\delt</description>
-    </item>
-    
-    <item>
-      <title>算法设计与分析-理论部分</title>
-      <link>https://atksoto.com/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
-      <pubDate>Fri, 07 Jan 2022 19:39:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</guid>
-      <description>主定理1 P,NP P是NP的子集，NP是否是P的子集暂时没有被证明 NP是否等于P会出现的结果如下图1 出自北京航空航天大学计算机学院童咏昕老师课件&amp;#</description>
-    </item>
-    
-    <item>
       <title>数据库-理论部分</title>
       <link>https://atksoto.com/%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
@@ -43,39 +16,12 @@
     </item>
     
     <item>
-      <title>数学分析-关于几何的积分</title>
-      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</link>
-      <pubDate>Thu, 30 Dec 2021 22:26:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E5%85%B3%E4%BA%8E%E5%87%A0%E4%BD%95%E7%9A%84%E7%A7%AF%E5%88%86/</guid>
-      <description>极坐标方程的积分 周长 $$ \int_0^{2\pi}r\ d\theta $$ 面积 $$ \int_0^{2\pi}\frac{1}{2}r^2d\theta $$ 弧长公式 一般形式 $$ s=\int_a^b\sqrt{1+y&#39;^2}dx $$ 参数方程形式 $$ s=\int_\alpha^\beta\sqrt{x&#39;^2(t)+y&#39;^2(t)}dt $$ 极坐标形式 $$ s=\int_\alpha^\beta\sqrt{r^2(\theta)+r&#39;^2(\theta)d\theta} $$ 曲率公式 $$ k=\frac{|y&#39;&#39;|}{(1+(y&#39;)^2)^{\frac{3}{2}}} $$ 特殊图形 双纽线1 $$ r^2 = 2a^2\cos2\theta $$ 星型线</description>
-    </item>
-    
-    <item>
       <title>关于编译实验期末上机考试</title>
       <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
       <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
       
       <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
       <description>刚考完，趁着还记得题，留个记录，供参考。 第一题：错误处理，增加constExp出现变量的错误 第二题：代码生成，增加i++和i&amp;ndash;的</description>
-    </item>
-    
-    <item>
-      <title>编译原理-理论部分</title>
-      <link>https://atksoto.com/buaa-compiler-theory/</link>
-      <pubDate>Wed, 15 Dec 2021 10:11:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/buaa-compiler-theory/</guid>
-      <description>编译原理 理论 考前再浏览一下目录 文法和语言 符号、符号串 文法形式定义 推导、规约 语言 递归 语法树、二义性 实用限制 词法分析 正则文法机状态图 有穷自动机 语</description>
-    </item>
-    
-    <item>
-      <title>数学分析大纲</title>
-      <link>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</link>
-      <pubDate>Sat, 04 Dec 2021 23:40:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E5%A4%A7%E7%BA%B2/</guid>
-      <description>数列极限 定义 Stolz 单调有界 函数极限 定义 连续 无穷大 无穷小 等价无穷小 1的无穷次 $e^{&amp;hellip;}$ 一致连续 证明 $|f(x_1)-f(x_2)| &amp;lt; A |x_1-x_2|$ $arctanx$与中值定理 导数 隐函数求导 参数方</description>
     </item>
     
     <item>
