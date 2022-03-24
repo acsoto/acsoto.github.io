@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha'><title>BUAAOO-第一单元总结</title>
 
 <link rel='canonical' href='https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='BUAAOO-第一单元总结'>
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='BUAAOO-第一单元总结'>
 <meta property='og:description' content='BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha'>
 <meta property='og:url' content='https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/'>
 <meta property='og:site_name' content='SOTO-BLOG'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='面向对象' /><meta property='article:tag' content='BUAA' /><meta property='article:published_time' content='2021-03-28T19:23:00&#43;08:00'/><meta property='article:modified_time' content='2022-03-24T17:33:08&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='面向对象' /><meta property='article:tag' content='BUAA' /><meta property='article:published_time' content='2021-03-28T19:23:00&#43;08:00'/><meta property='article:modified_time' content='2022-03-24T20:33:28&#43;08:00'/>
 <meta name="twitter:site" content="@TongFan_">
     <meta name="twitter:creator" content="@TongFan_"><meta name="twitter:title" content="BUAAOO-第一单元总结">
 <meta name="twitter:description" content="BUAAOO-第一单元总结 基于度量分析程序结构 第一次作业 对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的ha">
@@ -17,8 +17,8 @@
 
     </head>
     <body class="
-    article-page has-toc
-">
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -41,25 +41,230 @@
         }
     })();
 </script>
-<div class="container main-container flex 
-    
-        extended
-    
-">
-    
-        <div id="article-toolbar">
-            <a href="/" class="back-home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="http://pic.mcatk.com/soto-pictures/2021-12/PEqcQi.jpeg" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">SOTO-BLOG</a></h1>
+            <h2 class="site-description">多喝热水</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/85122707'
+                        target="_blank"
+                        title="bilibili"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="icon" width="200px" height="200.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z" fill="#bfbfbf" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/acsoto'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
 </svg>
 
 
 
-                <span>返回</span>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.mcac.cc'
+                        target="_blank"
+                        title="mc"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="icon" width="200px" height="200.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M170.666667 85.333333h682.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v682.666666a85.333333 85.333333 0 0 1-85.333334 85.333334H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334m85.333333 170.666667v170.666667h170.666667v85.333333H341.333333v256h85.333334v-85.333333h170.666666v85.333333h85.333334v-256h-85.333334v-85.333333h170.666667V256h-170.666667v170.666667h-170.666666V256H256z" fill="#bfbfbf" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
             </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://atksoto.com/" selected>中文</option>
+                        
+                            <option value="https://atksoto.com/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
         </div>
-    
+    </ol>
+</aside>
 <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
@@ -75,11 +280,13 @@
     </header>
     
 
-    <h2 class="article-title">
-        <a href="/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">BUAAOO-第一单元总结</a>
-    </h2>
-
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">BUAAOO-第一单元总结</a>
+        </h2>
     
+        
+    </div>
 
     
     <footer class="article-time">
@@ -101,53 +308,45 @@
         
     </footer>
     
+
+    
 </div>
 </header>
 
     <section class="article-content">
+    
+    
     <h1 id="buaaoo-第一单元总结">BUAAOO-第一单元总结</h1>
 <h2 id="基于度量分析程序结构">基于度量分析程序结构</h2>
 <h3 id="第一次作业">第一次作业</h3>
 <p>对多项式的求导，Expression类表示一个表达式，其成员变量为Term对象的hashmap，Interpreter用于解析输入字符串，返回一个Expression</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121094323695.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121094323695.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121094323695.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h3 id="基于度量分析">基于度量分析</h3>
 <p>类复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102908959.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102908959.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102908959.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>方法复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102926182.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102926182.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102926182.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>可以看到Term.toString过于复杂，原因是在幂函数转化为string类型时使用了过多的if，此处可以进行优化。</p>
 <p>本次作业没有被其他同学hack。性能方面，由于使用了hashmap，表达式基本上达到了最短，没有考虑到正负号打头和x**2拆分为x*x等细节</p>
 <p>本次作业没有很好的给下一次作业做好铺垫，表达式解析方法过于粗暴。</p>
@@ -155,115 +354,83 @@
 <p>本次作业难度骤升，因为要考虑表达式因子，第一次作业使用的暴力解析字符串方法骤然失效，遂彻底进行重构。我在本次作业中大量时间用于研究如何递归下降读取表达式。求导本身并不困难，创建Factor接口，sin，cos，幂函数，常量，term，poly均继承Factor，保证每个因子都有实现tostring和求导以及simplify方法。其中，Term是一些Factor构成的List，Poly是一些Term构成的List。在对Poly进行求导会自然向下递归。</p>
 <p>Patterns存放了提前编译好的正则表达式</p>
 <p>Parser用于递归下降解析表达式</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102938589.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102938589.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102938589.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>类复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102947709.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102947709.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102947709.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>可见Parser中方法复杂度较高，这是因为在解析字符串过程中，我调用了过多的私有方法，此处可以进行模块化优化。</p>
 <p>Term中由于simplify和diff的操作过于复杂，整体复杂度较高，此处可以把一些操作在初始化term时完成来优化。</p>
 <p>方法复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102958011.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102958011.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121102958011.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>复杂度较高的几个方法</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103009774.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103009774.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103009774.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>其中Term的simplify如前文所述，该方法过于臃肿。</p>
 <h3 id="第三次作业">第三次作业</h3>
 <p>本次作业加入了sin和cos内的嵌套已经wrong format的检测。由于和上一次作业的架构相似，仅需调整sin和cos内成员变量为Poly，并且对parser进行进一步递归下降即可。wrong format成为了难点，由于上一次作业的递归下降读取基于表达式正确的情况，这次由于格式可能的错误，我对parser进行了较大的调整，首先对字符串进行多余空白符和非法字符的判断，随后在递归下降读取过程中判断格式错误，包括括号和幂函数的错误。</p>
 <p>结构与第二次作业相似，加入了format checker和WF exception</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103022797.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103022797.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103022797.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>类复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103058547.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103058547.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103058547.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>方法复杂度</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103109066.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103109066.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103109066.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <p>其中较高的和第二次作业类似</p>
 <p>其中getCosFactor和getSinFactor是由于进行了格式的判断，此处重用了相似的代码，可以归类为一个方法进行优化。</p>
-<p><figure 
-	>
-	<a href="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103118727.png" >
-		<img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103118727.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://pic.mcatk.com/soto-pictures/2021-12/BUAAOO/BUAAOO-%e7%ac%ac%e4%b8%80%e5%8d%95%e5%85%83%e6%80%bb%e7%bb%93/image-20211121103118727.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h2 id="分析自己程序的bug">分析自己程序的bug</h2>
 <p>在前两次作业中，互测阶段没有被找到bug，在个人初期写代码过程中，遇到的一些BUG如：没有及时在while循环中continue，在if判断中逻辑过于复杂导致自己搞错了与或非逻辑，往往正是这类小的失误导致耗费大量时间debug，因此在写程序过程中应该时刻关注代码的复杂度。</p>
 <p>第三次作业，互测阶段被hack了两次，问题均是出在格式判断正负号和常数之间的空格时，我的判断条件出了问题，误判了一些正确的格式，自己写wrong format时没有考虑到各种情况，测试不够充分。</p>
@@ -315,7 +482,7 @@
 
 
         <span>
-            最后更新于 Mar 24, 2022 17:33 CST
+            最后更新于 Mar 24, 2022 20:33 CST
         </span>
     </section></footer>
 
@@ -326,11 +493,11 @@
                 href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
             ><script 
                 src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -346,14 +513,16 @@
     
 </article>
 
-    <aside class="related-contents--wrapper">
     
+
     
-        <h2 class="section-title">相关文章</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
+
+<aside class="related-contents--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-contents">
+        <div class="flex article-list--tile">
+            
                 
-                    
 <article class="">
     <a href="/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
         
@@ -364,8 +533,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
         
@@ -376,8 +545,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/">
         
@@ -388,8 +557,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="has-image">
     <a href="/alxa_compilersysy-to-pcode/">
         
@@ -406,8 +575,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/">
         
@@ -418,10 +587,9 @@
         </div>
     </a>
 </article>
-                
-            </div>
+            
         </div>
-    
+    </div>
 </aside>
 
      
@@ -442,7 +610,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -511,11 +679,11 @@
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
@@ -526,11 +694,13 @@
             >
 
             </main>
-    
-        <aside class="sidebar right-sidebar sticky">
-            <section class="widget archives">
-                <div class="widget-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -540,11 +710,11 @@
 
 
 
-                </div>
-                <h2 class="widget-title section-title">目录</h2>
-                
-                <div class="widget--toc">
-                    <nav id="TableOfContents">
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
   <ol>
     <li><a href="#基于度量分析程序结构">基于度量分析程序结构</a>
       <ol>
@@ -560,15 +730,18 @@
     <li><a href="#心得体会">心得体会</a></li>
   </ol>
 </nav>
-                </div>
-            </section>
-        </aside>
-    
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

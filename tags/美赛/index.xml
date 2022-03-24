@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>美赛 on SOTO-BLOG</title>
-    <link>https://atksoto.com/tags/%E7%BE%8E%E8%B5%9B/</link>
-    <description>Recent content in 美赛 on SOTO-BLOG</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 Nov 2021 11:36:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E7%BE%8E%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>关于2021美赛</title>
-      <link>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
-      <pubDate>Sun, 21 Nov 2021 11:36:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
-      <description>[[2021美赛正文.pdf]] (链接) GitHub开源供参考 2021年初，我与两位室友组队参与了美国大学数学竞赛（MCM-ICM） 后来有幸</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>美赛 on SOTO-BLOG</title>
+        <link>https://atksoto.com/tags/%E7%BE%8E%E8%B5%9B/</link>
+        <description>Recent content in 美赛 on SOTO-BLOG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 21 Nov 2021 11:36:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E7%BE%8E%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于2021美赛</title>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
+        <pubDate>Sun, 21 Nov 2021 11:36:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
+        <description>&lt;p&gt;[[2021美赛正文.pdf]] (&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021/blob/main/%e7%be%8e%e8%b5%9b%e6%ad%a3%e6%96%872111259.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub开源供参考&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2021年初，我与两位室友组队参与了美国大学数学竞赛（MCM-ICM）&lt;/p&gt;
+&lt;p&gt;后来有幸拿到了M奖（Meritorious Winner）&lt;/p&gt;
+&lt;p&gt;又一年美赛，有一些朋友询问经验，其实拿到这个奖比起其他投入了很多的同学我们也只是运气比较好罢了，没有太多真正意义上值得参考的经验，在此仅简要谈谈。&lt;/p&gt;
+&lt;p&gt;首先，我和室友都没有任何建模基础，起初是一时兴起报名了比赛。二位室友的专业是电子信息工程，我的专业是计算机科学与技术，同属信息类，在大一时学过C语言基础和数据结构。&lt;/p&gt;
+&lt;p&gt;在任务的分配上，起初我们是一人负责建模，一人负责写代码，一人负责写论文，后来在实际比赛的过程中，因为最初任务集中在建模和计算，于是二位队友一起建模和绘图，后期二位队友主要一起写文章和作图，我全程负责写代码。&lt;/p&gt;
+&lt;p&gt;选题上，在比赛之前官方发布了一份数据集，就已经提前下载下来，开题后对几个题目快速浏览了一下，起初考虑 &lt;strong&gt;Problem A: Fungi&lt;/strong&gt; 和 &lt;strong&gt;Problem C: Confirming the Buzz about Hornets&lt;/strong&gt;，队友主张A，但是因为A题很难快速想出一个合适的模型。我主张C，C题需要使用Machine Learning，和专业算是比较契合，但是我看了一上午ML相关知识并没有学会，只好最终选择了&lt;strong&gt;Problem D: The Influence of Music&lt;/strong&gt;，一个比较简单的偏大数据分析的题目。&lt;/p&gt;
+&lt;p&gt;代码上，我无Matlab经验，选择了用Python进行数据处理，现学了诸如numpy，pandas，matplotlib等库的用法并加之分析，说来也好笑，感觉自己在复习数据结构，用了图结构，DFS等算法，还在图遍历陷入死循环的时候发现了官方数据集的一个bug（$理论上有 A\in B但是A中出现了1条B中不存在的数据$）。&lt;/p&gt;
+&lt;p&gt;这里也是我们的一个失误，没有经验，没有想到数据要预处理，后期因为数据的一些问题，我以为是我自己算法的问题，卡了很久。&lt;/p&gt;
+&lt;p&gt;还有一个个人认为比较重要的一点，就是无论建模难度如何，完成度一定要高。&lt;/p&gt;
+&lt;p&gt;总的来说，实际上我们是没有什么建模经验和准备的情况下参加了比赛，三天时间学了很多东西（我是真的疯狂恶补敲python），每天不分昼夜的连麦也非常非常欢乐，中间也偷偷摸鱼玩了会游戏，最终出结果也很有成就感（尤其是算出Beatles的影响力时），最大的体验就是重在参与吧，真的是一段难忘的体验。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwmms8stpfj30u013lae6.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

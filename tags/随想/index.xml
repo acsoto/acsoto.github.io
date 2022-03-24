@@ -1,83 +1,259 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>随想 on SOTO-BLOG</title>
-    <link>https://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</link>
-    <description>Recent content in 随想 on SOTO-BLOG</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jan 2022 16:26:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E9%9A%8F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>冬日的光</title>
-      <link>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
-      <pubDate>Sun, 02 Jan 2022 16:26:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
-      <description>下午两点半的游泳馆没有多少人，我成为了打破平静清澈水面的第一个人，耳边只有水的声音，不用想别的事情，得以享受片刻的宁静。 很少在下午场来游泳馆</description>
-    </item>
-    
-    <item>
-      <title>你好，2022</title>
-      <link>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</link>
-      <pubDate>Sat, 01 Jan 2022 01:33:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</guid>
-      <description>新的一年。</description>
-    </item>
-    
-    <item>
-      <title>圣诞和颐和园的日落</title>
-      <link>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
-      <pubDate>Mon, 27 Dec 2021 01:29:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
-      <description>考完编译的几天后，和朋友们在三里屯的一家烤肉店过了一个平安夜，因为外国人很多，这种气氛确实是之前没有感受到的，虽然听不懂他们的小游戏，和他们</description>
-    </item>
-    
-    <item>
-      <title>展望一下十二月</title>
-      <link>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
-      <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
-      <description>现在已经是13号了，时间过得真快，来不及展望，今年就要过完了。 今天终于截止了数据库和安卓的大作业，虽然有遇到一些不愉快，终于都结束了。 这是第</description>
-    </item>
-    
-    <item>
-      <title>岁末将至</title>
-      <link>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
-      <pubDate>Sun, 28 Nov 2021 23:59:12 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
-      <description>2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。 2021年仍然是不平凡的一年，仍然记得年初开学前的焦虑，现在</description>
-    </item>
-    
-    <item>
-      <title>与鸟巢的匆匆一面</title>
-      <link>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
-      <pubDate>Fri, 19 Nov 2021 23:34:01 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
-      <description>今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只</description>
-    </item>
-    
-    <item>
-      <title>2021年11月的第一场雪</title>
-      <link>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
-      <pubDate>Sun, 07 Nov 2021 02:04:08 +0800</pubDate>
-      
-      <guid>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
-      <description>真的很冷 今天大家的关注点都在S赛，我也未能免俗参与其中</description>
-    </item>
-    
-    <item>
-      <title>关于巨人的烂尾</title>
-      <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
-      <pubDate>Thu, 08 Apr 2021 17:16:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
-      <description>从早上得知巨人烂尾，心情一直阴霾，实在忍不住了，想宣泄一下。 2013年的时候进击的巨人刚出，第一集艾伦的妈妈被吃前的那一句别抛下就给我留下了</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>随想 on SOTO-BLOG</title>
+        <link>https://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</link>
+        <description>Recent content in 随想 on SOTO-BLOG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 02 Jan 2022 16:26:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E9%9A%8F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>冬日的光</title>
+        <link>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
+        <pubDate>Sun, 02 Jan 2022 16:26:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
+        <description>&lt;img src="https://pic.mcatk.com/soto/202201021637052.jpeg" alt="Featured image of post 冬日的光" /&gt;&lt;p&gt;下午两点半的游泳馆没有多少人，我成为了打破平静清澈水面的第一个人，耳边只有水的声音，不用想别的事情，得以享受片刻的宁静。&lt;/p&gt;
+&lt;p&gt;很少在下午场来游泳馆，冬日午后的阳光温柔地打在水面上，把波光映在池底，是深水区独有的享受，水也比平日晚上来时暖和。穿过撒着阳光的水面，眼前一片闪亮，水下又是另一片安静的光晃动着。&lt;/p&gt;
+&lt;p&gt;后从绿园散步回去，一路上没有什么人，也比平日安静几分，唯有穿过树林温柔的光，喝一瓶可乐，冬这个季节也不是一无是处了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>你好，2022</title>
+        <link>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</link>
+        <pubDate>Sat, 01 Jan 2022 01:33:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</guid>
+        <description>&lt;p&gt;新的一年。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>圣诞和颐和园的日落</title>
+        <link>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
+        <pubDate>Mon, 27 Dec 2021 01:29:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
+        <description>&lt;img src="https://pic.mcatk.com/soto/202112270145097.jpeg" alt="Featured image of post 圣诞和颐和园的日落" /&gt;&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270145874.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270147863.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270149909.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;考完编译的几天后，和朋友们在三里屯的一家烤肉店过了一个平安夜，因为外国人很多，这种气氛确实是之前没有感受到的，虽然听不懂他们的小游戏，和他们格格不入，但是一群人坐在一起，吃着烤肉喝着酒，戴着圣诞帽听着圣诞歌曲，大笑着玩小游戏，也是热闹非凡。&lt;/p&gt;
+&lt;p&gt;圣诞节当天，和朋友去颐和园看冬至我没看到的金光穿十七孔桥桥洞。桥洞没我想象中那么“金”，反而是更关注当日耀眼的落日。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146963.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146910.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146383.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270146552.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;今天真冷～&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>展望一下十二月</title>
+        <link>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
+        <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
+        <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/R6dzgZ.jpeg" alt="Featured image of post 展望一下十二月" /&gt;&lt;p&gt;现在已经是13号了，时间过得真快，来不及展望，今年就要过完了。&lt;/p&gt;
+&lt;p&gt;今天终于截止了数据库和安卓的大作业，虽然有遇到一些不愉快，终于都结束了。&lt;/p&gt;
+&lt;p&gt;这是第15周，从上周开始已经基本没什么课了，后续就是一大堆考试，这应该是我考试最多的一个学期了吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/nxzW74.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;15周日程&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;昨天临时起意去景山公园，4点出发，天气好，一路在赶着希望能见一面夕阳，路过北海，被余晖吸引，就下了车，先冲到北海公园，逛公园真是惬意。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/fV4FRj.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/IJ6INF.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/R6dzgZ.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/fJBkzV.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;随后也没丢了景山，虽然抵达时已经天黑得连路都看不清，最后也抵达了万春亭，俯瞰了一眼故宫。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/foM3v4.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/3VYkPX.jpeg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;故宫&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>岁末将至</title>
+        <link>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
+        <pubDate>Sun, 28 Nov 2021 23:59:12 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
+        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwvcckpc31j30sg0lcjw0.jpg" alt="Featured image of post 岁末将至" /&gt;&lt;p&gt;2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwv8gr6toaj30mw0qidhg.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;2021年仍然是不平凡的一年，仍然记得年初开学前的焦虑，现在回首，已是云淡风轻。&lt;/p&gt;
+&lt;p&gt;昨天也做了一件有意义的事情，终结了我的某个让我焦虑了一年的项目，很遗憾，和一般情况不同，不是顺利完成了，而是我终于宣告退出了，不知是我诉苦奏效还是项目确实没有什么意义，身边人在最后关头支持我的退出。且不谈这个项目的实际意义，我已经丧失了对项目的兴趣，尽管起初驱动我的也不是兴趣，最主要的还是这一年在这一件事上，循环往复的都是焦虑和难以推进，在近期，也是我今年最忙的时间段，项目突然开始快速推进，我借着这个机会，跟老板提出退出。最终什么都没有拿到，倒是这一年，更像是两年，本就社恐，又无经验，还得不到具体的指导，老板问我有没有给我压力，确实也没有，是自己给自己增加了不少压力，而我，2021年末的我，已经不愿再做自己不喜欢的事情了。让此事告终，心情也好了不少。&lt;/p&gt;
+&lt;p&gt;这几天甚是忙碌，周围人都出去玩乐了，我还在做作业，复习重修的课程。小伙伴今天下午约我出去玩，我才意识到这已经是这学期不知道第几次因为要考试而拒绝了。倒也不觉得情绪低，因为清楚自己在做什么，为什么忙，除了时间确实不够用，熬了几次夜，反倒挺有兴致的。也非常期待下一周，校历第13周的结束，这意味着编译和数据库的结课，数分期中考试的结束，物联网，安卓大作业的结束，虽然此时此刻他们都还没有结束，也不知道会以什么样的方式结束。&lt;/p&gt;
+&lt;p&gt;写完这篇，Typora提醒我15天后他要开始收费了。回想疫情居家的那一学期，在6系学长为我们讲解数据结构时，看到了学长的Typora，一眼喜欢上了这个软件，专门加了学长好友去问这款软件叫什么，学长告诉我，如果到了6系会经常用到，我还一笑，不曾想过自己会去6系，如今已是在计算机学院的第二年了。恰合主题，时间过得这么快，也算见证了Typora的演变。&lt;/p&gt;
+&lt;p&gt;岁末将至，敬颂冬绥&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>与鸟巢的匆匆一面</title>
+        <link>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
+        <pubDate>Fri, 19 Nov 2021 23:34:01 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
+        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwocp0mkarj30sg0lc43v.jpg" alt="Featured image of post 与鸟巢的匆匆一面" /&gt;&lt;p&gt;今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。&lt;/p&gt;
+&lt;p&gt;我在乘车前往目的地的路上，看到鸟巢灯火通明的一瞬间，突然感到与繁景告别已久（一个多月），仿佛自己离开了这个城市。恍然间审视起来自己这一个月真的是在有意义的活着吗？貌似是陷在编译里面虚度时间。忽然想起那句：北航人是没有生活的(&lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/ePycPzAVIXsyFPWTIV9fQQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;)，直呼赞同。故在按部就班完成生日的惊喜后按耐不住，感觉在座的各位都有自己在这一场聚会中想要做的事情，我不甚相融其中，只想奔赴鸟巢，而且还有点饿，想吃点告别已久的，学校外边的食物，遂离开。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwoctuf5vvj30sg0lcn00.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;奔赴鸟巢并不顺利，沿湖东路莫名被封，我四处绕路，路上遇见几位也是如此，最后还是从东侧大道进入，赶在闭园的前几分钟，好心的保安提示我赶紧进去，进去后反倒不如在湖边拍下的风景好，中轴线的人也不多，只有几个年轻人还在滑滑板，却也算完成了今日的心愿。&lt;/p&gt;
+&lt;p&gt;见到倒计时板只剩下76天，想到第一次来这个地方，已相隔七百来天，不甚感慨，在BUAA的这两年，在北京的这两年。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwocrn2scqj31he0u077j.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;离开之际，地铁口附近有一些劲爆的音乐和放纵的，各个年龄段的朝阳群众正在狂欢。待了一会儿，离开了，也没吃到饭。（回BUAA吃了难吃的烤冷面和土豆）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwocti2xgxj30sg0lcq5j.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>2021年11月的第一场雪</title>
+        <link>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
+        <pubDate>Sun, 07 Nov 2021 02:04:08 +0800</pubDate>
+        
+        <guid>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
+        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwkz3r6pstj30sg0lc43b.jpg" alt="Featured image of post 2021年11月的第一场雪" /&gt;&lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;150&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/album/the-four-seasons-concerto-no-4-in-f-minor-rv-297/883897569?i=883897598&amp;l=en&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;真的很冷&lt;/p&gt;
+&lt;p&gt;今天大家的关注点都在S赛，我也未能免俗参与其中&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于巨人的烂尾</title>
+        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
+        <pubDate>Thu, 08 Apr 2021 17:16:00 +0800</pubDate>
+        
+        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
+        <description>&lt;p&gt;从早上得知巨人烂尾，心情一直阴霾，实在忍不住了，想宣泄一下。&lt;/p&gt;
+&lt;p&gt;2013年的时候进击的巨人刚出，第一集艾伦的妈妈被吃前的那一句别抛下就给我留下了深刻的印象，那时候也不懂太多，一方面是被这样残酷的场景震慑了，一方面跟着大伙无脑燃。之后过了很多年，这期间一直也不算是巨人粉。到后来第二季莱纳贝尔托特叛变，我第一次被悲壮的氛围和史诗级的音乐震撼到，那一段我反反复复看了有几十遍，每一次看都起鸡皮疙瘩。那时候也很喜欢巨人第二季振奋的OP献出心脏，也很喜欢结尾怪诞的ED，不知道单曲循环了多少遍，那时候真的对巨人的剧情特别感兴趣，就像那个墙内的少年一样，抑制不住自己的好奇心，也看了很多漫画剧透，每天都在想巨人的剧情，好奇那只猴子，好奇所谓的故乡，被三笠对艾伦，尤弥尔对女王的爱打动。&lt;/p&gt;
+&lt;p&gt;到后来第三季part1王政篇，这时候的我也算是有更成熟的心智了，愿意去思考所谓立场，正义云云的东西，为团长帅气的政变欢呼，为墙内之王感到悲伤，也为肯尼的世界观赞叹不已。到part2时，正值高三，夺回玛丽亚之战，团长的冲锋，爱尔敏的牺牲，兵长砍猴，带给我悲伤却震撼的复杂情绪，也正是这一个个场景让我觉得巨人在我心中永远位于神坛。高考前夕正好更新了白夜，救谁的问题让我揪心，最终的结果也如高考的结束一样让我释然。随着进入地下室揭开一切秘密。&lt;/p&gt;
+&lt;p&gt;在我大学生活，也终于迎来了第四季的马莱篇，我对各个名场景充满期待，期待着巨人在我有生之年完成他的封神。我人生的前20个年头也这样过下来了。&lt;/p&gt;
+&lt;p&gt;总而言之，巨人在我的人生道路上，确确实实在深刻的影响我的三观，他就像是我的另一部分一样陪着我成长，我一直尽量谨慎的不去跟别人讨论巨人，因为我想让这个我心中top1的艺术品永远被我保护起来。&lt;/p&gt;
+&lt;p&gt;今天迎来了巨人的结局，因为我一直不看漫画，第四季前半部分结束后的剧情我全然不知，但是看到知乎都在讨论最后一话，没忍住就去看了。真的很难想象，这是出自谏山创之手，好像一下子三观全部毁掉了，母亲被吃是艾伦意料之内的，士兵们的牺牲全部成了白给，人设崩塌，立意全毁···这不是简单的烂尾，这是作者故意为之，一时间好像我从小到大的老朋友突然捅了我几刀，使劲践踏着我的尊严，难受的我说不出话。&lt;/p&gt;
+&lt;p&gt;我就是在昨天还认为，巨人就算烂尾了也永远是我心中的神，我对巨人的感情已经超过了能客观评价的程度，他已经足够好了，但是真的没想到作者能做到这个份上，更多的批评不想说了，说的越多自己越难受，大概这就是作者的目的吧。&lt;/p&gt;
+&lt;p&gt;我还会感谢曾经的巨人，他带着我思考了很多问题，深刻影响了我的三观，巨人与我很有缘分，他就像我的青春一样，永远停留在我人生的前20年了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

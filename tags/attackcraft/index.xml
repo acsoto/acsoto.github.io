@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>AtTackCraft on SOTO-BLOG</title>
-    <link>https://atksoto.com/tags/attackcraft/</link>
-    <description>Recent content in AtTackCraft on SOTO-BLOG</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Nov 2021 16:17:36 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AC又被黑了</title>
-      <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
-      <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
-      
-      <guid>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
-      <description>下午突然看到服务器有人发 仔细一看 打开链接一看： 很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放 查来查去发现是有人盗了</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>AtTackCraft on SOTO-BLOG</title>
+        <link>https://atksoto.com/tags/attackcraft/</link>
+        <description>Recent content in AtTackCraft on SOTO-BLOG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 28 Nov 2021 16:17:36 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>AC又被黑了</title>
+        <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+        <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
+        
+        <guid>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+        <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuxr0uhfdj30yc0jsgn6.jpg" alt="Featured image of post AC又被黑了" /&gt;&lt;p&gt;下午突然看到服务器有人发&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuxvfj6l5j30p205st8o.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;仔细一看&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuxvxty56j31400u0n6h.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;打开链接一看：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuxr0uhfdj30yc0jsgn6.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/dQw4w9WgXcQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;很无语，一开始以为是国外作案，黑进数据库了，一看我数据库根本没对外网开放&lt;/p&gt;
+&lt;p&gt;查来查去发现是有人盗了一个用来处理封禁的账号，进去之后一通乱封&lt;/p&gt;
+&lt;p&gt;把数据库恢复了一下备份，玩家还是进不去，我能进去，查了一下litebans的官网，是用了一个封锁服务器进入权限的指令，打了个指令就解决了。&lt;/p&gt;
+&lt;p&gt;很低级的手段，很无聊的恶趣味&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;后续&#34;&gt;后续&lt;/h4&gt;
+&lt;p&gt;原本晚上前往教学楼复习数分，没有带电脑。&lt;/p&gt;
+&lt;p&gt;没想到，在傍晚又被黑了，因为只是还有管理号没有停掉，仅凭手机暂时解决了问题，在仔细推敲后，认为其是通过非法调用我部署在web服务器的litebans端的api来实现用拥有权限的玩家账号去封禁其他玩家。&lt;/p&gt;
+&lt;p&gt;结果在稍晚一点又一次被黑，终于意识到，事情根本没有那么复杂，只是因为litebans是BC插件，Authme没办法限制登陆前对指令使用权限，任意一个有litebans权限的账号都在未登陆的情况下可以随意使用指令。其实早就应该发现我留了这种低级漏洞的，也没想道竟然这么久了才有人发现了这个这么简单的漏洞。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>
