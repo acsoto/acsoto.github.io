@@ -6,25 +6,7 @@
     <description>Recent content in Tags on SOTO-BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Jan 2022 14:17:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>BUAA</title>
-      <link>https://atksoto.com/tags/buaa/</link>
-      <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/tags/buaa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>数据库</title>
-      <link>https://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Wed, 05 Jan 2022 14:17:00 +0800</pubDate>
-      
-      <guid>https://atksoto.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 02 Jan 2022 16:26:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>随想</title>
       <link>https://atksoto.com/tags/%E9%9A%8F%E6%83%B3/</link>
@@ -175,6 +157,15 @@
       <pubDate>Sun, 21 Nov 2021 11:36:00 +0800</pubDate>
       
       <guid>https://atksoto.com/tags/%E7%BE%8E%E8%B5%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BUAA</title>
+      <link>https://atksoto.com/tags/buaa/</link>
+      <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
+      
+      <guid>https://atksoto.com/tags/buaa/</guid>
       <description></description>
     </item>
     
