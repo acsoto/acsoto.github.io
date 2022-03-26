@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>BUAA on SOTO-BLOG</title>
-        <link>https://atksoto.com/tags/buaa/</link>
+        <link>https://childsail.com/tags/buaa/</link>
         <description>Recent content in BUAA on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 16 Nov 2021 16:29:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/buaa/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 16 Nov 2021 16:29:00 +0800</lastBuildDate><atom:link href="https://childsail.com/tags/buaa/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Alxa_Compiler(SysY to PCODE)</title>
-        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
+        <link>https://childsail.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <guid>https://childsail.com/alxa_compilersysy-to-pcode/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
@@ -1704,10 +1704,10 @@
         </item>
         <item>
         <title>BUAAOO-第四单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第四单元总结&#34;&gt;BUAAOO-第四单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;总结本单元作业的架构设计&#34;&gt;总结本单元作业的架构设计&lt;/h3&gt;
 &lt;p&gt;本单元任务为设计UML分析器，包括类图，顺序图，状态图&lt;/p&gt;
@@ -1864,10 +1864,10 @@
         </item>
         <item>
         <title>BUAAOO-第三单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第三单元总结&#34;&gt;BUAAOO-第三单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;实现规格所采取的设计策略&#34;&gt;实现规格所采取的设计策略&lt;/h3&gt;
 &lt;p&gt;在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。&lt;/p&gt;
@@ -2145,10 +2145,10 @@
         </item>
         <item>
         <title>BUAAOO-第二单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第二单元总结&#34;&gt;BUAAOO-第二单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;作业分析&#34;&gt;作业分析&lt;/h2&gt;
 &lt;h3 id=&#34;同步块与锁&#34;&gt;同步块与锁&lt;/h3&gt;
@@ -2277,10 +2277,10 @@
         </item>
         <item>
         <title>BUAAOO-第一单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第一单元总结&#34;&gt;BUAAOO-第一单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;基于度量分析程序结构&#34;&gt;基于度量分析程序结构&lt;/h2&gt;
 &lt;h3 id=&#34;第一次作业&#34;&gt;第一次作业&lt;/h3&gt;
@@ -2414,10 +2414,10 @@
         </item>
         <item>
         <title>失败的逻辑课程笔记</title>
-        <link>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+        <link>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;失败的规律&#34;&gt;失败的规律&lt;/h2&gt;
 &lt;h4 id=&#34;墨菲定律&#34;&gt;墨菲定律&lt;/h4&gt;
 &lt;h6 id=&#34;定义&#34;&gt;定义&lt;/h6&gt;

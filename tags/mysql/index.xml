@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>MySQL on SOTO-BLOG</title>
-        <link>https://atksoto.com/tags/mysql/</link>
+        <link>https://childsail.com/tags/mysql/</link>
         <description>Recent content in MySQL on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0800</lastBuildDate><atom:link href="https://childsail.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于TakeawayDelivery</title>
-        <link>https://atksoto.com/takeawaydelivery/</link>
+        <link>https://childsail.com/takeawaydelivery/</link>
         <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery/</guid>
+        <guid>https://childsail.com/takeawaydelivery/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post 关于TakeawayDelivery" /&gt;&lt;p&gt;[[TakeawayDelivery 后端实现]]&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
@@ -27,10 +27,10 @@
         </item>
         <item>
         <title>TakeawayDelivery 后端实现</title>
-        <link>https://atksoto.com/takeawaydelivery-back/</link>
+        <link>https://childsail.com/takeawaydelivery-back/</link>
         <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery-back/</guid>
+        <guid>https://childsail.com/takeawaydelivery-back/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;

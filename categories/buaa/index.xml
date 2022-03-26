@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>BUAA on SOTO-BLOG</title>
-        <link>https://atksoto.com/categories/buaa/</link>
+        <link>https://childsail.com/categories/buaa/</link>
         <description>Recent content in BUAA on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://atksoto.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language><atom:link href="https://childsail.com/categories/buaa/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于编译实验期末上机考试</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
         <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
         <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
 &lt;p&gt;第一题：错误处理，增加&lt;code&gt;constExp&lt;/code&gt;出现变量的错误&lt;/p&gt;
 &lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是变量++或&amp;ndash;&lt;/p&gt;
@@ -34,10 +34,10 @@
         </item>
         <item>
         <title>新北老年活动中心</title>
-        <link>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+        <link>https://childsail.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
         <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+        <guid>https://childsail.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg" alt="Featured image of post 新北老年活动中心" /&gt;&lt;h1 id=&#34;新北区迷惑大赏&#34;&gt;新北区迷惑大赏&lt;/h1&gt;
 &lt;p&gt;我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩&lt;/p&gt;
 &lt;p&gt;上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很着急&lt;/p&gt;
@@ -71,10 +71,10 @@
         </item>
         <item>
         <title>Alxa_Compiler(SysY to PCODE)</title>
-        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
+        <link>https://childsail.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <guid>https://childsail.com/alxa_compilersysy-to-pcode/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
@@ -1767,10 +1767,10 @@
         </item>
         <item>
         <title>失败的逻辑课程笔记</title>
-        <link>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+        <link>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;失败的规律&#34;&gt;失败的规律&lt;/h2&gt;
 &lt;h4 id=&#34;墨菲定律&#34;&gt;墨菲定律&lt;/h4&gt;
 &lt;h6 id=&#34;定义&#34;&gt;定义&lt;/h6&gt;

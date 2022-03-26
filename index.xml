@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>SOTO-BLOG</title>
-        <link>https://atksoto.com/</link>
+        <link>https://childsail.com/</link>
         <description>Recent content on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://atksoto.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language><atom:link href="https://childsail.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>北京溜达日记 2022-3-20</title>
-        <link>https://atksoto.com/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B0-2022-3-20/</link>
+        <link>https://childsail.com/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B0-2022-3-20/</link>
         <pubDate>Sun, 20 Mar 2022 23:38:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B0-2022-3-20/</guid>
+        <guid>https://childsail.com/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B0-2022-3-20/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202203270010919.jpeg" alt="Featured image of post 北京溜达日记 2022-3-20" /&gt;
 
 
@@ -222,10 +222,10 @@
         </item>
         <item>
         <title>冬日的光</title>
-        <link>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
+        <link>https://childsail.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</link>
         <pubDate>Sun, 02 Jan 2022 16:26:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
+        <guid>https://childsail.com/%E5%86%AC%E6%97%A5%E7%9A%84%E5%85%89/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202201021637052.jpeg" alt="Featured image of post 冬日的光" /&gt;&lt;p&gt;下午两点半的游泳馆没有多少人，我成为了打破平静清澈水面的第一个人，耳边只有水的声音，不用想别的事情，得以享受片刻的宁静。&lt;/p&gt;
 &lt;p&gt;很少在下午场来游泳馆，冬日午后的阳光温柔地打在水面上，把波光映在池底，是深水区独有的享受，水也比平日晚上来时暖和。穿过撒着阳光的水面，眼前一片闪亮，水下又是另一片安静的光晃动着。&lt;/p&gt;
 &lt;p&gt;后从绿园散步回去，一路上没有什么人，也比平日安静几分，唯有穿过树林温柔的光，喝一瓶可乐，冬这个季节也不是一无是处了。&lt;/p&gt;
@@ -233,19 +233,19 @@
         </item>
         <item>
         <title>你好，2022</title>
-        <link>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</link>
+        <link>https://childsail.com/%E4%BD%A0%E5%A5%BD2022/</link>
         <pubDate>Sat, 01 Jan 2022 01:33:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E4%BD%A0%E5%A5%BD2022/</guid>
+        <guid>https://childsail.com/%E4%BD%A0%E5%A5%BD2022/</guid>
         <description>&lt;p&gt;新的一年。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>关于编译实验期末上机考试</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
         <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
         <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
 &lt;p&gt;第一题：错误处理，增加&lt;code&gt;constExp&lt;/code&gt;出现变量的错误&lt;/p&gt;
 &lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是变量++或&amp;ndash;&lt;/p&gt;
@@ -269,10 +269,10 @@
         </item>
         <item>
         <title>天空之城，米店和XLD</title>
-        <link>https://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
+        <link>https://childsail.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
         <pubDate>Tue, 28 Dec 2021 01:24:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
+        <guid>https://childsail.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112280125409.jpg" alt="Featured image of post 天空之城，米店和XLD" /&gt;&lt;p&gt;现在是凌晨1:26，刚水完领导力的报告，听着天空之城。&lt;/p&gt;
 &lt;p&gt;今天(昨天)一早起来全朋友圈都在发自己的网易云，我于是打开了很久没有打开的Spotify，想看看有没有年度报告，尘封在资料库的李先生印入眼帘，点开了天空之城，顿时感觉非常感动，听了一下午他的歌。&lt;/p&gt;
 &lt;p&gt;想想自己还挺喜欢他的歌的，却一直只能在Spotify听，于是到北邮人下了他的一堆专辑，打算导进AM。&lt;/p&gt;
@@ -348,10 +348,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>圣诞和颐和园的日落</title>
-        <link>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
+        <link>https://childsail.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</link>
         <pubDate>Mon, 27 Dec 2021 01:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
+        <guid>https://childsail.com/%E5%9C%A3%E8%AF%9E%E5%92%8C%E9%A2%90%E5%92%8C%E5%9B%AD%E7%9A%84%E6%97%A5%E8%90%BD/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112270145097.jpeg" alt="Featured image of post 圣诞和颐和园的日落" /&gt;&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112270145874.jpeg&#34;
 	
 	
@@ -415,10 +415,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>SwiftUI 图表库 ChartView</title>
-        <link>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
+        <link>https://childsail.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
         <pubDate>Mon, 27 Dec 2021 01:16:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
+        <guid>https://childsail.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
         <description>&lt;p&gt;写这个[[关于Swift开发的依赖安装]]的时候回顾之前的[[IoTMonitor]]，突然很想推荐一下这个库，真的很好看，至少很符合我的审美。&lt;/p&gt;
 &lt;p&gt;当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。&lt;/p&gt;
 &lt;p&gt;(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)&lt;/p&gt;
@@ -470,10 +470,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>推歌 第三期</title>
-        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
+        <link>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</link>
         <pubDate>Fri, 24 Dec 2021 23:42:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</guid>
+        <guid>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%89%E6%9C%9F/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gxpctdc5yzj30rs0rsgp4.jpg" alt="Featured image of post 推歌 第三期" /&gt;&lt;p&gt;祝各位圣诞快乐&lt;/p&gt;
 &lt;p&gt;先来点圣诞歌单&lt;/p&gt;
 &lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;450&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/playlist/merry-christmas/pl.u-r2yB1GGCRgj4Z1W&#34;&gt;&lt;/iframe&gt;
@@ -501,10 +501,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>关于TakeawayDelivery</title>
-        <link>https://atksoto.com/takeawaydelivery/</link>
+        <link>https://childsail.com/takeawaydelivery/</link>
         <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery/</guid>
+        <guid>https://childsail.com/takeawaydelivery/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post 关于TakeawayDelivery" /&gt;&lt;p&gt;[[TakeawayDelivery 后端实现]]&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
@@ -520,10 +520,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>展望一下十二月</title>
-        <link>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
+        <link>https://childsail.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</link>
         <pubDate>Mon, 13 Dec 2021 00:37:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
+        <guid>https://childsail.com/%E5%B1%95%E6%9C%9B%E4%B8%80%E4%B8%8B%E5%8D%81%E4%BA%8C%E6%9C%88/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/R6dzgZ.jpeg" alt="Featured image of post 展望一下十二月" /&gt;&lt;p&gt;现在已经是13号了，时间过得真快，来不及展望，今年就要过完了。&lt;/p&gt;
 &lt;p&gt;今天终于截止了数据库和安卓的大作业，虽然有遇到一些不愉快，终于都结束了。&lt;/p&gt;
 &lt;p&gt;这是第15周，从上周开始已经基本没什么课了，后续就是一大堆考试，这应该是我考试最多的一个学期了吧。&lt;/p&gt;
@@ -593,10 +593,10 @@ AM的服务器在内地速度不是很好，因为我担心移动端同步过去
         </item>
         <item>
         <title>TakeawayDelivery 后端实现</title>
-        <link>https://atksoto.com/takeawaydelivery-back/</link>
+        <link>https://childsail.com/takeawaydelivery-back/</link>
         <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery-back/</guid>
+        <guid>https://childsail.com/takeawaydelivery-back/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;
@@ -1037,10 +1037,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Obsidian体验与新工作流</title>
-        <link>https://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+        <link>https://childsail.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
         <pubDate>Tue, 07 Dec 2021 12:11:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+        <guid>https://childsail.com/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/XmECh3.png" alt="Featured image of post Obsidian体验与新工作流" /&gt;&lt;p&gt;最近在玩Hexo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;现在也收费了，趁着这个契机，打算换一个软件用。&lt;/p&gt;
 &lt;p&gt;听说 all in one 的 Notion&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。&lt;/p&gt;
 &lt;p&gt;另外就是一直感觉很神秘但是不会用的Obsidian&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;。由于习惯停留在Typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。&lt;/p&gt;
@@ -1224,10 +1224,10 @@ image:
         </item>
         <item>
         <title>推歌 第二期</title>
-        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
+        <link>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</link>
         <pubDate>Sat, 04 Dec 2021 15:49:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
+        <guid>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌&lt;br&gt;
 大家一起分享&lt;/p&gt;
 &lt;ul&gt;
@@ -1245,10 +1245,10 @@ image:
         </item>
         <item>
         <title>假如爱有天意</title>
-        <link>https://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
+        <link>https://childsail.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
         <pubDate>Fri, 03 Dec 2021 22:11:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
+        <guid>https://childsail.com/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/y6rPnu.png" alt="Featured image of post 假如爱有天意" /&gt;&lt;p&gt;《假如爱有天意》&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/PocBU6.jpeg&#34;
 	
@@ -1297,10 +1297,10 @@ image:
         </item>
         <item>
         <title>推歌 第一期</title>
-        <link>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
+        <link>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</link>
         <pubDate>Wed, 01 Dec 2021 23:18:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
+        <guid>https://childsail.com/%E6%8E%A8%E6%AD%8C-%E7%AC%AC%E4%B8%80%E6%9C%9F/</guid>
         <description>&lt;p&gt;uu们最近给我推的歌
 大家一起分享&lt;/p&gt;
 &lt;hr&gt;
@@ -1335,10 +1335,10 @@ image:
         </item>
         <item>
         <title>Our Little Sister</title>
-        <link>https://atksoto.com/our-little-sister/</link>
+        <link>https://childsail.com/our-little-sister/</link>
         <pubDate>Wed, 01 Dec 2021 19:25:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/our-little-sister/</guid>
+        <guid>https://childsail.com/our-little-sister/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto-pictures/2021-12/GkSWWl.png" alt="Featured image of post Our Little Sister" /&gt;&lt;p&gt;《海街日记》&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto-pictures/2021-12/BZLazU.png&#34;
 	
@@ -1384,10 +1384,10 @@ image:
         </item>
         <item>
         <title>岁末将至</title>
-        <link>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
+        <link>https://childsail.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</link>
         <pubDate>Sun, 28 Nov 2021 23:59:12 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
+        <guid>https://childsail.com/%E5%B2%81%E6%9C%AB%E5%B0%86%E8%87%B3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwvcckpc31j30sg0lcjw0.jpg" alt="Featured image of post 岁末将至" /&gt;&lt;p&gt;2021年匆匆的过去了，看上面这张图的话，似乎眼前的这些周期都很快将要画上句号。&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwv8gr6toaj30mw0qidhg.jpg&#34;
@@ -1407,10 +1407,10 @@ image:
         </item>
         <item>
         <title>AC又被黑了</title>
-        <link>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+        <link>https://childsail.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
         <pubDate>Sun, 28 Nov 2021 16:17:36 +0800</pubDate>
         
-        <guid>https://atksoto.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+        <guid>https://childsail.com/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuxr0uhfdj30yc0jsgn6.jpg" alt="Featured image of post AC又被黑了" /&gt;&lt;p&gt;下午突然看到服务器有人发&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwuxvfj6l5j30p205st8o.jpg&#34;
 	
@@ -1452,10 +1452,10 @@ image:
         </item>
         <item>
         <title>IoTMonitor</title>
-        <link>https://atksoto.com/iotmonitor/</link>
+        <link>https://childsail.com/iotmonitor/</link>
         <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
         
-        <guid>https://atksoto.com/iotmonitor/</guid>
+        <guid>https://childsail.com/iotmonitor/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" alt="Featured image of post IoTMonitor" /&gt;&lt;h1 id=&#34;iotmonitor&#34;&gt;IoTMonitor&lt;/h1&gt;
 &lt;p&gt;用于展示IoT课程开发板的相关信息并进行控制&lt;/p&gt;
 &lt;p&gt;可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线&lt;/p&gt;
@@ -1529,10 +1529,10 @@ image:
         </item>
         <item>
         <title>我爱我度过的所有时间</title>
-        <link>https://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
+        <link>https://childsail.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</link>
         <pubDate>Fri, 26 Nov 2021 19:06:03 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
+        <guid>https://childsail.com/%E6%88%91%E7%88%B1%E6%88%91%E5%BA%A6%E8%BF%87%E7%9A%84%E6%89%80%E6%9C%89%E6%97%B6%E9%97%B4/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwt3jhmdacj31gm0luq6m.jpg" alt="Featured image of post 我爱我度过的所有时间" /&gt;&lt;p&gt;《现在去见你》&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwsrf6kfqgj31nk0skaf1.jpg&#34;
 	
@@ -1555,10 +1555,10 @@ image:
         </item>
         <item>
         <title>新北老年活动中心</title>
-        <link>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
+        <link>https://childsail.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</link>
         <pubDate>Fri, 26 Nov 2021 10:22:27 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
+        <guid>https://childsail.com/%E6%96%B0%E5%8C%97%E8%80%81%E5%B9%B4%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwsc4q052vj30sg0lcq6v.jpg" alt="Featured image of post 新北老年活动中心" /&gt;&lt;h1 id=&#34;新北区迷惑大赏&#34;&gt;新北区迷惑大赏&lt;/h1&gt;
 &lt;p&gt;我真的不理解为什么他们喜欢在这片区域晒太阳和带小孩&lt;/p&gt;
 &lt;p&gt;上个学期上早八吃早饭，总会有一群阿姨比我更早，我不知道他们着不着急，反正我很着急&lt;/p&gt;
@@ -1592,10 +1592,10 @@ image:
         </item>
         <item>
         <title>泳社约游群的有趣见闻</title>
-        <link>https://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
+        <link>https://childsail.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</link>
         <pubDate>Tue, 23 Nov 2021 12:36:52 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
+        <guid>https://childsail.com/%E6%B3%B3%E7%A4%BE%E7%BA%A6%E6%B8%B8%E7%BE%A4%E7%9A%84%E6%9C%89%E8%B6%A3%E8%A7%81%E9%97%BB/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwoz8tqtvij30u015cq70.jpg&#34;
 	
 	
@@ -1609,10 +1609,10 @@ image:
         </item>
         <item>
         <title>关于封校的行为艺术——很有冲击力</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</link>
         <pubDate>Mon, 22 Nov 2021 15:28:59 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E%E5%B0%81%E6%A0%A1%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF%E5%BE%88%E6%9C%89%E5%86%B2%E5%87%BB%E5%8A%9B/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwnymv1zyrj31780u0ane.jpg" alt="Featured image of post 关于封校的行为艺术——很有冲击力" /&gt;&lt;p&gt;今日看到北京电影学院的行为艺术，甚感封校许久政策就是最明显的校内不同群体的利益冲突，比如在BUAA，冲封校冲得最厉害的，似乎是大四的同学，因为很多人急于出去实习科研。对于一些每天的生活只有卷的同学，封校政策并无大碍。对于北航家属呢，此政策影响不到他们的正常出行。对于我呢，在我想出去玩的时候，对政策感到厌恶，在我不想出玩的时候，却也觉得无所谓。&lt;/p&gt;
 &lt;p&gt;《肖申克的救赎》&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/008i3skNly1gwov7m0x7uj30u00uxq4x.jpg&#34;
@@ -1638,10 +1638,10 @@ image:
         </item>
         <item>
         <title>关于2021美赛</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
         <pubDate>Sun, 21 Nov 2021 11:36:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
         <description>&lt;p&gt;[[2021美赛正文.pdf]] (&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021/blob/main/%e7%be%8e%e8%b5%9b%e6%ad%a3%e6%96%872111259.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/acsoto/MCM-ICM_2021&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1668,10 +1668,10 @@ image:
         </item>
         <item>
         <title>与鸟巢的匆匆一面</title>
-        <link>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
+        <link>https://childsail.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</link>
         <pubDate>Fri, 19 Nov 2021 23:34:01 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
+        <guid>https://childsail.com/%E4%B8%8E%E9%B8%9F%E5%B7%A2%E7%9A%84%E5%8C%86%E5%8C%86%E4%B8%80%E9%9D%A2/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwocp0mkarj30sg0lc43v.jpg" alt="Featured image of post 与鸟巢的匆匆一面" /&gt;&lt;p&gt;今赴一场蓄谋已久的生日宴会，开场一个半小时后先行撤退且不辞而别，在此先把责任全部归咎于我自己，母上也对我的行为直呼无趣，倒也不是自讨没趣，只是封校许久难得有机会出来，想要自行去溜达一圈。&lt;/p&gt;
 &lt;p&gt;我在乘车前往目的地的路上，看到鸟巢灯火通明的一瞬间，突然感到与繁景告别已久（一个多月），仿佛自己离开了这个城市。恍然间审视起来自己这一个月真的是在有意义的活着吗？貌似是陷在编译里面虚度时间。忽然想起那句：北航人是没有生活的(&lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/ePycPzAVIXsyFPWTIV9fQQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;)，直呼赞同。故在按部就班完成生日的惊喜后按耐不住，感觉在座的各位都有自己在这一场聚会中想要做的事情，我不甚相融其中，只想奔赴鸟巢，而且还有点饿，想吃点告别已久的，学校外边的食物，遂离开。&lt;/p&gt;
@@ -1706,10 +1706,10 @@ image:
         </item>
         <item>
         <title>Alxa_Compiler(SysY to PCODE)</title>
-        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
+        <link>https://childsail.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <guid>https://childsail.com/alxa_compilersysy-to-pcode/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
@@ -3402,10 +3402,10 @@ image:
         </item>
         <item>
         <title>2021年11月的第一场雪</title>
-        <link>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
+        <link>https://childsail.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</link>
         <pubDate>Sun, 07 Nov 2021 02:04:08 +0800</pubDate>
         
-        <guid>https://atksoto.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
+        <guid>https://childsail.com/2021%E5%B9%B411%E6%9C%88%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwkz3r6pstj30sg0lc43b.jpg" alt="Featured image of post 2021年11月的第一场雪" /&gt;&lt;iframe allow=&#34;autoplay *; encrypted-media *; fullscreen *&#34; frameborder=&#34;0&#34; height=&#34;150&#34; style=&#34;width:100%;max-width:660px;overflow:hidden;background:transparent;&#34; sandbox=&#34;allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation&#34; src=&#34;https://embed.music.apple.com/cn/album/the-four-seasons-concerto-no-4-in-f-minor-rv-297/883897569?i=883897598&amp;l=en&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;真的很冷&lt;/p&gt;
 &lt;p&gt;今天大家的关注点都在S赛，我也未能免俗参与其中&lt;/p&gt;
@@ -3413,10 +3413,10 @@ image:
         </item>
         <item>
         <title>Memo文档</title>
-        <link>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
+        <link>https://childsail.com/memo%E6%96%87%E6%A1%A3/</link>
         <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
+        <guid>https://childsail.com/memo%E6%96%87%E6%A1%A3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" alt="Featured image of post Memo文档" /&gt;&lt;h1 id=&#34;memo&#34;&gt;Memo&lt;/h1&gt;
 &lt;p&gt;Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;&lt;/p&gt;
 &lt;p&gt;灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。&lt;/p&gt;
@@ -3785,10 +3785,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第四单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第四单元总结&#34;&gt;BUAAOO-第四单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;总结本单元作业的架构设计&#34;&gt;总结本单元作业的架构设计&lt;/h3&gt;
 &lt;p&gt;本单元任务为设计UML分析器，包括类图，顺序图，状态图&lt;/p&gt;
@@ -3945,10 +3945,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第三单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第三单元总结&#34;&gt;BUAAOO-第三单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;实现规格所采取的设计策略&#34;&gt;实现规格所采取的设计策略&lt;/h3&gt;
 &lt;p&gt;在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。&lt;/p&gt;
@@ -4226,10 +4226,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第二单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第二单元总结&#34;&gt;BUAAOO-第二单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;作业分析&#34;&gt;作业分析&lt;/h2&gt;
 &lt;h3 id=&#34;同步块与锁&#34;&gt;同步块与锁&lt;/h3&gt;
@@ -4358,10 +4358,10 @@ image:
         </item>
         <item>
         <title>关于巨人的烂尾</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</link>
         <pubDate>Thu, 08 Apr 2021 17:16:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E%E5%B7%A8%E4%BA%BA%E7%9A%84%E7%83%82%E5%B0%BE/</guid>
         <description>&lt;p&gt;从早上得知巨人烂尾，心情一直阴霾，实在忍不住了，想宣泄一下。&lt;/p&gt;
 &lt;p&gt;2013年的时候进击的巨人刚出，第一集艾伦的妈妈被吃前的那一句别抛下就给我留下了深刻的印象，那时候也不懂太多，一方面是被这样残酷的场景震慑了，一方面跟着大伙无脑燃。之后过了很多年，这期间一直也不算是巨人粉。到后来第二季莱纳贝尔托特叛变，我第一次被悲壮的氛围和史诗级的音乐震撼到，那一段我反反复复看了有几十遍，每一次看都起鸡皮疙瘩。那时候也很喜欢巨人第二季振奋的OP献出心脏，也很喜欢结尾怪诞的ED，不知道单曲循环了多少遍，那时候真的对巨人的剧情特别感兴趣，就像那个墙内的少年一样，抑制不住自己的好奇心，也看了很多漫画剧透，每天都在想巨人的剧情，好奇那只猴子，好奇所谓的故乡，被三笠对艾伦，尤弥尔对女王的爱打动。&lt;/p&gt;
 &lt;p&gt;到后来第三季part1王政篇，这时候的我也算是有更成熟的心智了，愿意去思考所谓立场，正义云云的东西，为团长帅气的政变欢呼，为墙内之王感到悲伤，也为肯尼的世界观赞叹不已。到part2时，正值高三，夺回玛丽亚之战，团长的冲锋，爱尔敏的牺牲，兵长砍猴，带给我悲伤却震撼的复杂情绪，也正是这一个个场景让我觉得巨人在我心中永远位于神坛。高考前夕正好更新了白夜，救谁的问题让我揪心，最终的结果也如高考的结束一样让我释然。随着进入地下室揭开一切秘密。&lt;/p&gt;
@@ -4374,10 +4374,10 @@ image:
         </item>
         <item>
         <title>BUAAOO-第一单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第一单元总结&#34;&gt;BUAAOO-第一单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;基于度量分析程序结构&#34;&gt;基于度量分析程序结构&lt;/h2&gt;
 &lt;h3 id=&#34;第一次作业&#34;&gt;第一次作业&lt;/h3&gt;
@@ -4511,10 +4511,10 @@ image:
         </item>
         <item>
         <title>失败的逻辑课程笔记</title>
-        <link>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+        <link>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 29 Oct 2020 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://childsail.com/%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;h2 id=&#34;失败的规律&#34;&gt;失败的规律&lt;/h2&gt;
 &lt;h4 id=&#34;墨菲定律&#34;&gt;墨菲定律&lt;/h4&gt;
 &lt;h6 id=&#34;定义&#34;&gt;定义&lt;/h6&gt;
@@ -4607,10 +4607,10 @@ image:
         </item>
         <item>
         <title>关于</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://github-readme-stats.vercel.app/api?username=acsoto&amp;amp;show_icons=true&amp;amp;hide_title=false&amp;amp;hide_border=false&#34;
 	
 	
@@ -4631,26 +4631,26 @@ image:
         </item>
         <item>
         <title>归档</title>
-        <link>https://atksoto.com/archives/</link>
+        <link>https://childsail.com/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://atksoto.com/archives/</guid>
+        <guid>https://childsail.com/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://atksoto.com/search/</link>
+        <link>https://childsail.com/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://atksoto.com/search/</guid>
+        <guid>https://childsail.com/search/</guid>
         <description></description>
         </item>
         <item>
         <title>链接</title>
-        <link>https://atksoto.com/%E9%93%BE%E6%8E%A5/</link>
+        <link>https://childsail.com/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://atksoto.com/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>https://childsail.com/%E9%93%BE%E6%8E%A5/</guid>
         <description></description>
         </item>
         

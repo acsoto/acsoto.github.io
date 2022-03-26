@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Coding on SOTO-BLOG</title>
-        <link>https://atksoto.com/categories/coding/</link>
+        <link>https://childsail.com/categories/coding/</link>
         <description>Recent content in Coding on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://atksoto.com/categories/coding/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language><atom:link href="https://childsail.com/categories/coding/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>SwiftUI 图表库 ChartView</title>
-        <link>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
+        <link>https://childsail.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
         <pubDate>Mon, 27 Dec 2021 01:16:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
+        <guid>https://childsail.com/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
         <description>&lt;p&gt;写这个[[关于Swift开发的依赖安装]]的时候回顾之前的[[IoTMonitor]]，突然很想推荐一下这个库，真的很好看，至少很符合我的审美。&lt;/p&gt;
 &lt;p&gt;当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。&lt;/p&gt;
 &lt;p&gt;(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)&lt;/p&gt;
@@ -62,10 +62,10 @@
         </item>
         <item>
         <title>关于TakeawayDelivery</title>
-        <link>https://atksoto.com/takeawaydelivery/</link>
+        <link>https://childsail.com/takeawaydelivery/</link>
         <pubDate>Wed, 22 Dec 2021 15:18:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery/</guid>
+        <guid>https://childsail.com/takeawaydelivery/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post 关于TakeawayDelivery" /&gt;&lt;p&gt;[[TakeawayDelivery 后端实现]]&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Yq4y1q7Zf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目展示视频&lt;/a&gt;&lt;/p&gt;
@@ -81,10 +81,10 @@
         </item>
         <item>
         <title>TakeawayDelivery 后端实现</title>
-        <link>https://atksoto.com/takeawaydelivery-back/</link>
+        <link>https://childsail.com/takeawaydelivery-back/</link>
         <pubDate>Tue, 07 Dec 2021 19:14:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/takeawaydelivery-back/</guid>
+        <guid>https://childsail.com/takeawaydelivery-back/</guid>
         <description>&lt;img src="https://pic.mcatk.com/soto/202112170131240.png" alt="Featured image of post TakeawayDelivery 后端实现" /&gt;&lt;h1 id=&#34;takeawaydelivery-后端实现&#34;&gt;TakeawayDelivery 后端实现&lt;/h1&gt;
 &lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;ul&gt;
@@ -525,10 +525,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>IoTMonitor</title>
-        <link>https://atksoto.com/iotmonitor/</link>
+        <link>https://childsail.com/iotmonitor/</link>
         <pubDate>Sun, 28 Nov 2021 02:54:12 +0800</pubDate>
         
-        <guid>https://atksoto.com/iotmonitor/</guid>
+        <guid>https://childsail.com/iotmonitor/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuaqehi6ej30lg0eggmc.jpg" alt="Featured image of post IoTMonitor" /&gt;&lt;h1 id=&#34;iotmonitor&#34;&gt;IoTMonitor&lt;/h1&gt;
 &lt;p&gt;用于展示IoT课程开发板的相关信息并进行控制&lt;/p&gt;
 &lt;p&gt;可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线&lt;/p&gt;
@@ -602,10 +602,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Alxa_Compiler(SysY to PCODE)</title>
-        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
+        <link>https://childsail.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <guid>https://childsail.com/alxa_compilersysy-to-pcode/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
@@ -2298,10 +2298,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Memo文档</title>
-        <link>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</link>
+        <link>https://childsail.com/memo%E6%96%87%E6%A1%A3/</link>
         <pubDate>Thu, 28 Oct 2021 17:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/memo%E6%96%87%E6%A1%A3/</guid>
+        <guid>https://childsail.com/memo%E6%96%87%E6%A1%A3/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwv08ty64aj31340m4761.jpg" alt="Featured image of post Memo文档" /&gt;&lt;h1 id=&#34;memo&#34;&gt;Memo&lt;/h1&gt;
 &lt;p&gt;Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;&lt;/p&gt;
 &lt;p&gt;灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。&lt;/p&gt;
@@ -2670,10 +2670,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>BUAAOO-第四单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 26 Jun 2021 11:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第四单元总结&#34;&gt;BUAAOO-第四单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;总结本单元作业的架构设计&#34;&gt;总结本单元作业的架构设计&lt;/h3&gt;
 &lt;p&gt;本单元任务为设计UML分析器，包括类图，顺序图，状态图&lt;/p&gt;
@@ -2830,10 +2830,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>BUAAOO-第三单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sat, 29 May 2021 11:54:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%89%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第三单元总结&#34;&gt;BUAAOO-第三单元总结&lt;/h1&gt;
 &lt;h3 id=&#34;实现规格所采取的设计策略&#34;&gt;实现规格所采取的设计策略&lt;/h3&gt;
 &lt;p&gt;在第一次作业中，开始没有经验，采取了直接对规格进行“翻译”的策略，对数据保存直接使用了定长数组，后发现这样操作代码可读性不高且性能较差，于使重新改写为使用HashMap保存。&lt;/p&gt;
@@ -3111,10 +3111,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>BUAAOO-第二单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 25 Apr 2021 22:33:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%BA%8C%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第二单元总结&#34;&gt;BUAAOO-第二单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;作业分析&#34;&gt;作业分析&lt;/h2&gt;
 &lt;h3 id=&#34;同步块与锁&#34;&gt;同步块与锁&lt;/h3&gt;
@@ -3243,10 +3243,10 @@ PARA: &lt;code&gt;userID&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>BUAAOO-第一单元总结</title>
-        <link>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
+        <link>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</link>
         <pubDate>Sun, 28 Mar 2021 19:23:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
+        <guid>https://childsail.com/buaaoo-%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E6%80%BB%E7%BB%93/</guid>
         <description>&lt;h1 id=&#34;buaaoo-第一单元总结&#34;&gt;BUAAOO-第一单元总结&lt;/h1&gt;
 &lt;h2 id=&#34;基于度量分析程序结构&#34;&gt;基于度量分析程序结构&lt;/h2&gt;
 &lt;h3 id=&#34;第一次作业&#34;&gt;第一次作业&lt;/h3&gt;

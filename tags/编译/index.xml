@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>编译 on SOTO-BLOG</title>
-        <link>https://atksoto.com/tags/%E7%BC%96%E8%AF%91/</link>
+        <link>https://childsail.com/tags/%E7%BC%96%E8%AF%91/</link>
         <description>Recent content in 编译 on SOTO-BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 30 Dec 2021 18:15:00 +0800</lastBuildDate><atom:link href="https://atksoto.com/tags/%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 30 Dec 2021 18:15:00 +0800</lastBuildDate><atom:link href="https://childsail.com/tags/%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于编译实验期末上机考试</title>
-        <link>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
+        <link>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</link>
         <pubDate>Thu, 30 Dec 2021 18:15:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
+        <guid>https://childsail.com/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%AF%91%E5%AE%9E%E9%AA%8C%E6%9C%9F%E6%9C%AB%E4%B8%8A%E6%9C%BA%E8%80%83%E8%AF%95/</guid>
         <description>&lt;p&gt;刚考完，趁着还记得题，留个记录，供参考。&lt;/p&gt;
 &lt;p&gt;第一题：错误处理，增加&lt;code&gt;constExp&lt;/code&gt;出现变量的错误&lt;/p&gt;
 &lt;p&gt;第二题：代码生成，增加i++和i&amp;ndash;的文法，但是只出现在stmt里且只是变量++或&amp;ndash;&lt;/p&gt;
@@ -35,10 +35,10 @@
         </item>
         <item>
         <title>Alxa_Compiler(SysY to PCODE)</title>
-        <link>https://atksoto.com/alxa_compilersysy-to-pcode/</link>
+        <link>https://childsail.com/alxa_compilersysy-to-pcode/</link>
         <pubDate>Tue, 16 Nov 2021 16:29:00 +0800</pubDate>
         
-        <guid>https://atksoto.com/alxa_compilersysy-to-pcode/</guid>
+        <guid>https://childsail.com/alxa_compilersysy-to-pcode/</guid>
         <description>&lt;img src="https://tva1.sinaimg.cn/large/008i3skNly1gwuyxmimj1j30tg0c0wfl.jpg" alt="Featured image of post Alxa_Compiler(SysY to PCODE)" /&gt;&lt;h2 id=&#34;lexical-analysis&#34;&gt;Lexical analysis&lt;/h2&gt;
 &lt;h3 id=&#34;before-code&#34;&gt;Before Code&lt;/h3&gt;
 &lt;p&gt;Requriement:  read &lt;code&gt;testfile.txt&lt;/code&gt;, parse every char to word and print them. At the same time, memorize type, content and line number of  each word.&lt;/p&gt;
