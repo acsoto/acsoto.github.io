@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://childsail.com/en/about/</loc>
+    <loc>https://www.atksoto.com/en/about/</loc>
     <lastmod>2022-03-24T20:18:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://childsail.com/%E5%85%B3%E4%BA%8E/"
+                href="https://www.atksoto.com/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://childsail.com/en/about/"
+                href="https://www.atksoto.com/en/about/"
                 />
   </url><url>
-    <loc>https://childsail.com/en/page/</loc>
+    <loc>https://www.atksoto.com/en/page/</loc>
     <lastmod>2022-03-24T20:18:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://childsail.com/page/"
+                href="https://www.atksoto.com/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://childsail.com/en/page/"
+                href="https://www.atksoto.com/en/page/"
                 />
   </url><url>
-    <loc>https://childsail.com/en/</loc>
+    <loc>https://www.atksoto.com/en/</loc>
     <lastmod>2022-03-19T16:56:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://childsail.com/"
+                href="https://www.atksoto.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://childsail.com/en/"
+                href="https://www.atksoto.com/en/"
                 />
   </url><url>
-    <loc>https://childsail.com/en/categories/</loc>
+    <loc>https://www.atksoto.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://childsail.com/categories/"
+                href="https://www.atksoto.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://childsail.com/en/categories/"
+                href="https://www.atksoto.com/en/categories/"
                 />
   </url><url>
-    <loc>https://childsail.com/en/tags/</loc>
+    <loc>https://www.atksoto.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://childsail.com/tags/"
+                href="https://www.atksoto.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://childsail.com/en/tags/"
+                href="https://www.atksoto.com/en/tags/"
                 />
   </url>
 </urlset>
