@@ -1,90 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>音乐 on SOTO-BLOG</title>
-        <link>https://www.atksoto.com/tags/%E9%9F%B3%E4%B9%90/</link>
-        <description>Recent content in 音乐 on SOTO-BLOG</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 Dec 2021 01:24:00 +0800</lastBuildDate><atom:link href="https://www.atksoto.com/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>天空之城，米店和XLD</title>
-        <link>https://www.atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
-        <pubDate>Tue, 28 Dec 2021 01:24:00 +0800</pubDate>
-        
-        <guid>https://www.atksoto.com/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
-        <description>&lt;img src="https://pic.mcatk.com/soto/202112280125409.jpg" alt="Featured image of post 天空之城，米店和XLD" /&gt;&lt;p&gt;现在是凌晨1:26，刚水完领导力的报告，听着天空之城。&lt;/p&gt;
-&lt;p&gt;今天(昨天)一早起来全朋友圈都在发自己的网易云，我于是打开了很久没有打开的Spotify，想看看有没有年度报告，尘封在资料库的李先生印入眼帘，点开了天空之城，顿时感觉非常感动，听了一下午他的歌。&lt;/p&gt;
-&lt;p&gt;想想自己还挺喜欢他的歌的，却一直只能在Spotify听，于是到北邮人下了他的一堆专辑，打算导进AM。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112280128122.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;下载下来的文件是整个专辑完整的flac和cue文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112280130703.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;这里用之前在少数派看到的XLD进行了一波转换。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;这个软件真是让我非常惊喜，他不光可以转AM适用的无损和AAC，还可以轻易的使用cue切分。&lt;/p&gt;
-&lt;p&gt;直接用XLD点开cue文件，把封面图拖上去，对没有正确识别的歌名稍作修改后点击Transcode即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112280138823.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;
-AM的服务器在内地速度不是很好，因为我担心移动端同步过去播放卡的问题，我在这里生成了AAC（苹果的一种有损格式），每首歌就只剩下几mb了，直接拖进AM里即可。&lt;/p&gt;
-&lt;p&gt;如果单曲的对应专辑出现问题，直接批量选择之后用AM自带的编辑功能稍作修改即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112280139067.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://pic.mcatk.com/soto/202112280141620.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;img src=&#34;https://pic.mcatk.com/soto/202112280143546.PNG&#34; width=&#34;300&#34; alt=&#34;webhooks&#34;&gt;
-&lt;blockquote&gt;
-&lt;p&gt;港岛妹妹，你献给我的西班牙馅饼&lt;/p&gt;
-&lt;p&gt;甜蜜地融化了我，天空之城在哭泣&lt;/p&gt;
-&lt;p&gt;港岛妹妹，我们曾拥有的甜蜜的爱情&lt;/p&gt;
-&lt;p&gt;疯狂地撕裂了我，天空之城在哭泣&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;爱人 你可感到明天已经来临&lt;/p&gt;
-&lt;p&gt;码头上停着我们的船&lt;/p&gt;
-&lt;p&gt;我会洗干净头发爬上桅杆&lt;/p&gt;
-&lt;p&gt;撑起我们葡萄枝嫩叶般的家&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;XLD：macOS 无损音频转换的不二之选 (&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/56940&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://sspai.com/post/56940&lt;/a&gt;)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-        </item>
-        
-    </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>音乐 on SOTO-BLOG</title>
+    <link>/tags/%E9%9F%B3%E4%B9%90/</link>
+    <description>Recent content in 音乐 on SOTO-BLOG</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 28 Dec 2021 01:24:00 +0000</lastBuildDate><atom:link href="/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>天空之城，米店和XLD</title>
+      <link>/posts/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</link>
+      <pubDate>Tue, 28 Dec 2021 01:24:00 +0000</pubDate>
+      
+      <guid>/posts/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%B1%B3%E5%BA%97%E5%92%8Cxld/</guid>
+      <description>现在是凌晨1:26，刚水完领导力的报告，听着天空之城。
+今天(昨天)一早起来全朋友圈都在发自己的网易云，我于是打开了很久没有打开的Spotify，想看看有没有年度报告，尘封在资料库的李先生印入眼帘，点开了天空之城，顿时感觉非常感动，听了一下午他的歌。
+想想自己还挺喜欢他的歌的，却一直只能在Spotify听，于是到北邮人下了他的一堆专辑，打算导进AM。
+下载下来的文件是整个专辑完整的flac和cue文件
+这里用之前在少数派看到的XLD进行了一波转换。1
+这个软件真是让我非常惊喜，他不光可以转AM适用的无损和AAC，还可以轻易的使用cue切分。
+直接用XLD点开cue文件，把封面图拖上去，对没有正确识别的歌名稍作修改后点击Transcode即可。
+AM的服务器在内地速度不是很好，因为我担心移动端同步过去播放卡的问题，我在这里生成了AAC（苹果的一种有损格式），每首歌就只剩下几mb了，直接拖进AM里即可。
+如果单曲的对应专辑出现问题，直接批量选择之后用AM自带的编辑功能稍作修改即可。
+港岛妹妹，你献给我的西班牙馅饼
+甜蜜地融化了我，天空之城在哭泣
+港岛妹妹，我们曾拥有的甜蜜的爱情
+疯狂地撕裂了我，天空之城在哭泣
+爱人 你可感到明天已经来临
+码头上停着我们的船
+我会洗干净头发爬上桅杆
+撑起我们葡萄枝嫩叶般的家
+XLD：macOS 无损音频转换的不二之选 (https://sspai.com/post/56940)&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <content:encoded><![CDATA[<p>现在是凌晨1:26，刚水完领导力的报告，听着天空之城。</p>
+<p>今天(昨天)一早起来全朋友圈都在发自己的网易云，我于是打开了很久没有打开的Spotify，想看看有没有年度报告，尘封在资料库的李先生印入眼帘，点开了天空之城，顿时感觉非常感动，听了一下午他的歌。</p>
+<p>想想自己还挺喜欢他的歌的，却一直只能在Spotify听，于是到北邮人下了他的一堆专辑，打算导进AM。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/soto/202112280128122.png" alt=""  />
+</p>
+<p>下载下来的文件是整个专辑完整的flac和cue文件</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/soto/202112280130703.png" alt=""  />
+</p>
+<p>这里用之前在少数派看到的XLD进行了一波转换。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>这个软件真是让我非常惊喜，他不光可以转AM适用的无损和AAC，还可以轻易的使用cue切分。</p>
+<p>直接用XLD点开cue文件，把封面图拖上去，对没有正确识别的歌名稍作修改后点击Transcode即可。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/soto/202112280138823.png" alt=""  />
+
+AM的服务器在内地速度不是很好，因为我担心移动端同步过去播放卡的问题，我在这里生成了AAC（苹果的一种有损格式），每首歌就只剩下几mb了，直接拖进AM里即可。</p>
+<p>如果单曲的对应专辑出现问题，直接批量选择之后用AM自带的编辑功能稍作修改即可。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/soto/202112280139067.png" alt=""  />
+</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/soto/202112280141620.png" alt=""  />
+</p>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>港岛妹妹，你献给我的西班牙馅饼</p>
+<p>甜蜜地融化了我，天空之城在哭泣</p>
+<p>港岛妹妹，我们曾拥有的甜蜜的爱情</p>
+<p>疯狂地撕裂了我，天空之城在哭泣</p>
+</blockquote>
+<blockquote>
+<p>爱人 你可感到明天已经来临</p>
+<p>码头上停着我们的船</p>
+<p>我会洗干净头发爬上桅杆</p>
+<p>撑起我们葡萄枝嫩叶般的家</p>
+</blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>XLD：macOS 无损音频转换的不二之选 (<a href="https://sspai.com/post/56940">https://sspai.com/post/56940</a>)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
+    </item>
+    
+  </channel>
 </rss>
