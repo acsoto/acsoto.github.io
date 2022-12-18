@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Obsidian on SOTO-BLOG</title>
-    <link>/tags/obsidian/</link>
+    <link>https://zzhgo.com/tags/obsidian/</link>
     <description>Recent content in Obsidian on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0000</lastBuildDate><atom:link href="/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 12:11:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Obsidian体验与新工作流</title>
-      <link>/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <link>https://zzhgo.com/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Tue, 07 Dec 2021 12:11:00 +0000</pubDate>
       
-      <guid>/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <guid>https://zzhgo.com/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
       <description>最近在玩Hexo1，加上很多零散的笔记和文档也是markdown写的，发现自己用markdown的频率高了很多。本来就在计划换一个效率更高的markdown编辑器，毕竟确实有很多markdown的场景是单个编辑器没法覆盖的，Typora2现在也收费了，趁着这个契机，打算换一个软件用。
 听说 all in one 的 Notion3 很好使，身边也有人在用，于是先试了一下，发现首先这个东西已经不是传统的markdown了，有点趋近于word那种富文本，并且云端依赖太高了，我要求得有一套本地可以用来渲染的md文件，所以没法用这个。
 另外就是一直感觉很神秘但是不会用的Obsidian4。由于习惯停留在Typora，刚下载下来Obsidian感觉非常不习惯，没法直接打开一个md，而且没法实时预览。

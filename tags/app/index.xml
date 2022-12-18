@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>APP on SOTO-BLOG</title>
-    <link>/tags/app/</link>
+    <link>https://zzhgo.com/tags/app/</link>
     <description>Recent content in APP on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Aug 2022 23:20:00 +0000</lastBuildDate><atom:link href="/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Aug 2022 23:20:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重拾RSS</title>
-      <link>/posts/%E9%87%8D%E6%8B%BErss/</link>
+      <link>https://zzhgo.com/posts/%E9%87%8D%E6%8B%BErss/</link>
       <pubDate>Fri, 05 Aug 2022 23:20:00 +0000</pubDate>
       
-      <guid>/posts/%E9%87%8D%E6%8B%BErss/</guid>
+      <guid>https://zzhgo.com/posts/%E9%87%8D%E6%8B%BErss/</guid>
       <description>之前新鲜过一段时间的RSS，还专门买了Reeder，当时只是关注了少数派，知乎精选，几个微博，后来逐渐就不看了。因为爱看的东西比较分散，微信上看订阅号，在TG上看竹新社和BBC，看少数派APP，看知乎，看国家地理app，偶尔就落了某个，所以最近又开始集中到RSS源，集中时间看，还是比分散着偶尔看这个偶尔看那个好很多。下面看看订阅的东西。
 RSSHub 一个很重要的平台：RSSHub，有极其丰富的RSS源。
 RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源。RSSHub 借助于开源社区的力量快速发展中，目前已适配数百家网站的上千项内容

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>编译 on SOTO-BLOG</title>
-    <link>/tags/%E7%BC%96%E8%AF%91/</link>
+    <link>https://zzhgo.com/tags/%E7%BC%96%E8%AF%91/</link>
     <description>Recent content in 编译 on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Nov 2021 16:29:00 +0000</lastBuildDate><atom:link href="/tags/%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Nov 2021 16:29:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alxa_Compiler(SysY to PCODE)</title>
-      <link>/posts/alxa_compiler/</link>
+      <link>https://zzhgo.com/posts/alxa_compiler/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
       
-      <guid>/posts/alxa_compiler/</guid>
+      <guid>https://zzhgo.com/posts/alxa_compiler/</guid>
       <description>Lexical analysis Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
 File reading Read by line, scan every char of every string and analyse.
 while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.

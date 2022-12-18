@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>美赛 on SOTO-BLOG</title>
-    <link>/tags/%E7%BE%8E%E8%B5%9B/</link>
+    <link>https://zzhgo.com/tags/%E7%BE%8E%E8%B5%9B/</link>
     <description>Recent content in 美赛 on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Nov 2021 11:36:00 +0000</lastBuildDate><atom:link href="/tags/%E7%BE%8E%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 11:36:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/%E7%BE%8E%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于2021美赛</title>
-      <link>/posts/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
+      <link>https://zzhgo.com/posts/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</link>
       <pubDate>Sun, 21 Nov 2021 11:36:00 +0000</pubDate>
       
-      <guid>/posts/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
+      <guid>https://zzhgo.com/posts/%E5%85%B3%E4%BA%8E2021%E7%BE%8E%E8%B5%9B/</guid>
       <description>[[2021美赛正文.pdf]] (链接)
 GitHub开源供参考
 2021年初，我与两位室友组队参与了美国大学数学竞赛（MCM-ICM）

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>旅游 on SOTO-BLOG</title>
-    <link>/categories/%E6%97%85%E6%B8%B8/</link>
+    <link>https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/</link>
     <description>Recent content in 旅游 on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Jul 2022 00:46:00 +0000</lastBuildDate><atom:link href="/categories/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:46:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【游记】初访西安</title>
-      <link>/posts/xian1/</link>
+      <link>https://zzhgo.com/posts/xian1/</link>
       <pubDate>Mon, 04 Jul 2022 00:46:00 +0000</pubDate>
       
-      <guid>/posts/xian1/</guid>
+      <guid>https://zzhgo.com/posts/xian1/</guid>
       <description>DAY 1 话说阿拉善到西安机票只要70元，不过这个飞机是真不行
 机场确实远，直奔钟楼
 钟楼 回民街 豆豆西安分豆
@@ -131,10 +131,10 @@ DAY 3 到处找地儿做核酸，贼难找，晒化了
     
     <item>
       <title>【游记】一个人的武汉</title>
-      <link>/posts/wuhan1/</link>
+      <link>https://zzhgo.com/posts/wuhan1/</link>
       <pubDate>Mon, 19 Jul 2021 00:46:00 +0000</pubDate>
       
-      <guid>/posts/wuhan1/</guid>
+      <guid>https://zzhgo.com/posts/wuhan1/</guid>
       <description>这个假期因为定好了要去支教，所以早在6.27就放假从呼市中转回阿拉善了，也没有选第三学期火热的python课，7.8又赶往呼市考托福，和老同学们见了一面，7.14又坐高铁赴北京，待了一晚上，7.15坐飞机赴武汉。短短几天易地多次，引得别人好奇。
 Day1 这也是第一次来大兴机场，北京去西北的航班总在首都机场。 一个比较有趣的事情是，飞机刚刚落地武汉，就接到了表妹录取武汉的华中农业大学的消息，因为内蒙都是实时填报，之前聊天也没有提及过武汉的学校，因此感觉很是巧合。
 一下飞机闷热袭来，这个英雄的城市确实很热。

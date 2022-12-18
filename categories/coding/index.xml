@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Coding on SOTO-BLOG</title>
-    <link>/categories/coding/</link>
+    <link>https://zzhgo.com/categories/coding/</link>
     <description>Recent content in Coding on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 01:16:00 +0000</lastBuildDate><atom:link href="/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 01:16:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwiftUI 图表库 ChartView</title>
-      <link>/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
+      <link>https://zzhgo.com/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
       <pubDate>Mon, 27 Dec 2021 01:16:00 +0000</pubDate>
       
-      <guid>/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
+      <guid>https://zzhgo.com/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
       <description>写这个[[关于Swift开发的依赖安装]]的时候回顾之前的[[IoTMonitor]]，突然很想推荐一下这个库，真的很好看，至少很符合我的审美。
 当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。
 (说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)
@@ -49,10 +49,10 @@ MultiLineChartView(data: [([8,32,11,23,40,28], GradientColors.green), ([90,99,78
     
     <item>
       <title>关于TakeawayDelivery</title>
-      <link>/posts/takeawaydelivery/takeawaydelivery/</link>
+      <link>https://zzhgo.com/posts/takeawaydelivery/takeawaydelivery/</link>
       <pubDate>Wed, 22 Dec 2021 15:18:00 +0000</pubDate>
       
-      <guid>/posts/takeawaydelivery/takeawaydelivery/</guid>
+      <guid>https://zzhgo.com/posts/takeawaydelivery/takeawaydelivery/</guid>
       <description>[[TakeawayDelivery 后端实现]]
 项目展示视频
 web端答辩PPT
@@ -70,10 +70,10 @@ web端答辩PPT
     
     <item>
       <title>TakeawayDelivery 后端实现</title>
-      <link>/posts/takeawaydelivery/takeawaydelivery-back/</link>
+      <link>https://zzhgo.com/posts/takeawaydelivery/takeawaydelivery-back/</link>
       <pubDate>Tue, 07 Dec 2021 19:14:00 +0000</pubDate>
       
-      <guid>/posts/takeawaydelivery/takeawaydelivery-back/</guid>
+      <guid>https://zzhgo.com/posts/takeawaydelivery/takeawaydelivery-back/</guid>
       <description>TakeawayDelivery 后端实现 开发环境 Python Django PyTorch MySQL 云端部署 我们将后端Django和数据库均部署在服务器上，并且进行了域名解析，可以通过delivery.mcatk.com直接访问后端，前端可以在任意情况下发送请求。
 服务器供应：腾讯云&amp;amp;阿里云 服务器系统：CentOS 7 数据库：MySQL 5 解释器：Anaconda 3
 数据库结构 后端实现接口 path(&amp;#39;api/login/&amp;#39;, myapp.views.login), path(&amp;#39;api/register/&amp;#39;, myapp.views.register), path(&amp;#39;api/getInformation/&amp;#39;, myapp.views.get_information), path(&amp;#39;api/changeInformation/&amp;#39;, myapp.views.change_information), path(&amp;#39;api/changePassword/&amp;#39;, myapp.views.change_password), path(&amp;#39;api/getStores/&amp;#39;, myapp.views.get_stores), path(&amp;#39;api/getStoreInformation/&amp;#39;, myapp.views.get_store_information), path(&amp;#39;api/deleteUser/&amp;#39;, myapp.views.delete_user), path(&amp;#39;api/getEvaluateFood/&amp;#39;, myapp.views.get_evaluate_food), path(&amp;#39;api/evaluateFood/&amp;#39;, myapp.views.evaluate_food), path(&amp;#39;api/deleteEvaluateFood/&amp;#39;, myapp.views.delete_evaluate_food), path(&amp;#39;api/getEvaluateUser/&amp;#39;, myapp.views.get_evaluate_user), path(&amp;#39;api/evaluateUser/&amp;#39;, myapp.views.evaluate_user), path(&amp;#39;api/deleteEvaluateUser/&amp;#39;, myapp.views.delete_evaluate_user), path(&amp;#39;api/setOrders/&amp;#39;, myapp.views.set_orders), path(&amp;#39;api/unStar/&amp;#39;, myapp.views.un_star), path(&amp;#39;api/setStar/&amp;#39;, myapp.views.set_star), path(&amp;#39;api/finishOrder/&amp;#39;, myapp.views.finish_order), path(&amp;#39;api/takeOrder/&amp;#39;, myapp.views.take_order), path(&amp;#39;api/getAllOrders/&amp;#39;, myapp.views.get_all_orders), path(&amp;#39;api/getTopFoodList/&amp;#39;, myapp.views.get_top_food_list), path(&amp;#39;api/androidGetUserFoodEvaluate/&amp;#39;, myapp.views.android_get_user_food_evaluate), path(&amp;#39;api/androidGetFoodEvaluateScore/&amp;#39;, myapp.views.android_get_food_evaluate_score), 深度学习 我们根据订单的配送时间是星期几，餐厅，配送地等信息通过深度学习预测订单送达时间 我们通过手动构造数据集，训练了一个模型存到服务器，并在每次前端发送新的请求后对订单进行预计送达时间的计算。
@@ -292,10 +292,10 @@ PARA: <code>userID</code></p>
     
     <item>
       <title>IoTMonitor</title>
-      <link>/posts/iotmonitor/</link>
+      <link>https://zzhgo.com/posts/iotmonitor/</link>
       <pubDate>Sun, 28 Nov 2021 02:54:12 +0000</pubDate>
       
-      <guid>/posts/iotmonitor/</guid>
+      <guid>https://zzhgo.com/posts/iotmonitor/</guid>
       <description>IoTMonitor 用于展示IoT课程开发板的相关信息并进行控制
 可以通过调用我们部署的服务器api及时获取开发板的温湿度数据，也可以发送开关电机的指令，并且可以设置温湿度超过某阈值后报警，同时有历史记录来提供任意时间段内好看的温湿度曲线
 图片 简介 主页面 分为三个部分：设备状态，历史记录，设置
@@ -351,10 +351,10 @@ UI整体使用卡片式扁平设计
     
     <item>
       <title>Alxa_Compiler(SysY to PCODE)</title>
-      <link>/posts/alxa_compiler/</link>
+      <link>https://zzhgo.com/posts/alxa_compiler/</link>
       <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
       
-      <guid>/posts/alxa_compiler/</guid>
+      <guid>https://zzhgo.com/posts/alxa_compiler/</guid>
       <description>Lexical analysis Before Code Requriement: read testfile.txt, parse every char to word and print them. At the same time, memorize type, content and line number of each word.
 File reading Read by line, scan every char of every string and analyse.
 while ((s = bf.readLine()) != null) { ... } Analyse When i get the key word, enter the next analyst.
@@ -1291,10 +1291,10 @@ while ((c = getChar()) != null) { if (c == &amp;#39; &amp;#39; || c == &amp;#39;
     
     <item>
       <title>Memo文档</title>
-      <link>/posts/memo%E6%96%87%E6%A1%A3/</link>
+      <link>https://zzhgo.com/posts/memo%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 28 Oct 2021 17:29:00 +0000</pubDate>
       
-      <guid>/posts/memo%E6%96%87%E6%A1%A3/</guid>
+      <guid>https://zzhgo.com/posts/memo%E6%96%87%E6%A1%A3/</guid>
       <description>Memo Memo用于随时记录，记录生活中的某一刻，记录今天的心情，或是记录看过的一部电影，一本书，留下自己此时的感想，并在自己最爱的电影或书籍的二刷三刷后再次记录下时间和新的想法&amp;hellip;
 灵感来源于豆瓣，比起豆瓣的功能多出的个人需求为：需要一个简洁没有过量冗余信息的片单和书单记录软件，记录二刷，三刷的时间，以及想要随时记录每一天，并且在几年后回顾那年今日，留一些感动与感慨，让每一天都值得被纪念，故开发此软件。
 图片 （介绍及短评摘自豆瓣，侵删）

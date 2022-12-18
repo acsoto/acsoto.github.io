@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on SOTO-BLOG</title>
-    <link>/categories/</link>
+    <link>https://zzhgo.com/categories/</link>
     <description>Recent content in Categories on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Aug 2022 00:08:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 00:08:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>日常</title>
-      <link>/categories/%E6%97%A5%E5%B8%B8/</link>
+      <link>https://zzhgo.com/categories/%E6%97%A5%E5%B8%B8/</link>
       <pubDate>Sat, 06 Aug 2022 00:08:00 +0000</pubDate>
       
-      <guid>/categories/%E6%97%A5%E5%B8%B8/</guid>
+      <guid>https://zzhgo.com/categories/%E6%97%A5%E5%B8%B8/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>旅游</title>
-      <link>/categories/%E6%97%85%E6%B8%B8/</link>
+      <link>https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/</link>
       <pubDate>Mon, 04 Jul 2022 00:46:00 +0000</pubDate>
       
-      <guid>/categories/%E6%97%85%E6%B8%B8/</guid>
+      <guid>https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Coding</title>
-      <link>/categories/coding/</link>
+      <link>https://zzhgo.com/categories/coding/</link>
       <pubDate>Mon, 27 Dec 2021 01:16:00 +0000</pubDate>
       
-      <guid>/categories/coding/</guid>
+      <guid>https://zzhgo.com/categories/coding/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>BUAA</title>
-      <link>/categories/buaa/</link>
+      <link>https://zzhgo.com/categories/buaa/</link>
       <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
       
-      <guid>/categories/buaa/</guid>
+      <guid>https://zzhgo.com/categories/buaa/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

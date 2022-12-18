@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>电影 on SOTO-BLOG</title>
-    <link>/tags/%E7%94%B5%E5%BD%B1/</link>
+    <link>https://zzhgo.com/tags/%E7%94%B5%E5%BD%B1/</link>
     <description>Recent content in 电影 on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Dec 2021 22:11:00 +0000</lastBuildDate><atom:link href="/tags/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 22:11:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>假如爱有天意</title>
-      <link>/posts/tv/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
+      <link>https://zzhgo.com/posts/tv/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</link>
       <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
       
-      <guid>/posts/tv/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
+      <guid>https://zzhgo.com/posts/tv/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/</guid>
       <description>《假如爱有天意》
 最近又在听《假如爱有天意》，遂又回去二刷原作 一年了，依然感动</description>
       <content:encoded><![CDATA[<p>《假如爱有天意》</p>
@@ -37,10 +37,10 @@
     
     <item>
       <title>Our Little Sister</title>
-      <link>/posts/tv/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</link>
+      <link>https://zzhgo.com/posts/tv/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</link>
       <pubDate>Wed, 01 Dec 2021 19:25:00 +0000</pubDate>
       
-      <guid>/posts/tv/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</guid>
+      <guid>https://zzhgo.com/posts/tv/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/</guid>
       <description>《海街日记》</description>
       <content:encoded><![CDATA[<p>《海街日记》</p>
 <p><img loading="lazy" src="https://pic.mcac.cc/soto-pictures/2021-12/BZLazU.png" alt=""  />
@@ -58,10 +58,10 @@
     
     <item>
       <title>我爱我度过的所有时间</title>
-      <link>/posts/tv/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</link>
+      <link>https://zzhgo.com/posts/tv/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</link>
       <pubDate>Fri, 26 Nov 2021 19:06:03 +0000</pubDate>
       
-      <guid>/posts/tv/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</guid>
+      <guid>https://zzhgo.com/posts/tv/%E7%8E%B0%E5%9C%A8%E5%8E%BB%E8%A7%81%E4%BD%A0/</guid>
       <description>《现在去见你》
 哪怕早知道我会早早离开，也不愿辜负有你们的这一生。</description>
       <content:encoded><![CDATA[<p>《现在去见你》</p>

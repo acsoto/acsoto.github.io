@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AtTackCraft on SOTO-BLOG</title>
-    <link>/tags/attackcraft/</link>
+    <link>https://zzhgo.com/tags/attackcraft/</link>
     <description>Recent content in AtTackCraft on SOTO-BLOG</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Nov 2021 16:17:36 +0000</lastBuildDate><atom:link href="/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Nov 2021 16:17:36 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/attackcraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AC又被黑了</title>
-      <link>/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
+      <link>https://zzhgo.com/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</link>
       <pubDate>Sun, 28 Nov 2021 16:17:36 +0000</pubDate>
       
-      <guid>/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
+      <guid>https://zzhgo.com/posts/ac%E5%8F%88%E8%A2%AB%E9%BB%91%E4%BA%86/</guid>
       <description>下午突然看到服务器有人发
 仔细一看
 打开链接一看：
