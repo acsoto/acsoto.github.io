@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>游记</title>
+      <link>https://zzhgo.com/tags/%E6%B8%B8%E8%AE%B0/</link>
+      <pubDate>Mon, 04 Jul 2022 00:46:00 +0000</pubDate>
+      
+      <guid>https://zzhgo.com/tags/%E6%B8%B8%E8%AE%B0/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>北京溜达日记</title>
       <link>https://zzhgo.com/tags/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B0/</link>
       <pubDate>Mon, 02 May 2022 23:38:00 +0000</pubDate>
@@ -71,21 +81,11 @@
     </item>
     
     <item>
-      <title>Obsidian</title>
-      <link>https://zzhgo.com/tags/obsidian/</link>
-      <pubDate>Tue, 07 Dec 2021 12:11:00 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/tags/obsidian/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>电影</title>
-      <link>https://zzhgo.com/tags/%E7%94%B5%E5%BD%B1/</link>
+      <title>影视</title>
+      <link>https://zzhgo.com/tags/%E5%BD%B1%E8%A7%86/</link>
       <pubDate>Fri, 03 Dec 2021 22:11:00 +0000</pubDate>
       
-      <guid>https://zzhgo.com/tags/%E7%94%B5%E5%BD%B1/</guid>
+      <guid>https://zzhgo.com/tags/%E5%BD%B1%E8%A7%86/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -101,51 +101,11 @@
     </item>
     
     <item>
-      <title>吐槽</title>
-      <link>https://zzhgo.com/tags/%E5%90%90%E6%A7%BD/</link>
-      <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/tags/%E5%90%90%E6%A7%BD/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>美赛</title>
-      <link>https://zzhgo.com/tags/%E7%BE%8E%E8%B5%9B/</link>
-      <pubDate>Sun, 21 Nov 2021 11:36:00 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/tags/%E7%BE%8E%E8%B5%9B/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
       <title>BUAA</title>
       <link>https://zzhgo.com/tags/buaa/</link>
-      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
+      <pubDate>Fri, 26 Nov 2021 10:22:27 +0000</pubDate>
       
       <guid>https://zzhgo.com/tags/buaa/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://zzhgo.com/tags/java/</link>
-      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/tags/java/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>编译</title>
-      <link>https://zzhgo.com/tags/%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Tue, 16 Nov 2021 16:29:00 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/tags/%E7%BC%96%E8%AF%91/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

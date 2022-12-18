@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>旅游 on SOTO-BLOG</title>
-    <link>https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/</link>
-    <description>Recent content in 旅游 on SOTO-BLOG</description>
+    <title>游记 on SOTO-BLOG</title>
+    <link>https://zzhgo.com/tags/%E6%B8%B8%E8%AE%B0/</link>
+    <description>Recent content in 游记 on SOTO-BLOG</description>
     <image>
       <url>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Jul 2022 00:46:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:46:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/%E6%B8%B8%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【游记】初访西安</title>
       <link>https://zzhgo.com/posts/xian1/</link>
