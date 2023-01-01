@@ -68,12 +68,12 @@ name: Deploy Hugo site to Pages on: # push 触发 push: branches: [&#34;main&#34
 name: Deploy Hugo site to Pages on: # push 触发 push: branches: [&#34;main&#34;] # 手动触发 workflow_dispatch: jobs: build: runs-on: ubuntu-latest steps: - name: Checkout uses: actions/checkout@v3 with: submodules: recursive - name: Hugo setup uses: peaceiris/actions-hugo@v2.6.0 with: hugo-version: &#39;latest&#39; - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.PERSONAL_TOKEN }} publish_dir: ./public external_repository: xxx/xxx.github.io publish_branch: master 其中，external_repository为你的xxx.github.io仓库地址，publish_branch为你的xxx.github.io仓库的分支。
 需要在Settings-Developer settings-Personal access tokens中生成一个token，权限选workflow，然后在hugo仓库Settings-Repository secrets中设置PERSONAL_TOKEN为刚才的token" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/" /><meta property="og:image" content="https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/" /><meta property="og:image" content="https://pic.mcac.cc/202301012340641.jpg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-12-15T15:31:38+08:00" />
 <meta property="article:modified_time" content="2022-12-15T15:31:38+08:00" /><meta property="og:site_name" content="SOTO-BLOG" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zzhgo.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+<meta name="twitter:image" content="https://pic.mcac.cc/202301012340641.jpg"/>
 
 <meta name="twitter:title" content="Hugo部署"/>
 <meta name="twitter:description" content="部署到 GitHub Pages (指从hugo仓库部署到xx.github.io仓库)
