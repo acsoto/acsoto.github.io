@@ -9,7 +9,91 @@
       <link>https://pic.mcac.cc/202301012340641.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Jan 2023 01:16:10 +0800</lastBuildDate><atom:link href="https://zzhgo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 23:54:03 +0800</lastBuildDate><atom:link href="https://zzhgo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raycast 体验</title>
+      <link>https://zzhgo.com/posts/2023-1/20230103235403/</link>
+      <pubDate>Tue, 03 Jan 2023 23:54:03 +0800</pubDate>
+      
+      <guid>https://zzhgo.com/posts/2023-1/20230103235403/</guid>
+      <description>Raycast 前几天在一篇文章 你的 2022，藏在这些数字里 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。
+Raycast：2022 Wrapped Mac 平台著名的启动器 Raycast 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。 之前一直没有尝试过此类软件是因为元老 Alfred 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。
+这里有几篇很好的介绍:
+快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast 能少一个是一个：我用 Raycast 替代了这些应用 Raycast 小技巧之 Quicklink 二三事 自定义脚本 这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。
+#!/usr/bin/osascript # Required parameters: # @raycast.schemaVersion 1 # @raycast.title Run Hugo Server # @raycast.mode compact # Optional parameters: # @raycast.icon images/hugo-logo.png # Documentation: # @raycast.description Run Hugo Server tell application &amp;#34;Terminal&amp;#34; set newTab to do script &amp;#34;cd /Users/soto/Code/soto-blog &amp;amp;&amp;amp; hugo server&amp;#34; end tell delay 1 do shell script &amp;#34;open http://localhost:1313&amp;#34; 美观好用，非常让人满意。</description>
+      <content:encoded><![CDATA[<h2 id="raycast">Raycast</h2>
+<p>前几天在一篇文章 <a href="https://sspai.com/post/77519">你的 2022，藏在这些数字里</a> 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。</p>
+<blockquote>
+<p>Raycast：2022 Wrapped
+Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F%2Fwww.raycast.com%2F">Raycast</a> 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。
+<img loading="lazy" src="https://cdn.sspai.com/2022/12/29/ec9a0b96ca3e8d732a6bd0d0caa3b248.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""  />
+</p>
+</blockquote>
+<p>之前一直没有尝试过此类软件是因为元老 <a href="https://www.alfredapp.com">Alfred</a> 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。</p>
+<p>这里有几篇很好的介绍:</p>
+<ul>
+<li><a href="https://sspai.com/post/63521">快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast</a></li>
+<li><a href="https://sspai.com/post/72540">能少一个是一个：我用 Raycast 替代了这些应用</a></li>
+<li><a href="https://sspai.com/post/72951">Raycast 小技巧之 Quicklink 二三事</a></li>
+</ul>
+<h2 id="自定义脚本">自定义脚本</h2>
+<p>这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-applescript" data-lang="applescript"><span class="line"><span class="cl"><span class="c">#!/usr/bin/osascript</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Required parameters:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.schemaVersion 1</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.title Run Hugo Server</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.mode compact</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Optional parameters:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.icon images/hugo-logo.png</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Documentation:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.description Run Hugo Server</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;Terminal&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">set</span> <span class="nv">newTab</span> <span class="k">to</span> <span class="nv">do</span> <span class="nv">script</span> <span class="s2">&#34;cd /Users/soto/Code/soto-blog &amp;&amp; hugo server&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span> <span class="k">tell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">delay</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">do shell script</span> <span class="s2">&#34;open http://localhost:1313&#34;</span>
+</span></span></code></pre></div><p>美观好用，非常让人满意。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040009617.png" alt=""  />
+</p>
+<h2 id="社区脚本">社区脚本</h2>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040014993.png" alt=""  />
+</p>
+<p>安装插件很方便，除此以外一些简单的脚本可以在官方维护的这个库里找到 <a href="https://github.com/raycast/script-commands">raycast
+/script-commands</a> 例如这个从当前文件夹打开终端就很方便，省的右键点击目录再打开了。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040015940.png" alt=""  />
+</p>
+<p>这个图标太丑了，可以自己改一下。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040015673.png" alt=""  />
+</p>
+<h2 id="其他功能">其他功能</h2>
+<h3 id="剪切板历史">剪切板历史</h3>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
+</p>
+<h3 id="计算器">计算器</h3>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
+</p>
+<p>另外还有可以替换著名付费软件的分屏，但是我不用。</p>
+<h2 id="其他插件">其他插件</h2>
+<p>装了几个很方便的社区插件</p>
+<p><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
+</p>
+<p><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录/书签非常方便</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040038775.png" alt=""  />
+</p>
+<p><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记</p>
+<p><a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a> 这个也很方便，可以快速打开某个项目</p>
+<h2 id="the-end">The end</h2>
+<p>总之就是如果用习惯了能省不少事儿，配置起来也很方便基本就是装插件，重要的是好看好玩，已经把默认的 ⌘ + Space 换掉了，就唯一不满意的是这个软件图标太难看了。</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>新年快乐</title>
       <link>https://zzhgo.com/posts/2023-1/20230101011610/</link>

@@ -193,6 +193,24 @@
 </article>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://pic.mcac.cc/202301040034085.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2>Raycast 体验
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Raycast 前几天在一篇文章 你的 2022，藏在这些数字里 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。
+Raycast：2022 Wrapped Mac 平台著名的启动器 Raycast 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。 之前一直没有尝试过此类软件是因为元老 Alfred 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。
+这里有几篇很好的介绍:
+快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast 能少一个是一个：我用 Raycast 替代了这些应用 Raycast 小技巧之 Quicklink 二三事 自定义脚本 这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。
+#!/usr/bin/osascript # Required parameters: # @raycast.schemaVersion 1 # @raycast.title Run Hugo Server # @raycast.mode compact # Optional parameters: # @raycast.icon images/hugo-logo.png # Documentation: # @raycast.description Run Hugo Server tell application &#34;Terminal&#34; set newTab to do script &#34;cd /Users/soto/Code/soto-blog &amp;&amp; hugo server&#34; end tell delay 1 do shell script &#34;open http://localhost:1313&#34; 美观好用，非常让人满意。...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-03 23:54:03 +0800 +0800'>2023-01-03</span>&nbsp;·&nbsp;SOTO</footer>
+  <a class="entry-link" aria-label="post link to Raycast 体验" href="https://zzhgo.com/posts/2023-1/20230103235403/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://pic.mcac.cc/202301020105628.png" alt="">
 </figure>
   <header class="entry-header">
@@ -275,21 +293,6 @@ infuse会自动识别影视资源进行整理。
   </div>
   <footer class="entry-footer"><span title='2022-12-25 09:18:50 +0800 +0800'>2022-12-25</span>&nbsp;·&nbsp;SOTO</footer>
   <a class="entry-link" aria-label="post link to 感染新冠" href="https://zzhgo.com/posts/2022-12/%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Hugo部署
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>部署到 GitHub Pages (指从hugo仓库部署到xx.github.io仓库)
-在hugo仓库新建一个action
-name: Deploy Hugo site to Pages on: # push 触发 push: branches: [&#34;main&#34;] # 手动触发 workflow_dispatch: jobs: build: runs-on: ubuntu-latest steps: - name: Checkout uses: actions/checkout@v3 with: submodules: recursive - name: Hugo setup uses: peaceiris/actions-hugo@v2.6.0 with: hugo-version: &#39;latest&#39; - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.PERSONAL_TOKEN }} publish_dir: ./public external_repository: xxx/xxx.github.io publish_branch: master 其中，external_repository为你的xxx.github.io仓库地址，publish_branch为你的xxx.github.io仓库的分支。
-需要在Settings-Developer settings-Personal access tokens中生成一个token，权限选workflow，然后在hugo仓库Settings-Repository secrets中设置PERSONAL_TOKEN为刚才的token...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-12-15 15:31:38 +0800 +0800'>2022-12-15</span>&nbsp;·&nbsp;SOTO</footer>
-  <a class="entry-link" aria-label="post link to Hugo部署" href="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

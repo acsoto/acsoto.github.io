@@ -143,6 +143,21 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Hugo部署
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>部署到 GitHub Pages (指从hugo仓库部署到xx.github.io仓库)
+在hugo仓库新建一个action
+name: Deploy Hugo site to Pages on: # push 触发 push: branches: [&#34;main&#34;] # 手动触发 workflow_dispatch: jobs: build: runs-on: ubuntu-latest steps: - name: Checkout uses: actions/checkout@v3 with: submodules: recursive - name: Hugo setup uses: peaceiris/actions-hugo@v2.6.0 with: hugo-version: &#39;latest&#39; - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.PERSONAL_TOKEN }} publish_dir: ./public external_repository: xxx/xxx.github.io publish_branch: master 其中，external_repository为你的xxx.github.io仓库地址，publish_branch为你的xxx.github.io仓库的分支。
+需要在Settings-Developer settings-Personal access tokens中生成一个token，权限选workflow，然后在hugo仓库Settings-Repository secrets中设置PERSONAL_TOKEN为刚才的token...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-15 15:31:38 +0800 +0800'>2022-12-15</span>&nbsp;·&nbsp;SOTO</footer>
+  <a class="entry-link" aria-label="post link to Hugo部署" href="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://pic.mcac.cc/soto/202208060026377.png" alt="">
 </figure>
   <header class="entry-header">
@@ -248,23 +263,6 @@ DAY 3 到处找地儿做核酸，贼难找，晒化了
   </div>
   <footer class="entry-footer"><span title='2022-05-02 23:38:00 +0000 UTC'>2022-05-02</span>&nbsp;·&nbsp;SOTO</footer>
   <a class="entry-link" aria-label="post link to 【北京溜达日记】20220430" href="https://zzhgo.com/posts/beijing-diary/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B020220430/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://pic.mcac.cc/soto/202208160019461.jpeg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>【北京溜达日记】20220413
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>去看一个影视音乐会
-赶上了久违的好夕阳
-这天空的颜色真好
-The classic, Lalaland ❤</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-04-13 23:38:00 +0000 UTC'>2022-04-13</span>&nbsp;·&nbsp;SOTO</footer>
-  <a class="entry-link" aria-label="post link to 【北京溜达日记】20220413" href="https://zzhgo.com/posts/beijing-diary/%E5%8C%97%E4%BA%AC%E6%BA%9C%E8%BE%BE%E6%97%A5%E8%AE%B020220413/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
