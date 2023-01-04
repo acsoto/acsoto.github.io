@@ -82,6 +82,9 @@ title: {{title}} 直接复用文件名 date: {{date}}T{{time}} 即是符合 hugo
 </tbody>
 </table>
 <p>加上 GitHub Actions 自动化 <a href="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/">[Hugo部署]</a></p>
+<h2 id="关于-notion-的题外话">关于 Notion 的题外话</h2>
+<p>用了一段时间 Notion ，也是折腾了好久，建了很多页面，最后发现真的想找一个文件的时候他的搜索真的很慢，而且有时候会出现同步功能失效的情况，记笔记还是为了找起来快，所以 Obsidian 本地文件极快的搜索和双链还是更适合存笔记。而且这次从 Notion 迁移东西出来发现这个东西真的好进不好出，有条件还是把文件都按照原生 markdown 存起来。Notion 的数据库是真的方便，非常喜欢的功能，我的一些数据仍然放在 Notion 里面。</p>
+<p>顺带一提，Obsidian 新出的 <a href="https://obsidian.md/canvas">Canvas</a> 值得一试。</p>
 ]]></content:encoded>
     </item>
     
@@ -140,37 +143,81 @@ Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F
 <p><img loading="lazy" src="https://pic.mcac.cc/202301040015673.png" alt=""  />
 </p>
 <h2 id="其他功能">其他功能</h2>
-<p>剪切板历史</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
-</p>
-<p>计算器</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
-
-MacOS 联动</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301042158529.png" alt=""  />
-</p>
+<table>
+<thead>
+<tr>
+<th>Functions</th>
+<th>Screenshots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>剪切板历史</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td>计算器</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td>内置字典</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042158529.png" alt=""  />
+</td>
+</tr>
+</tbody>
+</table>
 <p>另外还有可以替换著名付费软件的分屏，但是我不用。</p>
 <h2 id="其他插件">其他插件</h2>
 <p><img loading="lazy" src="https://pic.mcac.cc/202301042151560.png" alt=""  />
 </p>
 <p>装了几个很方便的社区插件</p>
-<p><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
-</p>
-<p><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301040038775.png" alt=""  />
-</p>
-<p><a href="https://www.raycast.com/mblode/quick-event">Quick Event</a> 速建日程(可惜不支持汉语)</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301042159601.png" alt=""  />
-</p>
-<p><a href="https://www.raycast.com/thomas/github-repository-search">GitHub Repository Search</a> 快速去仓库，另外还有快速 Git 操作的插件，我用不到就没装。</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
-
-<a href="https://www.raycast.com/gdsmith/jetbrains">JetBrains Toolbox Recent Projects</a> 这个也很方便，可以快速打开某个项目</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202301042155859.png" alt=""  />
-
-<a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a>  同上</p>
-<p><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记/开仓库</p>
+<table>
+<thead>
+<tr>
+<th>Extensions</th>
+<th>Screenshots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042159601.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/mblode/quick-event">Quick Event</a> 速建日程(可惜不支持汉语)</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/thomas/github-repository-search">GitHub Repository Search</a> 快速去仓库，另外还有快速 Git 操作的插件，我用不到就没装。</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/gdsmith/jetbrains">JetBrains Toolbox Recent Projects</a> 这个也很方便，可以快速打开某个项目</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042155859.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a>  同上</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042246228.png" alt=""  />
+</td>
+</tr>
+<tr>
+<td><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记/开仓库</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042246261.png" alt=""  />
+</td>
+</tr>
+</tbody>
+</table>
 <h2 id="彩蛋">彩蛋</h2>
 <p>confetti!</p>
 <p><img loading="lazy" src="https://pic.mcac.cc/202301042141088.gif" alt=""  />
