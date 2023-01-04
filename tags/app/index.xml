@@ -9,7 +9,187 @@
       <link>https://pic.mcac.cc/202301012340641.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Aug 2022 23:20:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 18:07:41 +0800</lastBuildDate><atom:link href="https://zzhgo.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian，Hugo</title>
+      <link>https://zzhgo.com/posts/2023-1/20230104180741/</link>
+      <pubDate>Wed, 04 Jan 2023 18:07:41 +0800</pubDate>
+      
+      <guid>https://zzhgo.com/posts/2023-1/20230104180741/</guid>
+      <description>上一篇相关文章: [Obsidian体验与新工作流]
+用 vscode 写这种大量的 md 文件还是不方便，想看实时渲染效果，因为博客图太多对照起来非常麻烦，Obsidian 相比起来体验会好很多，现在版本升到 1.0 以上了，原生的实时预览也找到了之前 Typora 的熟悉感，我做了下面几个配置来让博客 Vault 更好地适应 hugo。
+插入模板 首先是一个方便的 metadata 插入模板，这比起运行 hugo 指令要方便多了。
+--- title: {{title}} date: {{date}}T{{time}}+08:00 tags: [] categories: [] cover: image: &amp;#34;&amp;#34; slug: {{date:YYYYMMDD}}{{time:HHmmss}} --- 在以前我是用社区插件插入模板的，但是现在发现 Obsidian 自带的模板就完全够用了
+title: {{title}} 直接复用文件名 date: {{date}}T{{time}} 即是符合 hugo 要求的时间样式，时区 +08:00 slug: {{date:YYYYMMDD}}{{time:HHmmss}} 这个比较有意思，具体说一下 slug 就是自定义 hugo 生成的链接，因为 hugo 自动生成的链接是直接复用标题的，导致我分享链接的出现中文被微信识别为不属于链接的部分，导致链接没法点，就算用 Safari 直接分享出去也会把链接显示为一大堆 unicode ，非常不美观，因此我想到直接用自带模板的时间格式化一串数字，这肯定是不会重名并且不影响分享的，当然这里也可以用 Templater 之类的社区插件生成一个更短的随机字符串。
+效果:
+--- title: Obsidian，Hugo date: 2023-01-04T18:07:41+08:00 tags: [] categories: [] cover: image: &amp;#34;&amp;#34; slug: 20230104180741 --- 这样生成的链接是这样的: https://zzhgo.</description>
+      <content:encoded><![CDATA[<p>上一篇相关文章: <a href="https://zzhgo.com/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/">[Obsidian体验与新工作流]</a></p>
+<p>用 vscode 写这种大量的 md 文件还是不方便，想看实时渲染效果，因为博客图太多对照起来非常麻烦，Obsidian 相比起来体验会好很多，现在版本升到 1.0 以上了，原生的实时预览也找到了之前 Typora 的熟悉感，我做了下面几个配置来让博客 Vault 更好地适应 hugo。</p>
+<h2 id="插入模板">插入模板</h2>
+<p>首先是一个方便的 metadata 插入模板，这比起运行 hugo 指令要方便多了。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: {{title}}
+</span></span><span class="line"><span class="cl">date: {{date}}T{{time}}+08:00
+</span></span><span class="line"><span class="cl">tags: []
+</span></span><span class="line"><span class="cl">categories: []
+</span></span><span class="line"><span class="cl">cover:
+</span></span><span class="line"><span class="cl">    image: &#34;&#34;
+</span></span><span class="line"><span class="cl">slug: {{date:YYYYMMDD}}{{time:HHmmss}}
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><p>在以前我是用社区插件插入模板的，但是现在发现 Obsidian 自带的模板就完全够用了</p>
+<ul>
+<li><code>title: {{title}}</code> 直接复用文件名</li>
+<li><code>date: {{date}}T{{time}}</code> 即是符合 hugo 要求的时间样式，时区 +08:00</li>
+<li><code>slug: {{date:YYYYMMDD}}{{time:HHmmss}}</code> 这个比较有意思，具体说一下</li>
+</ul>
+<p>slug 就是自定义 hugo 生成的链接，因为 hugo 自动生成的链接是直接复用标题的，导致我分享链接的出现中文被微信识别为不属于链接的部分，导致链接没法点，就算用 Safari 直接分享出去也会把链接显示为一大堆 unicode ，非常不美观，因此我想到直接用自带模板的时间格式化一串数字，这肯定是不会重名并且不影响分享的，当然这里也可以用 Templater 之类的社区插件生成一个更短的随机字符串。</p>
+<p>效果:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: Obsidian，Hugo
+</span></span><span class="line"><span class="cl">date: 2023-01-04T18:07:41+08:00
+</span></span><span class="line"><span class="cl">tags: []
+</span></span><span class="line"><span class="cl">categories: []
+</span></span><span class="line"><span class="cl">cover:
+</span></span><span class="line"><span class="cl">    image: &#34;&#34;
+</span></span><span class="line"><span class="cl">slug: 20230104180741
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><p>这样生成的链接是这样的: <a href="https://zzhgo.com/posts/2023-1/20230104180741/">https://zzhgo.com/posts/2023-1/20230104180741/</a> 就不存在非法字符的问题了。</p>
+<p>记得在 hugo config 忽略模板。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">ignoreFiles</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&#34;Templates.md&#34;</span><span class="w"> </span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></div><h2 id="链接问题">链接问题</h2>
+<p>Obsidian 默认是用双链联系文件的，这也是 Obsidian 早期最大的卖点，这个功能的存在导致 markdown 本来的链接格式在这个软件里没什么存在感，链接图片和其他 markdown 文件就和 hugo 完全不一致。于是我用了一个妥协二者的办法，在引用其他文件的时候使用这样的格式：</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301041905120.png" alt=""  />
+</p>
+<p>其中双括号建立了 Obsidian 的双链，后者是 hugo 的链接语法，最后呈现在网页上的效果是这样的:  <a href="https://zzhgo.com/posts/obsidian%E4%BD%93%E9%AA%8C%E4%B8%8E%E6%96%B0%E5%B7%A5%E4%BD%9C%E6%B5%81/">[Obsidian体验与新工作流]</a></p>
+<p>当然这在移动文件的时候 ref 的链接会失效，Obsidian 会自动调整双链，可以根据 Obsidian 的提示让自己想起来还有个 ref 没调整。</p>
+<h2 id="git">Git</h2>
+<p><a href="https://github.com/denolehov/obsidian-git">obsidian-git</a> 用这个插件来快速提交更新</p>
+<p>⌘ + P</p>
+<table>
+<thead>
+<tr>
+<th>查看 source control view</th>
+<th>一键提交</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042207707.png" alt=""  />
+</td>
+<td><img loading="lazy" src="https://pic.mcac.cc/202301042209616.png" alt=""  />
+</td>
+</tr>
+</tbody>
+</table>
+<p>加上 GitHub Actions 自动化 <a href="https://zzhgo.com/posts/2022-12/hugo%E9%83%A8%E7%BD%B2/">[Hugo部署]</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Raycast 体验</title>
+      <link>https://zzhgo.com/posts/2023-1/20230103235403/</link>
+      <pubDate>Tue, 03 Jan 2023 23:54:03 +0800</pubDate>
+      
+      <guid>https://zzhgo.com/posts/2023-1/20230103235403/</guid>
+      <description>Raycast 前几天在一篇文章 你的 2022，藏在这些数字里 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。
+Raycast：2022 Wrapped Mac 平台著名的启动器 Raycast 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。 之前一直没有尝试过此类软件是因为元老 Alfred 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。
+自定义脚本 这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。
+#!/usr/bin/osascript # Required parameters: # @raycast.schemaVersion 1 # @raycast.title Run Hugo Server # @raycast.mode compact # Optional parameters: # @raycast.icon images/hugo-logo.png # Documentation: # @raycast.description Run Hugo Server tell application &amp;#34;Terminal&amp;#34; set newTab to do script &amp;#34;cd /Users/soto/Code/soto-blog &amp;amp;&amp;amp; hugo server&amp;#34; end tell delay 1 do shell script &amp;#34;open http://localhost:1313&amp;#34; 美观好用，非常让人满意。</description>
+      <content:encoded><![CDATA[<h2 id="raycast">Raycast</h2>
+<p>前几天在一篇文章 <a href="https://sspai.com/post/77519">你的 2022，藏在这些数字里</a> 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。</p>
+<blockquote>
+<p>Raycast：2022 Wrapped
+Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F%2Fwww.raycast.com%2F">Raycast</a> 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。
+<img loading="lazy" src="https://cdn.sspai.com/2022/12/29/ec9a0b96ca3e8d732a6bd0d0caa3b248.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""  />
+</p>
+</blockquote>
+<p>之前一直没有尝试过此类软件是因为元老 <a href="https://www.alfredapp.com">Alfred</a> 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。</p>
+<h2 id="自定义脚本">自定义脚本</h2>
+<p>这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-applescript" data-lang="applescript"><span class="line"><span class="cl"><span class="c">#!/usr/bin/osascript</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Required parameters:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.schemaVersion 1</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.title Run Hugo Server</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.mode compact</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Optional parameters:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.icon images/hugo-logo.png</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Documentation:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># @raycast.description Run Hugo Server</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;Terminal&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">set</span> <span class="nv">newTab</span> <span class="k">to</span> <span class="nv">do</span> <span class="nv">script</span> <span class="s2">&#34;cd /Users/soto/Code/soto-blog &amp;&amp; hugo server&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span> <span class="k">tell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">delay</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">do shell script</span> <span class="s2">&#34;open http://localhost:1313&#34;</span>
+</span></span></code></pre></div><p>美观好用，非常让人满意。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040009617.png" alt=""  />
+</p>
+<h2 id="社区脚本">社区脚本</h2>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040014993.png" alt=""  />
+</p>
+<p>安装插件很方便，除此以外一些简单的脚本可以在官方维护的这个库里找到 <a href="https://github.com/raycast/script-commands">raycast
+/script-commands</a> 例如这个从当前文件夹打开终端就很方便，省的右键点击目录再打开了。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040015940.png" alt=""  />
+</p>
+<p>这个图标太丑了，可以自己改一下。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040015673.png" alt=""  />
+</p>
+<h2 id="其他功能">其他功能</h2>
+<p>剪切板历史</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
+</p>
+<p>计算器</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
+
+MacOS 联动</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042158529.png" alt=""  />
+</p>
+<p>另外还有可以替换著名付费软件的分屏，但是我不用。</p>
+<h2 id="其他插件">其他插件</h2>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042151560.png" alt=""  />
+</p>
+<p>装了几个很方便的社区插件</p>
+<p><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
+</p>
+<p><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301040038775.png" alt=""  />
+</p>
+<p><a href="https://www.raycast.com/mblode/quick-event">Quick Event</a> 速建日程(可惜不支持汉语)</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042159601.png" alt=""  />
+</p>
+<p><a href="https://www.raycast.com/thomas/github-repository-search">GitHub Repository Search</a> 快速去仓库，另外还有快速 Git 操作的插件，我用不到就没装。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
+
+<a href="https://www.raycast.com/gdsmith/jetbrains">JetBrains Toolbox Recent Projects</a> 这个也很方便，可以快速打开某个项目</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042155859.png" alt=""  />
+
+<a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a>  同上</p>
+<p><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记/开仓库</p>
+<h2 id="彩蛋">彩蛋</h2>
+<p>confetti!</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042141088.gif" alt=""  />
+</p>
+<p><a href="https://www.ray.so">Rayso</a></p>
+<p>突然发现之前收藏的一个好看的代码截图工具网站也是Raycast维护的。同样的，右下角可以获取这个脚本。</p>
+<p><img loading="lazy" src="https://pic.mcac.cc/202301042143074.png" alt=""  />
+</p>
+<h2 id="the-end">The end</h2>
+<p>总之就是如果用习惯了能省不少事儿，配置起来也很方便基本就是装插件，重要的是好看好玩，已经把默认的 ⌘ + Space 换掉了，就唯一不满意的是这个软件图标太难看了。</p>
+<p>几篇很好的介绍:</p>
+<ul>
+<li><a href="https://sspai.com/post/63521">快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast</a></li>
+<li><a href="https://sspai.com/post/72540">能少一个是一个：我用 Raycast 替代了这些应用</a></li>
+<li><a href="https://sspai.com/post/72951">Raycast 小技巧之 Quicklink 二三事</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>重拾RSS</title>
       <link>https://zzhgo.com/posts/%E9%87%8D%E6%8B%BErss/</link>

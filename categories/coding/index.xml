@@ -9,57 +9,20 @@
       <link>https://pic.mcac.cc/202301012340641.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 01:16:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SwiftUI 图表库 ChartView</title>
-      <link>https://zzhgo.com/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</link>
-      <pubDate>Mon, 27 Dec 2021 01:16:00 +0000</pubDate>
-      
-      <guid>https://zzhgo.com/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/</guid>
-      <description>突然很想推荐一下这个库，真的很好看，至少很符合我的审美。
-当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。
-(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)
-地址 https://github.com/AppPear/ChartView
-官方图例
-好看就完了，另外使用也相当简单，两个例子：
-MultiLineChartView(data: [([8,32,11,23,40,28], GradientColors.green), ([90,99,78,111,70,60,77], GradientColors.purple), ([34,56,72,38,43,100,50], GradientColors.orngPink)], title: &amp;#34;Title&amp;#34;) PieChartView(data: [8,23,54,32], title: &amp;#34;Title&amp;#34;, legend: &amp;#34;Legendary&amp;#34;) // legend is optional 而且这些卡片样式都是可以自己重新修订的，不用担心和自己的风格不一样。比如我之前的这个直接搬了两个卡片上去，它的阴影和我其他没有阴影的卡片是很不和谐的，于是我稍作修改，把他改成了和我其他卡片样式风格一致的样子。
-因为之前开发仓促，使用的时候没有仔细修改样式，但是可以肯定这个库还有更多的发挥空间。总之这个库真的很不错，封装程度高又不失自定义的空间，推荐。</description>
-      <content:encoded><![CDATA[<p>突然很想推荐一下这个库，真的很好看，至少很符合我的审美。</p>
-<p>当时第一次试图在SwiftUI画图，搜遍全网没找到几个能用的，而且能用的也相当丑，踩了不少坑，终于跟着一个demo追根溯源找到了这个库，救我于水火之中。</p>
-<p>(说起来也是，写第一个SwiftUI APP的时候也一样，在网上找资料真的太艰难了，国内几乎没有多少人写这些东西)</p>
-<p>地址 <a href="https://github.com/AppPear/ChartView">https://github.com/AppPear/ChartView</a></p>
-<p>官方图例</p>
-<p><img src="https://user-images.githubusercontent.com/2826764/130787802-9aa619ee-05de-4343-ba3c-1796e4d05e08.gif" width="26%"></img> <img src="https://user-images.githubusercontent.com/2826764/130787814-283f3d26-6c9d-448b-b2c7-879e60a3b05d.gif" width="26%"></img></p>
-<p><img src="https://user-images.githubusercontent.com/2826764/130785262-010d6791-16cf-485d-b920-29e4086477e2.png" width="45%"></img></p>
-<p><img src="https://user-images.githubusercontent.com/2826764/130785266-94a08622-2963-4177-8777-8bd3ad463809.png" width="45%"></img></p>
-<p><img src="https://user-images.githubusercontent.com/2826764/130785268-284314de-ba96-4fb7-a1e5-8a46578e1f0e.png" width="45%"></img></p>
-<p><img src="https://user-images.githubusercontent.com/2826764/131211993-5d33312b-09af-44b4-a32e-ffaad739adfe.gif" width="45%"></img> <img src="https://user-images.githubusercontent.com/2826764/131211994-48c9ce4e-2e67-40a0-b727-c88bdbd22cd0.gif" width="45%"></p>
-<p>好看就完了，另外使用也相当简单，两个例子：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="n">MultiLineChartView</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="p">[([</span><span class="mi">8</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">28</span><span class="p">],</span> <span class="n">GradientColors</span><span class="p">.</span><span class="n">green</span><span class="p">),</span> <span class="p">([</span><span class="mi">90</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">77</span><span class="p">],</span> <span class="n">GradientColors</span><span class="p">.</span><span class="n">purple</span><span class="p">),</span> <span class="p">([</span><span class="mi">34</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">38</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">50</span><span class="p">],</span> <span class="n">GradientColors</span><span class="p">.</span><span class="n">orngPink</span><span class="p">)],</span> <span class="n">title</span><span class="p">:</span> <span class="s">&#34;Title&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/2826764/131211991-eca64276-cf05-423f-a78a-697c55e44bbc.gif" width="50%"></img></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"> <span class="n">PieChartView</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">32</span><span class="p">],</span> <span class="n">title</span><span class="p">:</span> <span class="s">&#34;Title&#34;</span><span class="p">,</span> <span class="n">legend</span><span class="p">:</span> <span class="s">&#34;Legendary&#34;</span><span class="p">)</span> <span class="c1">// legend is optional</span>
-</span></span></code></pre></div><p><img loading="lazy" src="https://user-images.githubusercontent.com/2826764/131211998-e142657d-0ebc-43b7-aeda-07cae4d9e34b.png" alt=""  />
-</p>
-<p>而且这些卡片样式都是可以自己重新修订的，不用担心和自己的风格不一样。比如我之前的这个直接搬了两个卡片上去，它的阴影和我其他没有阴影的卡片是很不和谐的，于是我稍作修改，把他改成了和我其他卡片样式风格一致的样子。</p>
-<p><img loading="lazy" src="https://pic.mcac.cc/202212310108165.png" alt=""  />
-</p>
-<p>因为之前开发仓促，使用的时候没有仔细修改样式，但是可以肯定这个库还有更多的发挥空间。总之这个库真的很不错，封装程度高又不失自定义的空间，推荐。</p>
-]]></content:encoded>
-    </item>
-    
+    <lastBuildDate>Wed, 22 Dec 2021 15:18:00 +0000</lastBuildDate><atom:link href="https://zzhgo.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于TakeawayDelivery</title>
       <link>https://zzhgo.com/posts/projects/takeawaydelivery/</link>
       <pubDate>Wed, 22 Dec 2021 15:18:00 +0000</pubDate>
       
       <guid>https://zzhgo.com/posts/projects/takeawaydelivery/</guid>
-      <description>[[TakeawayDelivery 后端实现]]
+      <description>TakeawayDelivery 后端实现
 项目展示视频
 web端答辩PPT
 移动端APP答辩PPT
 项目前后端仓库
 移动端APP仓库</description>
-      <content:encoded><![CDATA[<p>[[TakeawayDelivery 后端实现]]</p>
+      <content:encoded><![CDATA[<p><a href="https://zzhgo.com/posts/projects/takeawaydelivery-back/">TakeawayDelivery 后端实现</a></p>
 <p><a href="https://www.bilibili.com/video/BV1Yq4y1q7Zf">项目展示视频</a></p>
 <p><a href="https://github.com/acsoto/TakeawayDelivery/blob/master/TakeawayDelivery%E5%B1%95%E7%A4%BAPPT.pdf">web端答辩PPT</a></p>
 <p><a href="https://github.com/Qwtdgh/Android/blob/main/%E9%AB%98%E5%85%B1%E4%BA%AB%E9%A3%9F%E5%A0%82%E5%A4%96%E5%8D%96%E5%B9%B3%E5%8F%B0%E2%80%9C%E8%88%AA%E9%80%81%E2%80%9D%E5%B1%95%E7%A4%BAPPT.pdf">移动端APP答辩PPT</a></p>
@@ -302,7 +265,7 @@ PARA: <code>userID</code></p>
 UI整体使用卡片式扁平设计
 设备状态 刷新按钮和更新温湿度数据，温湿度可以显示此时设备的温湿度传感器信息，打开电机和关闭电机功能用于控制控制板马达
 其中，温湿度会每秒自动进行更新，2位小数点保留
-历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了[[SwiftUI 图表库 ChartView]]库）
+历史记录 通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了[SwiftUI 图表库 ChartView]库）
 默认显示2天前到现在的曲线，第一次打开app时会同步一次
 设置 在设置页面，通过选择器选择阈值后点击保存，当温度高于此阈值时，开发板电机将会转动
 同时，打开app后每次阈值的设置会被记录，以便查看设置情况
@@ -326,7 +289,7 @@ UI整体使用卡片式扁平设计
 <p><img loading="lazy" src="https://pic.mcac.cc/202212310106548.png" alt=""  />
 </p>
 <h4 id="历史记录">历史记录</h4>
-<p>通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了[[SwiftUI 图表库 ChartView]]库）</p>
+<p>通过DatePicker选择起止时间，再点击获取，即可得到此段时间内的温湿度曲线，触摸曲线还可以动态显示任意一点的数值（此处使用了<a href="https://zzhgo.com/posts/swiftui-%E5%9B%BE%E8%A1%A8%E5%BA%93-chartview/">[SwiftUI 图表库 ChartView]</a>库）</p>
 <p>默认显示2天前到现在的曲线，第一次打开app时会同步一次</p>
 <p><img loading="lazy" src="https://pic.mcac.cc/202212310107635.png" alt=""  />
 </p>

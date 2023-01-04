@@ -157,6 +157,24 @@
 </header>
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Obsidian，Hugo
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上一篇相关文章: [Obsidian体验与新工作流]
+用 vscode 写这种大量的 md 文件还是不方便，想看实时渲染效果，因为博客图太多对照起来非常麻烦，Obsidian 相比起来体验会好很多，现在版本升到 1.0 以上了，原生的实时预览也找到了之前 Typora 的熟悉感，我做了下面几个配置来让博客 Vault 更好地适应 hugo。
+插入模板 首先是一个方便的 metadata 插入模板，这比起运行 hugo 指令要方便多了。
+--- title: {{title}} date: {{date}}T{{time}}&#43;08:00 tags: [] categories: [] cover: image: &#34;&#34; slug: {{date:YYYYMMDD}}{{time:HHmmss}} --- 在以前我是用社区插件插入模板的，但是现在发现 Obsidian 自带的模板就完全够用了
+title: {{title}} 直接复用文件名 date: {{date}}T{{time}} 即是符合 hugo 要求的时间样式，时区 &#43;08:00 slug: {{date:YYYYMMDD}}{{time:HHmmss}} 这个比较有意思，具体说一下 slug 就是自定义 hugo 生成的链接，因为 hugo 自动生成的链接是直接复用标题的，导致我分享链接的出现中文被微信识别为不属于链接的部分，导致链接没法点，就算用 Safari 直接分享出去也会把链接显示为一大堆 unicode ，非常不美观，因此我想到直接用自带模板的时间格式化一串数字，这肯定是不会重名并且不影响分享的，当然这里也可以用 Templater 之类的社区插件生成一个更短的随机字符串。
+效果:
+--- title: Obsidian，Hugo date: 2023-01-04T18:07:41&#43;08:00 tags: [] categories: [] cover: image: &#34;&#34; slug: 20230104180741 --- 这样生成的链接是这样的: https://zzhgo....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-04 18:07:41 +0800 +0800'>2023-01-04</span>&nbsp;·&nbsp;SOTO</footer>
+  <a class="entry-link" aria-label="post link to Obsidian，Hugo" href="https://zzhgo.com/posts/2023-1/20230104180741/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://pic.mcac.cc/202301040034085.png" alt="">
 </figure>
   <header class="entry-header">
@@ -166,8 +184,7 @@
   <div class="entry-content">
     <p>Raycast 前几天在一篇文章 你的 2022，藏在这些数字里 中偶然看到了 Raycast 这个软件也有年终报告，当时就猜到是一个类似 Alfred 的代替原生 Spotlight 的软件。
 Raycast：2022 Wrapped Mac 平台著名的启动器 Raycast 也推出了年度总结报告。这份报告分为四个部分，分别是应用的使用情况、调用拓展情况、通过 Raycast 启动应用的情况，以及最后的总结。 之前一直没有尝试过此类软件是因为元老 Alfred 实在是长得不好看，让我觉得没法融入系统，今天在思索怎么样能省事地运行 hugo server 的时候想到可以用这类软件来实现，于是下载了 Alfred 发现脚本功能是付费的，正在研究有无必要的时候发现了 Raycast 这个软件，一眼爱上UI，而且免费，于是下了一个来折腾，发现确实是个好东西。
-这里有几篇很好的介绍:
-快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast 能少一个是一个：我用 Raycast 替代了这些应用 Raycast 小技巧之 Quicklink 二三事 自定义脚本 这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。
+自定义脚本 这个软件自定义脚本也是非常方便，为了实现刚才考虑的功能又特意研究了一下 AppleScript，最后搞定了这个脚本。
 #!/usr/bin/osascript # Required parameters: # @raycast.schemaVersion 1 # @raycast.title Run Hugo Server # @raycast.mode compact # Optional parameters: # @raycast.icon images/hugo-logo.png # Documentation: # @raycast.description Run Hugo Server tell application &#34;Terminal&#34; set newTab to do script &#34;cd /Users/soto/Code/soto-blog &amp;&amp; hugo server&#34; end tell delay 1 do shell script &#34;open http://localhost:1313&#34; 美观好用，非常让人满意。...</p>
   </div>
   <footer class="entry-footer"><span title='2023-01-03 23:54:03 +0800 +0800'>2023-01-03</span>&nbsp;·&nbsp;SOTO</footer>
@@ -239,24 +256,6 @@ infuse会自动识别影视资源进行整理。
   </div>
   <footer class="entry-footer"><span title='2022-12-31 11:02:00 +0800 +0800'>2022-12-31</span>&nbsp;·&nbsp;SOTO</footer>
   <a class="entry-link" aria-label="post link to PT站使用" href="https://zzhgo.com/posts/pt%E7%AB%99%E4%BD%BF%E7%94%A8/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>感染新冠
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>第六天，今天除了有些咳嗽和感冒症状，基本上是好多了。
-2022-12-8 北航每日健康打卡停止
-从个人的角度，从这一刻，防疫算是彻底结束了，一周前还不认为事情会进展得如此之快，还在想考研会不会延期，短短几天之内，翻天地覆。几天前我还在想什么时候能进店不用扫码将是人类的伟大进步，现在各种健康码都取消了。要说放开，我是一直期待的，但现在又会被舆论指责是“不顾老人小孩的生命只为了自己的喊放开的人”。
-疫情占据了我几乎四年的大学生活。计划的周末天津/秦皇岛游自始至终没有实现，没有体验到真正的大学生活，最大的自由只是在京城走来走去，只凭这点都会非常羡慕hk的大学。
-在全面放开一周，疫情马上扩散到各地，朋友圈每天都是发自己体温和两道杠的。家里老人也感染了，目前平安渡过了。
-我和我爸是在我妈感染五天后才开始有症状的，本来还以为真的有所谓的“无症状感染”，最后都是一样得病。我是周二晚上遛完狗回来嗓子就凉凉的，没一会儿体温就开始升，吃了布洛芬就睡了，半夜半梦半醒意识混乱，第二天是真的寄，高烧到39.5，腰和腿感觉要断了，怎么躺都不舒服，第三天本来好点了，第四天又复发，一大早冻醒来高烧，头巨痛，晚上烧完出了很多汗，第五天终于不烧了好多了。
-感觉我吃布洛芬看不到什么效果，每次吃完还是烧得很高，反复烧了四天，和别人症状也不太一样，低估了这新冠了，这状态要我考研我肯定会死，总之，怎么说？在这样一场3年闹剧之后，喜提抗体…过段时间可以到处玩了?</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-12-25 09:18:50 +0800 +0800'>2022-12-25</span>&nbsp;·&nbsp;SOTO</footer>
-  <a class="entry-link" aria-label="post link to 感染新冠" href="https://zzhgo.com/posts/2022-12/%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
