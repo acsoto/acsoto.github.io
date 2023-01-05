@@ -146,24 +146,24 @@ Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F
 <table>
 <thead>
 <tr>
-<th>Functions</th>
-<th>Screenshots</th>
+<th style="text-align:center">Functions</th>
+<th style="text-align:center">Screenshots</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>剪切板历史</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
+<td style="text-align:center">剪切板历史</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301040017318.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td>计算器</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
+<td style="text-align:center">计算器</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301040018234.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td>内置字典</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042158529.png" alt=""  />
+<td style="text-align:center">内置字典</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042158529.png" alt=""  />
 </td>
 </tr>
 </tbody>
@@ -176,44 +176,44 @@ Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F
 <table>
 <thead>
 <tr>
-<th>Extensions</th>
-<th>Screenshots</th>
+<th style="text-align:center">Extensions</th>
+<th style="text-align:center">Screenshots</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/fedevitaledev/music">AppleMusic</a> 可以快速播放歌单/加入资料库/喜欢</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301040039801.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042159601.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/loris/safari">Safari</a> 这个直接搜历史记录</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042159601.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/mblode/quick-event">Quick Event</a> 速建日程(可惜不支持汉语)</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/mblode/quick-event">Quick Event</a> 速建日程(可惜不支持汉语)</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/thomas/github-repository-search">GitHub Repository Search</a> 快速去仓库，另外还有快速 Git 操作的插件，我用不到就没装。</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/thomas/github-repository-search">GitHub Repository Search</a> 快速去仓库，另外还有快速 Git 操作的插件，我用不到就没装。</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042149577.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/gdsmith/jetbrains">JetBrains Toolbox Recent Projects</a> 这个也很方便，可以快速打开某个项目</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042155859.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/gdsmith/jetbrains">JetBrains Toolbox Recent Projects</a> 这个也很方便，可以快速打开某个项目</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042155859.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a>  同上</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042246228.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/MarkusLanger/vscode-project-manager">Visual Studio Code - Project Manager</a>  同上</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042246228.png" alt=""  />
 </td>
 </tr>
 <tr>
-<td><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记/开仓库</td>
-<td><img loading="lazy" src="https://pic.mcac.cc/202301042246261.png" alt=""  />
+<td style="text-align:center"><a href="https://www.raycast.com/marcjulian/obsidian">Obsidian</a> 可以快速搜笔记/开仓库</td>
+<td style="text-align:center"><img loading="lazy" src="https://pic.mcac.cc/202301042246261.png" alt=""  />
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Mac 平台著名的启动器 <a href="https://sspai.com/link?target=https%3A%2F
 <p>突然发现之前收藏的一个好看的代码截图工具网站也是Raycast维护的。同样的，右下角可以获取这个脚本。</p>
 <p><img loading="lazy" src="https://pic.mcac.cc/202301042143074.png" alt=""  />
 </p>
-<h2 id="the-end">The end</h2>
+<h2 id="end">End</h2>
 <p>总之就是如果用习惯了能省不少事儿，配置起来也很方便基本就是装插件，重要的是好看好玩，已经把默认的 ⌘ + Space 换掉了，就唯一不满意的是这个软件图标太难看了。</p>
 <p>几篇很好的介绍:</p>
 <ul>
