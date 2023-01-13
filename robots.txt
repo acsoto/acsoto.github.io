@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Sitemap: https://zzhgo.com/sitemap.xml
