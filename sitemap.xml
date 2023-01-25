@@ -151,6 +151,14 @@
   </url>
 
   <url>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/假如爱有天意</loc>
+  </url>
+
+  <url>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/海街日记</loc>
+  </url>
+
+  <url>
     <loc>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/2021年11月的第一场雪</loc>
   </url>
 
@@ -243,14 +251,6 @@
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/假如爱有天意</loc>
-  </url>
-
-  <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/海街日记</loc>
-  </url>
-
-  <url>
     <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/ac</loc>
   </url>
 
@@ -259,7 +259,7 @@
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/guide</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/canada</loc>
   </url>
 
   <url>
@@ -267,11 +267,11 @@
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/hugo</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/guide</loc>
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/music</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/hugo</loc>
   </url>
 
   <url>
@@ -279,11 +279,11 @@
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/canada</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/next-js</loc>
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/next-js</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/music</loc>
   </url>
 
   <url>
@@ -299,11 +299,11 @@
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/react</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/tv</loc>
   </url>
 
   <url>
-    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/tv</loc>
+    <loc>https://tailwind-nextjs-starter-blog.vercel.app/tags/react</loc>
   </url>
 
   <url>
