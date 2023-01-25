@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>SOTO-BLOG</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>me@zzhgo.com (SOTO)</managingEditor>
+      <webMaster>me@zzhgo.com (SOTO)</webMaster>
+      <lastBuildDate>Wed, 04 Jan 2023 18:07:41 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/hugo/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Obsidian，Hugo</guid>
+    <title>Obsidian，Hugo</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Obsidian，Hugo</link>
+    undefined
+    <pubDate>Wed, 04 Jan 2023 18:07:41 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category><category>Hugo</category><category>Obsidian</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/Hugo部署</guid>
+    <title>Hugo部署</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/Hugo部署</link>
+    undefined
+    <pubDate>Thu, 15 Dec 2022 07:31:38 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category><category>Hugo</category>
+  </item>
+
+    </channel>
+  </rss>

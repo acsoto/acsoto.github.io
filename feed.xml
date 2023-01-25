@@ -1,0 +1,504 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>SOTO-BLOG</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>me@zzhgo.com (SOTO)</managingEditor>
+      <webMaster>me@zzhgo.com (SOTO)</webMaster>
+      <lastBuildDate>Mon, 16 Jan 2023 00:26:17 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/致运行3年的47.111.244.170</guid>
+    <title>致运行3年的47.111.244.170</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/致运行3年的47.111.244.170</link>
+    undefined
+    <pubDate>Mon, 16 Jan 2023 00:26:17 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>AC</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/前端的一些学习和Gatsby的使用</guid>
+    <title>前端的一些学习和 Gatsby 的使用</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/前端的一些学习和Gatsby的使用</link>
+    undefined
+    <pubDate>Sat, 14 Jan 2023 01:32:16 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>React</category><category>APP</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Obsidian，Hugo</guid>
+    <title>Obsidian，Hugo</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Obsidian，Hugo</link>
+    undefined
+    <pubDate>Wed, 04 Jan 2023 18:07:41 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category><category>Hugo</category><category>Obsidian</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Raycast体验</guid>
+    <title>Raycast 体验</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/Raycast体验</link>
+    undefined
+    <pubDate>Tue, 03 Jan 2023 23:54:03 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/第73回NHK紅白歌合戦</guid>
+    <title>第73回NHK紅白歌合戦</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/第73回NHK紅白歌合戦</link>
+    undefined
+    <pubDate>Mon, 02 Jan 2023 23:46:42 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Music</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/2023 新年快乐</guid>
+    <title>新年快乐</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202301/2023 新年快乐</link>
+    undefined
+    <pubDate>Sun, 01 Jan 2023 01:16:10 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/PT站使用</guid>
+    <title>PT站使用</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/PT站使用</link>
+    undefined
+    <pubDate>Sat, 31 Dec 2022 11:02:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>TV</category><category>APP</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/y2022</guid>
+    <title>2022 年度报告</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/y2022</link>
+    undefined
+    <pubDate>Sat, 31 Dec 2022 08:52:16 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/感染新冠</guid>
+    <title>感染新冠</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/感染新冠</link>
+    undefined
+    <pubDate>Sun, 25 Dec 2022 01:18:50 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/Hugo部署</guid>
+    <title>Hugo部署</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/202212/Hugo部署</link>
+    undefined
+    <pubDate>Thu, 15 Dec 2022 07:31:38 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category><category>Hugo</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/最近在看的博主</guid>
+    <title>最近在看的博主</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/最近在看的博主</link>
+    undefined
+    <pubDate>Sat, 06 Aug 2022 00:08:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>TV</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/重拾RSS</guid>
+    <title>重拾RSS</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/重拾RSS</link>
+    undefined
+    <pubDate>Fri, 05 Aug 2022 23:20:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】初访西安</guid>
+    <title>【游记】初访西安</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】初访西安</link>
+    undefined
+    <pubDate>Mon, 04 Jul 2022 00:46:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>游记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220430</guid>
+    <title>【北京溜达日记】20220430</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220430</link>
+    undefined
+    <pubDate>Mon, 02 May 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220413</guid>
+    <title>【北京溜达日记】20220413</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220413</link>
+    undefined
+    <pubDate>Wed, 13 Apr 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220410</guid>
+    <title>【北京溜达日记】20220410</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220410</link>
+    undefined
+    <pubDate>Sun, 10 Apr 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220407</guid>
+    <title>【北京溜达日记】20220407</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220407</link>
+    undefined
+    <pubDate>Thu, 07 Apr 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220404</guid>
+    <title>【北京溜达日记】20220404</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220404</link>
+    undefined
+    <pubDate>Mon, 04 Apr 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220331</guid>
+    <title>【北京溜达日记】2022年0331</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220331</link>
+    undefined
+    <pubDate>Thu, 31 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220321</guid>
+    <title>【北京溜达日记】20220321</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220321</link>
+    undefined
+    <pubDate>Mon, 21 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220320</guid>
+    <title>【北京溜达日记】20220320</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220320</link>
+    undefined
+    <pubDate>Sun, 20 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220309</guid>
+    <title>【北京溜达日记】20220309</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220309</link>
+    undefined
+    <pubDate>Wed, 09 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220308</guid>
+    <title>【北京溜达日记】20220308</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220308</link>
+    undefined
+    <pubDate>Tue, 08 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220305</guid>
+    <title>【北京溜达日记】20220305</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220305</link>
+    undefined
+    <pubDate>Sat, 05 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220304</guid>
+    <title>【北京溜达日记】20220304</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220304</link>
+    undefined
+    <pubDate>Fri, 04 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220303</guid>
+    <title>【北京溜达日记】20220303</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220303</link>
+    undefined
+    <pubDate>Thu, 03 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220302</guid>
+    <title>【北京溜达日记】20220302</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/beijing-diary/【北京溜达日记】20220302</link>
+    undefined
+    <pubDate>Wed, 02 Mar 2022 23:38:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>北京溜达日记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/冬日的光</guid>
+    <title>冬日的光</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/冬日的光</link>
+    undefined
+    <pubDate>Sun, 02 Jan 2022 16:26:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/你好，2022</guid>
+    <title>你好，2022</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/你好，2022</link>
+    undefined
+    <pubDate>Sat, 01 Jan 2022 01:33:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/天空之城，米店和XLD</guid>
+    <title>天空之城，米店和XLD</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/天空之城，米店和XLD</link>
+    undefined
+    <pubDate>Tue, 28 Dec 2021 01:24:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Music</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/圣诞和颐和园的日落</guid>
+    <title>圣诞和颐和园的日落</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/圣诞和颐和园的日落</link>
+    undefined
+    <pubDate>Mon, 27 Dec 2021 01:29:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/SwiftUI图表库ChartView</guid>
+    <title>SwiftUI 图表库 ChartView</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/SwiftUI图表库ChartView</link>
+    undefined
+    <pubDate>Mon, 27 Dec 2021 01:16:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/展望一下十二月</guid>
+    <title>展望一下十二月</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/展望一下十二月</link>
+    undefined
+    <pubDate>Mon, 13 Dec 2021 00:37:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/TakeawayDelivery后端实现</guid>
+    <title>TakeawayDelivery 后端实现</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/TakeawayDelivery后端实现</link>
+    undefined
+    <pubDate>Tue, 07 Dec 2021 19:14:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Obsidian体验与新工作流</guid>
+    <title>Obsidian体验与新工作流</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Obsidian体验与新工作流</link>
+    undefined
+    <pubDate>Tue, 07 Dec 2021 12:11:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>APP</category><category>Obsidian</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/假如爱有天意</guid>
+    <title>假如爱有天意</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/假如爱有天意</link>
+    undefined
+    <pubDate>Fri, 03 Dec 2021 22:11:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>TV</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/海街日记</guid>
+    <title>海街日记</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/tv/海街日记</link>
+    undefined
+    <pubDate>Wed, 01 Dec 2021 19:25:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>TV</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/岁末将至</guid>
+    <title>岁末将至</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/岁末将至</link>
+    undefined
+    <pubDate>Sun, 28 Nov 2021 23:59:12 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/AC又被黑了</guid>
+    <title>AC又被黑了</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/AC又被黑了</link>
+    undefined
+    <pubDate>Sun, 28 Nov 2021 16:17:36 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/IoTMonitor</guid>
+    <title>IoTMonitor</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/IoTMonitor</link>
+    undefined
+    <pubDate>Sun, 28 Nov 2021 02:54:12 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/新北老年活动中心</guid>
+    <title>新北老年活动中心</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/新北老年活动中心</link>
+    undefined
+    <pubDate>Fri, 26 Nov 2021 10:22:27 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/泳社约游群的有趣见闻</guid>
+    <title>泳社约游群的有趣见闻</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/泳社约游群的有趣见闻</link>
+    undefined
+    <pubDate>Tue, 23 Nov 2021 12:36:52 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/关于2021美赛</guid>
+    <title>关于2021美赛</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/关于2021美赛</link>
+    undefined
+    <pubDate>Sun, 21 Nov 2021 11:36:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/与鸟巢的匆匆一面</guid>
+    <title>与鸟巢的匆匆一面</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/与鸟巢的匆匆一面</link>
+    undefined
+    <pubDate>Fri, 19 Nov 2021 23:34:01 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Alxa_Compiler</guid>
+    <title>Alxa_Compiler(SysY to PCODE)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Alxa_Compiler</link>
+    undefined
+    <pubDate>Tue, 16 Nov 2021 16:29:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/2021年11月的第一场雪</guid>
+    <title>2021年11月的第一场雪</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/2021年11月的第一场雪</link>
+    undefined
+    <pubDate>Sun, 07 Nov 2021 02:04:08 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>随想</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Memo文档</guid>
+    <title>Memo文档</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Memo文档</link>
+    undefined
+    <pubDate>Thu, 28 Oct 2021 17:29:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】一个人的武汉</guid>
+    <title>【游记】武汉</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】一个人的武汉</link>
+    undefined
+    <pubDate>Mon, 19 Jul 2021 00:46:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>游记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/关于巨人的烂尾</guid>
+    <title>关于巨人的烂尾</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/关于巨人的烂尾</link>
+    undefined
+    <pubDate>Thu, 08 Apr 2021 17:16:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>TV</category>
+  </item>
+
+    </channel>
+  </rss>

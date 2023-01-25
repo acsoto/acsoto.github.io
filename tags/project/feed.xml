@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>SOTO-BLOG</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>me@zzhgo.com (SOTO)</managingEditor>
+      <webMaster>me@zzhgo.com (SOTO)</webMaster>
+      <lastBuildDate>Tue, 07 Dec 2021 19:14:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/project/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/TakeawayDelivery后端实现</guid>
+    <title>TakeawayDelivery 后端实现</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/TakeawayDelivery后端实现</link>
+    undefined
+    <pubDate>Tue, 07 Dec 2021 19:14:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/IoTMonitor</guid>
+    <title>IoTMonitor</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/IoTMonitor</link>
+    undefined
+    <pubDate>Sun, 28 Nov 2021 02:54:12 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Alxa_Compiler</guid>
+    <title>Alxa_Compiler(SysY to PCODE)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Alxa_Compiler</link>
+    undefined
+    <pubDate>Tue, 16 Nov 2021 16:29:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Memo文档</guid>
+    <title>Memo文档</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/Memo文档</link>
+    undefined
+    <pubDate>Thu, 28 Oct 2021 17:29:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>Project</category>
+  </item>
+
+    </channel>
+  </rss>

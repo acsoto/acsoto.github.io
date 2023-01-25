@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>SOTO-BLOG</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>me@zzhgo.com (SOTO)</managingEditor>
+      <webMaster>me@zzhgo.com (SOTO)</webMaster>
+      <lastBuildDate>Mon, 04 Jul 2022 00:46:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/游记/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】初访西安</guid>
+    <title>【游记】初访西安</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】初访西安</link>
+    undefined
+    <pubDate>Mon, 04 Jul 2022 00:46:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>游记</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】一个人的武汉</guid>
+    <title>【游记】武汉</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/legacy/【游记】一个人的武汉</link>
+    undefined
+    <pubDate>Mon, 19 Jul 2021 00:46:00 GMT</pubDate>
+    <author>me@zzhgo.com (SOTO)</author>
+    <category>游记</category>
+  </item>
+
+    </channel>
+  </rss>
